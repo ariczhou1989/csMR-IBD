@@ -45,14 +45,5 @@ eQTL_REFERENCE_GENOTYPE:
   data/reference_genome_1000G_EUR
 
 
-# Parameters for colocalization analysis
-COLOC_SETTING: # Window definition for mapping gene specificity values to SNPs
-  WINDOW_SIZE_BP:
-    100000
-  COVERAGES: # Multiple coverages are allowed which must be separated by comma. eg: 0.6,0.9
-    0.9
-  THREADS:
-    60
-  CUTOFF:
-    0.8
+
 
