@@ -1,0 +1,59 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 60
+Rules claiming more threads will be scaled down.
+Job stats:
+job      count    min threads    max threads
+-----  -------  -------------  -------------
+MR           3              1              1
+all          1              1              1
+total        4              1              1
+
+Select jobs to execute...
+
+[Sat Aug 31 08:51:34 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Inflammatory_bowel_disease.results.coverage.0.9.PPH4.0.8.L5_IT.clumped
+    output: csMR-EXAMPLE/MR/Inflammatory_bowel_disease-AD_ieu_b_2_full_outcome/Inflammatory_bowel_disease.AD_ieu_b_2_full_outcome.L5_IT.MR.res, csMR-EXAMPLE/MR/Inflammatory_bowel_disease-AD_ieu_b_2_full_outcome/Inflammatory_bowel_disease.AD_ieu_b_2_full_outcome.L5_IT.MR.sensitivity
+    jobid: 688
+    reason: Missing output files: csMR-EXAMPLE/MR/Inflammatory_bowel_disease-AD_ieu_b_2_full_outcome/Inflammatory_bowel_disease.AD_ieu_b_2_full_outcome.L5_IT.MR.res, csMR-EXAMPLE/MR/Inflammatory_bowel_disease-AD_ieu_b_2_full_outcome/Inflammatory_bowel_disease.AD_ieu_b_2_full_outcome.L5_IT.MR.sensitivity
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Inflammatory_bowel_disease, outcome=AD_ieu_b_2_full_outcome, cell_type=L5_IT
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 08:51:34 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Crohn_disease.results.coverage.0.9.PPH4.0.8.L5_IT.clumped
+    output: csMR-EXAMPLE/MR/Crohn_disease-Bipolar_affective_disorders_R10_full_outcome/Crohn_disease.Bipolar_affective_disorders_R10_full_outcome.L5_IT.MR.res, csMR-EXAMPLE/MR/Crohn_disease-Bipolar_affective_disorders_R10_full_outcome/Crohn_disease.Bipolar_affective_disorders_R10_full_outcome.L5_IT.MR.sensitivity
+    jobid: 1052
+    reason: Missing output files: csMR-EXAMPLE/MR/Crohn_disease-Bipolar_affective_disorders_R10_full_outcome/Crohn_disease.Bipolar_affective_disorders_R10_full_outcome.L5_IT.MR.sensitivity, csMR-EXAMPLE/MR/Crohn_disease-Bipolar_affective_disorders_R10_full_outcome/Crohn_disease.Bipolar_affective_disorders_R10_full_outcome.L5_IT.MR.res
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Crohn_disease, outcome=Bipolar_affective_disorders_R10_full_outcome, cell_type=L5_IT
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 08:51:34 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Crohn_disease.results.coverage.0.9.PPH4.0.8.L5_IT.clumped
+    output: csMR-EXAMPLE/MR/Crohn_disease-Obsessive_compulsive_disorder_full_outcome/Crohn_disease.Obsessive_compulsive_disorder_full_outcome.L5_IT.MR.res, csMR-EXAMPLE/MR/Crohn_disease-Obsessive_compulsive_disorder_full_outcome/Crohn_disease.Obsessive_compulsive_disorder_full_outcome.L5_IT.MR.sensitivity
+    jobid: 1050
+    reason: Missing output files: csMR-EXAMPLE/MR/Crohn_disease-Obsessive_compulsive_disorder_full_outcome/Crohn_disease.Obsessive_compulsive_disorder_full_outcome.L5_IT.MR.res, csMR-EXAMPLE/MR/Crohn_disease-Obsessive_compulsive_disorder_full_outcome/Crohn_disease.Obsessive_compulsive_disorder_full_outcome.L5_IT.MR.sensitivity
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Crohn_disease, outcome=Obsessive_compulsive_disorder_full_outcome, cell_type=L5_IT
+    resources: tmpdir=/tmp
+
+[Sat Aug 31 08:51:48 2024]
+Error in rule MR:
+    jobid: 688
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Inflammatory_bowel_disease.results.coverage.0.9.PPH4.0.8.L5_IT.clumped
+    output: csMR-EXAMPLE/MR/Inflammatory_bowel_disease-AD_ieu_b_2_full_outcome/Inflammatory_bowel_disease.AD_ieu_b_2_full_outcome.L5_IT.MR.res, csMR-EXAMPLE/MR/Inflammatory_bowel_disease-AD_ieu_b_2_full_outcome/Inflammatory_bowel_disease.AD_ieu_b_2_full_outcome.L5_IT.MR.sensitivity
+    shell:
+        Rscript scripts/csMR.r -e /home/u/csMR/example/BMI_GWAS/Inflammatory_bowel_disease.ma -o example/outcomes/AD_ieu_b_2_full_outcome.ma -c csMR-EXAMPLE/MR/clump/Susie_coloc.Inflammatory_bowel_disease.results.coverage.0.9.PPH4.0.8.L5_IT.clumped -r /home/u/csMR/data/reference_genome_1000G_EUR
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Sat Aug 31 08:52:00 2024]
+Finished job 1050.
+1 of 4 steps (25%) done
+[Sat Aug 31 08:52:31 2024]
+Finished job 1052.
+2 of 4 steps (50%) done
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2024-08-31T085132.396711.snakemake.log

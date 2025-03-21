@@ -1,0 +1,687 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 60
+Rules claiming more threads will be scaled down.
+Job stats:
+job      count    min threads    max threads
+-----  -------  -------------  -------------
+MR          47              1              1
+all          1              1              1
+total       48              1              1
+
+Select jobs to execute...
+
+[Wed Sep  4 17:01:12 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.HDL_cholesterol.results.coverage.0.9.PPH4.0.8.sat_Macrophage.clumped
+    output: csMR-EXAMPLE/MR/HDL_cholesterol-PVS/HDL_cholesterol.PVS.sat_Macrophage.MR.res, csMR-EXAMPLE/MR/HDL_cholesterol-PVS/HDL_cholesterol.PVS.sat_Macrophage.MR.sensitivity
+    jobid: 11634
+    reason: Missing output files: csMR-EXAMPLE/MR/HDL_cholesterol-PVS/HDL_cholesterol.PVS.sat_Macrophage.MR.res, csMR-EXAMPLE/MR/HDL_cholesterol-PVS/HDL_cholesterol.PVS.sat_Macrophage.MR.sensitivity
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=HDL_cholesterol, outcome=PVS, cell_type=sat_Macrophage
+    resources: tmpdir=/tmp
+
+
+[Wed Sep  4 17:01:12 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Glycated_haemoglobin_HbA1c.results.coverage.0.9.PPH4.0.8.sat_Adipocyte.clumped
+    output: csMR-EXAMPLE/MR/Glycated_haemoglobin_HbA1c-Scoliosis_R10_full_outcome/Glycated_haemoglobin_HbA1c.Scoliosis_R10_full_outcome.sat_Adipocyte.MR.res, csMR-EXAMPLE/MR/Glycated_haemoglobin_HbA1c-Scoliosis_R10_full_outcome/Glycated_haemoglobin_HbA1c.Scoliosis_R10_full_outcome.sat_Adipocyte.MR.sensitivity
+    jobid: 4298
+    reason: Missing output files: csMR-EXAMPLE/MR/Glycated_haemoglobin_HbA1c-Scoliosis_R10_full_outcome/Glycated_haemoglobin_HbA1c.Scoliosis_R10_full_outcome.sat_Adipocyte.MR.res, csMR-EXAMPLE/MR/Glycated_haemoglobin_HbA1c-Scoliosis_R10_full_outcome/Glycated_haemoglobin_HbA1c.Scoliosis_R10_full_outcome.sat_Adipocyte.MR.sensitivity
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Glycated_haemoglobin_HbA1c, outcome=Scoliosis_R10_full_outcome, cell_type=sat_Adipocyte
+    resources: tmpdir=/tmp
+
+
+[Wed Sep  4 17:01:12 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.HDL_cholesterol.results.coverage.0.9.PPH4.0.8.sat_Macrophage.clumped
+    output: csMR-EXAMPLE/MR/HDL_cholesterol-Coronary_artery_disease/HDL_cholesterol.Coronary_artery_disease.sat_Macrophage.MR.res, csMR-EXAMPLE/MR/HDL_cholesterol-Coronary_artery_disease/HDL_cholesterol.Coronary_artery_disease.sat_Macrophage.MR.sensitivity
+    jobid: 11578
+    reason: Missing output files: csMR-EXAMPLE/MR/HDL_cholesterol-Coronary_artery_disease/HDL_cholesterol.Coronary_artery_disease.sat_Macrophage.MR.res, csMR-EXAMPLE/MR/HDL_cholesterol-Coronary_artery_disease/HDL_cholesterol.Coronary_artery_disease.sat_Macrophage.MR.sensitivity
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=HDL_cholesterol, outcome=Coronary_artery_disease, cell_type=sat_Macrophage
+    resources: tmpdir=/tmp
+
+
+[Wed Sep  4 17:01:12 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Glycated_haemoglobin_HbA1c.results.coverage.0.9.PPH4.0.8.sat_Adipocyte.clumped
+    output: csMR-EXAMPLE/MR/Glycated_haemoglobin_HbA1c-Insomnia_R10_full_outcome/Glycated_haemoglobin_HbA1c.Insomnia_R10_full_outcome.sat_Adipocyte.MR.res, csMR-EXAMPLE/MR/Glycated_haemoglobin_HbA1c-Insomnia_R10_full_outcome/Glycated_haemoglobin_HbA1c.Insomnia_R10_full_outcome.sat_Adipocyte.MR.sensitivity
+    jobid: 4312
+    reason: Missing output files: csMR-EXAMPLE/MR/Glycated_haemoglobin_HbA1c-Insomnia_R10_full_outcome/Glycated_haemoglobin_HbA1c.Insomnia_R10_full_outcome.sat_Adipocyte.MR.res, csMR-EXAMPLE/MR/Glycated_haemoglobin_HbA1c-Insomnia_R10_full_outcome/Glycated_haemoglobin_HbA1c.Insomnia_R10_full_outcome.sat_Adipocyte.MR.sensitivity
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Glycated_haemoglobin_HbA1c, outcome=Insomnia_R10_full_outcome, cell_type=sat_Adipocyte
+    resources: tmpdir=/tmp
+
+
+[Wed Sep  4 17:01:12 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.HDL_cholesterol.results.coverage.0.9.PPH4.0.8.sat_Macrophage.clumped
+    output: csMR-EXAMPLE/MR/HDL_cholesterol-Scoliosis_R10_full_outcome/HDL_cholesterol.Scoliosis_R10_full_outcome.sat_Macrophage.MR.res, csMR-EXAMPLE/MR/HDL_cholesterol-Scoliosis_R10_full_outcome/HDL_cholesterol.Scoliosis_R10_full_outcome.sat_Macrophage.MR.sensitivity
+    jobid: 11614
+    reason: Missing output files: csMR-EXAMPLE/MR/HDL_cholesterol-Scoliosis_R10_full_outcome/HDL_cholesterol.Scoliosis_R10_full_outcome.sat_Macrophage.MR.sensitivity, csMR-EXAMPLE/MR/HDL_cholesterol-Scoliosis_R10_full_outcome/HDL_cholesterol.Scoliosis_R10_full_outcome.sat_Macrophage.MR.res
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=HDL_cholesterol, outcome=Scoliosis_R10_full_outcome, cell_type=sat_Macrophage
+    resources: tmpdir=/tmp
+
+
+[Wed Sep  4 17:01:12 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.HDL_cholesterol.results.coverage.0.9.PPH4.0.8.sat_Macrophage.clumped
+    output: csMR-EXAMPLE/MR/HDL_cholesterol-Insomnia_R10_full_outcome/HDL_cholesterol.Insomnia_R10_full_outcome.sat_Macrophage.MR.res, csMR-EXAMPLE/MR/HDL_cholesterol-Insomnia_R10_full_outcome/HDL_cholesterol.Insomnia_R10_full_outcome.sat_Macrophage.MR.sensitivity
+    jobid: 11628
+    reason: Missing output files: csMR-EXAMPLE/MR/HDL_cholesterol-Insomnia_R10_full_outcome/HDL_cholesterol.Insomnia_R10_full_outcome.sat_Macrophage.MR.sensitivity, csMR-EXAMPLE/MR/HDL_cholesterol-Insomnia_R10_full_outcome/HDL_cholesterol.Insomnia_R10_full_outcome.sat_Macrophage.MR.res
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=HDL_cholesterol, outcome=Insomnia_R10_full_outcome, cell_type=sat_Macrophage
+    resources: tmpdir=/tmp
+
+
+[Wed Sep  4 17:01:12 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Triglycerides.results.coverage.0.9.PPH4.0.8.sat_Macrophage.clumped
+    output: csMR-EXAMPLE/MR/Triglycerides-Gout_unspecified_R10_full_outcome/Triglycerides.Gout_unspecified_R10_full_outcome.sat_Macrophage.MR.res, csMR-EXAMPLE/MR/Triglycerides-Gout_unspecified_R10_full_outcome/Triglycerides.Gout_unspecified_R10_full_outcome.sat_Macrophage.MR.sensitivity
+    jobid: 12916
+    reason: Missing output files: csMR-EXAMPLE/MR/Triglycerides-Gout_unspecified_R10_full_outcome/Triglycerides.Gout_unspecified_R10_full_outcome.sat_Macrophage.MR.res, csMR-EXAMPLE/MR/Triglycerides-Gout_unspecified_R10_full_outcome/Triglycerides.Gout_unspecified_R10_full_outcome.sat_Macrophage.MR.sensitivity
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Triglycerides, outcome=Gout_unspecified_R10_full_outcome, cell_type=sat_Macrophage
+    resources: tmpdir=/tmp
+
+
+[Wed Sep  4 17:01:12 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Glycated_haemoglobin_HbA1c.results.coverage.0.9.PPH4.0.8.sat_Adipocyte.clumped
+    output: csMR-EXAMPLE/MR/Glycated_haemoglobin_HbA1c-Pancreatic_cancer/Glycated_haemoglobin_HbA1c.Pancreatic_cancer.sat_Adipocyte.MR.res, csMR-EXAMPLE/MR/Glycated_haemoglobin_HbA1c-Pancreatic_cancer/Glycated_haemoglobin_HbA1c.Pancreatic_cancer.sat_Adipocyte.MR.sensitivity
+    jobid: 4327
+    reason: Missing output files: csMR-EXAMPLE/MR/Glycated_haemoglobin_HbA1c-Pancreatic_cancer/Glycated_haemoglobin_HbA1c.Pancreatic_cancer.sat_Adipocyte.MR.res, csMR-EXAMPLE/MR/Glycated_haemoglobin_HbA1c-Pancreatic_cancer/Glycated_haemoglobin_HbA1c.Pancreatic_cancer.sat_Adipocyte.MR.sensitivity
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Glycated_haemoglobin_HbA1c, outcome=Pancreatic_cancer, cell_type=sat_Adipocyte
+    resources: tmpdir=/tmp
+
+
+[Wed Sep  4 17:01:12 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.HDL_cholesterol.results.coverage.0.9.PPH4.0.8.sat_Macrophage.clumped
+    output: csMR-EXAMPLE/MR/HDL_cholesterol-Autism_spectrum_disorder_full_outcome/HDL_cholesterol.Autism_spectrum_disorder_full_outcome.sat_Macrophage.MR.res, csMR-EXAMPLE/MR/HDL_cholesterol-Autism_spectrum_disorder_full_outcome/HDL_cholesterol.Autism_spectrum_disorder_full_outcome.sat_Macrophage.MR.sensitivity
+    jobid: 11565
+    reason: Missing output files: csMR-EXAMPLE/MR/HDL_cholesterol-Autism_spectrum_disorder_full_outcome/HDL_cholesterol.Autism_spectrum_disorder_full_outcome.sat_Macrophage.MR.res, csMR-EXAMPLE/MR/HDL_cholesterol-Autism_spectrum_disorder_full_outcome/HDL_cholesterol.Autism_spectrum_disorder_full_outcome.sat_Macrophage.MR.sensitivity
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=HDL_cholesterol, outcome=Autism_spectrum_disorder_full_outcome, cell_type=sat_Macrophage
+    resources: tmpdir=/tmp
+
+
+[Wed Sep  4 17:01:12 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.HDL_cholesterol.results.coverage.0.9.PPH4.0.8.sat_Macrophage.clumped
+    output: csMR-EXAMPLE/MR/HDL_cholesterol-Nerve_nerve_root_and_plexus_disorders_R10_full_outcome/HDL_cholesterol.Nerve_nerve_root_and_plexus_disorders_R10_full_outcome.sat_Macrophage.MR.res, csMR-EXAMPLE/MR/HDL_cholesterol-Nerve_nerve_root_and_plexus_disorders_R10_full_outcome/HDL_cholesterol.Nerve_nerve_root_and_plexus_disorders_R10_full_outcome.sat_Macrophage.MR.sensitivity
+    jobid: 11593
+    reason: Missing output files: csMR-EXAMPLE/MR/HDL_cholesterol-Nerve_nerve_root_and_plexus_disorders_R10_full_outcome/HDL_cholesterol.Nerve_nerve_root_and_plexus_disorders_R10_full_outcome.sat_Macrophage.MR.sensitivity, csMR-EXAMPLE/MR/HDL_cholesterol-Nerve_nerve_root_and_plexus_disorders_R10_full_outcome/HDL_cholesterol.Nerve_nerve_root_and_plexus_disorders_R10_full_outcome.sat_Macrophage.MR.res
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=HDL_cholesterol, outcome=Nerve_nerve_root_and_plexus_disorders_R10_full_outcome, cell_type=sat_Macrophage
+    resources: tmpdir=/tmp
+
+
+[Wed Sep  4 17:01:12 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.HDL_cholesterol.results.coverage.0.9.PPH4.0.8.sat_Macrophage.clumped
+    output: csMR-EXAMPLE/MR/HDL_cholesterol-WMHV/HDL_cholesterol.WMHV.sat_Macrophage.MR.res, csMR-EXAMPLE/MR/HDL_cholesterol-WMHV/HDL_cholesterol.WMHV.sat_Macrophage.MR.sensitivity
+    jobid: 11649
+    reason: Missing output files: csMR-EXAMPLE/MR/HDL_cholesterol-WMHV/HDL_cholesterol.WMHV.sat_Macrophage.MR.res, csMR-EXAMPLE/MR/HDL_cholesterol-WMHV/HDL_cholesterol.WMHV.sat_Macrophage.MR.sensitivity
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=HDL_cholesterol, outcome=WMHV, cell_type=sat_Macrophage
+    resources: tmpdir=/tmp
+
+
+[Wed Sep  4 17:01:12 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Triglycerides.results.coverage.0.9.PPH4.0.8.sat_Adipocyte.clumped
+    output: csMR-EXAMPLE/MR/Triglycerides-Obsessive_compulsive_disorders_full_outcome_pan/Triglycerides.Obsessive_compulsive_disorders_full_outcome_pan.sat_Adipocyte.MR.res, csMR-EXAMPLE/MR/Triglycerides-Obsessive_compulsive_disorders_full_outcome_pan/Triglycerides.Obsessive_compulsive_disorders_full_outcome_pan.sat_Adipocyte.MR.sensitivity
+    jobid: 12349
+    reason: Missing output files: csMR-EXAMPLE/MR/Triglycerides-Obsessive_compulsive_disorders_full_outcome_pan/Triglycerides.Obsessive_compulsive_disorders_full_outcome_pan.sat_Adipocyte.MR.res, csMR-EXAMPLE/MR/Triglycerides-Obsessive_compulsive_disorders_full_outcome_pan/Triglycerides.Obsessive_compulsive_disorders_full_outcome_pan.sat_Adipocyte.MR.sensitivity
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Triglycerides, outcome=Obsessive_compulsive_disorders_full_outcome_pan, cell_type=sat_Adipocyte
+    resources: tmpdir=/tmp
+
+
+[Wed Sep  4 17:01:12 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Triglycerides.results.coverage.0.9.PPH4.0.8.sat_Macrophage.clumped
+    output: csMR-EXAMPLE/MR/Triglycerides-GCST90027158_AD_38_full_outcome/Triglycerides.GCST90027158_AD_38_full_outcome.sat_Macrophage.MR.res, csMR-EXAMPLE/MR/Triglycerides-GCST90027158_AD_38_full_outcome/Triglycerides.GCST90027158_AD_38_full_outcome.sat_Macrophage.MR.sensitivity
+    jobid: 12917
+    reason: Missing output files: csMR-EXAMPLE/MR/Triglycerides-GCST90027158_AD_38_full_outcome/Triglycerides.GCST90027158_AD_38_full_outcome.sat_Macrophage.MR.res, csMR-EXAMPLE/MR/Triglycerides-GCST90027158_AD_38_full_outcome/Triglycerides.GCST90027158_AD_38_full_outcome.sat_Macrophage.MR.sensitivity
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Triglycerides, outcome=GCST90027158_AD_38_full_outcome, cell_type=sat_Macrophage
+    resources: tmpdir=/tmp
+
+
+[Wed Sep  4 17:01:12 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.HDL_cholesterol.results.coverage.0.9.PPH4.0.8.sat_Macrophage.clumped
+    output: csMR-EXAMPLE/MR/HDL_cholesterol-Amyotrophic_lateral_sclerosis_GCST005647_full_outcome/HDL_cholesterol.Amyotrophic_lateral_sclerosis_GCST005647_full_outcome.sat_Macrophage.MR.res, csMR-EXAMPLE/MR/HDL_cholesterol-Amyotrophic_lateral_sclerosis_GCST005647_full_outcome/HDL_cholesterol.Amyotrophic_lateral_sclerosis_GCST005647_full_outcome.sat_Macrophage.MR.sensitivity
+    jobid: 11615
+    reason: Missing output files: csMR-EXAMPLE/MR/HDL_cholesterol-Amyotrophic_lateral_sclerosis_GCST005647_full_outcome/HDL_cholesterol.Amyotrophic_lateral_sclerosis_GCST005647_full_outcome.sat_Macrophage.MR.sensitivity, csMR-EXAMPLE/MR/HDL_cholesterol-Amyotrophic_lateral_sclerosis_GCST005647_full_outcome/HDL_cholesterol.Amyotrophic_lateral_sclerosis_GCST005647_full_outcome.sat_Macrophage.MR.res
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=HDL_cholesterol, outcome=Amyotrophic_lateral_sclerosis_GCST005647_full_outcome, cell_type=sat_Macrophage
+    resources: tmpdir=/tmp
+
+
+[Wed Sep  4 17:01:12 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.HDL_cholesterol.results.coverage.0.9.PPH4.0.8.sat_Macrophage.clumped
+    output: csMR-EXAMPLE/MR/HDL_cholesterol-Carpal_tunnel_syndrome_R10_full_outcome/HDL_cholesterol.Carpal_tunnel_syndrome_R10_full_outcome.sat_Macrophage.MR.res, csMR-EXAMPLE/MR/HDL_cholesterol-Carpal_tunnel_syndrome_R10_full_outcome/HDL_cholesterol.Carpal_tunnel_syndrome_R10_full_outcome.sat_Macrophage.MR.sensitivity
+    jobid: 11608
+    reason: Missing output files: csMR-EXAMPLE/MR/HDL_cholesterol-Carpal_tunnel_syndrome_R10_full_outcome/HDL_cholesterol.Carpal_tunnel_syndrome_R10_full_outcome.sat_Macrophage.MR.res, csMR-EXAMPLE/MR/HDL_cholesterol-Carpal_tunnel_syndrome_R10_full_outcome/HDL_cholesterol.Carpal_tunnel_syndrome_R10_full_outcome.sat_Macrophage.MR.sensitivity
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=HDL_cholesterol, outcome=Carpal_tunnel_syndrome_R10_full_outcome, cell_type=sat_Macrophage
+    resources: tmpdir=/tmp
+
+
+[Wed Sep  4 17:01:12 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.HDL_cholesterol.results.coverage.0.9.PPH4.0.8.sat_Macrophage.clumped
+    output: csMR-EXAMPLE/MR/HDL_cholesterol-Sleep_disorders_combined_R10_full_outcome/HDL_cholesterol.Sleep_disorders_combined_R10_full_outcome.sat_Macrophage.MR.res, csMR-EXAMPLE/MR/HDL_cholesterol-Sleep_disorders_combined_R10_full_outcome/HDL_cholesterol.Sleep_disorders_combined_R10_full_outcome.sat_Macrophage.MR.sensitivity
+    jobid: 11588
+    reason: Missing output files: csMR-EXAMPLE/MR/HDL_cholesterol-Sleep_disorders_combined_R10_full_outcome/HDL_cholesterol.Sleep_disorders_combined_R10_full_outcome.sat_Macrophage.MR.sensitivity, csMR-EXAMPLE/MR/HDL_cholesterol-Sleep_disorders_combined_R10_full_outcome/HDL_cholesterol.Sleep_disorders_combined_R10_full_outcome.sat_Macrophage.MR.res
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=HDL_cholesterol, outcome=Sleep_disorders_combined_R10_full_outcome, cell_type=sat_Macrophage
+    resources: tmpdir=/tmp
+
+
+[Wed Sep  4 17:01:12 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.HDL_cholesterol.results.coverage.0.9.PPH4.0.8.sat_Macrophage.clumped
+    output: csMR-EXAMPLE/MR/HDL_cholesterol-Skin_cancer/HDL_cholesterol.Skin_cancer.sat_Macrophage.MR.res, csMR-EXAMPLE/MR/HDL_cholesterol-Skin_cancer/HDL_cholesterol.Skin_cancer.sat_Macrophage.MR.sensitivity
+    jobid: 11616
+    reason: Missing output files: csMR-EXAMPLE/MR/HDL_cholesterol-Skin_cancer/HDL_cholesterol.Skin_cancer.sat_Macrophage.MR.sensitivity, csMR-EXAMPLE/MR/HDL_cholesterol-Skin_cancer/HDL_cholesterol.Skin_cancer.sat_Macrophage.MR.res
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=HDL_cholesterol, outcome=Skin_cancer, cell_type=sat_Macrophage
+    resources: tmpdir=/tmp
+
+
+[Wed Sep  4 17:01:12 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Glycated_haemoglobin_HbA1c.results.coverage.0.9.PPH4.0.8.sat_Adipocyte.clumped
+    output: csMR-EXAMPLE/MR/Glycated_haemoglobin_HbA1c-Lacunar_stroke/Glycated_haemoglobin_HbA1c.Lacunar_stroke.sat_Adipocyte.MR.res, csMR-EXAMPLE/MR/Glycated_haemoglobin_HbA1c-Lacunar_stroke/Glycated_haemoglobin_HbA1c.Lacunar_stroke.sat_Adipocyte.MR.sensitivity
+    jobid: 4315
+    reason: Missing output files: csMR-EXAMPLE/MR/Glycated_haemoglobin_HbA1c-Lacunar_stroke/Glycated_haemoglobin_HbA1c.Lacunar_stroke.sat_Adipocyte.MR.res, csMR-EXAMPLE/MR/Glycated_haemoglobin_HbA1c-Lacunar_stroke/Glycated_haemoglobin_HbA1c.Lacunar_stroke.sat_Adipocyte.MR.sensitivity
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Glycated_haemoglobin_HbA1c, outcome=Lacunar_stroke, cell_type=sat_Adipocyte
+    resources: tmpdir=/tmp
+
+
+[Wed Sep  4 17:01:12 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Apolipoprotein_A_I.results.coverage.0.9.PPH4.0.8.sat_ASPC.clumped
+    output: csMR-EXAMPLE/MR/Apolipoprotein_A_I-Arthropathies_R10_full_outcome/Apolipoprotein_A_I.Arthropathies_R10_full_outcome.sat_ASPC.MR.res, csMR-EXAMPLE/MR/Apolipoprotein_A_I-Arthropathies_R10_full_outcome/Apolipoprotein_A_I.Arthropathies_R10_full_outcome.sat_ASPC.MR.sensitivity
+    jobid: 9811
+    reason: Missing output files: csMR-EXAMPLE/MR/Apolipoprotein_A_I-Arthropathies_R10_full_outcome/Apolipoprotein_A_I.Arthropathies_R10_full_outcome.sat_ASPC.MR.sensitivity, csMR-EXAMPLE/MR/Apolipoprotein_A_I-Arthropathies_R10_full_outcome/Apolipoprotein_A_I.Arthropathies_R10_full_outcome.sat_ASPC.MR.res
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Apolipoprotein_A_I, outcome=Arthropathies_R10_full_outcome, cell_type=sat_ASPC
+    resources: tmpdir=/tmp
+
+
+[Wed Sep  4 17:01:12 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Glycated_haemoglobin_HbA1c.results.coverage.0.9.PPH4.0.8.sat_Adipocyte.clumped
+    output: csMR-EXAMPLE/MR/Glycated_haemoglobin_HbA1c-Arthropathies_R10_full_outcome/Glycated_haemoglobin_HbA1c.Arthropathies_R10_full_outcome.sat_Adipocyte.MR.res, csMR-EXAMPLE/MR/Glycated_haemoglobin_HbA1c-Arthropathies_R10_full_outcome/Glycated_haemoglobin_HbA1c.Arthropathies_R10_full_outcome.sat_Adipocyte.MR.sensitivity
+    jobid: 4323
+    reason: Missing output files: csMR-EXAMPLE/MR/Glycated_haemoglobin_HbA1c-Arthropathies_R10_full_outcome/Glycated_haemoglobin_HbA1c.Arthropathies_R10_full_outcome.sat_Adipocyte.MR.sensitivity, csMR-EXAMPLE/MR/Glycated_haemoglobin_HbA1c-Arthropathies_R10_full_outcome/Glycated_haemoglobin_HbA1c.Arthropathies_R10_full_outcome.sat_Adipocyte.MR.res
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Glycated_haemoglobin_HbA1c, outcome=Arthropathies_R10_full_outcome, cell_type=sat_Adipocyte
+    resources: tmpdir=/tmp
+
+
+[Wed Sep  4 17:01:12 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.HDL_cholesterol.results.coverage.0.9.PPH4.0.8.sat_Macrophage.clumped
+    output: csMR-EXAMPLE/MR/HDL_cholesterol-Lacunar_stroke/HDL_cholesterol.Lacunar_stroke.sat_Macrophage.MR.res, csMR-EXAMPLE/MR/HDL_cholesterol-Lacunar_stroke/HDL_cholesterol.Lacunar_stroke.sat_Macrophage.MR.sensitivity
+    jobid: 11631
+    reason: Missing output files: csMR-EXAMPLE/MR/HDL_cholesterol-Lacunar_stroke/HDL_cholesterol.Lacunar_stroke.sat_Macrophage.MR.res, csMR-EXAMPLE/MR/HDL_cholesterol-Lacunar_stroke/HDL_cholesterol.Lacunar_stroke.sat_Macrophage.MR.sensitivity
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=HDL_cholesterol, outcome=Lacunar_stroke, cell_type=sat_Macrophage
+    resources: tmpdir=/tmp
+
+
+[Wed Sep  4 17:01:12 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Triglycerides.results.coverage.0.9.PPH4.0.8.sat_Adipocyte.clumped
+    output: csMR-EXAMPLE/MR/Triglycerides-Dementia_R10_full_outcome/Triglycerides.Dementia_R10_full_outcome.sat_Adipocyte.MR.res, csMR-EXAMPLE/MR/Triglycerides-Dementia_R10_full_outcome/Triglycerides.Dementia_R10_full_outcome.sat_Adipocyte.MR.sensitivity
+    jobid: 12359
+    reason: Missing output files: csMR-EXAMPLE/MR/Triglycerides-Dementia_R10_full_outcome/Triglycerides.Dementia_R10_full_outcome.sat_Adipocyte.MR.sensitivity, csMR-EXAMPLE/MR/Triglycerides-Dementia_R10_full_outcome/Triglycerides.Dementia_R10_full_outcome.sat_Adipocyte.MR.res
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Triglycerides, outcome=Dementia_R10_full_outcome, cell_type=sat_Adipocyte
+    resources: tmpdir=/tmp
+
+
+[Wed Sep  4 17:01:12 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Triglycerides.results.coverage.0.9.PPH4.0.8.sat_Adipocyte.clumped
+    output: csMR-EXAMPLE/MR/Triglycerides-Arthropathies_R10_full_outcome/Triglycerides.Arthropathies_R10_full_outcome.sat_Adipocyte.MR.res, csMR-EXAMPLE/MR/Triglycerides-Arthropathies_R10_full_outcome/Triglycerides.Arthropathies_R10_full_outcome.sat_Adipocyte.MR.sensitivity
+    jobid: 12411
+    reason: Missing output files: csMR-EXAMPLE/MR/Triglycerides-Arthropathies_R10_full_outcome/Triglycerides.Arthropathies_R10_full_outcome.sat_Adipocyte.MR.res, csMR-EXAMPLE/MR/Triglycerides-Arthropathies_R10_full_outcome/Triglycerides.Arthropathies_R10_full_outcome.sat_Adipocyte.MR.sensitivity
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Triglycerides, outcome=Arthropathies_R10_full_outcome, cell_type=sat_Adipocyte
+    resources: tmpdir=/tmp
+
+
+[Wed Sep  4 17:01:12 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Glycated_haemoglobin_HbA1c.results.coverage.0.9.PPH4.0.8.sat_Adipocyte.clumped
+    output: csMR-EXAMPLE/MR/Glycated_haemoglobin_HbA1c-Heart_failure_strict_R10_full_outcome/Glycated_haemoglobin_HbA1c.Heart_failure_strict_R10_full_outcome.sat_Adipocyte.MR.res, csMR-EXAMPLE/MR/Glycated_haemoglobin_HbA1c-Heart_failure_strict_R10_full_outcome/Glycated_haemoglobin_HbA1c.Heart_failure_strict_R10_full_outcome.sat_Adipocyte.MR.sensitivity
+    jobid: 4302
+    reason: Missing output files: csMR-EXAMPLE/MR/Glycated_haemoglobin_HbA1c-Heart_failure_strict_R10_full_outcome/Glycated_haemoglobin_HbA1c.Heart_failure_strict_R10_full_outcome.sat_Adipocyte.MR.sensitivity, csMR-EXAMPLE/MR/Glycated_haemoglobin_HbA1c-Heart_failure_strict_R10_full_outcome/Glycated_haemoglobin_HbA1c.Heart_failure_strict_R10_full_outcome.sat_Adipocyte.MR.res
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Glycated_haemoglobin_HbA1c, outcome=Heart_failure_strict_R10_full_outcome, cell_type=sat_Adipocyte
+    resources: tmpdir=/tmp
+
+
+[Wed Sep  4 17:01:12 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.HDL_cholesterol.results.coverage.0.9.PPH4.0.8.sat_Macrophage.clumped
+    output: csMR-EXAMPLE/MR/HDL_cholesterol-Small_cell_lung_cancer/HDL_cholesterol.Small_cell_lung_cancer.sat_Macrophage.MR.res, csMR-EXAMPLE/MR/HDL_cholesterol-Small_cell_lung_cancer/HDL_cholesterol.Small_cell_lung_cancer.sat_Macrophage.MR.sensitivity
+    jobid: 11596
+    reason: Missing output files: csMR-EXAMPLE/MR/HDL_cholesterol-Small_cell_lung_cancer/HDL_cholesterol.Small_cell_lung_cancer.sat_Macrophage.MR.res, csMR-EXAMPLE/MR/HDL_cholesterol-Small_cell_lung_cancer/HDL_cholesterol.Small_cell_lung_cancer.sat_Macrophage.MR.sensitivity
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=HDL_cholesterol, outcome=Small_cell_lung_cancer, cell_type=sat_Macrophage
+    resources: tmpdir=/tmp
+
+
+[Wed Sep  4 17:01:12 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.HDL_cholesterol.results.coverage.0.9.PPH4.0.8.sat_Macrophage.clumped
+    output: csMR-EXAMPLE/MR/HDL_cholesterol-Sleep_disorders_other_unspecified_R10_full_outcome/HDL_cholesterol.Sleep_disorders_other_unspecified_R10_full_outcome.sat_Macrophage.MR.res, csMR-EXAMPLE/MR/HDL_cholesterol-Sleep_disorders_other_unspecified_R10_full_outcome/HDL_cholesterol.Sleep_disorders_other_unspecified_R10_full_outcome.sat_Macrophage.MR.sensitivity
+    jobid: 11610
+    reason: Missing output files: csMR-EXAMPLE/MR/HDL_cholesterol-Sleep_disorders_other_unspecified_R10_full_outcome/HDL_cholesterol.Sleep_disorders_other_unspecified_R10_full_outcome.sat_Macrophage.MR.sensitivity, csMR-EXAMPLE/MR/HDL_cholesterol-Sleep_disorders_other_unspecified_R10_full_outcome/HDL_cholesterol.Sleep_disorders_other_unspecified_R10_full_outcome.sat_Macrophage.MR.res
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=HDL_cholesterol, outcome=Sleep_disorders_other_unspecified_R10_full_outcome, cell_type=sat_Macrophage
+    resources: tmpdir=/tmp
+
+
+[Wed Sep  4 17:01:12 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Glycated_haemoglobin_HbA1c.results.coverage.0.9.PPH4.0.8.sat_Adipocyte.clumped
+    output: csMR-EXAMPLE/MR/Glycated_haemoglobin_HbA1c-Papillary_adenocarcinoma_of_thyroid_gland/Glycated_haemoglobin_HbA1c.Papillary_adenocarcinoma_of_thyroid_gland.sat_Adipocyte.MR.res, csMR-EXAMPLE/MR/Glycated_haemoglobin_HbA1c-Papillary_adenocarcinoma_of_thyroid_gland/Glycated_haemoglobin_HbA1c.Papillary_adenocarcinoma_of_thyroid_gland.sat_Adipocyte.MR.sensitivity
+    jobid: 4296
+    reason: Missing output files: csMR-EXAMPLE/MR/Glycated_haemoglobin_HbA1c-Papillary_adenocarcinoma_of_thyroid_gland/Glycated_haemoglobin_HbA1c.Papillary_adenocarcinoma_of_thyroid_gland.sat_Adipocyte.MR.sensitivity, csMR-EXAMPLE/MR/Glycated_haemoglobin_HbA1c-Papillary_adenocarcinoma_of_thyroid_gland/Glycated_haemoglobin_HbA1c.Papillary_adenocarcinoma_of_thyroid_gland.sat_Adipocyte.MR.res
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Glycated_haemoglobin_HbA1c, outcome=Papillary_adenocarcinoma_of_thyroid_gland, cell_type=sat_Adipocyte
+    resources: tmpdir=/tmp
+
+
+[Wed Sep  4 17:01:12 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.HDL_cholesterol.results.coverage.0.9.PPH4.0.8.sat_Macrophage.clumped
+    output: csMR-EXAMPLE/MR/HDL_cholesterol-Parkinsons_disease_R10_full_outcome/HDL_cholesterol.Parkinsons_disease_R10_full_outcome.sat_Macrophage.MR.res, csMR-EXAMPLE/MR/HDL_cholesterol-Parkinsons_disease_R10_full_outcome/HDL_cholesterol.Parkinsons_disease_R10_full_outcome.sat_Macrophage.MR.sensitivity
+    jobid: 11576
+    reason: Missing output files: csMR-EXAMPLE/MR/HDL_cholesterol-Parkinsons_disease_R10_full_outcome/HDL_cholesterol.Parkinsons_disease_R10_full_outcome.sat_Macrophage.MR.sensitivity, csMR-EXAMPLE/MR/HDL_cholesterol-Parkinsons_disease_R10_full_outcome/HDL_cholesterol.Parkinsons_disease_R10_full_outcome.sat_Macrophage.MR.res
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=HDL_cholesterol, outcome=Parkinsons_disease_R10_full_outcome, cell_type=sat_Macrophage
+    resources: tmpdir=/tmp
+
+
+[Wed Sep  4 17:01:12 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.HDL_cholesterol.results.coverage.0.9.PPH4.0.8.sat_Macrophage.clumped
+    output: csMR-EXAMPLE/MR/HDL_cholesterol-Glaucoma_R10_full_outcome/HDL_cholesterol.Glaucoma_R10_full_outcome.sat_Macrophage.MR.res, csMR-EXAMPLE/MR/HDL_cholesterol-Glaucoma_R10_full_outcome/HDL_cholesterol.Glaucoma_R10_full_outcome.sat_Macrophage.MR.sensitivity
+    jobid: 11590
+    reason: Missing output files: csMR-EXAMPLE/MR/HDL_cholesterol-Glaucoma_R10_full_outcome/HDL_cholesterol.Glaucoma_R10_full_outcome.sat_Macrophage.MR.sensitivity, csMR-EXAMPLE/MR/HDL_cholesterol-Glaucoma_R10_full_outcome/HDL_cholesterol.Glaucoma_R10_full_outcome.sat_Macrophage.MR.res
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=HDL_cholesterol, outcome=Glaucoma_R10_full_outcome, cell_type=sat_Macrophage
+    resources: tmpdir=/tmp
+
+
+[Wed Sep  4 17:01:12 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Glycated_haemoglobin_HbA1c.results.coverage.0.9.PPH4.0.8.sat_Adipocyte.clumped
+    output: csMR-EXAMPLE/MR/Glycated_haemoglobin_HbA1c-Migraine_R10_full_outcome/Glycated_haemoglobin_HbA1c.Migraine_R10_full_outcome.sat_Adipocyte.MR.res, csMR-EXAMPLE/MR/Glycated_haemoglobin_HbA1c-Migraine_R10_full_outcome/Glycated_haemoglobin_HbA1c.Migraine_R10_full_outcome.sat_Adipocyte.MR.sensitivity
+    jobid: 4303
+    reason: Missing output files: csMR-EXAMPLE/MR/Glycated_haemoglobin_HbA1c-Migraine_R10_full_outcome/Glycated_haemoglobin_HbA1c.Migraine_R10_full_outcome.sat_Adipocyte.MR.res, csMR-EXAMPLE/MR/Glycated_haemoglobin_HbA1c-Migraine_R10_full_outcome/Glycated_haemoglobin_HbA1c.Migraine_R10_full_outcome.sat_Adipocyte.MR.sensitivity
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Glycated_haemoglobin_HbA1c, outcome=Migraine_R10_full_outcome, cell_type=sat_Adipocyte
+    resources: tmpdir=/tmp
+
+
+[Wed Sep  4 17:01:13 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Glycated_haemoglobin_HbA1c.results.coverage.0.9.PPH4.0.8.sat_Adipocyte.clumped
+    output: csMR-EXAMPLE/MR/Glycated_haemoglobin_HbA1c-Obsessive_compulsive_disorders_full_outcome_pan/Glycated_haemoglobin_HbA1c.Obsessive_compulsive_disorders_full_outcome_pan.sat_Adipocyte.MR.res, csMR-EXAMPLE/MR/Glycated_haemoglobin_HbA1c-Obsessive_compulsive_disorders_full_outcome_pan/Glycated_haemoglobin_HbA1c.Obsessive_compulsive_disorders_full_outcome_pan.sat_Adipocyte.MR.sensitivity
+    jobid: 4261
+    reason: Missing output files: csMR-EXAMPLE/MR/Glycated_haemoglobin_HbA1c-Obsessive_compulsive_disorders_full_outcome_pan/Glycated_haemoglobin_HbA1c.Obsessive_compulsive_disorders_full_outcome_pan.sat_Adipocyte.MR.res, csMR-EXAMPLE/MR/Glycated_haemoglobin_HbA1c-Obsessive_compulsive_disorders_full_outcome_pan/Glycated_haemoglobin_HbA1c.Obsessive_compulsive_disorders_full_outcome_pan.sat_Adipocyte.MR.sensitivity
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Glycated_haemoglobin_HbA1c, outcome=Obsessive_compulsive_disorders_full_outcome_pan, cell_type=sat_Adipocyte
+    resources: tmpdir=/tmp
+
+
+[Wed Sep  4 17:01:13 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Glycated_haemoglobin_HbA1c.results.coverage.0.9.PPH4.0.8.sat_Adipocyte.clumped
+    output: csMR-EXAMPLE/MR/Glycated_haemoglobin_HbA1c-Nerve_nerve_root_and_plexus_disorders_R10_full_outcome/Glycated_haemoglobin_HbA1c.Nerve_nerve_root_and_plexus_disorders_R10_full_outcome.sat_Adipocyte.MR.res, csMR-EXAMPLE/MR/Glycated_haemoglobin_HbA1c-Nerve_nerve_root_and_plexus_disorders_R10_full_outcome/Glycated_haemoglobin_HbA1c.Nerve_nerve_root_and_plexus_disorders_R10_full_outcome.sat_Adipocyte.MR.sensitivity
+    jobid: 4277
+    reason: Missing output files: csMR-EXAMPLE/MR/Glycated_haemoglobin_HbA1c-Nerve_nerve_root_and_plexus_disorders_R10_full_outcome/Glycated_haemoglobin_HbA1c.Nerve_nerve_root_and_plexus_disorders_R10_full_outcome.sat_Adipocyte.MR.res, csMR-EXAMPLE/MR/Glycated_haemoglobin_HbA1c-Nerve_nerve_root_and_plexus_disorders_R10_full_outcome/Glycated_haemoglobin_HbA1c.Nerve_nerve_root_and_plexus_disorders_R10_full_outcome.sat_Adipocyte.MR.sensitivity
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Glycated_haemoglobin_HbA1c, outcome=Nerve_nerve_root_and_plexus_disorders_R10_full_outcome, cell_type=sat_Adipocyte
+    resources: tmpdir=/tmp
+
+
+[Wed Sep  4 17:01:13 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.HDL_cholesterol.results.coverage.0.9.PPH4.0.8.sat_Macrophage.clumped
+    output: csMR-EXAMPLE/MR/HDL_cholesterol-Arthropathies_R10_full_outcome/HDL_cholesterol.Arthropathies_R10_full_outcome.sat_Macrophage.MR.res, csMR-EXAMPLE/MR/HDL_cholesterol-Arthropathies_R10_full_outcome/HDL_cholesterol.Arthropathies_R10_full_outcome.sat_Macrophage.MR.sensitivity
+    jobid: 11639
+    reason: Missing output files: csMR-EXAMPLE/MR/HDL_cholesterol-Arthropathies_R10_full_outcome/HDL_cholesterol.Arthropathies_R10_full_outcome.sat_Macrophage.MR.res, csMR-EXAMPLE/MR/HDL_cholesterol-Arthropathies_R10_full_outcome/HDL_cholesterol.Arthropathies_R10_full_outcome.sat_Macrophage.MR.sensitivity
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=HDL_cholesterol, outcome=Arthropathies_R10_full_outcome, cell_type=sat_Macrophage
+    resources: tmpdir=/tmp
+
+
+[Wed Sep  4 17:01:13 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Glycated_haemoglobin_HbA1c.results.coverage.0.9.PPH4.0.8.sat_Adipocyte.clumped
+    output: csMR-EXAMPLE/MR/Glycated_haemoglobin_HbA1c-Nonalcoholic_fatty_liver_disease_R10_full_outcome/Glycated_haemoglobin_HbA1c.Nonalcoholic_fatty_liver_disease_R10_full_outcome.sat_Adipocyte.MR.res, csMR-EXAMPLE/MR/Glycated_haemoglobin_HbA1c-Nonalcoholic_fatty_liver_disease_R10_full_outcome/Glycated_haemoglobin_HbA1c.Nonalcoholic_fatty_liver_disease_R10_full_outcome.sat_Adipocyte.MR.sensitivity
+    jobid: 4255
+    reason: Missing output files: csMR-EXAMPLE/MR/Glycated_haemoglobin_HbA1c-Nonalcoholic_fatty_liver_disease_R10_full_outcome/Glycated_haemoglobin_HbA1c.Nonalcoholic_fatty_liver_disease_R10_full_outcome.sat_Adipocyte.MR.sensitivity, csMR-EXAMPLE/MR/Glycated_haemoglobin_HbA1c-Nonalcoholic_fatty_liver_disease_R10_full_outcome/Glycated_haemoglobin_HbA1c.Nonalcoholic_fatty_liver_disease_R10_full_outcome.sat_Adipocyte.MR.res
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Glycated_haemoglobin_HbA1c, outcome=Nonalcoholic_fatty_liver_disease_R10_full_outcome, cell_type=sat_Adipocyte
+    resources: tmpdir=/tmp
+
+
+[Wed Sep  4 17:01:13 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Glycated_haemoglobin_HbA1c.results.coverage.0.9.PPH4.0.8.sat_Adipocyte.clumped
+    output: csMR-EXAMPLE/MR/Glycated_haemoglobin_HbA1c-Generalized_anxiety_disorder_R10_full_outcome/Glycated_haemoglobin_HbA1c.Generalized_anxiety_disorder_R10_full_outcome.sat_Adipocyte.MR.res, csMR-EXAMPLE/MR/Glycated_haemoglobin_HbA1c-Generalized_anxiety_disorder_R10_full_outcome/Glycated_haemoglobin_HbA1c.Generalized_anxiety_disorder_R10_full_outcome.sat_Adipocyte.MR.sensitivity
+    jobid: 4297
+    reason: Missing output files: csMR-EXAMPLE/MR/Glycated_haemoglobin_HbA1c-Generalized_anxiety_disorder_R10_full_outcome/Glycated_haemoglobin_HbA1c.Generalized_anxiety_disorder_R10_full_outcome.sat_Adipocyte.MR.res, csMR-EXAMPLE/MR/Glycated_haemoglobin_HbA1c-Generalized_anxiety_disorder_R10_full_outcome/Glycated_haemoglobin_HbA1c.Generalized_anxiety_disorder_R10_full_outcome.sat_Adipocyte.MR.sensitivity
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Glycated_haemoglobin_HbA1c, outcome=Generalized_anxiety_disorder_R10_full_outcome, cell_type=sat_Adipocyte
+    resources: tmpdir=/tmp
+
+
+[Wed Sep  4 17:01:13 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Glycated_haemoglobin_HbA1c.results.coverage.0.9.PPH4.0.8.sat_Adipocyte.clumped
+    output: csMR-EXAMPLE/MR/Glycated_haemoglobin_HbA1c-Colon_cancer/Glycated_haemoglobin_HbA1c.Colon_cancer.sat_Adipocyte.MR.res, csMR-EXAMPLE/MR/Glycated_haemoglobin_HbA1c-Colon_cancer/Glycated_haemoglobin_HbA1c.Colon_cancer.sat_Adipocyte.MR.sensitivity
+    jobid: 4339
+    reason: Missing output files: csMR-EXAMPLE/MR/Glycated_haemoglobin_HbA1c-Colon_cancer/Glycated_haemoglobin_HbA1c.Colon_cancer.sat_Adipocyte.MR.sensitivity, csMR-EXAMPLE/MR/Glycated_haemoglobin_HbA1c-Colon_cancer/Glycated_haemoglobin_HbA1c.Colon_cancer.sat_Adipocyte.MR.res
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Glycated_haemoglobin_HbA1c, outcome=Colon_cancer, cell_type=sat_Adipocyte
+    resources: tmpdir=/tmp
+
+
+[Wed Sep  4 17:01:13 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.HDL_cholesterol.results.coverage.0.9.PPH4.0.8.sat_Macrophage.clumped
+    output: csMR-EXAMPLE/MR/HDL_cholesterol-Cerebral_aneurysm_nonruptured_R10_full_outcome/HDL_cholesterol.Cerebral_aneurysm_nonruptured_R10_full_outcome.sat_Macrophage.MR.res, csMR-EXAMPLE/MR/HDL_cholesterol-Cerebral_aneurysm_nonruptured_R10_full_outcome/HDL_cholesterol.Cerebral_aneurysm_nonruptured_R10_full_outcome.sat_Macrophage.MR.sensitivity
+    jobid: 11591
+    reason: Missing output files: csMR-EXAMPLE/MR/HDL_cholesterol-Cerebral_aneurysm_nonruptured_R10_full_outcome/HDL_cholesterol.Cerebral_aneurysm_nonruptured_R10_full_outcome.sat_Macrophage.MR.sensitivity, csMR-EXAMPLE/MR/HDL_cholesterol-Cerebral_aneurysm_nonruptured_R10_full_outcome/HDL_cholesterol.Cerebral_aneurysm_nonruptured_R10_full_outcome.sat_Macrophage.MR.res
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=HDL_cholesterol, outcome=Cerebral_aneurysm_nonruptured_R10_full_outcome, cell_type=sat_Macrophage
+    resources: tmpdir=/tmp
+
+
+[Wed Sep  4 17:01:13 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.HDL_cholesterol.results.coverage.0.9.PPH4.0.8.sat_Macrophage.clumped
+    output: csMR-EXAMPLE/MR/HDL_cholesterol-Type_2_diabetes_definitions_combined_R10_full_outcome/HDL_cholesterol.Type_2_diabetes_definitions_combined_R10_full_outcome.sat_Macrophage.MR.res, csMR-EXAMPLE/MR/HDL_cholesterol-Type_2_diabetes_definitions_combined_R10_full_outcome/HDL_cholesterol.Type_2_diabetes_definitions_combined_R10_full_outcome.sat_Macrophage.MR.sensitivity
+    jobid: 11605
+    reason: Missing output files: csMR-EXAMPLE/MR/HDL_cholesterol-Type_2_diabetes_definitions_combined_R10_full_outcome/HDL_cholesterol.Type_2_diabetes_definitions_combined_R10_full_outcome.sat_Macrophage.MR.sensitivity, csMR-EXAMPLE/MR/HDL_cholesterol-Type_2_diabetes_definitions_combined_R10_full_outcome/HDL_cholesterol.Type_2_diabetes_definitions_combined_R10_full_outcome.sat_Macrophage.MR.res
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=HDL_cholesterol, outcome=Type_2_diabetes_definitions_combined_R10_full_outcome, cell_type=sat_Macrophage
+    resources: tmpdir=/tmp
+
+
+[Wed Sep  4 17:01:13 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Triglycerides.results.coverage.0.9.PPH4.0.8.sat_Macrophage.clumped
+    output: csMR-EXAMPLE/MR/Triglycerides-ADHA/Triglycerides.ADHA.sat_Macrophage.MR.res, csMR-EXAMPLE/MR/Triglycerides-ADHA/Triglycerides.ADHA.sat_Macrophage.MR.sensitivity
+    jobid: 12977
+    reason: Missing output files: csMR-EXAMPLE/MR/Triglycerides-ADHA/Triglycerides.ADHA.sat_Macrophage.MR.res, csMR-EXAMPLE/MR/Triglycerides-ADHA/Triglycerides.ADHA.sat_Macrophage.MR.sensitivity
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Triglycerides, outcome=ADHA, cell_type=sat_Macrophage
+    resources: tmpdir=/tmp
+
+
+[Wed Sep  4 17:01:13 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Glycated_haemoglobin_HbA1c.results.coverage.0.9.PPH4.0.8.sat_Adipocyte.clumped
+    output: csMR-EXAMPLE/MR/Glycated_haemoglobin_HbA1c-Coronary_artery_disease/Glycated_haemoglobin_HbA1c.Coronary_artery_disease.sat_Adipocyte.MR.res, csMR-EXAMPLE/MR/Glycated_haemoglobin_HbA1c-Coronary_artery_disease/Glycated_haemoglobin_HbA1c.Coronary_artery_disease.sat_Adipocyte.MR.sensitivity
+    jobid: 4262
+    reason: Missing output files: csMR-EXAMPLE/MR/Glycated_haemoglobin_HbA1c-Coronary_artery_disease/Glycated_haemoglobin_HbA1c.Coronary_artery_disease.sat_Adipocyte.MR.sensitivity, csMR-EXAMPLE/MR/Glycated_haemoglobin_HbA1c-Coronary_artery_disease/Glycated_haemoglobin_HbA1c.Coronary_artery_disease.sat_Adipocyte.MR.res
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Glycated_haemoglobin_HbA1c, outcome=Coronary_artery_disease, cell_type=sat_Adipocyte
+    resources: tmpdir=/tmp
+
+
+[Wed Sep  4 17:01:13 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.HDL_cholesterol.results.coverage.0.9.PPH4.0.8.sat_Macrophage.clumped
+    output: csMR-EXAMPLE/MR/HDL_cholesterol-Papillary_adenocarcinoma_of_thyroid_gland/HDL_cholesterol.Papillary_adenocarcinoma_of_thyroid_gland.sat_Macrophage.MR.res, csMR-EXAMPLE/MR/HDL_cholesterol-Papillary_adenocarcinoma_of_thyroid_gland/HDL_cholesterol.Papillary_adenocarcinoma_of_thyroid_gland.sat_Macrophage.MR.sensitivity
+    jobid: 11612
+    reason: Missing output files: csMR-EXAMPLE/MR/HDL_cholesterol-Papillary_adenocarcinoma_of_thyroid_gland/HDL_cholesterol.Papillary_adenocarcinoma_of_thyroid_gland.sat_Macrophage.MR.res, csMR-EXAMPLE/MR/HDL_cholesterol-Papillary_adenocarcinoma_of_thyroid_gland/HDL_cholesterol.Papillary_adenocarcinoma_of_thyroid_gland.sat_Macrophage.MR.sensitivity
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=HDL_cholesterol, outcome=Papillary_adenocarcinoma_of_thyroid_gland, cell_type=sat_Macrophage
+    resources: tmpdir=/tmp
+
+
+[Wed Sep  4 17:01:13 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.HDL_cholesterol.results.coverage.0.9.PPH4.0.8.sat_Macrophage.clumped
+    output: csMR-EXAMPLE/MR/HDL_cholesterol-Cardiac_arrest_R10_full_outcome/HDL_cholesterol.Cardiac_arrest_R10_full_outcome.sat_Macrophage.MR.res, csMR-EXAMPLE/MR/HDL_cholesterol-Cardiac_arrest_R10_full_outcome/HDL_cholesterol.Cardiac_arrest_R10_full_outcome.sat_Macrophage.MR.sensitivity
+    jobid: 11626
+    reason: Missing output files: csMR-EXAMPLE/MR/HDL_cholesterol-Cardiac_arrest_R10_full_outcome/HDL_cholesterol.Cardiac_arrest_R10_full_outcome.sat_Macrophage.MR.res, csMR-EXAMPLE/MR/HDL_cholesterol-Cardiac_arrest_R10_full_outcome/HDL_cholesterol.Cardiac_arrest_R10_full_outcome.sat_Macrophage.MR.sensitivity
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=HDL_cholesterol, outcome=Cardiac_arrest_R10_full_outcome, cell_type=sat_Macrophage
+    resources: tmpdir=/tmp
+
+
+[Wed Sep  4 17:01:13 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.HDL_cholesterol.results.coverage.0.9.PPH4.0.8.sat_Macrophage.clumped
+    output: csMR-EXAMPLE/MR/HDL_cholesterol-attention_deficit_hyperactivity_disorder_full_outcome/HDL_cholesterol.attention_deficit_hyperactivity_disorder_full_outcome.sat_Macrophage.MR.res, csMR-EXAMPLE/MR/HDL_cholesterol-attention_deficit_hyperactivity_disorder_full_outcome/HDL_cholesterol.attention_deficit_hyperactivity_disorder_full_outcome.sat_Macrophage.MR.sensitivity
+    jobid: 11641
+    reason: Missing output files: csMR-EXAMPLE/MR/HDL_cholesterol-attention_deficit_hyperactivity_disorder_full_outcome/HDL_cholesterol.attention_deficit_hyperactivity_disorder_full_outcome.sat_Macrophage.MR.res, csMR-EXAMPLE/MR/HDL_cholesterol-attention_deficit_hyperactivity_disorder_full_outcome/HDL_cholesterol.attention_deficit_hyperactivity_disorder_full_outcome.sat_Macrophage.MR.sensitivity
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=HDL_cholesterol, outcome=attention_deficit_hyperactivity_disorder_full_outcome, cell_type=sat_Macrophage
+    resources: tmpdir=/tmp
+
+
+[Wed Sep  4 17:01:13 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.HDL_cholesterol.results.coverage.0.9.PPH4.0.8.sat_Macrophage.clumped
+    output: csMR-EXAMPLE/MR/HDL_cholesterol-Cancer_of_bronchus_lung/HDL_cholesterol.Cancer_of_bronchus_lung.sat_Macrophage.MR.res, csMR-EXAMPLE/MR/HDL_cholesterol-Cancer_of_bronchus_lung/HDL_cholesterol.Cancer_of_bronchus_lung.sat_Macrophage.MR.sensitivity
+    jobid: 11654
+    reason: Missing output files: csMR-EXAMPLE/MR/HDL_cholesterol-Cancer_of_bronchus_lung/HDL_cholesterol.Cancer_of_bronchus_lung.sat_Macrophage.MR.res, csMR-EXAMPLE/MR/HDL_cholesterol-Cancer_of_bronchus_lung/HDL_cholesterol.Cancer_of_bronchus_lung.sat_Macrophage.MR.sensitivity
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=HDL_cholesterol, outcome=Cancer_of_bronchus_lung, cell_type=sat_Macrophage
+    resources: tmpdir=/tmp
+
+
+[Wed Sep  4 17:01:13 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Glycated_haemoglobin_HbA1c.results.coverage.0.9.PPH4.0.8.sat_Adipocyte.clumped
+    output: csMR-EXAMPLE/MR/Glycated_haemoglobin_HbA1c-Autism_spectrum_disorder_full_outcome/Glycated_haemoglobin_HbA1c.Autism_spectrum_disorder_full_outcome.sat_Adipocyte.MR.res, csMR-EXAMPLE/MR/Glycated_haemoglobin_HbA1c-Autism_spectrum_disorder_full_outcome/Glycated_haemoglobin_HbA1c.Autism_spectrum_disorder_full_outcome.sat_Adipocyte.MR.sensitivity
+    jobid: 4249
+    reason: Missing output files: csMR-EXAMPLE/MR/Glycated_haemoglobin_HbA1c-Autism_spectrum_disorder_full_outcome/Glycated_haemoglobin_HbA1c.Autism_spectrum_disorder_full_outcome.sat_Adipocyte.MR.sensitivity, csMR-EXAMPLE/MR/Glycated_haemoglobin_HbA1c-Autism_spectrum_disorder_full_outcome/Glycated_haemoglobin_HbA1c.Autism_spectrum_disorder_full_outcome.sat_Adipocyte.MR.res
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Glycated_haemoglobin_HbA1c, outcome=Autism_spectrum_disorder_full_outcome, cell_type=sat_Adipocyte
+    resources: tmpdir=/tmp
+
+
+[Wed Sep  4 17:01:13 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Triglycerides.results.coverage.0.9.PPH4.0.8.sat_Macrophage.clumped
+    output: csMR-EXAMPLE/MR/Triglycerides-Breast_cancer/Triglycerides.Breast_cancer.sat_Macrophage.MR.res, csMR-EXAMPLE/MR/Triglycerides-Breast_cancer/Triglycerides.Breast_cancer.sat_Macrophage.MR.sensitivity
+    jobid: 12985
+    reason: Missing output files: csMR-EXAMPLE/MR/Triglycerides-Breast_cancer/Triglycerides.Breast_cancer.sat_Macrophage.MR.res, csMR-EXAMPLE/MR/Triglycerides-Breast_cancer/Triglycerides.Breast_cancer.sat_Macrophage.MR.sensitivity
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Triglycerides, outcome=Breast_cancer, cell_type=sat_Macrophage
+    resources: tmpdir=/tmp
+
+
+[Wed Sep  4 17:01:13 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.HDL_cholesterol.results.coverage.0.9.PPH4.0.8.sat_Macrophage.clumped
+    output: csMR-EXAMPLE/MR/HDL_cholesterol-ALS_ieu_a_1085_full_outcome/HDL_cholesterol.ALS_ieu_a_1085_full_outcome.sat_Macrophage.MR.res, csMR-EXAMPLE/MR/HDL_cholesterol-ALS_ieu_a_1085_full_outcome/HDL_cholesterol.ALS_ieu_a_1085_full_outcome.sat_Macrophage.MR.sensitivity
+    jobid: 11627
+    reason: Missing output files: csMR-EXAMPLE/MR/HDL_cholesterol-ALS_ieu_a_1085_full_outcome/HDL_cholesterol.ALS_ieu_a_1085_full_outcome.sat_Macrophage.MR.sensitivity, csMR-EXAMPLE/MR/HDL_cholesterol-ALS_ieu_a_1085_full_outcome/HDL_cholesterol.ALS_ieu_a_1085_full_outcome.sat_Macrophage.MR.res
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=HDL_cholesterol, outcome=ALS_ieu_a_1085_full_outcome, cell_type=sat_Macrophage
+    resources: tmpdir=/tmp
+
+[Wed Sep  4 17:01:58 2024]
+Error in rule MR:
+    jobid: 11565
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.HDL_cholesterol.results.coverage.0.9.PPH4.0.8.sat_Macrophage.clumped
+    output: csMR-EXAMPLE/MR/HDL_cholesterol-Autism_spectrum_disorder_full_outcome/HDL_cholesterol.Autism_spectrum_disorder_full_outcome.sat_Macrophage.MR.res, csMR-EXAMPLE/MR/HDL_cholesterol-Autism_spectrum_disorder_full_outcome/HDL_cholesterol.Autism_spectrum_disorder_full_outcome.sat_Macrophage.MR.sensitivity
+    shell:
+        Rscript scripts/csMR.r -e /home/u/csMR/example/BMI_GWAS/HDL_cholesterol.ma -o example/outcomes/Autism_spectrum_disorder_full_outcome.ma -c csMR-EXAMPLE/MR/clump/Susie_coloc.HDL_cholesterol.results.coverage.0.9.PPH4.0.8.sat_Macrophage.clumped -r /home/u/csMR/data/reference_genome_1000G_EUR
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Wed Sep  4 17:01:59 2024]
+Error in rule MR:
+    jobid: 11631
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.HDL_cholesterol.results.coverage.0.9.PPH4.0.8.sat_Macrophage.clumped
+    output: csMR-EXAMPLE/MR/HDL_cholesterol-Lacunar_stroke/HDL_cholesterol.Lacunar_stroke.sat_Macrophage.MR.res, csMR-EXAMPLE/MR/HDL_cholesterol-Lacunar_stroke/HDL_cholesterol.Lacunar_stroke.sat_Macrophage.MR.sensitivity
+    shell:
+        Rscript scripts/csMR.r -e /home/u/csMR/example/BMI_GWAS/HDL_cholesterol.ma -o example/outcomes/Lacunar_stroke.ma -c csMR-EXAMPLE/MR/clump/Susie_coloc.HDL_cholesterol.results.coverage.0.9.PPH4.0.8.sat_Macrophage.clumped -r /home/u/csMR/data/reference_genome_1000G_EUR
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Wed Sep  4 17:02:10 2024]
+Finished job 11649.
+1 of 48 steps (2%) done
+[Wed Sep  4 17:02:16 2024]
+Error in rule MR:
+    jobid: 11615
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.HDL_cholesterol.results.coverage.0.9.PPH4.0.8.sat_Macrophage.clumped
+    output: csMR-EXAMPLE/MR/HDL_cholesterol-Amyotrophic_lateral_sclerosis_GCST005647_full_outcome/HDL_cholesterol.Amyotrophic_lateral_sclerosis_GCST005647_full_outcome.sat_Macrophage.MR.res, csMR-EXAMPLE/MR/HDL_cholesterol-Amyotrophic_lateral_sclerosis_GCST005647_full_outcome/HDL_cholesterol.Amyotrophic_lateral_sclerosis_GCST005647_full_outcome.sat_Macrophage.MR.sensitivity
+    shell:
+        Rscript scripts/csMR.r -e /home/u/csMR/example/BMI_GWAS/HDL_cholesterol.ma -o example/outcomes/Amyotrophic_lateral_sclerosis_GCST005647_full_outcome.ma -c csMR-EXAMPLE/MR/clump/Susie_coloc.HDL_cholesterol.results.coverage.0.9.PPH4.0.8.sat_Macrophage.clumped -r /home/u/csMR/data/reference_genome_1000G_EUR
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Wed Sep  4 17:02:16 2024]
+Finished job 11627.
+2 of 48 steps (4%) done
+[Wed Sep  4 17:02:19 2024]
+Error in rule MR:
+    jobid: 11578
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.HDL_cholesterol.results.coverage.0.9.PPH4.0.8.sat_Macrophage.clumped
+    output: csMR-EXAMPLE/MR/HDL_cholesterol-Coronary_artery_disease/HDL_cholesterol.Coronary_artery_disease.sat_Macrophage.MR.res, csMR-EXAMPLE/MR/HDL_cholesterol-Coronary_artery_disease/HDL_cholesterol.Coronary_artery_disease.sat_Macrophage.MR.sensitivity
+    shell:
+        Rscript scripts/csMR.r -e /home/u/csMR/example/BMI_GWAS/HDL_cholesterol.ma -o example/outcomes/Coronary_artery_disease.ma -c csMR-EXAMPLE/MR/clump/Susie_coloc.HDL_cholesterol.results.coverage.0.9.PPH4.0.8.sat_Macrophage.clumped -r /home/u/csMR/data/reference_genome_1000G_EUR
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Wed Sep  4 17:02:29 2024]
+Finished job 11641.
+3 of 48 steps (6%) done
+[Wed Sep  4 17:02:30 2024]
+Finished job 11634.
+4 of 48 steps (8%) done
+[Wed Sep  4 17:02:42 2024]
+Finished job 11605.
+5 of 48 steps (10%) done
+[Wed Sep  4 17:02:48 2024]
+Finished job 11654.
+6 of 48 steps (12%) done
+[Wed Sep  4 17:02:50 2024]
+Error in rule MR:
+    jobid: 11616
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.HDL_cholesterol.results.coverage.0.9.PPH4.0.8.sat_Macrophage.clumped
+    output: csMR-EXAMPLE/MR/HDL_cholesterol-Skin_cancer/HDL_cholesterol.Skin_cancer.sat_Macrophage.MR.res, csMR-EXAMPLE/MR/HDL_cholesterol-Skin_cancer/HDL_cholesterol.Skin_cancer.sat_Macrophage.MR.sensitivity
+    shell:
+        Rscript scripts/csMR.r -e /home/u/csMR/example/BMI_GWAS/HDL_cholesterol.ma -o example/outcomes/Skin_cancer.ma -c csMR-EXAMPLE/MR/clump/Susie_coloc.HDL_cholesterol.results.coverage.0.9.PPH4.0.8.sat_Macrophage.clumped -r /home/u/csMR/data/reference_genome_1000G_EUR
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Wed Sep  4 17:02:53 2024]
+Error in rule MR:
+    jobid: 11596
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.HDL_cholesterol.results.coverage.0.9.PPH4.0.8.sat_Macrophage.clumped
+    output: csMR-EXAMPLE/MR/HDL_cholesterol-Small_cell_lung_cancer/HDL_cholesterol.Small_cell_lung_cancer.sat_Macrophage.MR.res, csMR-EXAMPLE/MR/HDL_cholesterol-Small_cell_lung_cancer/HDL_cholesterol.Small_cell_lung_cancer.sat_Macrophage.MR.sensitivity
+    shell:
+        Rscript scripts/csMR.r -e /home/u/csMR/example/BMI_GWAS/HDL_cholesterol.ma -o example/outcomes/Small_cell_lung_cancer.ma -c csMR-EXAMPLE/MR/clump/Susie_coloc.HDL_cholesterol.results.coverage.0.9.PPH4.0.8.sat_Macrophage.clumped -r /home/u/csMR/data/reference_genome_1000G_EUR
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Wed Sep  4 17:02:55 2024]
+Finished job 11612.
+7 of 48 steps (15%) done
+[Wed Sep  4 17:02:58 2024]
+Finished job 11576.
+8 of 48 steps (17%) done
+[Wed Sep  4 17:03:01 2024]
+Finished job 11610.
+9 of 48 steps (19%) done
+[Wed Sep  4 17:03:02 2024]
+Finished job 11593.
+10 of 48 steps (21%) done
+[Wed Sep  4 17:03:02 2024]
+Finished job 11639.
+11 of 48 steps (23%) done
+[Wed Sep  4 17:03:03 2024]
+Finished job 11608.
+12 of 48 steps (25%) done
+[Wed Sep  4 17:03:08 2024]
+Finished job 11590.
+13 of 48 steps (27%) done
+[Wed Sep  4 17:03:12 2024]
+Finished job 11588.
+14 of 48 steps (29%) done
+[Wed Sep  4 17:03:15 2024]
+Error in rule MR:
+    jobid: 4249
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Glycated_haemoglobin_HbA1c.results.coverage.0.9.PPH4.0.8.sat_Adipocyte.clumped
+    output: csMR-EXAMPLE/MR/Glycated_haemoglobin_HbA1c-Autism_spectrum_disorder_full_outcome/Glycated_haemoglobin_HbA1c.Autism_spectrum_disorder_full_outcome.sat_Adipocyte.MR.res, csMR-EXAMPLE/MR/Glycated_haemoglobin_HbA1c-Autism_spectrum_disorder_full_outcome/Glycated_haemoglobin_HbA1c.Autism_spectrum_disorder_full_outcome.sat_Adipocyte.MR.sensitivity
+    shell:
+        Rscript scripts/csMR.r -e /home/u/csMR/example/BMI_GWAS/Glycated_haemoglobin_HbA1c.ma -o example/outcomes/Autism_spectrum_disorder_full_outcome.ma -c csMR-EXAMPLE/MR/clump/Susie_coloc.Glycated_haemoglobin_HbA1c.results.coverage.0.9.PPH4.0.8.sat_Adipocyte.clumped -r /home/u/csMR/data/reference_genome_1000G_EUR
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Wed Sep  4 17:03:19 2024]
+Finished job 11626.
+15 of 48 steps (31%) done
+[Wed Sep  4 17:03:23 2024]
+Finished job 4261.
+16 of 48 steps (33%) done
+[Wed Sep  4 17:03:30 2024]
+Error in rule MR:
+    jobid: 4296
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Glycated_haemoglobin_HbA1c.results.coverage.0.9.PPH4.0.8.sat_Adipocyte.clumped
+    output: csMR-EXAMPLE/MR/Glycated_haemoglobin_HbA1c-Papillary_adenocarcinoma_of_thyroid_gland/Glycated_haemoglobin_HbA1c.Papillary_adenocarcinoma_of_thyroid_gland.sat_Adipocyte.MR.res, csMR-EXAMPLE/MR/Glycated_haemoglobin_HbA1c-Papillary_adenocarcinoma_of_thyroid_gland/Glycated_haemoglobin_HbA1c.Papillary_adenocarcinoma_of_thyroid_gland.sat_Adipocyte.MR.sensitivity
+    shell:
+        Rscript scripts/csMR.r -e /home/u/csMR/example/BMI_GWAS/Glycated_haemoglobin_HbA1c.ma -o example/outcomes/Papillary_adenocarcinoma_of_thyroid_gland.ma -c csMR-EXAMPLE/MR/clump/Susie_coloc.Glycated_haemoglobin_HbA1c.results.coverage.0.9.PPH4.0.8.sat_Adipocyte.clumped -r /home/u/csMR/data/reference_genome_1000G_EUR
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Wed Sep  4 17:03:34 2024]
+Finished job 4262.
+17 of 48 steps (35%) done
+[Wed Sep  4 17:03:36 2024]
+Error in rule MR:
+    jobid: 4297
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Glycated_haemoglobin_HbA1c.results.coverage.0.9.PPH4.0.8.sat_Adipocyte.clumped
+    output: csMR-EXAMPLE/MR/Glycated_haemoglobin_HbA1c-Generalized_anxiety_disorder_R10_full_outcome/Glycated_haemoglobin_HbA1c.Generalized_anxiety_disorder_R10_full_outcome.sat_Adipocyte.MR.res, csMR-EXAMPLE/MR/Glycated_haemoglobin_HbA1c-Generalized_anxiety_disorder_R10_full_outcome/Glycated_haemoglobin_HbA1c.Generalized_anxiety_disorder_R10_full_outcome.sat_Adipocyte.MR.sensitivity
+    shell:
+        Rscript scripts/csMR.r -e /home/u/csMR/example/BMI_GWAS/Glycated_haemoglobin_HbA1c.ma -o example/outcomes/Generalized_anxiety_disorder_R10_full_outcome.ma -c csMR-EXAMPLE/MR/clump/Susie_coloc.Glycated_haemoglobin_HbA1c.results.coverage.0.9.PPH4.0.8.sat_Adipocyte.clumped -r /home/u/csMR/data/reference_genome_1000G_EUR
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Wed Sep  4 17:03:37 2024]
+Finished job 11591.
+18 of 48 steps (38%) done
+[Wed Sep  4 17:03:38 2024]
+Finished job 11614.
+19 of 48 steps (40%) done
+[Wed Sep  4 17:03:39 2024]
+Finished job 4339.
+20 of 48 steps (42%) done
+[Wed Sep  4 17:03:39 2024]
+Finished job 4327.
+21 of 48 steps (44%) done
+[Wed Sep  4 17:03:40 2024]
+Finished job 4315.
+22 of 48 steps (46%) done
+[Wed Sep  4 17:03:45 2024]
+Finished job 4323.
+23 of 48 steps (48%) done
+[Wed Sep  4 17:03:45 2024]
+Finished job 4302.
+24 of 48 steps (50%) done
+[Wed Sep  4 17:03:47 2024]
+Finished job 4303.
+25 of 48 steps (52%) done
+[Wed Sep  4 17:03:48 2024]
+Error in rule MR:
+    jobid: 4298
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Glycated_haemoglobin_HbA1c.results.coverage.0.9.PPH4.0.8.sat_Adipocyte.clumped
+    output: csMR-EXAMPLE/MR/Glycated_haemoglobin_HbA1c-Scoliosis_R10_full_outcome/Glycated_haemoglobin_HbA1c.Scoliosis_R10_full_outcome.sat_Adipocyte.MR.res, csMR-EXAMPLE/MR/Glycated_haemoglobin_HbA1c-Scoliosis_R10_full_outcome/Glycated_haemoglobin_HbA1c.Scoliosis_R10_full_outcome.sat_Adipocyte.MR.sensitivity
+    shell:
+        Rscript scripts/csMR.r -e /home/u/csMR/example/BMI_GWAS/Glycated_haemoglobin_HbA1c.ma -o example/outcomes/Scoliosis_R10_full_outcome.ma -c csMR-EXAMPLE/MR/clump/Susie_coloc.Glycated_haemoglobin_HbA1c.results.coverage.0.9.PPH4.0.8.sat_Adipocyte.clumped -r /home/u/csMR/data/reference_genome_1000G_EUR
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Removing output files of failed job MR since they might be corrupted:
+csMR-EXAMPLE/MR/Glycated_haemoglobin_HbA1c-Scoliosis_R10_full_outcome/Glycated_haemoglobin_HbA1c.Scoliosis_R10_full_outcome.sat_Adipocyte.MR.res, csMR-EXAMPLE/MR/Glycated_haemoglobin_HbA1c-Scoliosis_R10_full_outcome/Glycated_haemoglobin_HbA1c.Scoliosis_R10_full_outcome.sat_Adipocyte.MR.sensitivity
+[Wed Sep  4 17:03:51 2024]
+Finished job 4277.
+26 of 48 steps (54%) done
+[Wed Sep  4 17:03:52 2024]
+Finished job 12977.
+27 of 48 steps (56%) done
+[Wed Sep  4 17:03:56 2024]
+Finished job 11628.
+28 of 48 steps (58%) done
+[Wed Sep  4 17:03:58 2024]
+Finished job 12917.
+29 of 48 steps (60%) done
+[Wed Sep  4 17:03:59 2024]
+Finished job 12349.
+30 of 48 steps (62%) done
+[Wed Sep  4 17:04:01 2024]
+Finished job 9811.
+31 of 48 steps (65%) done
+[Wed Sep  4 17:04:05 2024]
+Finished job 12359.
+32 of 48 steps (67%) done
+[Wed Sep  4 17:04:09 2024]
+Finished job 12985.
+33 of 48 steps (69%) done
+[Wed Sep  4 17:04:09 2024]
+Finished job 12411.
+34 of 48 steps (71%) done
+[Wed Sep  4 17:04:10 2024]
+Finished job 12916.
+35 of 48 steps (73%) done
+[Wed Sep  4 17:04:17 2024]
+Finished job 4312.
+36 of 48 steps (75%) done
+[Wed Sep  4 17:04:51 2024]
+Finished job 4255.
+37 of 48 steps (77%) done
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2024-09-04T170053.706768.snakemake.log

@@ -1,0 +1,302 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 60
+Rules claiming more threads will be scaled down.
+Job stats:
+job      count    min threads    max threads
+-----  -------  -------------  -------------
+MR          18              1              1
+all          1              1              1
+total       19              1              1
+
+Select jobs to execute...
+
+[Mon Sep  9 15:23:02 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.results.coverage.0.9.PPH4.0.8.Excitatory_neurons.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-aparc-Desikan_rh_thickness_fusiform_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.aparc-Desikan_rh_thickness_fusiform_full_outcome.Excitatory_neurons.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-aparc-Desikan_rh_thickness_fusiform_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.aparc-Desikan_rh_thickness_fusiform_full_outcome.Excitatory_neurons.MR.sensitivity
+    jobid: 8753
+    reason: Missing output files: csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-aparc-Desikan_rh_thickness_fusiform_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.aparc-Desikan_rh_thickness_fusiform_full_outcome.Excitatory_neurons.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-aparc-Desikan_rh_thickness_fusiform_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.aparc-Desikan_rh_thickness_fusiform_full_outcome.Excitatory_neurons.MR.sensitivity
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_ebi_a_GCST003045_full_exposure, outcome=aparc-Desikan_rh_thickness_fusiform_full_outcome, cell_type=Excitatory_neurons
+    resources: tmpdir=/tmp
+
+
+[Mon Sep  9 15:23:02 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.results.coverage.0.9.PPH4.0.8.Excitatory_neurons.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-IDP_dMRI_TBSS_MD_External_capsule_L_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.IDP_dMRI_TBSS_MD_External_capsule_L_full_outcome.Excitatory_neurons.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-IDP_dMRI_TBSS_MD_External_capsule_L_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.IDP_dMRI_TBSS_MD_External_capsule_L_full_outcome.Excitatory_neurons.MR.sensitivity
+    jobid: 8729
+    reason: Missing output files: csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-IDP_dMRI_TBSS_MD_External_capsule_L_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.IDP_dMRI_TBSS_MD_External_capsule_L_full_outcome.Excitatory_neurons.MR.sensitivity, csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-IDP_dMRI_TBSS_MD_External_capsule_L_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.IDP_dMRI_TBSS_MD_External_capsule_L_full_outcome.Excitatory_neurons.MR.res
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_ebi_a_GCST003045_full_exposure, outcome=IDP_dMRI_TBSS_MD_External_capsule_L_full_outcome, cell_type=Excitatory_neurons
+    resources: tmpdir=/tmp
+
+
+[Mon Sep  9 15:23:02 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Crohn_ebi_a_GCST003044_full_exposure.results.coverage.0.9.PPH4.0.8.Inhibitory_neurons.clumped
+    output: csMR-EXAMPLE/MR/Crohn_ebi_a_GCST003044_full_exposure-ThalamNuclei_lh_volume_AV_full_outcome/Crohn_ebi_a_GCST003044_full_exposure.ThalamNuclei_lh_volume_AV_full_outcome.Inhibitory_neurons.MR.res, csMR-EXAMPLE/MR/Crohn_ebi_a_GCST003044_full_exposure-ThalamNuclei_lh_volume_AV_full_outcome/Crohn_ebi_a_GCST003044_full_exposure.ThalamNuclei_lh_volume_AV_full_outcome.Inhibitory_neurons.MR.sensitivity
+    jobid: 5607
+    reason: Missing output files: csMR-EXAMPLE/MR/Crohn_ebi_a_GCST003044_full_exposure-ThalamNuclei_lh_volume_AV_full_outcome/Crohn_ebi_a_GCST003044_full_exposure.ThalamNuclei_lh_volume_AV_full_outcome.Inhibitory_neurons.MR.sensitivity, csMR-EXAMPLE/MR/Crohn_ebi_a_GCST003044_full_exposure-ThalamNuclei_lh_volume_AV_full_outcome/Crohn_ebi_a_GCST003044_full_exposure.ThalamNuclei_lh_volume_AV_full_outcome.Inhibitory_neurons.MR.res
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Crohn_ebi_a_GCST003044_full_exposure, outcome=ThalamNuclei_lh_volume_AV_full_outcome, cell_type=Inhibitory_neurons
+    resources: tmpdir=/tmp
+
+
+[Mon Sep  9 15:23:02 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.results.coverage.0.9.PPH4.0.8.Excitatory_neurons.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-HippSubfield_rh_volume_GC-ML-DG-head_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.HippSubfield_rh_volume_GC-ML-DG-head_full_outcome.Excitatory_neurons.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-HippSubfield_rh_volume_GC-ML-DG-head_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.HippSubfield_rh_volume_GC-ML-DG-head_full_outcome.Excitatory_neurons.MR.sensitivity
+    jobid: 9061
+    reason: Missing output files: csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-HippSubfield_rh_volume_GC-ML-DG-head_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.HippSubfield_rh_volume_GC-ML-DG-head_full_outcome.Excitatory_neurons.MR.sensitivity, csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-HippSubfield_rh_volume_GC-ML-DG-head_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.HippSubfield_rh_volume_GC-ML-DG-head_full_outcome.Excitatory_neurons.MR.res
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_ebi_a_GCST003045_full_exposure, outcome=HippSubfield_rh_volume_GC-ML-DG-head_full_outcome, cell_type=Excitatory_neurons
+    resources: tmpdir=/tmp
+
+
+[Mon Sep  9 15:23:02 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Crohn_ebi_a_GCST003044_full_exposure.results.coverage.0.9.PPH4.0.8.Oligodendrocytes.clumped
+    output: csMR-EXAMPLE/MR/Crohn_ebi_a_GCST003044_full_exposure-IDP_dMRI_TBSS_MD_Splenium_of_corpus_callosum_full_outcome/Crohn_ebi_a_GCST003044_full_exposure.IDP_dMRI_TBSS_MD_Splenium_of_corpus_callosum_full_outcome.Oligodendrocytes.MR.res, csMR-EXAMPLE/MR/Crohn_ebi_a_GCST003044_full_exposure-IDP_dMRI_TBSS_MD_Splenium_of_corpus_callosum_full_outcome/Crohn_ebi_a_GCST003044_full_exposure.IDP_dMRI_TBSS_MD_Splenium_of_corpus_callosum_full_outcome.Oligodendrocytes.MR.sensitivity
+    jobid: 6542
+    reason: Missing output files: csMR-EXAMPLE/MR/Crohn_ebi_a_GCST003044_full_exposure-IDP_dMRI_TBSS_MD_Splenium_of_corpus_callosum_full_outcome/Crohn_ebi_a_GCST003044_full_exposure.IDP_dMRI_TBSS_MD_Splenium_of_corpus_callosum_full_outcome.Oligodendrocytes.MR.res, csMR-EXAMPLE/MR/Crohn_ebi_a_GCST003044_full_exposure-IDP_dMRI_TBSS_MD_Splenium_of_corpus_callosum_full_outcome/Crohn_ebi_a_GCST003044_full_exposure.IDP_dMRI_TBSS_MD_Splenium_of_corpus_callosum_full_outcome.Oligodendrocytes.MR.sensitivity
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Crohn_ebi_a_GCST003044_full_exposure, outcome=IDP_dMRI_TBSS_MD_Splenium_of_corpus_callosum_full_outcome, cell_type=Oligodendrocytes
+    resources: tmpdir=/tmp
+
+
+[Mon Sep  9 15:23:02 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.results.coverage.0.9.PPH4.0.8.Excitatory_neurons.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-aparc-Desikan_rh_thickness_caudalanteriorcingulate_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.aparc-Desikan_rh_thickness_caudalanteriorcingulate_full_outcome.Excitatory_neurons.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-aparc-Desikan_rh_thickness_caudalanteriorcingulate_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.aparc-Desikan_rh_thickness_caudalanteriorcingulate_full_outcome.Excitatory_neurons.MR.sensitivity
+    jobid: 8912
+    reason: Missing output files: csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-aparc-Desikan_rh_thickness_caudalanteriorcingulate_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.aparc-Desikan_rh_thickness_caudalanteriorcingulate_full_outcome.Excitatory_neurons.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-aparc-Desikan_rh_thickness_caudalanteriorcingulate_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.aparc-Desikan_rh_thickness_caudalanteriorcingulate_full_outcome.Excitatory_neurons.MR.sensitivity
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_ebi_a_GCST003045_full_exposure, outcome=aparc-Desikan_rh_thickness_caudalanteriorcingulate_full_outcome, cell_type=Excitatory_neurons
+    resources: tmpdir=/tmp
+
+
+[Mon Sep  9 15:23:02 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.results.coverage.0.9.PPH4.0.8.Excitatory_neurons.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-IDP_dMRI_TBSS_MD_Superior_fronto-occipital_fasciculus_R_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.IDP_dMRI_TBSS_MD_Superior_fronto-occipital_fasciculus_R_full_outcome.Excitatory_neurons.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-IDP_dMRI_TBSS_MD_Superior_fronto-occipital_fasciculus_R_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.IDP_dMRI_TBSS_MD_Superior_fronto-occipital_fasciculus_R_full_outcome.Excitatory_neurons.MR.sensitivity
+    jobid: 8930
+    reason: Missing output files: csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-IDP_dMRI_TBSS_MD_Superior_fronto-occipital_fasciculus_R_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.IDP_dMRI_TBSS_MD_Superior_fronto-occipital_fasciculus_R_full_outcome.Excitatory_neurons.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-IDP_dMRI_TBSS_MD_Superior_fronto-occipital_fasciculus_R_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.IDP_dMRI_TBSS_MD_Superior_fronto-occipital_fasciculus_R_full_outcome.Excitatory_neurons.MR.sensitivity
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_ebi_a_GCST003045_full_exposure, outcome=IDP_dMRI_TBSS_MD_Superior_fronto-occipital_fasciculus_R_full_outcome, cell_type=Excitatory_neurons
+    resources: tmpdir=/tmp
+
+
+[Mon Sep  9 15:23:02 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.results.coverage.0.9.PPH4.0.8.Excitatory_neurons.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-HippSubfield_lh_volume_presubiculum-head_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.HippSubfield_lh_volume_presubiculum-head_full_outcome.Excitatory_neurons.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-HippSubfield_lh_volume_presubiculum-head_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.HippSubfield_lh_volume_presubiculum-head_full_outcome.Excitatory_neurons.MR.sensitivity
+    jobid: 8942
+    reason: Missing output files: csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-HippSubfield_lh_volume_presubiculum-head_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.HippSubfield_lh_volume_presubiculum-head_full_outcome.Excitatory_neurons.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-HippSubfield_lh_volume_presubiculum-head_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.HippSubfield_lh_volume_presubiculum-head_full_outcome.Excitatory_neurons.MR.sensitivity
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_ebi_a_GCST003045_full_exposure, outcome=HippSubfield_lh_volume_presubiculum-head_full_outcome, cell_type=Excitatory_neurons
+    resources: tmpdir=/tmp
+
+
+[Mon Sep  9 15:23:02 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.results.coverage.0.9.PPH4.0.8.Excitatory_neurons.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-aparc-Desikan_lh_thickness_transversetemporal_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.aparc-Desikan_lh_thickness_transversetemporal_full_outcome.Excitatory_neurons.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-aparc-Desikan_lh_thickness_transversetemporal_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.aparc-Desikan_lh_thickness_transversetemporal_full_outcome.Excitatory_neurons.MR.sensitivity
+    jobid: 9057
+    reason: Missing output files: csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-aparc-Desikan_lh_thickness_transversetemporal_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.aparc-Desikan_lh_thickness_transversetemporal_full_outcome.Excitatory_neurons.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-aparc-Desikan_lh_thickness_transversetemporal_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.aparc-Desikan_lh_thickness_transversetemporal_full_outcome.Excitatory_neurons.MR.sensitivity
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_ebi_a_GCST003045_full_exposure, outcome=aparc-Desikan_lh_thickness_transversetemporal_full_outcome, cell_type=Excitatory_neurons
+    resources: tmpdir=/tmp
+
+
+[Mon Sep  9 15:23:02 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.results.coverage.0.9.PPH4.0.8.Excitatory_neurons.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-HippSubfield_lh_volume_HATA_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.HippSubfield_lh_volume_HATA_full_outcome.Excitatory_neurons.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-HippSubfield_lh_volume_HATA_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.HippSubfield_lh_volume_HATA_full_outcome.Excitatory_neurons.MR.sensitivity
+    jobid: 8716
+    reason: Missing output files: csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-HippSubfield_lh_volume_HATA_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.HippSubfield_lh_volume_HATA_full_outcome.Excitatory_neurons.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-HippSubfield_lh_volume_HATA_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.HippSubfield_lh_volume_HATA_full_outcome.Excitatory_neurons.MR.sensitivity
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_ebi_a_GCST003045_full_exposure, outcome=HippSubfield_lh_volume_HATA_full_outcome, cell_type=Excitatory_neurons
+    resources: tmpdir=/tmp
+
+
+[Mon Sep  9 15:23:02 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.results.coverage.0.9.PPH4.0.8.Excitatory_neurons.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-IDP_dMRI_TBSS_FA_Superior_corona_radiata_R_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.IDP_dMRI_TBSS_FA_Superior_corona_radiata_R_full_outcome.Excitatory_neurons.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-IDP_dMRI_TBSS_FA_Superior_corona_radiata_R_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.IDP_dMRI_TBSS_FA_Superior_corona_radiata_R_full_outcome.Excitatory_neurons.MR.sensitivity
+    jobid: 8824
+    reason: Missing output files: csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-IDP_dMRI_TBSS_FA_Superior_corona_radiata_R_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.IDP_dMRI_TBSS_FA_Superior_corona_radiata_R_full_outcome.Excitatory_neurons.MR.sensitivity, csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-IDP_dMRI_TBSS_FA_Superior_corona_radiata_R_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.IDP_dMRI_TBSS_FA_Superior_corona_radiata_R_full_outcome.Excitatory_neurons.MR.res
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_ebi_a_GCST003045_full_exposure, outcome=IDP_dMRI_TBSS_FA_Superior_corona_radiata_R_full_outcome, cell_type=Excitatory_neurons
+    resources: tmpdir=/tmp
+
+
+[Mon Sep  9 15:23:02 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.results.coverage.0.9.PPH4.0.8.Excitatory_neurons.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-IDP_dMRI_TBSS_MD_Anterior_limb_of_internal_capsule_L_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.IDP_dMRI_TBSS_MD_Anterior_limb_of_internal_capsule_L_full_outcome.Excitatory_neurons.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-IDP_dMRI_TBSS_MD_Anterior_limb_of_internal_capsule_L_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.IDP_dMRI_TBSS_MD_Anterior_limb_of_internal_capsule_L_full_outcome.Excitatory_neurons.MR.sensitivity
+    jobid: 8744
+    reason: Missing output files: csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-IDP_dMRI_TBSS_MD_Anterior_limb_of_internal_capsule_L_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.IDP_dMRI_TBSS_MD_Anterior_limb_of_internal_capsule_L_full_outcome.Excitatory_neurons.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-IDP_dMRI_TBSS_MD_Anterior_limb_of_internal_capsule_L_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.IDP_dMRI_TBSS_MD_Anterior_limb_of_internal_capsule_L_full_outcome.Excitatory_neurons.MR.sensitivity
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_ebi_a_GCST003045_full_exposure, outcome=IDP_dMRI_TBSS_MD_Anterior_limb_of_internal_capsule_L_full_outcome, cell_type=Excitatory_neurons
+    resources: tmpdir=/tmp
+
+
+[Mon Sep  9 15:23:02 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.results.coverage.0.9.PPH4.0.8.Excitatory_neurons.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-IDP_dMRI_TBSS_FA_Splenium_of_corpus_callosum_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.IDP_dMRI_TBSS_FA_Splenium_of_corpus_callosum_full_outcome.Excitatory_neurons.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-IDP_dMRI_TBSS_FA_Splenium_of_corpus_callosum_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.IDP_dMRI_TBSS_FA_Splenium_of_corpus_callosum_full_outcome.Excitatory_neurons.MR.sensitivity
+    jobid: 9013
+    reason: Missing output files: csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-IDP_dMRI_TBSS_FA_Splenium_of_corpus_callosum_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.IDP_dMRI_TBSS_FA_Splenium_of_corpus_callosum_full_outcome.Excitatory_neurons.MR.sensitivity, csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-IDP_dMRI_TBSS_FA_Splenium_of_corpus_callosum_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.IDP_dMRI_TBSS_FA_Splenium_of_corpus_callosum_full_outcome.Excitatory_neurons.MR.res
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_ebi_a_GCST003045_full_exposure, outcome=IDP_dMRI_TBSS_FA_Splenium_of_corpus_callosum_full_outcome, cell_type=Excitatory_neurons
+    resources: tmpdir=/tmp
+
+
+[Mon Sep  9 15:23:02 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.results.coverage.0.9.PPH4.0.8.Excitatory_neurons.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-aparc-Desikan_rh_volume_medialorbitofrontal_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.aparc-Desikan_rh_volume_medialorbitofrontal_full_outcome.Excitatory_neurons.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-aparc-Desikan_rh_volume_medialorbitofrontal_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.aparc-Desikan_rh_volume_medialorbitofrontal_full_outcome.Excitatory_neurons.MR.sensitivity
+    jobid: 9007
+    reason: Missing output files: csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-aparc-Desikan_rh_volume_medialorbitofrontal_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.aparc-Desikan_rh_volume_medialorbitofrontal_full_outcome.Excitatory_neurons.MR.sensitivity, csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-aparc-Desikan_rh_volume_medialorbitofrontal_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.aparc-Desikan_rh_volume_medialorbitofrontal_full_outcome.Excitatory_neurons.MR.res
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_ebi_a_GCST003045_full_exposure, outcome=aparc-Desikan_rh_volume_medialorbitofrontal_full_outcome, cell_type=Excitatory_neurons
+    resources: tmpdir=/tmp
+
+
+[Mon Sep  9 15:23:02 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Crohn_ebi_a_GCST003044_full_exposure.results.coverage.0.9.PPH4.0.8.Oligodendrocytes.clumped
+    output: csMR-EXAMPLE/MR/Crohn_ebi_a_GCST003044_full_exposure-aparc-Desikan_lh_area_insula_full_outcome/Crohn_ebi_a_GCST003044_full_exposure.aparc-Desikan_lh_area_insula_full_outcome.Oligodendrocytes.MR.res, csMR-EXAMPLE/MR/Crohn_ebi_a_GCST003044_full_exposure-aparc-Desikan_lh_area_insula_full_outcome/Crohn_ebi_a_GCST003044_full_exposure.aparc-Desikan_lh_area_insula_full_outcome.Oligodendrocytes.MR.sensitivity
+    jobid: 6435
+    reason: Missing output files: csMR-EXAMPLE/MR/Crohn_ebi_a_GCST003044_full_exposure-aparc-Desikan_lh_area_insula_full_outcome/Crohn_ebi_a_GCST003044_full_exposure.aparc-Desikan_lh_area_insula_full_outcome.Oligodendrocytes.MR.res, csMR-EXAMPLE/MR/Crohn_ebi_a_GCST003044_full_exposure-aparc-Desikan_lh_area_insula_full_outcome/Crohn_ebi_a_GCST003044_full_exposure.aparc-Desikan_lh_area_insula_full_outcome.Oligodendrocytes.MR.sensitivity
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Crohn_ebi_a_GCST003044_full_exposure, outcome=aparc-Desikan_lh_area_insula_full_outcome, cell_type=Oligodendrocytes
+    resources: tmpdir=/tmp
+
+
+[Mon Sep  9 15:23:02 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.results.coverage.0.9.PPH4.0.8.Excitatory_neurons.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-aparc-Desikan_lh_volume_paracentral_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.aparc-Desikan_lh_volume_paracentral_full_outcome.Excitatory_neurons.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-aparc-Desikan_lh_volume_paracentral_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.aparc-Desikan_lh_volume_paracentral_full_outcome.Excitatory_neurons.MR.sensitivity
+    jobid: 8701
+    reason: Missing output files: csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-aparc-Desikan_lh_volume_paracentral_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.aparc-Desikan_lh_volume_paracentral_full_outcome.Excitatory_neurons.MR.sensitivity, csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-aparc-Desikan_lh_volume_paracentral_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.aparc-Desikan_lh_volume_paracentral_full_outcome.Excitatory_neurons.MR.res
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_ebi_a_GCST003045_full_exposure, outcome=aparc-Desikan_lh_volume_paracentral_full_outcome, cell_type=Excitatory_neurons
+    resources: tmpdir=/tmp
+
+
+[Mon Sep  9 15:23:02 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.results.coverage.0.9.PPH4.0.8.Excitatory_neurons.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-ThalamNuclei_lh_volume_LP_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.ThalamNuclei_lh_volume_LP_full_outcome.Excitatory_neurons.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-ThalamNuclei_lh_volume_LP_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.ThalamNuclei_lh_volume_LP_full_outcome.Excitatory_neurons.MR.sensitivity
+    jobid: 8659
+    reason: Missing output files: csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-ThalamNuclei_lh_volume_LP_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.ThalamNuclei_lh_volume_LP_full_outcome.Excitatory_neurons.MR.sensitivity, csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-ThalamNuclei_lh_volume_LP_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.ThalamNuclei_lh_volume_LP_full_outcome.Excitatory_neurons.MR.res
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_ebi_a_GCST003045_full_exposure, outcome=ThalamNuclei_lh_volume_LP_full_outcome, cell_type=Excitatory_neurons
+    resources: tmpdir=/tmp
+
+
+[Mon Sep  9 15:23:02 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.results.coverage.0.9.PPH4.0.8.Excitatory_neurons.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-AmygNuclei_lh_volume_Corticoamygdaloid-transitio_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.AmygNuclei_lh_volume_Corticoamygdaloid-transitio_full_outcome.Excitatory_neurons.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-AmygNuclei_lh_volume_Corticoamygdaloid-transitio_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.AmygNuclei_lh_volume_Corticoamygdaloid-transitio_full_outcome.Excitatory_neurons.MR.sensitivity
+    jobid: 8883
+    reason: Missing output files: csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-AmygNuclei_lh_volume_Corticoamygdaloid-transitio_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.AmygNuclei_lh_volume_Corticoamygdaloid-transitio_full_outcome.Excitatory_neurons.MR.sensitivity, csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-AmygNuclei_lh_volume_Corticoamygdaloid-transitio_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.AmygNuclei_lh_volume_Corticoamygdaloid-transitio_full_outcome.Excitatory_neurons.MR.res
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_ebi_a_GCST003045_full_exposure, outcome=AmygNuclei_lh_volume_Corticoamygdaloid-transitio_full_outcome, cell_type=Excitatory_neurons
+    resources: tmpdir=/tmp
+
+[Mon Sep  9 15:23:48 2024]
+Error in rule MR:
+    jobid: 8659
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.results.coverage.0.9.PPH4.0.8.Excitatory_neurons.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-ThalamNuclei_lh_volume_LP_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.ThalamNuclei_lh_volume_LP_full_outcome.Excitatory_neurons.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-ThalamNuclei_lh_volume_LP_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.ThalamNuclei_lh_volume_LP_full_outcome.Excitatory_neurons.MR.sensitivity
+    shell:
+        Rscript scripts/csMR.r -e /home/u/csMR/example/BMI_GWAS/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.ma -o example/outcomes/ThalamNuclei_lh_volume_LP_full_outcome.ma -c csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.results.coverage.0.9.PPH4.0.8.Excitatory_neurons.clumped -r /home/u/csMR/data/reference_genome_1000G_EUR
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Mon Sep  9 15:23:51 2024]
+Error in rule MR:
+    jobid: 8701
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.results.coverage.0.9.PPH4.0.8.Excitatory_neurons.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-aparc-Desikan_lh_volume_paracentral_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.aparc-Desikan_lh_volume_paracentral_full_outcome.Excitatory_neurons.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-aparc-Desikan_lh_volume_paracentral_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.aparc-Desikan_lh_volume_paracentral_full_outcome.Excitatory_neurons.MR.sensitivity
+    shell:
+        Rscript scripts/csMR.r -e /home/u/csMR/example/BMI_GWAS/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.ma -o example/outcomes/aparc-Desikan_lh_volume_paracentral_full_outcome.ma -c csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.results.coverage.0.9.PPH4.0.8.Excitatory_neurons.clumped -r /home/u/csMR/data/reference_genome_1000G_EUR
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Mon Sep  9 15:23:52 2024]
+Error in rule MR:
+    jobid: 8883
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.results.coverage.0.9.PPH4.0.8.Excitatory_neurons.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-AmygNuclei_lh_volume_Corticoamygdaloid-transitio_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.AmygNuclei_lh_volume_Corticoamygdaloid-transitio_full_outcome.Excitatory_neurons.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-AmygNuclei_lh_volume_Corticoamygdaloid-transitio_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.AmygNuclei_lh_volume_Corticoamygdaloid-transitio_full_outcome.Excitatory_neurons.MR.sensitivity
+    shell:
+        Rscript scripts/csMR.r -e /home/u/csMR/example/BMI_GWAS/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.ma -o example/outcomes/AmygNuclei_lh_volume_Corticoamygdaloid-transitio_full_outcome.ma -c csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.results.coverage.0.9.PPH4.0.8.Excitatory_neurons.clumped -r /home/u/csMR/data/reference_genome_1000G_EUR
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Mon Sep  9 15:23:53 2024]
+Error in rule MR:
+    jobid: 8912
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.results.coverage.0.9.PPH4.0.8.Excitatory_neurons.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-aparc-Desikan_rh_thickness_caudalanteriorcingulate_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.aparc-Desikan_rh_thickness_caudalanteriorcingulate_full_outcome.Excitatory_neurons.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-aparc-Desikan_rh_thickness_caudalanteriorcingulate_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.aparc-Desikan_rh_thickness_caudalanteriorcingulate_full_outcome.Excitatory_neurons.MR.sensitivity
+    shell:
+        Rscript scripts/csMR.r -e /home/u/csMR/example/BMI_GWAS/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.ma -o example/outcomes/aparc-Desikan_rh_thickness_caudalanteriorcingulate_full_outcome.ma -c csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.results.coverage.0.9.PPH4.0.8.Excitatory_neurons.clumped -r /home/u/csMR/data/reference_genome_1000G_EUR
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Mon Sep  9 15:23:58 2024]
+Error in rule MR:
+    jobid: 8716
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.results.coverage.0.9.PPH4.0.8.Excitatory_neurons.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-HippSubfield_lh_volume_HATA_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.HippSubfield_lh_volume_HATA_full_outcome.Excitatory_neurons.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-HippSubfield_lh_volume_HATA_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.HippSubfield_lh_volume_HATA_full_outcome.Excitatory_neurons.MR.sensitivity
+    shell:
+        Rscript scripts/csMR.r -e /home/u/csMR/example/BMI_GWAS/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.ma -o example/outcomes/HippSubfield_lh_volume_HATA_full_outcome.ma -c csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.results.coverage.0.9.PPH4.0.8.Excitatory_neurons.clumped -r /home/u/csMR/data/reference_genome_1000G_EUR
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Mon Sep  9 15:24:00 2024]
+Finished job 6542.
+1 of 19 steps (5%) done
+[Mon Sep  9 15:24:42 2024]
+Error in rule MR:
+    jobid: 8824
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.results.coverage.0.9.PPH4.0.8.Excitatory_neurons.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-IDP_dMRI_TBSS_FA_Superior_corona_radiata_R_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.IDP_dMRI_TBSS_FA_Superior_corona_radiata_R_full_outcome.Excitatory_neurons.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-IDP_dMRI_TBSS_FA_Superior_corona_radiata_R_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.IDP_dMRI_TBSS_FA_Superior_corona_radiata_R_full_outcome.Excitatory_neurons.MR.sensitivity
+    shell:
+        Rscript scripts/csMR.r -e /home/u/csMR/example/BMI_GWAS/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.ma -o example/outcomes/IDP_dMRI_TBSS_FA_Superior_corona_radiata_R_full_outcome.ma -c csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.results.coverage.0.9.PPH4.0.8.Excitatory_neurons.clumped -r /home/u/csMR/data/reference_genome_1000G_EUR
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Mon Sep  9 15:24:54 2024]
+Finished job 8942.
+2 of 19 steps (11%) done
+[Mon Sep  9 15:25:10 2024]
+Finished job 8744.
+3 of 19 steps (16%) done
+[Mon Sep  9 15:25:13 2024]
+Finished job 9057.
+4 of 19 steps (21%) done
+[Mon Sep  9 15:25:18 2024]
+Finished job 6435.
+5 of 19 steps (26%) done
+[Mon Sep  9 15:25:24 2024]
+Error in rule MR:
+    jobid: 8753
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.results.coverage.0.9.PPH4.0.8.Excitatory_neurons.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-aparc-Desikan_rh_thickness_fusiform_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.aparc-Desikan_rh_thickness_fusiform_full_outcome.Excitatory_neurons.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-aparc-Desikan_rh_thickness_fusiform_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.aparc-Desikan_rh_thickness_fusiform_full_outcome.Excitatory_neurons.MR.sensitivity
+    shell:
+        Rscript scripts/csMR.r -e /home/u/csMR/example/BMI_GWAS/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.ma -o example/outcomes/aparc-Desikan_rh_thickness_fusiform_full_outcome.ma -c csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.results.coverage.0.9.PPH4.0.8.Excitatory_neurons.clumped -r /home/u/csMR/data/reference_genome_1000G_EUR
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Mon Sep  9 15:25:24 2024]
+Error in rule MR:
+    jobid: 8729
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.results.coverage.0.9.PPH4.0.8.Excitatory_neurons.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-IDP_dMRI_TBSS_MD_External_capsule_L_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.IDP_dMRI_TBSS_MD_External_capsule_L_full_outcome.Excitatory_neurons.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-IDP_dMRI_TBSS_MD_External_capsule_L_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.IDP_dMRI_TBSS_MD_External_capsule_L_full_outcome.Excitatory_neurons.MR.sensitivity
+    shell:
+        Rscript scripts/csMR.r -e /home/u/csMR/example/BMI_GWAS/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.ma -o example/outcomes/IDP_dMRI_TBSS_MD_External_capsule_L_full_outcome.ma -c csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.results.coverage.0.9.PPH4.0.8.Excitatory_neurons.clumped -r /home/u/csMR/data/reference_genome_1000G_EUR
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Mon Sep  9 15:25:29 2024]
+Error in rule MR:
+    jobid: 9061
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.results.coverage.0.9.PPH4.0.8.Excitatory_neurons.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-HippSubfield_rh_volume_GC-ML-DG-head_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.HippSubfield_rh_volume_GC-ML-DG-head_full_outcome.Excitatory_neurons.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-HippSubfield_rh_volume_GC-ML-DG-head_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.HippSubfield_rh_volume_GC-ML-DG-head_full_outcome.Excitatory_neurons.MR.sensitivity
+    shell:
+        Rscript scripts/csMR.r -e /home/u/csMR/example/BMI_GWAS/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.ma -o example/outcomes/HippSubfield_rh_volume_GC-ML-DG-head_full_outcome.ma -c csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.results.coverage.0.9.PPH4.0.8.Excitatory_neurons.clumped -r /home/u/csMR/data/reference_genome_1000G_EUR
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Mon Sep  9 15:25:34 2024]
+Finished job 8930.
+6 of 19 steps (32%) done
+[Mon Sep  9 15:25:34 2024]
+Finished job 5607.
+7 of 19 steps (37%) done
+[Mon Sep  9 15:25:39 2024]
+Finished job 9007.
+8 of 19 steps (42%) done
+[Mon Sep  9 15:25:45 2024]
+Finished job 9013.
+9 of 19 steps (47%) done
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2024-09-09T152245.031111.snakemake.log

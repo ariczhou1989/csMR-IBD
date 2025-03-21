@@ -1,0 +1,1293 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 60
+Rules claiming more threads will be scaled down.
+Job stats:
+job                   count    min threads    max threads
+------------------  -------  -------------  -------------
+MR                      240              1              1
+all                       1              1              1
+clump                    24              1              1
+coloc_summary             3              1              1
+eqtl_rdata                1              1              1
+fine_mapping              1              1              1
+get_intersect_pair       24              1              1
+gwas_rdata                3              1              1
+run_coloc                 1              1              1
+snp_filter                3              1              1
+split_eqtl                8              1              1
+split_gwas                3              1              1
+total                   312              1              1
+
+Select jobs to execute...
+
+[Thu Sep  5 03:43:47 2024]
+rule split_gwas:
+    input: /home/u/csMR/example/BMI_GWAS/Inflammatory_bowel_disease_ebi_a_GCST003043_full_exposure.ma
+    output: csMR-EXAMPLE/precomputation/Inflammatory_bowel_disease_ebi_a_GCST003043.GWAS_split/Inflammatory_bowel_disease_ebi_a_GCST003043.5e-8SNP.100kb.merged_nomhc.bed
+    jobid: 13
+    reason: Missing output files: csMR-EXAMPLE/precomputation/Inflammatory_bowel_disease_ebi_a_GCST003043.GWAS_split/Inflammatory_bowel_disease_ebi_a_GCST003043.5e-8SNP.100kb.merged_nomhc.bed
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Inflammatory_bowel_disease_ebi_a_GCST003043
+    resources: tmpdir=/tmp
+
+
+[Thu Sep  5 03:43:47 2024]
+rule split_gwas:
+    input: /home/u/csMR/example/BMI_GWAS/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.ma
+    output: csMR-EXAMPLE/precomputation/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.GWAS_split/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.5e-8SNP.100kb.merged_nomhc.bed
+    jobid: 15
+    reason: Missing output files: csMR-EXAMPLE/precomputation/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.GWAS_split/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.5e-8SNP.100kb.merged_nomhc.bed
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_ebi_a_GCST003045_full_exposure
+    resources: tmpdir=/tmp
+
+
+[Thu Sep  5 03:43:47 2024]
+rule split_gwas:
+    input: /home/u/csMR/example/BMI_GWAS/Crohn_ebi_a_GCST003044_full_exposure.ma
+    output: csMR-EXAMPLE/precomputation/Crohn_ebi_a_GCST003044.GWAS_split/Crohn_ebi_a_GCST003044.5e-8SNP.100kb.merged_nomhc.bed
+    jobid: 11
+    reason: Missing output files: csMR-EXAMPLE/precomputation/Crohn_ebi_a_GCST003044.GWAS_split/Crohn_ebi_a_GCST003044.5e-8SNP.100kb.merged_nomhc.bed
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Crohn_ebi_a_GCST003044
+    resources: tmpdir=/tmp
+
+[Thu Sep  5 03:43:51 2024]
+Finished job 13.
+1 of 312 steps (0.3%) done
+Select jobs to execute...
+
+[Thu Sep  5 03:43:51 2024]
+rule gwas_rdata:
+    input: csMR-EXAMPLE/precomputation/Inflammatory_bowel_disease_ebi_a_GCST003043.GWAS_split/Inflammatory_bowel_disease_ebi_a_GCST003043.5e-8SNP.100kb.merged_nomhc.bed
+    output: csMR-EXAMPLE/precomputation/Inflammatory_bowel_disease_ebi_a_GCST003043.GWAS_split/Inflammatory_bowel_disease_ebi_a_GCST003043.GWAS_split.maflist
+    jobid: 12
+    reason: Missing output files: csMR-EXAMPLE/precomputation/Inflammatory_bowel_disease_ebi_a_GCST003043.GWAS_split/Inflammatory_bowel_disease_ebi_a_GCST003043.GWAS_split.maflist; Input files updated by another job: csMR-EXAMPLE/precomputation/Inflammatory_bowel_disease_ebi_a_GCST003043.GWAS_split/Inflammatory_bowel_disease_ebi_a_GCST003043.5e-8SNP.100kb.merged_nomhc.bed
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Inflammatory_bowel_disease_ebi_a_GCST003043
+    resources: tmpdir=/tmp
+
+[Thu Sep  5 03:43:51 2024]
+Finished job 11.
+2 of 312 steps (1%) done
+Select jobs to execute...
+
+[Thu Sep  5 03:43:51 2024]
+rule gwas_rdata:
+    input: csMR-EXAMPLE/precomputation/Crohn_ebi_a_GCST003044.GWAS_split/Crohn_ebi_a_GCST003044.5e-8SNP.100kb.merged_nomhc.bed
+    output: csMR-EXAMPLE/precomputation/Crohn_ebi_a_GCST003044.GWAS_split/Crohn_ebi_a_GCST003044.GWAS_split.maflist
+    jobid: 10
+    reason: Missing output files: csMR-EXAMPLE/precomputation/Crohn_ebi_a_GCST003044.GWAS_split/Crohn_ebi_a_GCST003044.GWAS_split.maflist; Input files updated by another job: csMR-EXAMPLE/precomputation/Crohn_ebi_a_GCST003044.GWAS_split/Crohn_ebi_a_GCST003044.5e-8SNP.100kb.merged_nomhc.bed
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Crohn_ebi_a_GCST003044
+    resources: tmpdir=/tmp
+
+[Thu Sep  5 03:43:51 2024]
+Finished job 15.
+3 of 312 steps (1%) done
+Select jobs to execute...
+
+[Thu Sep  5 03:43:51 2024]
+rule gwas_rdata:
+    input: csMR-EXAMPLE/precomputation/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.GWAS_split/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.5e-8SNP.100kb.merged_nomhc.bed
+    output: csMR-EXAMPLE/precomputation/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.GWAS_split/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.GWAS_split.maflist
+    jobid: 14
+    reason: Missing output files: csMR-EXAMPLE/precomputation/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.GWAS_split/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.GWAS_split.maflist; Input files updated by another job: csMR-EXAMPLE/precomputation/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.GWAS_split/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.5e-8SNP.100kb.merged_nomhc.bed
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_ebi_a_GCST003045_full_exposure
+    resources: tmpdir=/tmp
+
+[Thu Sep  5 03:44:36 2024]
+Finished job 14.
+4 of 312 steps (1%) done
+[Thu Sep  5 03:44:37 2024]
+Finished job 12.
+5 of 312 steps (2%) done
+[Thu Sep  5 03:44:37 2024]
+Finished job 10.
+6 of 312 steps (2%) done
+Select jobs to execute...
+
+[Thu Sep  5 03:44:37 2024]
+rule split_eqtl:
+    input: csMR-EXAMPLE/precomputation/Crohn_ebi_a_GCST003044.GWAS_split/Crohn_ebi_a_GCST003044.GWAS_split.maflist, csMR-EXAMPLE/precomputation/Inflammatory_bowel_disease_ebi_a_GCST003043.GWAS_split/Inflammatory_bowel_disease_ebi_a_GCST003043.GWAS_split.maflist, csMR-EXAMPLE/precomputation/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.GWAS_split/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.GWAS_split.maflist, /home/u/csMR/example/single-cell-eQTL/Microglia.ma
+    output: csMR-EXAMPLE/precomputation/Microglia.eQTL_split
+    jobid: 21
+    reason: Missing output files: csMR-EXAMPLE/precomputation/Microglia.eQTL_split; Input files updated by another job: csMR-EXAMPLE/precomputation/Inflammatory_bowel_disease_ebi_a_GCST003043.GWAS_split/Inflammatory_bowel_disease_ebi_a_GCST003043.GWAS_split.maflist, csMR-EXAMPLE/precomputation/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.GWAS_split/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.GWAS_split.maflist, csMR-EXAMPLE/precomputation/Crohn_ebi_a_GCST003044.GWAS_split/Crohn_ebi_a_GCST003044.GWAS_split.maflist; Set of input files has changed since last execution
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, cell_type=Microglia
+    resources: tmpdir=/tmp
+
+
+[Thu Sep  5 03:44:37 2024]
+rule split_eqtl:
+    input: csMR-EXAMPLE/precomputation/Crohn_ebi_a_GCST003044.GWAS_split/Crohn_ebi_a_GCST003044.GWAS_split.maflist, csMR-EXAMPLE/precomputation/Inflammatory_bowel_disease_ebi_a_GCST003043.GWAS_split/Inflammatory_bowel_disease_ebi_a_GCST003043.GWAS_split.maflist, csMR-EXAMPLE/precomputation/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.GWAS_split/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.GWAS_split.maflist, /home/u/csMR/example/single-cell-eQTL/Endothelial.ma
+    output: csMR-EXAMPLE/precomputation/Endothelial.eQTL_split
+    jobid: 9
+    reason: Missing output files: csMR-EXAMPLE/precomputation/Endothelial.eQTL_split; Input files updated by another job: csMR-EXAMPLE/precomputation/Inflammatory_bowel_disease_ebi_a_GCST003043.GWAS_split/Inflammatory_bowel_disease_ebi_a_GCST003043.GWAS_split.maflist, csMR-EXAMPLE/precomputation/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.GWAS_split/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.GWAS_split.maflist, csMR-EXAMPLE/precomputation/Crohn_ebi_a_GCST003044.GWAS_split/Crohn_ebi_a_GCST003044.GWAS_split.maflist; Set of input files has changed since last execution
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, cell_type=Endothelial
+    resources: tmpdir=/tmp
+
+
+[Thu Sep  5 03:44:37 2024]
+rule split_eqtl:
+    input: csMR-EXAMPLE/precomputation/Crohn_ebi_a_GCST003044.GWAS_split/Crohn_ebi_a_GCST003044.GWAS_split.maflist, csMR-EXAMPLE/precomputation/Inflammatory_bowel_disease_ebi_a_GCST003043.GWAS_split/Inflammatory_bowel_disease_ebi_a_GCST003043.GWAS_split.maflist, csMR-EXAMPLE/precomputation/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.GWAS_split/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.GWAS_split.maflist, /home/u/csMR/example/single-cell-eQTL/Inhibitory_neurons.ma
+    output: csMR-EXAMPLE/precomputation/Inhibitory_neurons.eQTL_split
+    jobid: 23
+    reason: Missing output files: csMR-EXAMPLE/precomputation/Inhibitory_neurons.eQTL_split; Input files updated by another job: csMR-EXAMPLE/precomputation/Inflammatory_bowel_disease_ebi_a_GCST003043.GWAS_split/Inflammatory_bowel_disease_ebi_a_GCST003043.GWAS_split.maflist, csMR-EXAMPLE/precomputation/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.GWAS_split/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.GWAS_split.maflist, csMR-EXAMPLE/precomputation/Crohn_ebi_a_GCST003044.GWAS_split/Crohn_ebi_a_GCST003044.GWAS_split.maflist; Set of input files has changed since last execution
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, cell_type=Inhibitory_neurons
+    resources: tmpdir=/tmp
+
+
+[Thu Sep  5 03:44:37 2024]
+rule split_eqtl:
+    input: csMR-EXAMPLE/precomputation/Crohn_ebi_a_GCST003044.GWAS_split/Crohn_ebi_a_GCST003044.GWAS_split.maflist, csMR-EXAMPLE/precomputation/Inflammatory_bowel_disease_ebi_a_GCST003043.GWAS_split/Inflammatory_bowel_disease_ebi_a_GCST003043.GWAS_split.maflist, csMR-EXAMPLE/precomputation/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.GWAS_split/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.GWAS_split.maflist, /home/u/csMR/example/single-cell-eQTL/Oligodendrocytes.ma
+    output: csMR-EXAMPLE/precomputation/Oligodendrocytes.eQTL_split
+    jobid: 25
+    reason: Missing output files: csMR-EXAMPLE/precomputation/Oligodendrocytes.eQTL_split; Input files updated by another job: csMR-EXAMPLE/precomputation/Inflammatory_bowel_disease_ebi_a_GCST003043.GWAS_split/Inflammatory_bowel_disease_ebi_a_GCST003043.GWAS_split.maflist, csMR-EXAMPLE/precomputation/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.GWAS_split/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.GWAS_split.maflist, csMR-EXAMPLE/precomputation/Crohn_ebi_a_GCST003044.GWAS_split/Crohn_ebi_a_GCST003044.GWAS_split.maflist; Set of input files has changed since last execution
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, cell_type=Oligodendrocytes
+    resources: tmpdir=/tmp
+
+
+[Thu Sep  5 03:44:37 2024]
+rule split_eqtl:
+    input: csMR-EXAMPLE/precomputation/Crohn_ebi_a_GCST003044.GWAS_split/Crohn_ebi_a_GCST003044.GWAS_split.maflist, csMR-EXAMPLE/precomputation/Inflammatory_bowel_disease_ebi_a_GCST003043.GWAS_split/Inflammatory_bowel_disease_ebi_a_GCST003043.GWAS_split.maflist, csMR-EXAMPLE/precomputation/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.GWAS_split/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.GWAS_split.maflist, /home/u/csMR/example/single-cell-eQTL/Excitatory_neurons.ma
+    output: csMR-EXAMPLE/precomputation/Excitatory_neurons.eQTL_split
+    jobid: 27
+    reason: Missing output files: csMR-EXAMPLE/precomputation/Excitatory_neurons.eQTL_split; Input files updated by another job: csMR-EXAMPLE/precomputation/Inflammatory_bowel_disease_ebi_a_GCST003043.GWAS_split/Inflammatory_bowel_disease_ebi_a_GCST003043.GWAS_split.maflist, csMR-EXAMPLE/precomputation/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.GWAS_split/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.GWAS_split.maflist, csMR-EXAMPLE/precomputation/Crohn_ebi_a_GCST003044.GWAS_split/Crohn_ebi_a_GCST003044.GWAS_split.maflist; Set of input files has changed since last execution
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, cell_type=Excitatory_neurons
+    resources: tmpdir=/tmp
+
+
+[Thu Sep  5 03:44:37 2024]
+rule split_eqtl:
+    input: csMR-EXAMPLE/precomputation/Crohn_ebi_a_GCST003044.GWAS_split/Crohn_ebi_a_GCST003044.GWAS_split.maflist, csMR-EXAMPLE/precomputation/Inflammatory_bowel_disease_ebi_a_GCST003043.GWAS_split/Inflammatory_bowel_disease_ebi_a_GCST003043.GWAS_split.maflist, csMR-EXAMPLE/precomputation/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.GWAS_split/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.GWAS_split.maflist, /home/u/csMR/example/single-cell-eQTL/Astrocytes.ma
+    output: csMR-EXAMPLE/precomputation/Astrocytes.eQTL_split
+    jobid: 29
+    reason: Missing output files: csMR-EXAMPLE/precomputation/Astrocytes.eQTL_split; Input files updated by another job: csMR-EXAMPLE/precomputation/Inflammatory_bowel_disease_ebi_a_GCST003043.GWAS_split/Inflammatory_bowel_disease_ebi_a_GCST003043.GWAS_split.maflist, csMR-EXAMPLE/precomputation/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.GWAS_split/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.GWAS_split.maflist, csMR-EXAMPLE/precomputation/Crohn_ebi_a_GCST003044.GWAS_split/Crohn_ebi_a_GCST003044.GWAS_split.maflist; Set of input files has changed since last execution
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, cell_type=Astrocytes
+    resources: tmpdir=/tmp
+
+
+[Thu Sep  5 03:44:37 2024]
+rule split_eqtl:
+    input: csMR-EXAMPLE/precomputation/Crohn_ebi_a_GCST003044.GWAS_split/Crohn_ebi_a_GCST003044.GWAS_split.maflist, csMR-EXAMPLE/precomputation/Inflammatory_bowel_disease_ebi_a_GCST003043.GWAS_split/Inflammatory_bowel_disease_ebi_a_GCST003043.GWAS_split.maflist, csMR-EXAMPLE/precomputation/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.GWAS_split/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.GWAS_split.maflist, /home/u/csMR/example/single-cell-eQTL/Pericytes.ma
+    output: csMR-EXAMPLE/precomputation/Pericytes.eQTL_split
+    jobid: 17
+    reason: Missing output files: csMR-EXAMPLE/precomputation/Pericytes.eQTL_split; Input files updated by another job: csMR-EXAMPLE/precomputation/Inflammatory_bowel_disease_ebi_a_GCST003043.GWAS_split/Inflammatory_bowel_disease_ebi_a_GCST003043.GWAS_split.maflist, csMR-EXAMPLE/precomputation/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.GWAS_split/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.GWAS_split.maflist, csMR-EXAMPLE/precomputation/Crohn_ebi_a_GCST003044.GWAS_split/Crohn_ebi_a_GCST003044.GWAS_split.maflist; Set of input files has changed since last execution
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, cell_type=Pericytes
+    resources: tmpdir=/tmp
+
+
+[Thu Sep  5 03:44:37 2024]
+rule split_eqtl:
+    input: csMR-EXAMPLE/precomputation/Crohn_ebi_a_GCST003044.GWAS_split/Crohn_ebi_a_GCST003044.GWAS_split.maflist, csMR-EXAMPLE/precomputation/Inflammatory_bowel_disease_ebi_a_GCST003043.GWAS_split/Inflammatory_bowel_disease_ebi_a_GCST003043.GWAS_split.maflist, csMR-EXAMPLE/precomputation/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.GWAS_split/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.GWAS_split.maflist, /home/u/csMR/example/single-cell-eQTL/OPCs.ma
+    output: csMR-EXAMPLE/precomputation/OPCs.eQTL_split
+    jobid: 19
+    reason: Missing output files: csMR-EXAMPLE/precomputation/OPCs.eQTL_split; Input files updated by another job: csMR-EXAMPLE/precomputation/Inflammatory_bowel_disease_ebi_a_GCST003043.GWAS_split/Inflammatory_bowel_disease_ebi_a_GCST003043.GWAS_split.maflist, csMR-EXAMPLE/precomputation/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.GWAS_split/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.GWAS_split.maflist, csMR-EXAMPLE/precomputation/Crohn_ebi_a_GCST003044.GWAS_split/Crohn_ebi_a_GCST003044.GWAS_split.maflist; Set of input files has changed since last execution
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, cell_type=OPCs
+    resources: tmpdir=/tmp
+
+[Thu Sep  5 03:44:42 2024]
+Finished job 17.
+7 of 312 steps (2%) done
+Select jobs to execute...
+
+[Thu Sep  5 03:44:42 2024]
+rule get_intersect_pair:
+    input: csMR-EXAMPLE/precomputation/Pericytes.eQTL_split
+    output: csMR-EXAMPLE/precomputation/coloc.Crohn_ebi_a_GCST003044.GWAS_split.Pericytes.eQTL_split.pairs
+    jobid: 16
+    reason: Missing output files: csMR-EXAMPLE/precomputation/coloc.Crohn_ebi_a_GCST003044.GWAS_split.Pericytes.eQTL_split.pairs; Input files updated by another job: csMR-EXAMPLE/precomputation/Pericytes.eQTL_split
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Crohn_ebi_a_GCST003044, cell_type=Pericytes
+    resources: tmpdir=/tmp
+
+
+[Thu Sep  5 03:44:42 2024]
+rule get_intersect_pair:
+    input: csMR-EXAMPLE/precomputation/Pericytes.eQTL_split
+    output: csMR-EXAMPLE/precomputation/coloc.Inflammatory_bowel_disease_ebi_a_GCST003043.GWAS_split.Pericytes.eQTL_split.pairs
+    jobid: 31
+    reason: Missing output files: csMR-EXAMPLE/precomputation/coloc.Inflammatory_bowel_disease_ebi_a_GCST003043.GWAS_split.Pericytes.eQTL_split.pairs; Input files updated by another job: csMR-EXAMPLE/precomputation/Pericytes.eQTL_split
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Inflammatory_bowel_disease_ebi_a_GCST003043, cell_type=Pericytes
+    resources: tmpdir=/tmp
+
+
+[Thu Sep  5 03:44:42 2024]
+rule get_intersect_pair:
+    input: csMR-EXAMPLE/precomputation/Pericytes.eQTL_split
+    output: csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.GWAS_split.Pericytes.eQTL_split.pairs
+    jobid: 39
+    reason: Missing output files: csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.GWAS_split.Pericytes.eQTL_split.pairs; Input files updated by another job: csMR-EXAMPLE/precomputation/Pericytes.eQTL_split
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_ebi_a_GCST003045_full_exposure, cell_type=Pericytes
+    resources: tmpdir=/tmp
+
+[Thu Sep  5 03:44:42 2024]
+Finished job 31.
+8 of 312 steps (3%) done
+[Thu Sep  5 03:44:42 2024]
+Finished job 39.
+9 of 312 steps (3%) done
+[Thu Sep  5 03:44:42 2024]
+Finished job 16.
+10 of 312 steps (3%) done
+[Thu Sep  5 03:44:46 2024]
+Finished job 9.
+11 of 312 steps (4%) done
+Select jobs to execute...
+
+[Thu Sep  5 03:44:46 2024]
+rule get_intersect_pair:
+    input: csMR-EXAMPLE/precomputation/Endothelial.eQTL_split
+    output: csMR-EXAMPLE/precomputation/coloc.Inflammatory_bowel_disease_ebi_a_GCST003043.GWAS_split.Endothelial.eQTL_split.pairs
+    jobid: 30
+    reason: Missing output files: csMR-EXAMPLE/precomputation/coloc.Inflammatory_bowel_disease_ebi_a_GCST003043.GWAS_split.Endothelial.eQTL_split.pairs; Input files updated by another job: csMR-EXAMPLE/precomputation/Endothelial.eQTL_split
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Inflammatory_bowel_disease_ebi_a_GCST003043, cell_type=Endothelial
+    resources: tmpdir=/tmp
+
+
+[Thu Sep  5 03:44:46 2024]
+rule get_intersect_pair:
+    input: csMR-EXAMPLE/precomputation/Endothelial.eQTL_split
+    output: csMR-EXAMPLE/precomputation/coloc.Crohn_ebi_a_GCST003044.GWAS_split.Endothelial.eQTL_split.pairs
+    jobid: 8
+    reason: Missing output files: csMR-EXAMPLE/precomputation/coloc.Crohn_ebi_a_GCST003044.GWAS_split.Endothelial.eQTL_split.pairs; Input files updated by another job: csMR-EXAMPLE/precomputation/Endothelial.eQTL_split
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Crohn_ebi_a_GCST003044, cell_type=Endothelial
+    resources: tmpdir=/tmp
+
+
+[Thu Sep  5 03:44:46 2024]
+rule get_intersect_pair:
+    input: csMR-EXAMPLE/precomputation/Endothelial.eQTL_split
+    output: csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.GWAS_split.Endothelial.eQTL_split.pairs
+    jobid: 38
+    reason: Missing output files: csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.GWAS_split.Endothelial.eQTL_split.pairs; Input files updated by another job: csMR-EXAMPLE/precomputation/Endothelial.eQTL_split
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_ebi_a_GCST003045_full_exposure, cell_type=Endothelial
+    resources: tmpdir=/tmp
+
+[Thu Sep  5 03:44:47 2024]
+Finished job 30.
+12 of 312 steps (4%) done
+[Thu Sep  5 03:44:47 2024]
+Finished job 8.
+13 of 312 steps (4%) done
+[Thu Sep  5 03:44:47 2024]
+Finished job 38.
+14 of 312 steps (4%) done
+[Thu Sep  5 03:45:05 2024]
+Finished job 21.
+15 of 312 steps (5%) done
+Select jobs to execute...
+
+[Thu Sep  5 03:45:05 2024]
+rule get_intersect_pair:
+    input: csMR-EXAMPLE/precomputation/Microglia.eQTL_split
+    output: csMR-EXAMPLE/precomputation/coloc.Crohn_ebi_a_GCST003044.GWAS_split.Microglia.eQTL_split.pairs
+    jobid: 20
+    reason: Missing output files: csMR-EXAMPLE/precomputation/coloc.Crohn_ebi_a_GCST003044.GWAS_split.Microglia.eQTL_split.pairs; Input files updated by another job: csMR-EXAMPLE/precomputation/Microglia.eQTL_split
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Crohn_ebi_a_GCST003044, cell_type=Microglia
+    resources: tmpdir=/tmp
+
+
+[Thu Sep  5 03:45:05 2024]
+rule get_intersect_pair:
+    input: csMR-EXAMPLE/precomputation/Microglia.eQTL_split
+    output: csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.GWAS_split.Microglia.eQTL_split.pairs
+    jobid: 41
+    reason: Missing output files: csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.GWAS_split.Microglia.eQTL_split.pairs; Input files updated by another job: csMR-EXAMPLE/precomputation/Microglia.eQTL_split
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_ebi_a_GCST003045_full_exposure, cell_type=Microglia
+    resources: tmpdir=/tmp
+
+
+[Thu Sep  5 03:45:05 2024]
+rule get_intersect_pair:
+    input: csMR-EXAMPLE/precomputation/Microglia.eQTL_split
+    output: csMR-EXAMPLE/precomputation/coloc.Inflammatory_bowel_disease_ebi_a_GCST003043.GWAS_split.Microglia.eQTL_split.pairs
+    jobid: 33
+    reason: Missing output files: csMR-EXAMPLE/precomputation/coloc.Inflammatory_bowel_disease_ebi_a_GCST003043.GWAS_split.Microglia.eQTL_split.pairs; Input files updated by another job: csMR-EXAMPLE/precomputation/Microglia.eQTL_split
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Inflammatory_bowel_disease_ebi_a_GCST003043, cell_type=Microglia
+    resources: tmpdir=/tmp
+
+[Thu Sep  5 03:45:05 2024]
+Finished job 20.
+16 of 312 steps (5%) done
+[Thu Sep  5 03:45:05 2024]
+Finished job 41.
+17 of 312 steps (5%) done
+[Thu Sep  5 03:45:05 2024]
+Finished job 33.
+18 of 312 steps (6%) done
+[Thu Sep  5 03:45:07 2024]
+Finished job 19.
+19 of 312 steps (6%) done
+Select jobs to execute...
+
+[Thu Sep  5 03:45:07 2024]
+rule get_intersect_pair:
+    input: csMR-EXAMPLE/precomputation/OPCs.eQTL_split
+    output: csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.GWAS_split.OPCs.eQTL_split.pairs
+    jobid: 40
+    reason: Missing output files: csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.GWAS_split.OPCs.eQTL_split.pairs; Input files updated by another job: csMR-EXAMPLE/precomputation/OPCs.eQTL_split
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_ebi_a_GCST003045_full_exposure, cell_type=OPCs
+    resources: tmpdir=/tmp
+
+
+[Thu Sep  5 03:45:07 2024]
+rule get_intersect_pair:
+    input: csMR-EXAMPLE/precomputation/OPCs.eQTL_split
+    output: csMR-EXAMPLE/precomputation/coloc.Inflammatory_bowel_disease_ebi_a_GCST003043.GWAS_split.OPCs.eQTL_split.pairs
+    jobid: 32
+    reason: Missing output files: csMR-EXAMPLE/precomputation/coloc.Inflammatory_bowel_disease_ebi_a_GCST003043.GWAS_split.OPCs.eQTL_split.pairs; Input files updated by another job: csMR-EXAMPLE/precomputation/OPCs.eQTL_split
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Inflammatory_bowel_disease_ebi_a_GCST003043, cell_type=OPCs
+    resources: tmpdir=/tmp
+
+
+[Thu Sep  5 03:45:07 2024]
+rule get_intersect_pair:
+    input: csMR-EXAMPLE/precomputation/OPCs.eQTL_split
+    output: csMR-EXAMPLE/precomputation/coloc.Crohn_ebi_a_GCST003044.GWAS_split.OPCs.eQTL_split.pairs
+    jobid: 18
+    reason: Missing output files: csMR-EXAMPLE/precomputation/coloc.Crohn_ebi_a_GCST003044.GWAS_split.OPCs.eQTL_split.pairs; Input files updated by another job: csMR-EXAMPLE/precomputation/OPCs.eQTL_split
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Crohn_ebi_a_GCST003044, cell_type=OPCs
+    resources: tmpdir=/tmp
+
+[Thu Sep  5 03:45:07 2024]
+Finished job 40.
+20 of 312 steps (6%) done
+[Thu Sep  5 03:45:07 2024]
+Finished job 18.
+21 of 312 steps (7%) done
+[Thu Sep  5 03:45:07 2024]
+Finished job 32.
+22 of 312 steps (7%) done
+[Thu Sep  5 03:45:37 2024]
+Finished job 23.
+23 of 312 steps (7%) done
+Select jobs to execute...
+
+[Thu Sep  5 03:45:37 2024]
+rule get_intersect_pair:
+    input: csMR-EXAMPLE/precomputation/Inhibitory_neurons.eQTL_split
+    output: csMR-EXAMPLE/precomputation/coloc.Inflammatory_bowel_disease_ebi_a_GCST003043.GWAS_split.Inhibitory_neurons.eQTL_split.pairs
+    jobid: 34
+    reason: Missing output files: csMR-EXAMPLE/precomputation/coloc.Inflammatory_bowel_disease_ebi_a_GCST003043.GWAS_split.Inhibitory_neurons.eQTL_split.pairs; Input files updated by another job: csMR-EXAMPLE/precomputation/Inhibitory_neurons.eQTL_split
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Inflammatory_bowel_disease_ebi_a_GCST003043, cell_type=Inhibitory_neurons
+    resources: tmpdir=/tmp
+
+
+[Thu Sep  5 03:45:37 2024]
+rule get_intersect_pair:
+    input: csMR-EXAMPLE/precomputation/Inhibitory_neurons.eQTL_split
+    output: csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.GWAS_split.Inhibitory_neurons.eQTL_split.pairs
+    jobid: 42
+    reason: Missing output files: csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.GWAS_split.Inhibitory_neurons.eQTL_split.pairs; Input files updated by another job: csMR-EXAMPLE/precomputation/Inhibitory_neurons.eQTL_split
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_ebi_a_GCST003045_full_exposure, cell_type=Inhibitory_neurons
+    resources: tmpdir=/tmp
+
+
+[Thu Sep  5 03:45:37 2024]
+rule get_intersect_pair:
+    input: csMR-EXAMPLE/precomputation/Inhibitory_neurons.eQTL_split
+    output: csMR-EXAMPLE/precomputation/coloc.Crohn_ebi_a_GCST003044.GWAS_split.Inhibitory_neurons.eQTL_split.pairs
+    jobid: 22
+    reason: Missing output files: csMR-EXAMPLE/precomputation/coloc.Crohn_ebi_a_GCST003044.GWAS_split.Inhibitory_neurons.eQTL_split.pairs; Input files updated by another job: csMR-EXAMPLE/precomputation/Inhibitory_neurons.eQTL_split
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Crohn_ebi_a_GCST003044, cell_type=Inhibitory_neurons
+    resources: tmpdir=/tmp
+
+[Thu Sep  5 03:45:37 2024]
+Finished job 34.
+24 of 312 steps (8%) done
+[Thu Sep  5 03:45:37 2024]
+Finished job 22.
+25 of 312 steps (8%) done
+[Thu Sep  5 03:45:37 2024]
+Finished job 42.
+26 of 312 steps (8%) done
+[Thu Sep  5 03:45:43 2024]
+Finished job 29.
+27 of 312 steps (9%) done
+Select jobs to execute...
+
+[Thu Sep  5 03:45:43 2024]
+rule get_intersect_pair:
+    input: csMR-EXAMPLE/precomputation/Astrocytes.eQTL_split
+    output: csMR-EXAMPLE/precomputation/coloc.Crohn_ebi_a_GCST003044.GWAS_split.Astrocytes.eQTL_split.pairs
+    jobid: 28
+    reason: Missing output files: csMR-EXAMPLE/precomputation/coloc.Crohn_ebi_a_GCST003044.GWAS_split.Astrocytes.eQTL_split.pairs; Input files updated by another job: csMR-EXAMPLE/precomputation/Astrocytes.eQTL_split
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Crohn_ebi_a_GCST003044, cell_type=Astrocytes
+    resources: tmpdir=/tmp
+
+
+[Thu Sep  5 03:45:43 2024]
+rule get_intersect_pair:
+    input: csMR-EXAMPLE/precomputation/Astrocytes.eQTL_split
+    output: csMR-EXAMPLE/precomputation/coloc.Inflammatory_bowel_disease_ebi_a_GCST003043.GWAS_split.Astrocytes.eQTL_split.pairs
+    jobid: 37
+    reason: Missing output files: csMR-EXAMPLE/precomputation/coloc.Inflammatory_bowel_disease_ebi_a_GCST003043.GWAS_split.Astrocytes.eQTL_split.pairs; Input files updated by another job: csMR-EXAMPLE/precomputation/Astrocytes.eQTL_split
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Inflammatory_bowel_disease_ebi_a_GCST003043, cell_type=Astrocytes
+    resources: tmpdir=/tmp
+
+
+[Thu Sep  5 03:45:43 2024]
+rule get_intersect_pair:
+    input: csMR-EXAMPLE/precomputation/Astrocytes.eQTL_split
+    output: csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.GWAS_split.Astrocytes.eQTL_split.pairs
+    jobid: 45
+    reason: Missing output files: csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.GWAS_split.Astrocytes.eQTL_split.pairs; Input files updated by another job: csMR-EXAMPLE/precomputation/Astrocytes.eQTL_split
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_ebi_a_GCST003045_full_exposure, cell_type=Astrocytes
+    resources: tmpdir=/tmp
+
+[Thu Sep  5 03:45:43 2024]
+Finished job 28.
+28 of 312 steps (9%) done
+[Thu Sep  5 03:45:43 2024]
+Finished job 37.
+29 of 312 steps (9%) done
+[Thu Sep  5 03:45:43 2024]
+Finished job 45.
+30 of 312 steps (10%) done
+[Thu Sep  5 03:46:40 2024]
+Finished job 25.
+31 of 312 steps (10%) done
+Select jobs to execute...
+
+[Thu Sep  5 03:46:40 2024]
+rule get_intersect_pair:
+    input: csMR-EXAMPLE/precomputation/Oligodendrocytes.eQTL_split
+    output: csMR-EXAMPLE/precomputation/coloc.Inflammatory_bowel_disease_ebi_a_GCST003043.GWAS_split.Oligodendrocytes.eQTL_split.pairs
+    jobid: 35
+    reason: Missing output files: csMR-EXAMPLE/precomputation/coloc.Inflammatory_bowel_disease_ebi_a_GCST003043.GWAS_split.Oligodendrocytes.eQTL_split.pairs; Input files updated by another job: csMR-EXAMPLE/precomputation/Oligodendrocytes.eQTL_split
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Inflammatory_bowel_disease_ebi_a_GCST003043, cell_type=Oligodendrocytes
+    resources: tmpdir=/tmp
+
+
+[Thu Sep  5 03:46:40 2024]
+rule get_intersect_pair:
+    input: csMR-EXAMPLE/precomputation/Oligodendrocytes.eQTL_split
+    output: csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.GWAS_split.Oligodendrocytes.eQTL_split.pairs
+    jobid: 43
+    reason: Missing output files: csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.GWAS_split.Oligodendrocytes.eQTL_split.pairs; Input files updated by another job: csMR-EXAMPLE/precomputation/Oligodendrocytes.eQTL_split
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_ebi_a_GCST003045_full_exposure, cell_type=Oligodendrocytes
+    resources: tmpdir=/tmp
+
+
+[Thu Sep  5 03:46:40 2024]
+rule get_intersect_pair:
+    input: csMR-EXAMPLE/precomputation/Oligodendrocytes.eQTL_split
+    output: csMR-EXAMPLE/precomputation/coloc.Crohn_ebi_a_GCST003044.GWAS_split.Oligodendrocytes.eQTL_split.pairs
+    jobid: 24
+    reason: Missing output files: csMR-EXAMPLE/precomputation/coloc.Crohn_ebi_a_GCST003044.GWAS_split.Oligodendrocytes.eQTL_split.pairs; Input files updated by another job: csMR-EXAMPLE/precomputation/Oligodendrocytes.eQTL_split
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Crohn_ebi_a_GCST003044, cell_type=Oligodendrocytes
+    resources: tmpdir=/tmp
+
+[Thu Sep  5 03:46:40 2024]
+Finished job 43.
+32 of 312 steps (10%) done
+[Thu Sep  5 03:46:40 2024]
+Finished job 35.
+33 of 312 steps (11%) done
+[Thu Sep  5 03:46:40 2024]
+Finished job 24.
+34 of 312 steps (11%) done
+[Thu Sep  5 03:47:27 2024]
+Finished job 27.
+35 of 312 steps (11%) done
+Select jobs to execute...
+
+[Thu Sep  5 03:47:27 2024]
+rule get_intersect_pair:
+    input: csMR-EXAMPLE/precomputation/Excitatory_neurons.eQTL_split
+    output: csMR-EXAMPLE/precomputation/coloc.Crohn_ebi_a_GCST003044.GWAS_split.Excitatory_neurons.eQTL_split.pairs
+    jobid: 26
+    reason: Missing output files: csMR-EXAMPLE/precomputation/coloc.Crohn_ebi_a_GCST003044.GWAS_split.Excitatory_neurons.eQTL_split.pairs; Input files updated by another job: csMR-EXAMPLE/precomputation/Excitatory_neurons.eQTL_split
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Crohn_ebi_a_GCST003044, cell_type=Excitatory_neurons
+    resources: tmpdir=/tmp
+
+
+[Thu Sep  5 03:47:27 2024]
+rule get_intersect_pair:
+    input: csMR-EXAMPLE/precomputation/Excitatory_neurons.eQTL_split
+    output: csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.GWAS_split.Excitatory_neurons.eQTL_split.pairs
+    jobid: 44
+    reason: Missing output files: csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.GWAS_split.Excitatory_neurons.eQTL_split.pairs; Input files updated by another job: csMR-EXAMPLE/precomputation/Excitatory_neurons.eQTL_split
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_ebi_a_GCST003045_full_exposure, cell_type=Excitatory_neurons
+    resources: tmpdir=/tmp
+
+
+[Thu Sep  5 03:47:27 2024]
+rule get_intersect_pair:
+    input: csMR-EXAMPLE/precomputation/Excitatory_neurons.eQTL_split
+    output: csMR-EXAMPLE/precomputation/coloc.Inflammatory_bowel_disease_ebi_a_GCST003043.GWAS_split.Excitatory_neurons.eQTL_split.pairs
+    jobid: 36
+    reason: Missing output files: csMR-EXAMPLE/precomputation/coloc.Inflammatory_bowel_disease_ebi_a_GCST003043.GWAS_split.Excitatory_neurons.eQTL_split.pairs; Input files updated by another job: csMR-EXAMPLE/precomputation/Excitatory_neurons.eQTL_split
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Inflammatory_bowel_disease_ebi_a_GCST003043, cell_type=Excitatory_neurons
+    resources: tmpdir=/tmp
+
+[Thu Sep  5 03:47:27 2024]
+Finished job 26.
+36 of 312 steps (12%) done
+[Thu Sep  5 03:47:27 2024]
+Finished job 44.
+37 of 312 steps (12%) done
+[Thu Sep  5 03:47:27 2024]
+Finished job 36.
+38 of 312 steps (12%) done
+Select jobs to execute...
+
+[Thu Sep  5 03:47:27 2024]
+rule eqtl_rdata:
+    input: csMR-EXAMPLE/precomputation/coloc.Crohn_ebi_a_GCST003044.GWAS_split.Endothelial.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Crohn_ebi_a_GCST003044.GWAS_split.Pericytes.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Crohn_ebi_a_GCST003044.GWAS_split.OPCs.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Crohn_ebi_a_GCST003044.GWAS_split.Microglia.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Crohn_ebi_a_GCST003044.GWAS_split.Inhibitory_neurons.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Crohn_ebi_a_GCST003044.GWAS_split.Oligodendrocytes.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Crohn_ebi_a_GCST003044.GWAS_split.Excitatory_neurons.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Crohn_ebi_a_GCST003044.GWAS_split.Astrocytes.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Inflammatory_bowel_disease_ebi_a_GCST003043.GWAS_split.Endothelial.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Inflammatory_bowel_disease_ebi_a_GCST003043.GWAS_split.Pericytes.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Inflammatory_bowel_disease_ebi_a_GCST003043.GWAS_split.OPCs.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Inflammatory_bowel_disease_ebi_a_GCST003043.GWAS_split.Microglia.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Inflammatory_bowel_disease_ebi_a_GCST003043.GWAS_split.Inhibitory_neurons.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Inflammatory_bowel_disease_ebi_a_GCST003043.GWAS_split.Oligodendrocytes.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Inflammatory_bowel_disease_ebi_a_GCST003043.GWAS_split.Excitatory_neurons.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Inflammatory_bowel_disease_ebi_a_GCST003043.GWAS_split.Astrocytes.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.GWAS_split.Endothelial.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.GWAS_split.Pericytes.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.GWAS_split.OPCs.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.GWAS_split.Microglia.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.GWAS_split.Inhibitory_neurons.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.GWAS_split.Oligodendrocytes.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.GWAS_split.Excitatory_neurons.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.GWAS_split.Astrocytes.eQTL_split.pairs
+    output: csMR-EXAMPLE/precomputation/eqtl_maf.list
+    jobid: 7
+    reason: Missing output files: csMR-EXAMPLE/precomputation/eqtl_maf.list; Input files updated by another job: csMR-EXAMPLE/precomputation/coloc.Crohn_ebi_a_GCST003044.GWAS_split.Excitatory_neurons.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Crohn_ebi_a_GCST003044.GWAS_split.OPCs.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Inflammatory_bowel_disease_ebi_a_GCST003043.GWAS_split.OPCs.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.GWAS_split.Oligodendrocytes.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.GWAS_split.OPCs.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Inflammatory_bowel_disease_ebi_a_GCST003043.GWAS_split.Excitatory_neurons.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.GWAS_split.Astrocytes.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Crohn_ebi_a_GCST003044.GWAS_split.Endothelial.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.GWAS_split.Excitatory_neurons.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.GWAS_split.Inhibitory_neurons.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Crohn_ebi_a_GCST003044.GWAS_split.Astrocytes.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.GWAS_split.Pericytes.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Inflammatory_bowel_disease_ebi_a_GCST003043.GWAS_split.Endothelial.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Crohn_ebi_a_GCST003044.GWAS_split.Pericytes.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Inflammatory_bowel_disease_ebi_a_GCST003043.GWAS_split.Inhibitory_neurons.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Inflammatory_bowel_disease_ebi_a_GCST003043.GWAS_split.Pericytes.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Crohn_ebi_a_GCST003044.GWAS_split.Oligodendrocytes.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Inflammatory_bowel_disease_ebi_a_GCST003043.GWAS_split.Oligodendrocytes.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.GWAS_split.Microglia.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Crohn_ebi_a_GCST003044.GWAS_split.Inhibitory_neurons.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.GWAS_split.Endothelial.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Inflammatory_bowel_disease_ebi_a_GCST003043.GWAS_split.Astrocytes.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Crohn_ebi_a_GCST003044.GWAS_split.Microglia.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Inflammatory_bowel_disease_ebi_a_GCST003043.GWAS_split.Microglia.eQTL_split.pairs
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE
+    resources: tmpdir=/tmp
+
+[Thu Sep  5 03:49:57 2024]
+Finished job 7.
+39 of 312 steps (12%) done
+Select jobs to execute...
+
+[Thu Sep  5 03:49:57 2024]
+rule fine_mapping:
+    input: csMR-EXAMPLE/precomputation/eqtl_maf.list
+    output: csMR-EXAMPLE/precomputation/gwas_maf_finemap.list, csMR-EXAMPLE/precomputation/eqtl_maf_finemap.list
+    jobid: 6
+    reason: Missing output files: csMR-EXAMPLE/precomputation/eqtl_maf_finemap.list, csMR-EXAMPLE/precomputation/gwas_maf_finemap.list; Input files updated by another job: csMR-EXAMPLE/precomputation/eqtl_maf.list
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE
+    resources: tmpdir=/tmp
+
+[Thu Sep  5 03:50:56 2024]
+Finished job 6.
+40 of 312 steps (13%) done
+Select jobs to execute...
+
+[Thu Sep  5 03:50:56 2024]
+rule run_coloc:
+    input: csMR-EXAMPLE/precomputation/gwas_maf_finemap.list, csMR-EXAMPLE/precomputation/eqtl_maf_finemap.list
+    output: csMR-EXAMPLE/COLOC/coloc.Crohn_ebi_a_GCST003044.GWAS_split.Endothelial.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Crohn_ebi_a_GCST003044.GWAS_split.Pericytes.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Crohn_ebi_a_GCST003044.GWAS_split.OPCs.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Crohn_ebi_a_GCST003044.GWAS_split.Microglia.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Crohn_ebi_a_GCST003044.GWAS_split.Inhibitory_neurons.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Crohn_ebi_a_GCST003044.GWAS_split.Oligodendrocytes.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Crohn_ebi_a_GCST003044.GWAS_split.Excitatory_neurons.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Crohn_ebi_a_GCST003044.GWAS_split.Astrocytes.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Inflammatory_bowel_disease_ebi_a_GCST003043.GWAS_split.Endothelial.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Inflammatory_bowel_disease_ebi_a_GCST003043.GWAS_split.Pericytes.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Inflammatory_bowel_disease_ebi_a_GCST003043.GWAS_split.OPCs.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Inflammatory_bowel_disease_ebi_a_GCST003043.GWAS_split.Microglia.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Inflammatory_bowel_disease_ebi_a_GCST003043.GWAS_split.Inhibitory_neurons.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Inflammatory_bowel_disease_ebi_a_GCST003043.GWAS_split.Oligodendrocytes.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Inflammatory_bowel_disease_ebi_a_GCST003043.GWAS_split.Excitatory_neurons.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Inflammatory_bowel_disease_ebi_a_GCST003043.GWAS_split.Astrocytes.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.GWAS_split.Endothelial.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.GWAS_split.Pericytes.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.GWAS_split.OPCs.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.GWAS_split.Microglia.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.GWAS_split.Inhibitory_neurons.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.GWAS_split.Oligodendrocytes.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.GWAS_split.Excitatory_neurons.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.GWAS_split.Astrocytes.eQTL_split.pairs.coloc_results
+    jobid: 5
+    reason: Missing output files: csMR-EXAMPLE/COLOC/coloc.Inflammatory_bowel_disease_ebi_a_GCST003043.GWAS_split.Endothelial.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Crohn_ebi_a_GCST003044.GWAS_split.Oligodendrocytes.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Inflammatory_bowel_disease_ebi_a_GCST003043.GWAS_split.Microglia.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.GWAS_split.Astrocytes.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.GWAS_split.Oligodendrocytes.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Inflammatory_bowel_disease_ebi_a_GCST003043.GWAS_split.Inhibitory_neurons.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.GWAS_split.Pericytes.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Inflammatory_bowel_disease_ebi_a_GCST003043.GWAS_split.Excitatory_neurons.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Crohn_ebi_a_GCST003044.GWAS_split.OPCs.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Crohn_ebi_a_GCST003044.GWAS_split.Excitatory_neurons.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Inflammatory_bowel_disease_ebi_a_GCST003043.GWAS_split.Oligodendrocytes.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Inflammatory_bowel_disease_ebi_a_GCST003043.GWAS_split.Astrocytes.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Crohn_ebi_a_GCST003044.GWAS_split.Microglia.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.GWAS_split.Excitatory_neurons.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.GWAS_split.Endothelial.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Crohn_ebi_a_GCST003044.GWAS_split.Endothelial.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Crohn_ebi_a_GCST003044.GWAS_split.Pericytes.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Inflammatory_bowel_disease_ebi_a_GCST003043.GWAS_split.OPCs.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.GWAS_split.Inhibitory_neurons.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Crohn_ebi_a_GCST003044.GWAS_split.Inhibitory_neurons.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.GWAS_split.OPCs.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Inflammatory_bowel_disease_ebi_a_GCST003043.GWAS_split.Pericytes.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Crohn_ebi_a_GCST003044.GWAS_split.Astrocytes.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.GWAS_split.Microglia.eQTL_split.pairs.coloc_results; Input files updated by another job: csMR-EXAMPLE/precomputation/eqtl_maf_finemap.list, csMR-EXAMPLE/precomputation/gwas_maf_finemap.list
+    resources: tmpdir=/tmp
+
+[Thu Sep  5 03:51:38 2024]
+Finished job 5.
+41 of 312 steps (13%) done
+Select jobs to execute...
+
+[Thu Sep  5 03:51:38 2024]
+rule coloc_summary:
+    input: csMR-EXAMPLE/COLOC/coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.GWAS_split.Endothelial.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.GWAS_split.Pericytes.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.GWAS_split.OPCs.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.GWAS_split.Microglia.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.GWAS_split.Inhibitory_neurons.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.GWAS_split.Oligodendrocytes.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.GWAS_split.Excitatory_neurons.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.GWAS_split.Astrocytes.eQTL_split.pairs.coloc_results
+    output: csMR-EXAMPLE/COLOC/Susie_coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.results.coverage.0.9.PPH4.0.8
+    jobid: 225
+    reason: Missing output files: csMR-EXAMPLE/COLOC/Susie_coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.results.coverage.0.9.PPH4.0.8; Input files updated by another job: csMR-EXAMPLE/COLOC/coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.GWAS_split.OPCs.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.GWAS_split.Astrocytes.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.GWAS_split.Inhibitory_neurons.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.GWAS_split.Microglia.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.GWAS_split.Excitatory_neurons.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.GWAS_split.Oligodendrocytes.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.GWAS_split.Endothelial.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.GWAS_split.Pericytes.eQTL_split.pairs.coloc_results
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_ebi_a_GCST003045_full_exposure, coverage=0.9, coloc_cutoff=0.8
+    resources: tmpdir=/tmp
+
+
+[Thu Sep  5 03:51:38 2024]
+rule coloc_summary:
+    input: csMR-EXAMPLE/COLOC/coloc.Inflammatory_bowel_disease_ebi_a_GCST003043.GWAS_split.Endothelial.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Inflammatory_bowel_disease_ebi_a_GCST003043.GWAS_split.Pericytes.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Inflammatory_bowel_disease_ebi_a_GCST003043.GWAS_split.OPCs.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Inflammatory_bowel_disease_ebi_a_GCST003043.GWAS_split.Microglia.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Inflammatory_bowel_disease_ebi_a_GCST003043.GWAS_split.Inhibitory_neurons.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Inflammatory_bowel_disease_ebi_a_GCST003043.GWAS_split.Oligodendrocytes.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Inflammatory_bowel_disease_ebi_a_GCST003043.GWAS_split.Excitatory_neurons.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Inflammatory_bowel_disease_ebi_a_GCST003043.GWAS_split.Astrocytes.eQTL_split.pairs.coloc_results
+    output: csMR-EXAMPLE/COLOC/Susie_coloc.Inflammatory_bowel_disease_ebi_a_GCST003043.results.coverage.0.9.PPH4.0.8
+    jobid: 135
+    reason: Missing output files: csMR-EXAMPLE/COLOC/Susie_coloc.Inflammatory_bowel_disease_ebi_a_GCST003043.results.coverage.0.9.PPH4.0.8; Input files updated by another job: csMR-EXAMPLE/COLOC/coloc.Inflammatory_bowel_disease_ebi_a_GCST003043.GWAS_split.Endothelial.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Inflammatory_bowel_disease_ebi_a_GCST003043.GWAS_split.Excitatory_neurons.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Inflammatory_bowel_disease_ebi_a_GCST003043.GWAS_split.Pericytes.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Inflammatory_bowel_disease_ebi_a_GCST003043.GWAS_split.Oligodendrocytes.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Inflammatory_bowel_disease_ebi_a_GCST003043.GWAS_split.OPCs.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Inflammatory_bowel_disease_ebi_a_GCST003043.GWAS_split.Astrocytes.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Inflammatory_bowel_disease_ebi_a_GCST003043.GWAS_split.Microglia.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Inflammatory_bowel_disease_ebi_a_GCST003043.GWAS_split.Inhibitory_neurons.eQTL_split.pairs.coloc_results
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Inflammatory_bowel_disease_ebi_a_GCST003043, coverage=0.9, coloc_cutoff=0.8
+    resources: tmpdir=/tmp
+
+
+[Thu Sep  5 03:51:38 2024]
+rule coloc_summary:
+    input: csMR-EXAMPLE/COLOC/coloc.Crohn_ebi_a_GCST003044.GWAS_split.Endothelial.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Crohn_ebi_a_GCST003044.GWAS_split.Pericytes.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Crohn_ebi_a_GCST003044.GWAS_split.OPCs.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Crohn_ebi_a_GCST003044.GWAS_split.Microglia.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Crohn_ebi_a_GCST003044.GWAS_split.Inhibitory_neurons.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Crohn_ebi_a_GCST003044.GWAS_split.Oligodendrocytes.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Crohn_ebi_a_GCST003044.GWAS_split.Excitatory_neurons.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Crohn_ebi_a_GCST003044.GWAS_split.Astrocytes.eQTL_split.pairs.coloc_results
+    output: csMR-EXAMPLE/COLOC/Susie_coloc.Crohn_ebi_a_GCST003044.results.coverage.0.9.PPH4.0.8
+    jobid: 4
+    reason: Missing output files: csMR-EXAMPLE/COLOC/Susie_coloc.Crohn_ebi_a_GCST003044.results.coverage.0.9.PPH4.0.8; Input files updated by another job: csMR-EXAMPLE/COLOC/coloc.Crohn_ebi_a_GCST003044.GWAS_split.OPCs.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Crohn_ebi_a_GCST003044.GWAS_split.Endothelial.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Crohn_ebi_a_GCST003044.GWAS_split.Pericytes.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Crohn_ebi_a_GCST003044.GWAS_split.Excitatory_neurons.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Crohn_ebi_a_GCST003044.GWAS_split.Astrocytes.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Crohn_ebi_a_GCST003044.GWAS_split.Oligodendrocytes.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Crohn_ebi_a_GCST003044.GWAS_split.Microglia.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Crohn_ebi_a_GCST003044.GWAS_split.Inhibitory_neurons.eQTL_split.pairs.coloc_results
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Crohn_ebi_a_GCST003044, coverage=0.9, coloc_cutoff=0.8
+    resources: tmpdir=/tmp
+
+[Thu Sep  5 03:51:38 2024]
+Finished job 4.
+42 of 312 steps (13%) done
+Select jobs to execute...
+
+[Thu Sep  5 03:51:38 2024]
+rule snp_filter:
+    input: csMR-EXAMPLE/COLOC/Susie_coloc.Crohn_ebi_a_GCST003044.results.coverage.0.9.PPH4.0.8
+    output: csMR-EXAMPLE/MR/Susie_coloc.Crohn_ebi_a_GCST003044.results.coverage.0.9.PPH4.0.8.cells
+    jobid: 3
+    reason: Missing output files: csMR-EXAMPLE/MR/Susie_coloc.Crohn_ebi_a_GCST003044.results.coverage.0.9.PPH4.0.8.cells; Input files updated by another job: csMR-EXAMPLE/COLOC/Susie_coloc.Crohn_ebi_a_GCST003044.results.coverage.0.9.PPH4.0.8
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Crohn_ebi_a_GCST003044, coverage=0.9, coloc_cutoff=0.8
+    resources: tmpdir=/tmp
+
+[Thu Sep  5 03:51:38 2024]
+Finished job 225.
+43 of 312 steps (14%) done
+[Thu Sep  5 03:51:38 2024]
+Finished job 135.
+44 of 312 steps (14%) done
+Select jobs to execute...
+
+[Thu Sep  5 03:51:39 2024]
+rule snp_filter:
+    input: csMR-EXAMPLE/COLOC/Susie_coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.results.coverage.0.9.PPH4.0.8
+    output: csMR-EXAMPLE/MR/Susie_coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.results.coverage.0.9.PPH4.0.8.cells
+    jobid: 224
+    reason: Missing output files: csMR-EXAMPLE/MR/Susie_coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.results.coverage.0.9.PPH4.0.8.cells; Input files updated by another job: csMR-EXAMPLE/COLOC/Susie_coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.results.coverage.0.9.PPH4.0.8
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_ebi_a_GCST003045_full_exposure, coverage=0.9, coloc_cutoff=0.8
+    resources: tmpdir=/tmp
+
+
+[Thu Sep  5 03:51:39 2024]
+rule snp_filter:
+    input: csMR-EXAMPLE/COLOC/Susie_coloc.Inflammatory_bowel_disease_ebi_a_GCST003043.results.coverage.0.9.PPH4.0.8
+    output: csMR-EXAMPLE/MR/Susie_coloc.Inflammatory_bowel_disease_ebi_a_GCST003043.results.coverage.0.9.PPH4.0.8.cells
+    jobid: 134
+    reason: Missing output files: csMR-EXAMPLE/MR/Susie_coloc.Inflammatory_bowel_disease_ebi_a_GCST003043.results.coverage.0.9.PPH4.0.8.cells; Input files updated by another job: csMR-EXAMPLE/COLOC/Susie_coloc.Inflammatory_bowel_disease_ebi_a_GCST003043.results.coverage.0.9.PPH4.0.8
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Inflammatory_bowel_disease_ebi_a_GCST003043, coverage=0.9, coloc_cutoff=0.8
+    resources: tmpdir=/tmp
+
+[Thu Sep  5 03:51:39 2024]
+Finished job 3.
+45 of 312 steps (14%) done
+Select jobs to execute...
+
+[Thu Sep  5 03:51:39 2024]
+rule clump:
+    input: csMR-EXAMPLE/MR/Susie_coloc.Crohn_ebi_a_GCST003044.results.coverage.0.9.PPH4.0.8.cells
+    output: csMR-EXAMPLE/MR/clump/Susie_coloc.Crohn_ebi_a_GCST003044.results.coverage.0.9.PPH4.0.8.Microglia.clumped
+    jobid: 78
+    reason: Missing output files: csMR-EXAMPLE/MR/clump/Susie_coloc.Crohn_ebi_a_GCST003044.results.coverage.0.9.PPH4.0.8.Microglia.clumped; Input files updated by another job: csMR-EXAMPLE/MR/Susie_coloc.Crohn_ebi_a_GCST003044.results.coverage.0.9.PPH4.0.8.cells
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Crohn_ebi_a_GCST003044, coverage=0.9, coloc_cutoff=0.8, cell_type=Microglia
+    resources: tmpdir=/tmp
+
+
+[Thu Sep  5 03:51:39 2024]
+rule clump:
+    input: csMR-EXAMPLE/MR/Susie_coloc.Crohn_ebi_a_GCST003044.results.coverage.0.9.PPH4.0.8.cells
+    output: csMR-EXAMPLE/MR/clump/Susie_coloc.Crohn_ebi_a_GCST003044.results.coverage.0.9.PPH4.0.8.Astrocytes.clumped
+    jobid: 122
+    reason: Missing output files: csMR-EXAMPLE/MR/clump/Susie_coloc.Crohn_ebi_a_GCST003044.results.coverage.0.9.PPH4.0.8.Astrocytes.clumped; Input files updated by another job: csMR-EXAMPLE/MR/Susie_coloc.Crohn_ebi_a_GCST003044.results.coverage.0.9.PPH4.0.8.cells
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Crohn_ebi_a_GCST003044, coverage=0.9, coloc_cutoff=0.8, cell_type=Astrocytes
+    resources: tmpdir=/tmp
+
+
+[Thu Sep  5 03:51:39 2024]
+rule clump:
+    input: csMR-EXAMPLE/MR/Susie_coloc.Crohn_ebi_a_GCST003044.results.coverage.0.9.PPH4.0.8.cells
+    output: csMR-EXAMPLE/MR/clump/Susie_coloc.Crohn_ebi_a_GCST003044.results.coverage.0.9.PPH4.0.8.Pericytes.clumped
+    jobid: 56
+    reason: Missing output files: csMR-EXAMPLE/MR/clump/Susie_coloc.Crohn_ebi_a_GCST003044.results.coverage.0.9.PPH4.0.8.Pericytes.clumped; Input files updated by another job: csMR-EXAMPLE/MR/Susie_coloc.Crohn_ebi_a_GCST003044.results.coverage.0.9.PPH4.0.8.cells
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Crohn_ebi_a_GCST003044, coverage=0.9, coloc_cutoff=0.8, cell_type=Pericytes
+    resources: tmpdir=/tmp
+
+
+[Thu Sep  5 03:51:39 2024]
+rule clump:
+    input: csMR-EXAMPLE/MR/Susie_coloc.Crohn_ebi_a_GCST003044.results.coverage.0.9.PPH4.0.8.cells
+    output: csMR-EXAMPLE/MR/clump/Susie_coloc.Crohn_ebi_a_GCST003044.results.coverage.0.9.PPH4.0.8.Oligodendrocytes.clumped
+    jobid: 100
+    reason: Missing output files: csMR-EXAMPLE/MR/clump/Susie_coloc.Crohn_ebi_a_GCST003044.results.coverage.0.9.PPH4.0.8.Oligodendrocytes.clumped; Input files updated by another job: csMR-EXAMPLE/MR/Susie_coloc.Crohn_ebi_a_GCST003044.results.coverage.0.9.PPH4.0.8.cells
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Crohn_ebi_a_GCST003044, coverage=0.9, coloc_cutoff=0.8, cell_type=Oligodendrocytes
+    resources: tmpdir=/tmp
+
+
+[Thu Sep  5 03:51:39 2024]
+rule clump:
+    input: csMR-EXAMPLE/MR/Susie_coloc.Crohn_ebi_a_GCST003044.results.coverage.0.9.PPH4.0.8.cells
+    output: csMR-EXAMPLE/MR/clump/Susie_coloc.Crohn_ebi_a_GCST003044.results.coverage.0.9.PPH4.0.8.OPCs.clumped
+    jobid: 67
+    reason: Missing output files: csMR-EXAMPLE/MR/clump/Susie_coloc.Crohn_ebi_a_GCST003044.results.coverage.0.9.PPH4.0.8.OPCs.clumped; Input files updated by another job: csMR-EXAMPLE/MR/Susie_coloc.Crohn_ebi_a_GCST003044.results.coverage.0.9.PPH4.0.8.cells
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Crohn_ebi_a_GCST003044, coverage=0.9, coloc_cutoff=0.8, cell_type=OPCs
+    resources: tmpdir=/tmp
+
+
+[Thu Sep  5 03:51:39 2024]
+rule clump:
+    input: csMR-EXAMPLE/MR/Susie_coloc.Crohn_ebi_a_GCST003044.results.coverage.0.9.PPH4.0.8.cells
+    output: csMR-EXAMPLE/MR/clump/Susie_coloc.Crohn_ebi_a_GCST003044.results.coverage.0.9.PPH4.0.8.Excitatory_neurons.clumped
+    jobid: 111
+    reason: Missing output files: csMR-EXAMPLE/MR/clump/Susie_coloc.Crohn_ebi_a_GCST003044.results.coverage.0.9.PPH4.0.8.Excitatory_neurons.clumped; Input files updated by another job: csMR-EXAMPLE/MR/Susie_coloc.Crohn_ebi_a_GCST003044.results.coverage.0.9.PPH4.0.8.cells
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Crohn_ebi_a_GCST003044, coverage=0.9, coloc_cutoff=0.8, cell_type=Excitatory_neurons
+    resources: tmpdir=/tmp
+
+
+[Thu Sep  5 03:51:39 2024]
+rule clump:
+    input: csMR-EXAMPLE/MR/Susie_coloc.Crohn_ebi_a_GCST003044.results.coverage.0.9.PPH4.0.8.cells
+    output: csMR-EXAMPLE/MR/clump/Susie_coloc.Crohn_ebi_a_GCST003044.results.coverage.0.9.PPH4.0.8.Endothelial.clumped
+    jobid: 2
+    reason: Missing output files: csMR-EXAMPLE/MR/clump/Susie_coloc.Crohn_ebi_a_GCST003044.results.coverage.0.9.PPH4.0.8.Endothelial.clumped; Input files updated by another job: csMR-EXAMPLE/MR/Susie_coloc.Crohn_ebi_a_GCST003044.results.coverage.0.9.PPH4.0.8.cells
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Crohn_ebi_a_GCST003044, coverage=0.9, coloc_cutoff=0.8, cell_type=Endothelial
+    resources: tmpdir=/tmp
+
+
+[Thu Sep  5 03:51:39 2024]
+rule clump:
+    input: csMR-EXAMPLE/MR/Susie_coloc.Crohn_ebi_a_GCST003044.results.coverage.0.9.PPH4.0.8.cells
+    output: csMR-EXAMPLE/MR/clump/Susie_coloc.Crohn_ebi_a_GCST003044.results.coverage.0.9.PPH4.0.8.Inhibitory_neurons.clumped
+    jobid: 89
+    reason: Missing output files: csMR-EXAMPLE/MR/clump/Susie_coloc.Crohn_ebi_a_GCST003044.results.coverage.0.9.PPH4.0.8.Inhibitory_neurons.clumped; Input files updated by another job: csMR-EXAMPLE/MR/Susie_coloc.Crohn_ebi_a_GCST003044.results.coverage.0.9.PPH4.0.8.cells
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Crohn_ebi_a_GCST003044, coverage=0.9, coloc_cutoff=0.8, cell_type=Inhibitory_neurons
+    resources: tmpdir=/tmp
+
+[Thu Sep  5 03:51:39 2024]
+Finished job 224.
+46 of 312 steps (15%) done
+[Thu Sep  5 03:51:39 2024]
+Finished job 134.
+47 of 312 steps (15%) done
+Select jobs to execute...
+
+[Thu Sep  5 03:51:40 2024]
+rule clump:
+    input: csMR-EXAMPLE/MR/Susie_coloc.Inflammatory_bowel_disease_ebi_a_GCST003043.results.coverage.0.9.PPH4.0.8.cells
+    output: csMR-EXAMPLE/MR/clump/Susie_coloc.Inflammatory_bowel_disease_ebi_a_GCST003043.results.coverage.0.9.PPH4.0.8.Endothelial.clumped
+    jobid: 133
+    reason: Missing output files: csMR-EXAMPLE/MR/clump/Susie_coloc.Inflammatory_bowel_disease_ebi_a_GCST003043.results.coverage.0.9.PPH4.0.8.Endothelial.clumped; Input files updated by another job: csMR-EXAMPLE/MR/Susie_coloc.Inflammatory_bowel_disease_ebi_a_GCST003043.results.coverage.0.9.PPH4.0.8.cells
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Inflammatory_bowel_disease_ebi_a_GCST003043, coverage=0.9, coloc_cutoff=0.8, cell_type=Endothelial
+    resources: tmpdir=/tmp
+
+
+[Thu Sep  5 03:51:40 2024]
+rule clump:
+    input: csMR-EXAMPLE/MR/Susie_coloc.Inflammatory_bowel_disease_ebi_a_GCST003043.results.coverage.0.9.PPH4.0.8.cells
+    output: csMR-EXAMPLE/MR/clump/Susie_coloc.Inflammatory_bowel_disease_ebi_a_GCST003043.results.coverage.0.9.PPH4.0.8.Pericytes.clumped
+    jobid: 146
+    reason: Missing output files: csMR-EXAMPLE/MR/clump/Susie_coloc.Inflammatory_bowel_disease_ebi_a_GCST003043.results.coverage.0.9.PPH4.0.8.Pericytes.clumped; Input files updated by another job: csMR-EXAMPLE/MR/Susie_coloc.Inflammatory_bowel_disease_ebi_a_GCST003043.results.coverage.0.9.PPH4.0.8.cells
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Inflammatory_bowel_disease_ebi_a_GCST003043, coverage=0.9, coloc_cutoff=0.8, cell_type=Pericytes
+    resources: tmpdir=/tmp
+
+
+[Thu Sep  5 03:51:40 2024]
+rule clump:
+    input: csMR-EXAMPLE/MR/Susie_coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.results.coverage.0.9.PPH4.0.8.cells
+    output: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.results.coverage.0.9.PPH4.0.8.Pericytes.clumped
+    jobid: 236
+    reason: Missing output files: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.results.coverage.0.9.PPH4.0.8.Pericytes.clumped; Input files updated by another job: csMR-EXAMPLE/MR/Susie_coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.results.coverage.0.9.PPH4.0.8.cells
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_ebi_a_GCST003045_full_exposure, coverage=0.9, coloc_cutoff=0.8, cell_type=Pericytes
+    resources: tmpdir=/tmp
+
+
+[Thu Sep  5 03:51:40 2024]
+rule clump:
+    input: csMR-EXAMPLE/MR/Susie_coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.results.coverage.0.9.PPH4.0.8.cells
+    output: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.results.coverage.0.9.PPH4.0.8.Astrocytes.clumped
+    jobid: 302
+    reason: Missing output files: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.results.coverage.0.9.PPH4.0.8.Astrocytes.clumped; Input files updated by another job: csMR-EXAMPLE/MR/Susie_coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.results.coverage.0.9.PPH4.0.8.cells
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_ebi_a_GCST003045_full_exposure, coverage=0.9, coloc_cutoff=0.8, cell_type=Astrocytes
+    resources: tmpdir=/tmp
+
+
+[Thu Sep  5 03:51:40 2024]
+rule clump:
+    input: csMR-EXAMPLE/MR/Susie_coloc.Inflammatory_bowel_disease_ebi_a_GCST003043.results.coverage.0.9.PPH4.0.8.cells
+    output: csMR-EXAMPLE/MR/clump/Susie_coloc.Inflammatory_bowel_disease_ebi_a_GCST003043.results.coverage.0.9.PPH4.0.8.Oligodendrocytes.clumped
+    jobid: 190
+    reason: Missing output files: csMR-EXAMPLE/MR/clump/Susie_coloc.Inflammatory_bowel_disease_ebi_a_GCST003043.results.coverage.0.9.PPH4.0.8.Oligodendrocytes.clumped; Input files updated by another job: csMR-EXAMPLE/MR/Susie_coloc.Inflammatory_bowel_disease_ebi_a_GCST003043.results.coverage.0.9.PPH4.0.8.cells
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Inflammatory_bowel_disease_ebi_a_GCST003043, coverage=0.9, coloc_cutoff=0.8, cell_type=Oligodendrocytes
+    resources: tmpdir=/tmp
+
+
+[Thu Sep  5 03:51:40 2024]
+rule clump:
+    input: csMR-EXAMPLE/MR/Susie_coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.results.coverage.0.9.PPH4.0.8.cells
+    output: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.results.coverage.0.9.PPH4.0.8.Microglia.clumped
+    jobid: 258
+    reason: Missing output files: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.results.coverage.0.9.PPH4.0.8.Microglia.clumped; Input files updated by another job: csMR-EXAMPLE/MR/Susie_coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.results.coverage.0.9.PPH4.0.8.cells
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_ebi_a_GCST003045_full_exposure, coverage=0.9, coloc_cutoff=0.8, cell_type=Microglia
+    resources: tmpdir=/tmp
+
+
+[Thu Sep  5 03:51:40 2024]
+rule clump:
+    input: csMR-EXAMPLE/MR/Susie_coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.results.coverage.0.9.PPH4.0.8.cells
+    output: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.results.coverage.0.9.PPH4.0.8.Oligodendrocytes.clumped
+    jobid: 280
+    reason: Missing output files: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.results.coverage.0.9.PPH4.0.8.Oligodendrocytes.clumped; Input files updated by another job: csMR-EXAMPLE/MR/Susie_coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.results.coverage.0.9.PPH4.0.8.cells
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_ebi_a_GCST003045_full_exposure, coverage=0.9, coloc_cutoff=0.8, cell_type=Oligodendrocytes
+    resources: tmpdir=/tmp
+
+
+[Thu Sep  5 03:51:40 2024]
+rule clump:
+    input: csMR-EXAMPLE/MR/Susie_coloc.Inflammatory_bowel_disease_ebi_a_GCST003043.results.coverage.0.9.PPH4.0.8.cells
+    output: csMR-EXAMPLE/MR/clump/Susie_coloc.Inflammatory_bowel_disease_ebi_a_GCST003043.results.coverage.0.9.PPH4.0.8.Microglia.clumped
+    jobid: 168
+    reason: Missing output files: csMR-EXAMPLE/MR/clump/Susie_coloc.Inflammatory_bowel_disease_ebi_a_GCST003043.results.coverage.0.9.PPH4.0.8.Microglia.clumped; Input files updated by another job: csMR-EXAMPLE/MR/Susie_coloc.Inflammatory_bowel_disease_ebi_a_GCST003043.results.coverage.0.9.PPH4.0.8.cells
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Inflammatory_bowel_disease_ebi_a_GCST003043, coverage=0.9, coloc_cutoff=0.8, cell_type=Microglia
+    resources: tmpdir=/tmp
+
+
+[Thu Sep  5 03:51:40 2024]
+rule clump:
+    input: csMR-EXAMPLE/MR/Susie_coloc.Inflammatory_bowel_disease_ebi_a_GCST003043.results.coverage.0.9.PPH4.0.8.cells
+    output: csMR-EXAMPLE/MR/clump/Susie_coloc.Inflammatory_bowel_disease_ebi_a_GCST003043.results.coverage.0.9.PPH4.0.8.Astrocytes.clumped
+    jobid: 212
+    reason: Missing output files: csMR-EXAMPLE/MR/clump/Susie_coloc.Inflammatory_bowel_disease_ebi_a_GCST003043.results.coverage.0.9.PPH4.0.8.Astrocytes.clumped; Input files updated by another job: csMR-EXAMPLE/MR/Susie_coloc.Inflammatory_bowel_disease_ebi_a_GCST003043.results.coverage.0.9.PPH4.0.8.cells
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Inflammatory_bowel_disease_ebi_a_GCST003043, coverage=0.9, coloc_cutoff=0.8, cell_type=Astrocytes
+    resources: tmpdir=/tmp
+
+
+[Thu Sep  5 03:51:40 2024]
+rule clump:
+    input: csMR-EXAMPLE/MR/Susie_coloc.Inflammatory_bowel_disease_ebi_a_GCST003043.results.coverage.0.9.PPH4.0.8.cells
+    output: csMR-EXAMPLE/MR/clump/Susie_coloc.Inflammatory_bowel_disease_ebi_a_GCST003043.results.coverage.0.9.PPH4.0.8.Inhibitory_neurons.clumped
+    jobid: 179
+    reason: Missing output files: csMR-EXAMPLE/MR/clump/Susie_coloc.Inflammatory_bowel_disease_ebi_a_GCST003043.results.coverage.0.9.PPH4.0.8.Inhibitory_neurons.clumped; Input files updated by another job: csMR-EXAMPLE/MR/Susie_coloc.Inflammatory_bowel_disease_ebi_a_GCST003043.results.coverage.0.9.PPH4.0.8.cells
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Inflammatory_bowel_disease_ebi_a_GCST003043, coverage=0.9, coloc_cutoff=0.8, cell_type=Inhibitory_neurons
+    resources: tmpdir=/tmp
+
+
+[Thu Sep  5 03:51:40 2024]
+rule clump:
+    input: csMR-EXAMPLE/MR/Susie_coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.results.coverage.0.9.PPH4.0.8.cells
+    output: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.results.coverage.0.9.PPH4.0.8.Excitatory_neurons.clumped
+    jobid: 291
+    reason: Missing output files: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.results.coverage.0.9.PPH4.0.8.Excitatory_neurons.clumped; Input files updated by another job: csMR-EXAMPLE/MR/Susie_coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.results.coverage.0.9.PPH4.0.8.cells
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_ebi_a_GCST003045_full_exposure, coverage=0.9, coloc_cutoff=0.8, cell_type=Excitatory_neurons
+    resources: tmpdir=/tmp
+
+
+[Thu Sep  5 03:51:40 2024]
+rule clump:
+    input: csMR-EXAMPLE/MR/Susie_coloc.Inflammatory_bowel_disease_ebi_a_GCST003043.results.coverage.0.9.PPH4.0.8.cells
+    output: csMR-EXAMPLE/MR/clump/Susie_coloc.Inflammatory_bowel_disease_ebi_a_GCST003043.results.coverage.0.9.PPH4.0.8.Excitatory_neurons.clumped
+    jobid: 201
+    reason: Missing output files: csMR-EXAMPLE/MR/clump/Susie_coloc.Inflammatory_bowel_disease_ebi_a_GCST003043.results.coverage.0.9.PPH4.0.8.Excitatory_neurons.clumped; Input files updated by another job: csMR-EXAMPLE/MR/Susie_coloc.Inflammatory_bowel_disease_ebi_a_GCST003043.results.coverage.0.9.PPH4.0.8.cells
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Inflammatory_bowel_disease_ebi_a_GCST003043, coverage=0.9, coloc_cutoff=0.8, cell_type=Excitatory_neurons
+    resources: tmpdir=/tmp
+
+
+[Thu Sep  5 03:51:40 2024]
+rule clump:
+    input: csMR-EXAMPLE/MR/Susie_coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.results.coverage.0.9.PPH4.0.8.cells
+    output: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.results.coverage.0.9.PPH4.0.8.Inhibitory_neurons.clumped
+    jobid: 269
+    reason: Missing output files: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.results.coverage.0.9.PPH4.0.8.Inhibitory_neurons.clumped; Input files updated by another job: csMR-EXAMPLE/MR/Susie_coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.results.coverage.0.9.PPH4.0.8.cells
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_ebi_a_GCST003045_full_exposure, coverage=0.9, coloc_cutoff=0.8, cell_type=Inhibitory_neurons
+    resources: tmpdir=/tmp
+
+
+[Thu Sep  5 03:51:40 2024]
+rule clump:
+    input: csMR-EXAMPLE/MR/Susie_coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.results.coverage.0.9.PPH4.0.8.cells
+    output: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.results.coverage.0.9.PPH4.0.8.Endothelial.clumped
+    jobid: 223
+    reason: Missing output files: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.results.coverage.0.9.PPH4.0.8.Endothelial.clumped; Input files updated by another job: csMR-EXAMPLE/MR/Susie_coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.results.coverage.0.9.PPH4.0.8.cells
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_ebi_a_GCST003045_full_exposure, coverage=0.9, coloc_cutoff=0.8, cell_type=Endothelial
+    resources: tmpdir=/tmp
+
+
+[Thu Sep  5 03:51:40 2024]
+rule clump:
+    input: csMR-EXAMPLE/MR/Susie_coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.results.coverage.0.9.PPH4.0.8.cells
+    output: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.results.coverage.0.9.PPH4.0.8.OPCs.clumped
+    jobid: 247
+    reason: Missing output files: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.results.coverage.0.9.PPH4.0.8.OPCs.clumped; Input files updated by another job: csMR-EXAMPLE/MR/Susie_coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.results.coverage.0.9.PPH4.0.8.cells
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_ebi_a_GCST003045_full_exposure, coverage=0.9, coloc_cutoff=0.8, cell_type=OPCs
+    resources: tmpdir=/tmp
+
+
+[Thu Sep  5 03:51:40 2024]
+rule clump:
+    input: csMR-EXAMPLE/MR/Susie_coloc.Inflammatory_bowel_disease_ebi_a_GCST003043.results.coverage.0.9.PPH4.0.8.cells
+    output: csMR-EXAMPLE/MR/clump/Susie_coloc.Inflammatory_bowel_disease_ebi_a_GCST003043.results.coverage.0.9.PPH4.0.8.OPCs.clumped
+    jobid: 157
+    reason: Missing output files: csMR-EXAMPLE/MR/clump/Susie_coloc.Inflammatory_bowel_disease_ebi_a_GCST003043.results.coverage.0.9.PPH4.0.8.OPCs.clumped; Input files updated by another job: csMR-EXAMPLE/MR/Susie_coloc.Inflammatory_bowel_disease_ebi_a_GCST003043.results.coverage.0.9.PPH4.0.8.cells
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Inflammatory_bowel_disease_ebi_a_GCST003043, coverage=0.9, coloc_cutoff=0.8, cell_type=OPCs
+    resources: tmpdir=/tmp
+
+[Thu Sep  5 03:51:40 2024]
+Finished job 236.
+48 of 312 steps (15%) done
+Select jobs to execute...
+
+[Thu Sep  5 03:51:40 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.results.coverage.0.9.PPH4.0.8.Pericytes.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-AmygNuclei_lh_volume_Paralaminar-nucleus_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.AmygNuclei_lh_volume_Paralaminar-nucleus_full_outcome.Pericytes.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-AmygNuclei_lh_volume_Paralaminar-nucleus_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.AmygNuclei_lh_volume_Paralaminar-nucleus_full_outcome.Pericytes.MR.sensitivity
+    jobid: 235
+    reason: Missing output files: csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-AmygNuclei_lh_volume_Paralaminar-nucleus_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.AmygNuclei_lh_volume_Paralaminar-nucleus_full_outcome.Pericytes.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-AmygNuclei_lh_volume_Paralaminar-nucleus_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.AmygNuclei_lh_volume_Paralaminar-nucleus_full_outcome.Pericytes.MR.sensitivity; Input files updated by another job: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.results.coverage.0.9.PPH4.0.8.Pericytes.clumped
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_ebi_a_GCST003045_full_exposure, outcome=AmygNuclei_lh_volume_Paralaminar-nucleus_full_outcome, cell_type=Pericytes
+    resources: tmpdir=/tmp
+
+
+[Thu Sep  5 03:51:40 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.results.coverage.0.9.PPH4.0.8.Pericytes.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-AmygNuclei_lh_volume_Accessory-Basal-nucleus_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.AmygNuclei_lh_volume_Accessory-Basal-nucleus_full_outcome.Pericytes.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-AmygNuclei_lh_volume_Accessory-Basal-nucleus_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.AmygNuclei_lh_volume_Accessory-Basal-nucleus_full_outcome.Pericytes.MR.sensitivity
+    jobid: 244
+    reason: Missing output files: csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-AmygNuclei_lh_volume_Accessory-Basal-nucleus_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.AmygNuclei_lh_volume_Accessory-Basal-nucleus_full_outcome.Pericytes.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-AmygNuclei_lh_volume_Accessory-Basal-nucleus_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.AmygNuclei_lh_volume_Accessory-Basal-nucleus_full_outcome.Pericytes.MR.sensitivity; Input files updated by another job: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.results.coverage.0.9.PPH4.0.8.Pericytes.clumped
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_ebi_a_GCST003045_full_exposure, outcome=AmygNuclei_lh_volume_Accessory-Basal-nucleus_full_outcome, cell_type=Pericytes
+    resources: tmpdir=/tmp
+
+
+[Thu Sep  5 03:51:40 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.results.coverage.0.9.PPH4.0.8.Pericytes.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-AmygNuclei_lh_volume_Whole-amygdala_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.AmygNuclei_lh_volume_Whole-amygdala_full_outcome.Pericytes.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-AmygNuclei_lh_volume_Whole-amygdala_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.AmygNuclei_lh_volume_Whole-amygdala_full_outcome.Pericytes.MR.sensitivity
+    jobid: 238
+    reason: Missing output files: csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-AmygNuclei_lh_volume_Whole-amygdala_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.AmygNuclei_lh_volume_Whole-amygdala_full_outcome.Pericytes.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-AmygNuclei_lh_volume_Whole-amygdala_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.AmygNuclei_lh_volume_Whole-amygdala_full_outcome.Pericytes.MR.sensitivity; Input files updated by another job: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.results.coverage.0.9.PPH4.0.8.Pericytes.clumped
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_ebi_a_GCST003045_full_exposure, outcome=AmygNuclei_lh_volume_Whole-amygdala_full_outcome, cell_type=Pericytes
+    resources: tmpdir=/tmp
+
+
+[Thu Sep  5 03:51:40 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.results.coverage.0.9.PPH4.0.8.Pericytes.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-AmygNuclei_lh_volume_Basal-nucleus_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.AmygNuclei_lh_volume_Basal-nucleus_full_outcome.Pericytes.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-AmygNuclei_lh_volume_Basal-nucleus_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.AmygNuclei_lh_volume_Basal-nucleus_full_outcome.Pericytes.MR.sensitivity
+    jobid: 240
+    reason: Missing output files: csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-AmygNuclei_lh_volume_Basal-nucleus_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.AmygNuclei_lh_volume_Basal-nucleus_full_outcome.Pericytes.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-AmygNuclei_lh_volume_Basal-nucleus_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.AmygNuclei_lh_volume_Basal-nucleus_full_outcome.Pericytes.MR.sensitivity; Input files updated by another job: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.results.coverage.0.9.PPH4.0.8.Pericytes.clumped
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_ebi_a_GCST003045_full_exposure, outcome=AmygNuclei_lh_volume_Basal-nucleus_full_outcome, cell_type=Pericytes
+    resources: tmpdir=/tmp
+
+
+[Thu Sep  5 03:51:40 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.results.coverage.0.9.PPH4.0.8.Pericytes.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-AmygNuclei_lh_volume_Corticoamygdaloid-transitio_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.AmygNuclei_lh_volume_Corticoamygdaloid-transitio_full_outcome.Pericytes.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-AmygNuclei_lh_volume_Corticoamygdaloid-transitio_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.AmygNuclei_lh_volume_Corticoamygdaloid-transitio_full_outcome.Pericytes.MR.sensitivity
+    jobid: 242
+    reason: Missing output files: csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-AmygNuclei_lh_volume_Corticoamygdaloid-transitio_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.AmygNuclei_lh_volume_Corticoamygdaloid-transitio_full_outcome.Pericytes.MR.sensitivity, csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-AmygNuclei_lh_volume_Corticoamygdaloid-transitio_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.AmygNuclei_lh_volume_Corticoamygdaloid-transitio_full_outcome.Pericytes.MR.res; Input files updated by another job: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.results.coverage.0.9.PPH4.0.8.Pericytes.clumped
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_ebi_a_GCST003045_full_exposure, outcome=AmygNuclei_lh_volume_Corticoamygdaloid-transitio_full_outcome, cell_type=Pericytes
+    resources: tmpdir=/tmp
+
+
+[Thu Sep  5 03:51:40 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.results.coverage.0.9.PPH4.0.8.Pericytes.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-AmygNuclei_lh_volume_Anterior-amygdaloid-area-AAA_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.AmygNuclei_lh_volume_Anterior-amygdaloid-area-AAA_full_outcome.Pericytes.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-AmygNuclei_lh_volume_Anterior-amygdaloid-area-AAA_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.AmygNuclei_lh_volume_Anterior-amygdaloid-area-AAA_full_outcome.Pericytes.MR.sensitivity
+    jobid: 237
+    reason: Missing output files: csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-AmygNuclei_lh_volume_Anterior-amygdaloid-area-AAA_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.AmygNuclei_lh_volume_Anterior-amygdaloid-area-AAA_full_outcome.Pericytes.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-AmygNuclei_lh_volume_Anterior-amygdaloid-area-AAA_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.AmygNuclei_lh_volume_Anterior-amygdaloid-area-AAA_full_outcome.Pericytes.MR.sensitivity; Input files updated by another job: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.results.coverage.0.9.PPH4.0.8.Pericytes.clumped
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_ebi_a_GCST003045_full_exposure, outcome=AmygNuclei_lh_volume_Anterior-amygdaloid-area-AAA_full_outcome, cell_type=Pericytes
+    resources: tmpdir=/tmp
+
+
+[Thu Sep  5 03:51:40 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.results.coverage.0.9.PPH4.0.8.Pericytes.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-AmygNuclei_lh_volume_Cortical-nucleus_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.AmygNuclei_lh_volume_Cortical-nucleus_full_outcome.Pericytes.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-AmygNuclei_lh_volume_Cortical-nucleus_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.AmygNuclei_lh_volume_Cortical-nucleus_full_outcome.Pericytes.MR.sensitivity
+    jobid: 243
+    reason: Missing output files: csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-AmygNuclei_lh_volume_Cortical-nucleus_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.AmygNuclei_lh_volume_Cortical-nucleus_full_outcome.Pericytes.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-AmygNuclei_lh_volume_Cortical-nucleus_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.AmygNuclei_lh_volume_Cortical-nucleus_full_outcome.Pericytes.MR.sensitivity; Input files updated by another job: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.results.coverage.0.9.PPH4.0.8.Pericytes.clumped
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_ebi_a_GCST003045_full_exposure, outcome=AmygNuclei_lh_volume_Cortical-nucleus_full_outcome, cell_type=Pericytes
+    resources: tmpdir=/tmp
+
+
+[Thu Sep  5 03:51:40 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.results.coverage.0.9.PPH4.0.8.Pericytes.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-AmygNuclei_lh_volume_Medial-nucleus_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.AmygNuclei_lh_volume_Medial-nucleus_full_outcome.Pericytes.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-AmygNuclei_lh_volume_Medial-nucleus_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.AmygNuclei_lh_volume_Medial-nucleus_full_outcome.Pericytes.MR.sensitivity
+    jobid: 245
+    reason: Missing output files: csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-AmygNuclei_lh_volume_Medial-nucleus_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.AmygNuclei_lh_volume_Medial-nucleus_full_outcome.Pericytes.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-AmygNuclei_lh_volume_Medial-nucleus_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.AmygNuclei_lh_volume_Medial-nucleus_full_outcome.Pericytes.MR.sensitivity; Input files updated by another job: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.results.coverage.0.9.PPH4.0.8.Pericytes.clumped
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_ebi_a_GCST003045_full_exposure, outcome=AmygNuclei_lh_volume_Medial-nucleus_full_outcome, cell_type=Pericytes
+    resources: tmpdir=/tmp
+
+
+[Thu Sep  5 03:51:40 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.results.coverage.0.9.PPH4.0.8.Pericytes.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-AmygNuclei_lh_volume_Central-nucleus_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.AmygNuclei_lh_volume_Central-nucleus_full_outcome.Pericytes.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-AmygNuclei_lh_volume_Central-nucleus_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.AmygNuclei_lh_volume_Central-nucleus_full_outcome.Pericytes.MR.sensitivity
+    jobid: 239
+    reason: Missing output files: csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-AmygNuclei_lh_volume_Central-nucleus_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.AmygNuclei_lh_volume_Central-nucleus_full_outcome.Pericytes.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-AmygNuclei_lh_volume_Central-nucleus_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.AmygNuclei_lh_volume_Central-nucleus_full_outcome.Pericytes.MR.sensitivity; Input files updated by another job: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.results.coverage.0.9.PPH4.0.8.Pericytes.clumped
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_ebi_a_GCST003045_full_exposure, outcome=AmygNuclei_lh_volume_Central-nucleus_full_outcome, cell_type=Pericytes
+    resources: tmpdir=/tmp
+
+
+[Thu Sep  5 03:51:40 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.results.coverage.0.9.PPH4.0.8.Pericytes.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-AmygNuclei_lh_volume_Lateral-nucleus_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.AmygNuclei_lh_volume_Lateral-nucleus_full_outcome.Pericytes.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-AmygNuclei_lh_volume_Lateral-nucleus_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.AmygNuclei_lh_volume_Lateral-nucleus_full_outcome.Pericytes.MR.sensitivity
+    jobid: 241
+    reason: Missing output files: csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-AmygNuclei_lh_volume_Lateral-nucleus_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.AmygNuclei_lh_volume_Lateral-nucleus_full_outcome.Pericytes.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-AmygNuclei_lh_volume_Lateral-nucleus_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.AmygNuclei_lh_volume_Lateral-nucleus_full_outcome.Pericytes.MR.sensitivity; Input files updated by another job: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.results.coverage.0.9.PPH4.0.8.Pericytes.clumped
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_ebi_a_GCST003045_full_exposure, outcome=AmygNuclei_lh_volume_Lateral-nucleus_full_outcome, cell_type=Pericytes
+    resources: tmpdir=/tmp
+
+[Thu Sep  5 03:51:41 2024]
+Finished job 146.
+49 of 312 steps (16%) done
+[Thu Sep  5 03:51:41 2024]
+Finished job 223.
+50 of 312 steps (16%) done
+Select jobs to execute...
+
+[Thu Sep  5 03:51:41 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.results.coverage.0.9.PPH4.0.8.Endothelial.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-AmygNuclei_lh_volume_Central-nucleus_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.AmygNuclei_lh_volume_Central-nucleus_full_outcome.Endothelial.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-AmygNuclei_lh_volume_Central-nucleus_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.AmygNuclei_lh_volume_Central-nucleus_full_outcome.Endothelial.MR.sensitivity
+    jobid: 228
+    reason: Missing output files: csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-AmygNuclei_lh_volume_Central-nucleus_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.AmygNuclei_lh_volume_Central-nucleus_full_outcome.Endothelial.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-AmygNuclei_lh_volume_Central-nucleus_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.AmygNuclei_lh_volume_Central-nucleus_full_outcome.Endothelial.MR.sensitivity; Input files updated by another job: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.results.coverage.0.9.PPH4.0.8.Endothelial.clumped
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_ebi_a_GCST003045_full_exposure, outcome=AmygNuclei_lh_volume_Central-nucleus_full_outcome, cell_type=Endothelial
+    resources: tmpdir=/tmp
+
+
+[Thu Sep  5 03:51:41 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.results.coverage.0.9.PPH4.0.8.Endothelial.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-AmygNuclei_lh_volume_Anterior-amygdaloid-area-AAA_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.AmygNuclei_lh_volume_Anterior-amygdaloid-area-AAA_full_outcome.Endothelial.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-AmygNuclei_lh_volume_Anterior-amygdaloid-area-AAA_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.AmygNuclei_lh_volume_Anterior-amygdaloid-area-AAA_full_outcome.Endothelial.MR.sensitivity
+    jobid: 226
+    reason: Missing output files: csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-AmygNuclei_lh_volume_Anterior-amygdaloid-area-AAA_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.AmygNuclei_lh_volume_Anterior-amygdaloid-area-AAA_full_outcome.Endothelial.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-AmygNuclei_lh_volume_Anterior-amygdaloid-area-AAA_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.AmygNuclei_lh_volume_Anterior-amygdaloid-area-AAA_full_outcome.Endothelial.MR.sensitivity; Input files updated by another job: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.results.coverage.0.9.PPH4.0.8.Endothelial.clumped
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_ebi_a_GCST003045_full_exposure, outcome=AmygNuclei_lh_volume_Anterior-amygdaloid-area-AAA_full_outcome, cell_type=Endothelial
+    resources: tmpdir=/tmp
+
+
+[Thu Sep  5 03:51:41 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.results.coverage.0.9.PPH4.0.8.Endothelial.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-AmygNuclei_lh_volume_Cortical-nucleus_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.AmygNuclei_lh_volume_Cortical-nucleus_full_outcome.Endothelial.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-AmygNuclei_lh_volume_Cortical-nucleus_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.AmygNuclei_lh_volume_Cortical-nucleus_full_outcome.Endothelial.MR.sensitivity
+    jobid: 232
+    reason: Missing output files: csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-AmygNuclei_lh_volume_Cortical-nucleus_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.AmygNuclei_lh_volume_Cortical-nucleus_full_outcome.Endothelial.MR.sensitivity, csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-AmygNuclei_lh_volume_Cortical-nucleus_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.AmygNuclei_lh_volume_Cortical-nucleus_full_outcome.Endothelial.MR.res; Input files updated by another job: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.results.coverage.0.9.PPH4.0.8.Endothelial.clumped
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_ebi_a_GCST003045_full_exposure, outcome=AmygNuclei_lh_volume_Cortical-nucleus_full_outcome, cell_type=Endothelial
+    resources: tmpdir=/tmp
+
+
+[Thu Sep  5 03:51:41 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Inflammatory_bowel_disease_ebi_a_GCST003043.results.coverage.0.9.PPH4.0.8.Pericytes.clumped
+    output: csMR-EXAMPLE/MR/Inflammatory_bowel_disease_ebi_a_GCST003043-AmygNuclei_lh_volume_Accessory-Basal-nucleus_full_outcome/Inflammatory_bowel_disease_ebi_a_GCST003043.AmygNuclei_lh_volume_Accessory-Basal-nucleus_full_outcome.Pericytes.MR.res, csMR-EXAMPLE/MR/Inflammatory_bowel_disease_ebi_a_GCST003043-AmygNuclei_lh_volume_Accessory-Basal-nucleus_full_outcome/Inflammatory_bowel_disease_ebi_a_GCST003043.AmygNuclei_lh_volume_Accessory-Basal-nucleus_full_outcome.Pericytes.MR.sensitivity
+    jobid: 154
+    reason: Missing output files: csMR-EXAMPLE/MR/Inflammatory_bowel_disease_ebi_a_GCST003043-AmygNuclei_lh_volume_Accessory-Basal-nucleus_full_outcome/Inflammatory_bowel_disease_ebi_a_GCST003043.AmygNuclei_lh_volume_Accessory-Basal-nucleus_full_outcome.Pericytes.MR.res, csMR-EXAMPLE/MR/Inflammatory_bowel_disease_ebi_a_GCST003043-AmygNuclei_lh_volume_Accessory-Basal-nucleus_full_outcome/Inflammatory_bowel_disease_ebi_a_GCST003043.AmygNuclei_lh_volume_Accessory-Basal-nucleus_full_outcome.Pericytes.MR.sensitivity; Input files updated by another job: csMR-EXAMPLE/MR/clump/Susie_coloc.Inflammatory_bowel_disease_ebi_a_GCST003043.results.coverage.0.9.PPH4.0.8.Pericytes.clumped
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Inflammatory_bowel_disease_ebi_a_GCST003043, outcome=AmygNuclei_lh_volume_Accessory-Basal-nucleus_full_outcome, cell_type=Pericytes
+    resources: tmpdir=/tmp
+
+
+[Thu Sep  5 03:51:41 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Inflammatory_bowel_disease_ebi_a_GCST003043.results.coverage.0.9.PPH4.0.8.Pericytes.clumped
+    output: csMR-EXAMPLE/MR/Inflammatory_bowel_disease_ebi_a_GCST003043-AmygNuclei_lh_volume_Anterior-amygdaloid-area-AAA_full_outcome/Inflammatory_bowel_disease_ebi_a_GCST003043.AmygNuclei_lh_volume_Anterior-amygdaloid-area-AAA_full_outcome.Pericytes.MR.res, csMR-EXAMPLE/MR/Inflammatory_bowel_disease_ebi_a_GCST003043-AmygNuclei_lh_volume_Anterior-amygdaloid-area-AAA_full_outcome/Inflammatory_bowel_disease_ebi_a_GCST003043.AmygNuclei_lh_volume_Anterior-amygdaloid-area-AAA_full_outcome.Pericytes.MR.sensitivity
+    jobid: 147
+    reason: Missing output files: csMR-EXAMPLE/MR/Inflammatory_bowel_disease_ebi_a_GCST003043-AmygNuclei_lh_volume_Anterior-amygdaloid-area-AAA_full_outcome/Inflammatory_bowel_disease_ebi_a_GCST003043.AmygNuclei_lh_volume_Anterior-amygdaloid-area-AAA_full_outcome.Pericytes.MR.res, csMR-EXAMPLE/MR/Inflammatory_bowel_disease_ebi_a_GCST003043-AmygNuclei_lh_volume_Anterior-amygdaloid-area-AAA_full_outcome/Inflammatory_bowel_disease_ebi_a_GCST003043.AmygNuclei_lh_volume_Anterior-amygdaloid-area-AAA_full_outcome.Pericytes.MR.sensitivity; Input files updated by another job: csMR-EXAMPLE/MR/clump/Susie_coloc.Inflammatory_bowel_disease_ebi_a_GCST003043.results.coverage.0.9.PPH4.0.8.Pericytes.clumped
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Inflammatory_bowel_disease_ebi_a_GCST003043, outcome=AmygNuclei_lh_volume_Anterior-amygdaloid-area-AAA_full_outcome, cell_type=Pericytes
+    resources: tmpdir=/tmp
+
+
+[Thu Sep  5 03:51:41 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.results.coverage.0.9.PPH4.0.8.Endothelial.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-AmygNuclei_lh_volume_Basal-nucleus_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.AmygNuclei_lh_volume_Basal-nucleus_full_outcome.Endothelial.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-AmygNuclei_lh_volume_Basal-nucleus_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.AmygNuclei_lh_volume_Basal-nucleus_full_outcome.Endothelial.MR.sensitivity
+    jobid: 229
+    reason: Missing output files: csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-AmygNuclei_lh_volume_Basal-nucleus_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.AmygNuclei_lh_volume_Basal-nucleus_full_outcome.Endothelial.MR.sensitivity, csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-AmygNuclei_lh_volume_Basal-nucleus_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.AmygNuclei_lh_volume_Basal-nucleus_full_outcome.Endothelial.MR.res; Input files updated by another job: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.results.coverage.0.9.PPH4.0.8.Endothelial.clumped
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_ebi_a_GCST003045_full_exposure, outcome=AmygNuclei_lh_volume_Basal-nucleus_full_outcome, cell_type=Endothelial
+    resources: tmpdir=/tmp
+
+
+[Thu Sep  5 03:51:41 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.results.coverage.0.9.PPH4.0.8.Endothelial.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-AmygNuclei_lh_volume_Accessory-Basal-nucleus_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.AmygNuclei_lh_volume_Accessory-Basal-nucleus_full_outcome.Endothelial.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-AmygNuclei_lh_volume_Accessory-Basal-nucleus_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.AmygNuclei_lh_volume_Accessory-Basal-nucleus_full_outcome.Endothelial.MR.sensitivity
+    jobid: 233
+    reason: Missing output files: csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-AmygNuclei_lh_volume_Accessory-Basal-nucleus_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.AmygNuclei_lh_volume_Accessory-Basal-nucleus_full_outcome.Endothelial.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-AmygNuclei_lh_volume_Accessory-Basal-nucleus_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.AmygNuclei_lh_volume_Accessory-Basal-nucleus_full_outcome.Endothelial.MR.sensitivity; Input files updated by another job: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.results.coverage.0.9.PPH4.0.8.Endothelial.clumped
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_ebi_a_GCST003045_full_exposure, outcome=AmygNuclei_lh_volume_Accessory-Basal-nucleus_full_outcome, cell_type=Endothelial
+    resources: tmpdir=/tmp
+
+
+[Thu Sep  5 03:51:41 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Inflammatory_bowel_disease_ebi_a_GCST003043.results.coverage.0.9.PPH4.0.8.Pericytes.clumped
+    output: csMR-EXAMPLE/MR/Inflammatory_bowel_disease_ebi_a_GCST003043-AmygNuclei_lh_volume_Medial-nucleus_full_outcome/Inflammatory_bowel_disease_ebi_a_GCST003043.AmygNuclei_lh_volume_Medial-nucleus_full_outcome.Pericytes.MR.res, csMR-EXAMPLE/MR/Inflammatory_bowel_disease_ebi_a_GCST003043-AmygNuclei_lh_volume_Medial-nucleus_full_outcome/Inflammatory_bowel_disease_ebi_a_GCST003043.AmygNuclei_lh_volume_Medial-nucleus_full_outcome.Pericytes.MR.sensitivity
+    jobid: 155
+    reason: Missing output files: csMR-EXAMPLE/MR/Inflammatory_bowel_disease_ebi_a_GCST003043-AmygNuclei_lh_volume_Medial-nucleus_full_outcome/Inflammatory_bowel_disease_ebi_a_GCST003043.AmygNuclei_lh_volume_Medial-nucleus_full_outcome.Pericytes.MR.sensitivity, csMR-EXAMPLE/MR/Inflammatory_bowel_disease_ebi_a_GCST003043-AmygNuclei_lh_volume_Medial-nucleus_full_outcome/Inflammatory_bowel_disease_ebi_a_GCST003043.AmygNuclei_lh_volume_Medial-nucleus_full_outcome.Pericytes.MR.res; Input files updated by another job: csMR-EXAMPLE/MR/clump/Susie_coloc.Inflammatory_bowel_disease_ebi_a_GCST003043.results.coverage.0.9.PPH4.0.8.Pericytes.clumped
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Inflammatory_bowel_disease_ebi_a_GCST003043, outcome=AmygNuclei_lh_volume_Medial-nucleus_full_outcome, cell_type=Pericytes
+    resources: tmpdir=/tmp
+
+
+[Thu Sep  5 03:51:41 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Inflammatory_bowel_disease_ebi_a_GCST003043.results.coverage.0.9.PPH4.0.8.Pericytes.clumped
+    output: csMR-EXAMPLE/MR/Inflammatory_bowel_disease_ebi_a_GCST003043-AmygNuclei_lh_volume_Whole-amygdala_full_outcome/Inflammatory_bowel_disease_ebi_a_GCST003043.AmygNuclei_lh_volume_Whole-amygdala_full_outcome.Pericytes.MR.res, csMR-EXAMPLE/MR/Inflammatory_bowel_disease_ebi_a_GCST003043-AmygNuclei_lh_volume_Whole-amygdala_full_outcome/Inflammatory_bowel_disease_ebi_a_GCST003043.AmygNuclei_lh_volume_Whole-amygdala_full_outcome.Pericytes.MR.sensitivity
+    jobid: 148
+    reason: Missing output files: csMR-EXAMPLE/MR/Inflammatory_bowel_disease_ebi_a_GCST003043-AmygNuclei_lh_volume_Whole-amygdala_full_outcome/Inflammatory_bowel_disease_ebi_a_GCST003043.AmygNuclei_lh_volume_Whole-amygdala_full_outcome.Pericytes.MR.sensitivity, csMR-EXAMPLE/MR/Inflammatory_bowel_disease_ebi_a_GCST003043-AmygNuclei_lh_volume_Whole-amygdala_full_outcome/Inflammatory_bowel_disease_ebi_a_GCST003043.AmygNuclei_lh_volume_Whole-amygdala_full_outcome.Pericytes.MR.res; Input files updated by another job: csMR-EXAMPLE/MR/clump/Susie_coloc.Inflammatory_bowel_disease_ebi_a_GCST003043.results.coverage.0.9.PPH4.0.8.Pericytes.clumped
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Inflammatory_bowel_disease_ebi_a_GCST003043, outcome=AmygNuclei_lh_volume_Whole-amygdala_full_outcome, cell_type=Pericytes
+    resources: tmpdir=/tmp
+
+
+[Thu Sep  5 03:51:41 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.results.coverage.0.9.PPH4.0.8.Endothelial.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-AmygNuclei_lh_volume_Lateral-nucleus_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.AmygNuclei_lh_volume_Lateral-nucleus_full_outcome.Endothelial.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-AmygNuclei_lh_volume_Lateral-nucleus_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.AmygNuclei_lh_volume_Lateral-nucleus_full_outcome.Endothelial.MR.sensitivity
+    jobid: 230
+    reason: Missing output files: csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-AmygNuclei_lh_volume_Lateral-nucleus_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.AmygNuclei_lh_volume_Lateral-nucleus_full_outcome.Endothelial.MR.sensitivity, csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-AmygNuclei_lh_volume_Lateral-nucleus_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.AmygNuclei_lh_volume_Lateral-nucleus_full_outcome.Endothelial.MR.res; Input files updated by another job: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.results.coverage.0.9.PPH4.0.8.Endothelial.clumped
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_ebi_a_GCST003045_full_exposure, outcome=AmygNuclei_lh_volume_Lateral-nucleus_full_outcome, cell_type=Endothelial
+    resources: tmpdir=/tmp
+
+
+[Thu Sep  5 03:51:41 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.results.coverage.0.9.PPH4.0.8.Endothelial.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-AmygNuclei_lh_volume_Corticoamygdaloid-transitio_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.AmygNuclei_lh_volume_Corticoamygdaloid-transitio_full_outcome.Endothelial.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-AmygNuclei_lh_volume_Corticoamygdaloid-transitio_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.AmygNuclei_lh_volume_Corticoamygdaloid-transitio_full_outcome.Endothelial.MR.sensitivity
+    jobid: 231
+    reason: Missing output files: csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-AmygNuclei_lh_volume_Corticoamygdaloid-transitio_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.AmygNuclei_lh_volume_Corticoamygdaloid-transitio_full_outcome.Endothelial.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-AmygNuclei_lh_volume_Corticoamygdaloid-transitio_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.AmygNuclei_lh_volume_Corticoamygdaloid-transitio_full_outcome.Endothelial.MR.sensitivity; Input files updated by another job: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.results.coverage.0.9.PPH4.0.8.Endothelial.clumped
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_ebi_a_GCST003045_full_exposure, outcome=AmygNuclei_lh_volume_Corticoamygdaloid-transitio_full_outcome, cell_type=Endothelial
+    resources: tmpdir=/tmp
+
+
+[Thu Sep  5 03:51:41 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Inflammatory_bowel_disease_ebi_a_GCST003043.results.coverage.0.9.PPH4.0.8.Pericytes.clumped
+    output: csMR-EXAMPLE/MR/Inflammatory_bowel_disease_ebi_a_GCST003043-AmygNuclei_lh_volume_Central-nucleus_full_outcome/Inflammatory_bowel_disease_ebi_a_GCST003043.AmygNuclei_lh_volume_Central-nucleus_full_outcome.Pericytes.MR.res, csMR-EXAMPLE/MR/Inflammatory_bowel_disease_ebi_a_GCST003043-AmygNuclei_lh_volume_Central-nucleus_full_outcome/Inflammatory_bowel_disease_ebi_a_GCST003043.AmygNuclei_lh_volume_Central-nucleus_full_outcome.Pericytes.MR.sensitivity
+    jobid: 149
+    reason: Missing output files: csMR-EXAMPLE/MR/Inflammatory_bowel_disease_ebi_a_GCST003043-AmygNuclei_lh_volume_Central-nucleus_full_outcome/Inflammatory_bowel_disease_ebi_a_GCST003043.AmygNuclei_lh_volume_Central-nucleus_full_outcome.Pericytes.MR.sensitivity, csMR-EXAMPLE/MR/Inflammatory_bowel_disease_ebi_a_GCST003043-AmygNuclei_lh_volume_Central-nucleus_full_outcome/Inflammatory_bowel_disease_ebi_a_GCST003043.AmygNuclei_lh_volume_Central-nucleus_full_outcome.Pericytes.MR.res; Input files updated by another job: csMR-EXAMPLE/MR/clump/Susie_coloc.Inflammatory_bowel_disease_ebi_a_GCST003043.results.coverage.0.9.PPH4.0.8.Pericytes.clumped
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Inflammatory_bowel_disease_ebi_a_GCST003043, outcome=AmygNuclei_lh_volume_Central-nucleus_full_outcome, cell_type=Pericytes
+    resources: tmpdir=/tmp
+
+
+[Thu Sep  5 03:51:41 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Inflammatory_bowel_disease_ebi_a_GCST003043.results.coverage.0.9.PPH4.0.8.Pericytes.clumped
+    output: csMR-EXAMPLE/MR/Inflammatory_bowel_disease_ebi_a_GCST003043-AmygNuclei_lh_volume_Basal-nucleus_full_outcome/Inflammatory_bowel_disease_ebi_a_GCST003043.AmygNuclei_lh_volume_Basal-nucleus_full_outcome.Pericytes.MR.res, csMR-EXAMPLE/MR/Inflammatory_bowel_disease_ebi_a_GCST003043-AmygNuclei_lh_volume_Basal-nucleus_full_outcome/Inflammatory_bowel_disease_ebi_a_GCST003043.AmygNuclei_lh_volume_Basal-nucleus_full_outcome.Pericytes.MR.sensitivity
+    jobid: 150
+    reason: Missing output files: csMR-EXAMPLE/MR/Inflammatory_bowel_disease_ebi_a_GCST003043-AmygNuclei_lh_volume_Basal-nucleus_full_outcome/Inflammatory_bowel_disease_ebi_a_GCST003043.AmygNuclei_lh_volume_Basal-nucleus_full_outcome.Pericytes.MR.sensitivity, csMR-EXAMPLE/MR/Inflammatory_bowel_disease_ebi_a_GCST003043-AmygNuclei_lh_volume_Basal-nucleus_full_outcome/Inflammatory_bowel_disease_ebi_a_GCST003043.AmygNuclei_lh_volume_Basal-nucleus_full_outcome.Pericytes.MR.res; Input files updated by another job: csMR-EXAMPLE/MR/clump/Susie_coloc.Inflammatory_bowel_disease_ebi_a_GCST003043.results.coverage.0.9.PPH4.0.8.Pericytes.clumped
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Inflammatory_bowel_disease_ebi_a_GCST003043, outcome=AmygNuclei_lh_volume_Basal-nucleus_full_outcome, cell_type=Pericytes
+    resources: tmpdir=/tmp
+
+
+[Thu Sep  5 03:51:41 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.results.coverage.0.9.PPH4.0.8.Endothelial.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-AmygNuclei_lh_volume_Paralaminar-nucleus_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.AmygNuclei_lh_volume_Paralaminar-nucleus_full_outcome.Endothelial.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-AmygNuclei_lh_volume_Paralaminar-nucleus_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.AmygNuclei_lh_volume_Paralaminar-nucleus_full_outcome.Endothelial.MR.sensitivity
+    jobid: 222
+    reason: Missing output files: csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-AmygNuclei_lh_volume_Paralaminar-nucleus_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.AmygNuclei_lh_volume_Paralaminar-nucleus_full_outcome.Endothelial.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-AmygNuclei_lh_volume_Paralaminar-nucleus_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.AmygNuclei_lh_volume_Paralaminar-nucleus_full_outcome.Endothelial.MR.sensitivity; Input files updated by another job: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.results.coverage.0.9.PPH4.0.8.Endothelial.clumped
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_ebi_a_GCST003045_full_exposure, outcome=AmygNuclei_lh_volume_Paralaminar-nucleus_full_outcome, cell_type=Endothelial
+    resources: tmpdir=/tmp
+
+
+[Thu Sep  5 03:51:41 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.results.coverage.0.9.PPH4.0.8.Endothelial.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-AmygNuclei_lh_volume_Medial-nucleus_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.AmygNuclei_lh_volume_Medial-nucleus_full_outcome.Endothelial.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-AmygNuclei_lh_volume_Medial-nucleus_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.AmygNuclei_lh_volume_Medial-nucleus_full_outcome.Endothelial.MR.sensitivity
+    jobid: 234
+    reason: Missing output files: csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-AmygNuclei_lh_volume_Medial-nucleus_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.AmygNuclei_lh_volume_Medial-nucleus_full_outcome.Endothelial.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-AmygNuclei_lh_volume_Medial-nucleus_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.AmygNuclei_lh_volume_Medial-nucleus_full_outcome.Endothelial.MR.sensitivity; Input files updated by another job: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.results.coverage.0.9.PPH4.0.8.Endothelial.clumped
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_ebi_a_GCST003045_full_exposure, outcome=AmygNuclei_lh_volume_Medial-nucleus_full_outcome, cell_type=Endothelial
+    resources: tmpdir=/tmp
+
+
+[Thu Sep  5 03:51:41 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Inflammatory_bowel_disease_ebi_a_GCST003043.results.coverage.0.9.PPH4.0.8.Pericytes.clumped
+    output: csMR-EXAMPLE/MR/Inflammatory_bowel_disease_ebi_a_GCST003043-AmygNuclei_lh_volume_Lateral-nucleus_full_outcome/Inflammatory_bowel_disease_ebi_a_GCST003043.AmygNuclei_lh_volume_Lateral-nucleus_full_outcome.Pericytes.MR.res, csMR-EXAMPLE/MR/Inflammatory_bowel_disease_ebi_a_GCST003043-AmygNuclei_lh_volume_Lateral-nucleus_full_outcome/Inflammatory_bowel_disease_ebi_a_GCST003043.AmygNuclei_lh_volume_Lateral-nucleus_full_outcome.Pericytes.MR.sensitivity
+    jobid: 151
+    reason: Missing output files: csMR-EXAMPLE/MR/Inflammatory_bowel_disease_ebi_a_GCST003043-AmygNuclei_lh_volume_Lateral-nucleus_full_outcome/Inflammatory_bowel_disease_ebi_a_GCST003043.AmygNuclei_lh_volume_Lateral-nucleus_full_outcome.Pericytes.MR.sensitivity, csMR-EXAMPLE/MR/Inflammatory_bowel_disease_ebi_a_GCST003043-AmygNuclei_lh_volume_Lateral-nucleus_full_outcome/Inflammatory_bowel_disease_ebi_a_GCST003043.AmygNuclei_lh_volume_Lateral-nucleus_full_outcome.Pericytes.MR.res; Input files updated by another job: csMR-EXAMPLE/MR/clump/Susie_coloc.Inflammatory_bowel_disease_ebi_a_GCST003043.results.coverage.0.9.PPH4.0.8.Pericytes.clumped
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Inflammatory_bowel_disease_ebi_a_GCST003043, outcome=AmygNuclei_lh_volume_Lateral-nucleus_full_outcome, cell_type=Pericytes
+    resources: tmpdir=/tmp
+
+
+[Thu Sep  5 03:51:41 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Inflammatory_bowel_disease_ebi_a_GCST003043.results.coverage.0.9.PPH4.0.8.Pericytes.clumped
+    output: csMR-EXAMPLE/MR/Inflammatory_bowel_disease_ebi_a_GCST003043-AmygNuclei_lh_volume_Paralaminar-nucleus_full_outcome/Inflammatory_bowel_disease_ebi_a_GCST003043.AmygNuclei_lh_volume_Paralaminar-nucleus_full_outcome.Pericytes.MR.res, csMR-EXAMPLE/MR/Inflammatory_bowel_disease_ebi_a_GCST003043-AmygNuclei_lh_volume_Paralaminar-nucleus_full_outcome/Inflammatory_bowel_disease_ebi_a_GCST003043.AmygNuclei_lh_volume_Paralaminar-nucleus_full_outcome.Pericytes.MR.sensitivity
+    jobid: 145
+    reason: Missing output files: csMR-EXAMPLE/MR/Inflammatory_bowel_disease_ebi_a_GCST003043-AmygNuclei_lh_volume_Paralaminar-nucleus_full_outcome/Inflammatory_bowel_disease_ebi_a_GCST003043.AmygNuclei_lh_volume_Paralaminar-nucleus_full_outcome.Pericytes.MR.sensitivity, csMR-EXAMPLE/MR/Inflammatory_bowel_disease_ebi_a_GCST003043-AmygNuclei_lh_volume_Paralaminar-nucleus_full_outcome/Inflammatory_bowel_disease_ebi_a_GCST003043.AmygNuclei_lh_volume_Paralaminar-nucleus_full_outcome.Pericytes.MR.res; Input files updated by another job: csMR-EXAMPLE/MR/clump/Susie_coloc.Inflammatory_bowel_disease_ebi_a_GCST003043.results.coverage.0.9.PPH4.0.8.Pericytes.clumped
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Inflammatory_bowel_disease_ebi_a_GCST003043, outcome=AmygNuclei_lh_volume_Paralaminar-nucleus_full_outcome, cell_type=Pericytes
+    resources: tmpdir=/tmp
+
+
+[Thu Sep  5 03:51:41 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.results.coverage.0.9.PPH4.0.8.Endothelial.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-AmygNuclei_lh_volume_Whole-amygdala_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.AmygNuclei_lh_volume_Whole-amygdala_full_outcome.Endothelial.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-AmygNuclei_lh_volume_Whole-amygdala_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.AmygNuclei_lh_volume_Whole-amygdala_full_outcome.Endothelial.MR.sensitivity
+    jobid: 227
+    reason: Missing output files: csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-AmygNuclei_lh_volume_Whole-amygdala_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.AmygNuclei_lh_volume_Whole-amygdala_full_outcome.Endothelial.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_ebi_a_GCST003045_full_exposure-AmygNuclei_lh_volume_Whole-amygdala_full_outcome/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.AmygNuclei_lh_volume_Whole-amygdala_full_outcome.Endothelial.MR.sensitivity; Input files updated by another job: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_ebi_a_GCST003045_full_exposure.results.coverage.0.9.PPH4.0.8.Endothelial.clumped
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_ebi_a_GCST003045_full_exposure, outcome=AmygNuclei_lh_volume_Whole-amygdala_full_outcome, cell_type=Endothelial
+    resources: tmpdir=/tmp
+
+
+[Thu Sep  5 03:51:41 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Inflammatory_bowel_disease_ebi_a_GCST003043.results.coverage.0.9.PPH4.0.8.Pericytes.clumped
+    output: csMR-EXAMPLE/MR/Inflammatory_bowel_disease_ebi_a_GCST003043-AmygNuclei_lh_volume_Corticoamygdaloid-transitio_full_outcome/Inflammatory_bowel_disease_ebi_a_GCST003043.AmygNuclei_lh_volume_Corticoamygdaloid-transitio_full_outcome.Pericytes.MR.res, csMR-EXAMPLE/MR/Inflammatory_bowel_disease_ebi_a_GCST003043-AmygNuclei_lh_volume_Corticoamygdaloid-transitio_full_outcome/Inflammatory_bowel_disease_ebi_a_GCST003043.AmygNuclei_lh_volume_Corticoamygdaloid-transitio_full_outcome.Pericytes.MR.sensitivity
+    jobid: 152
+    reason: Missing output files: csMR-EXAMPLE/MR/Inflammatory_bowel_disease_ebi_a_GCST003043-AmygNuclei_lh_volume_Corticoamygdaloid-transitio_full_outcome/Inflammatory_bowel_disease_ebi_a_GCST003043.AmygNuclei_lh_volume_Corticoamygdaloid-transitio_full_outcome.Pericytes.MR.sensitivity, csMR-EXAMPLE/MR/Inflammatory_bowel_disease_ebi_a_GCST003043-AmygNuclei_lh_volume_Corticoamygdaloid-transitio_full_outcome/Inflammatory_bowel_disease_ebi_a_GCST003043.AmygNuclei_lh_volume_Corticoamygdaloid-transitio_full_outcome.Pericytes.MR.res; Input files updated by another job: csMR-EXAMPLE/MR/clump/Susie_coloc.Inflammatory_bowel_disease_ebi_a_GCST003043.results.coverage.0.9.PPH4.0.8.Pericytes.clumped
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Inflammatory_bowel_disease_ebi_a_GCST003043, outcome=AmygNuclei_lh_volume_Corticoamygdaloid-transitio_full_outcome, cell_type=Pericytes
+    resources: tmpdir=/tmp
+
+
+[Thu Sep  5 03:51:41 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Inflammatory_bowel_disease_ebi_a_GCST003043.results.coverage.0.9.PPH4.0.8.Pericytes.clumped
+    output: csMR-EXAMPLE/MR/Inflammatory_bowel_disease_ebi_a_GCST003043-AmygNuclei_lh_volume_Cortical-nucleus_full_outcome/Inflammatory_bowel_disease_ebi_a_GCST003043.AmygNuclei_lh_volume_Cortical-nucleus_full_outcome.Pericytes.MR.res, csMR-EXAMPLE/MR/Inflammatory_bowel_disease_ebi_a_GCST003043-AmygNuclei_lh_volume_Cortical-nucleus_full_outcome/Inflammatory_bowel_disease_ebi_a_GCST003043.AmygNuclei_lh_volume_Cortical-nucleus_full_outcome.Pericytes.MR.sensitivity
+    jobid: 153
+    reason: Missing output files: csMR-EXAMPLE/MR/Inflammatory_bowel_disease_ebi_a_GCST003043-AmygNuclei_lh_volume_Cortical-nucleus_full_outcome/Inflammatory_bowel_disease_ebi_a_GCST003043.AmygNuclei_lh_volume_Cortical-nucleus_full_outcome.Pericytes.MR.res, csMR-EXAMPLE/MR/Inflammatory_bowel_disease_ebi_a_GCST003043-AmygNuclei_lh_volume_Cortical-nucleus_full_outcome/Inflammatory_bowel_disease_ebi_a_GCST003043.AmygNuclei_lh_volume_Cortical-nucleus_full_outcome.Pericytes.MR.sensitivity; Input files updated by another job: csMR-EXAMPLE/MR/clump/Susie_coloc.Inflammatory_bowel_disease_ebi_a_GCST003043.results.coverage.0.9.PPH4.0.8.Pericytes.clumped
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Inflammatory_bowel_disease_ebi_a_GCST003043, outcome=AmygNuclei_lh_volume_Cortical-nucleus_full_outcome, cell_type=Pericytes
+    resources: tmpdir=/tmp
+
+[Thu Sep  5 03:52:29 2024]
+Finished job 152.
+51 of 312 steps (16%) done
+[Thu Sep  5 03:52:29 2024]
+Finished job 222.
+52 of 312 steps (17%) done
+[Thu Sep  5 03:52:29 2024]
+Finished job 228.
+53 of 312 steps (17%) done
+[Thu Sep  5 03:52:29 2024]
+Finished job 242.
+54 of 312 steps (17%) done
+[Thu Sep  5 03:52:29 2024]
+Finished job 147.
+55 of 312 steps (18%) done
+[Thu Sep  5 03:52:29 2024]
+Finished job 233.
+56 of 312 steps (18%) done
+[Thu Sep  5 03:52:30 2024]
+Finished job 154.
+57 of 312 steps (18%) done
+[Thu Sep  5 03:52:30 2024]
+Finished job 151.
+58 of 312 steps (19%) done
+[Thu Sep  5 03:52:30 2024]
+Finished job 150.
+59 of 312 steps (19%) done
+[Thu Sep  5 03:52:30 2024]
+Finished job 235.
+60 of 312 steps (19%) done
+[Thu Sep  5 03:52:30 2024]
+Finished job 148.
+61 of 312 steps (20%) done
+[Thu Sep  5 03:52:30 2024]
+Finished job 237.
+62 of 312 steps (20%) done
+[Thu Sep  5 03:52:31 2024]
+Finished job 239.
+63 of 312 steps (20%) done
+[Thu Sep  5 03:52:31 2024]
+Finished job 149.
+64 of 312 steps (21%) done
+[Thu Sep  5 03:52:31 2024]
+Finished job 232.
+65 of 312 steps (21%) done
+[Thu Sep  5 03:52:31 2024]
+Finished job 153.
+66 of 312 steps (21%) done
+[Thu Sep  5 03:52:32 2024]
+Finished job 230.
+67 of 312 steps (21%) done
+[Thu Sep  5 03:52:32 2024]
+Finished job 229.
+68 of 312 steps (22%) done
+[Thu Sep  5 03:52:32 2024]
+Finished job 231.
+69 of 312 steps (22%) done
+[Thu Sep  5 03:52:32 2024]
+Finished job 226.
+70 of 312 steps (22%) done
+[Thu Sep  5 03:52:32 2024]
+Finished job 155.
+71 of 312 steps (23%) done
+[Thu Sep  5 03:52:32 2024]
+Finished job 145.
+72 of 312 steps (23%) done
+[Thu Sep  5 03:52:33 2024]
+Finished job 241.
+73 of 312 steps (23%) done
+[Thu Sep  5 03:52:33 2024]
+Finished job 227.
+74 of 312 steps (24%) done
+[Thu Sep  5 03:52:33 2024]
+Finished job 238.
+75 of 312 steps (24%) done
+[Thu Sep  5 03:52:33 2024]
+Finished job 245.
+76 of 312 steps (24%) done
+[Thu Sep  5 03:52:33 2024]
+Finished job 240.
+77 of 312 steps (25%) done
+[Thu Sep  5 03:52:34 2024]
+Finished job 234.
+78 of 312 steps (25%) done
+[Thu Sep  5 03:52:34 2024]
+Finished job 243.
+79 of 312 steps (25%) done
+[Thu Sep  5 03:52:34 2024]
+Finished job 244.
+80 of 312 steps (26%) done

@@ -189,7 +189,7 @@ sensitivity_test = function(harmonised_data){
   
   ###leave-one-out
   loo <- mr_leaveoneout(harmonised_data)
-  if (is.na(loo$p)){
+  if (all(is.na(loo$p))){
     leave_one_out = "only one available SNP"
   }else if (sum(loo$p > 0.05) == 0){
     leave_one_out = "Pass"
@@ -226,6 +226,7 @@ outcome_ma_file = args$outcome_ma_file
 if (file.exists(paste0(getwd(),"/",outcome_ma_file))){
   outcome_ma_file = paste0(getwd(),"/",outcome_ma_file)
 }
+
 clump_file = args$clump_file
 if (file.exists(paste0(getwd(),"/",clump_file))){
   clump_file = paste0(getwd(),"/",clump_file)

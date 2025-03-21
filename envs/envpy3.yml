@@ -1,5 +1,5 @@
 
-name: csMR # USED FOR EVERYTHING PYTHON EXCEPT
+name: csMRPLUS # USED FOR EVERYTHING PYTHON EXCEPT
 channels:
   - anaconda
   - defaults

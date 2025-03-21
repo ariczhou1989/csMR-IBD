@@ -1,0 +1,681 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 60
+Rules claiming more threads will be scaled down.
+Job stats:
+job      count    min threads    max threads
+-----  -------  -------------  -------------
+MR          49              1              1
+all          1              1              1
+total       50              1              1
+
+Select jobs to execute...
+
+[Thu Aug 29 21:47:01 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.Endothelial.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Gonarthrosis_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Gonarthrosis_R10_full_outcome.Endothelial.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Gonarthrosis_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Gonarthrosis_R10_full_outcome.Endothelial.MR.sensitivity
+    jobid: 42
+    reason: Missing output files: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Gonarthrosis_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Gonarthrosis_R10_full_outcome.Endothelial.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Gonarthrosis_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Gonarthrosis_R10_full_outcome.Endothelial.MR.sensitivity
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, outcome=Gonarthrosis_R10_full_outcome, cell_type=Endothelial
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 29 21:47:01 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.OPCs.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Nonalcoholic_fatty_liver_disease_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Nonalcoholic_fatty_liver_disease_R10_full_outcome.OPCs.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Nonalcoholic_fatty_liver_disease_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Nonalcoholic_fatty_liver_disease_R10_full_outcome.OPCs.MR.sensitivity
+    jobid: 140
+    reason: Missing output files: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Nonalcoholic_fatty_liver_disease_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Nonalcoholic_fatty_liver_disease_R10_full_outcome.OPCs.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Nonalcoholic_fatty_liver_disease_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Nonalcoholic_fatty_liver_disease_R10_full_outcome.OPCs.MR.sensitivity
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, outcome=Nonalcoholic_fatty_liver_disease_R10_full_outcome, cell_type=OPCs
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 29 21:47:01 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.pb.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Myocardial_infarction_strict_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Myocardial_infarction_strict_R10_full_outcome.pb.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Myocardial_infarction_strict_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Myocardial_infarction_strict_R10_full_outcome.pb.MR.sensitivity
+    jobid: 498
+    reason: Missing output files: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Myocardial_infarction_strict_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Myocardial_infarction_strict_R10_full_outcome.pb.MR.sensitivity, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Myocardial_infarction_strict_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Myocardial_infarction_strict_R10_full_outcome.pb.MR.res
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, outcome=Myocardial_infarction_strict_R10_full_outcome, cell_type=pb
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 29 21:47:01 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.Excitatory_neurons.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Gonarthrosis_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Gonarthrosis_R10_full_outcome.Excitatory_neurons.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Gonarthrosis_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Gonarthrosis_R10_full_outcome.Excitatory_neurons.MR.sensitivity
+    jobid: 360
+    reason: Missing output files: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Gonarthrosis_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Gonarthrosis_R10_full_outcome.Excitatory_neurons.MR.sensitivity, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Gonarthrosis_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Gonarthrosis_R10_full_outcome.Excitatory_neurons.MR.res
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, outcome=Gonarthrosis_R10_full_outcome, cell_type=Excitatory_neurons
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 29 21:47:01 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.OPCs.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Gonarthrosis_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Gonarthrosis_R10_full_outcome.OPCs.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Gonarthrosis_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Gonarthrosis_R10_full_outcome.OPCs.MR.sensitivity
+    jobid: 148
+    reason: Missing output files: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Gonarthrosis_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Gonarthrosis_R10_full_outcome.OPCs.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Gonarthrosis_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Gonarthrosis_R10_full_outcome.OPCs.MR.sensitivity
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, outcome=Gonarthrosis_R10_full_outcome, cell_type=OPCs
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 29 21:47:01 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.Inhibitory_neurons.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Nonalcoholic_fatty_liver_disease_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Nonalcoholic_fatty_liver_disease_R10_full_outcome.Inhibitory_neurons.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Nonalcoholic_fatty_liver_disease_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Nonalcoholic_fatty_liver_disease_R10_full_outcome.Inhibitory_neurons.MR.sensitivity
+    jobid: 246
+    reason: Missing output files: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Nonalcoholic_fatty_liver_disease_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Nonalcoholic_fatty_liver_disease_R10_full_outcome.Inhibitory_neurons.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Nonalcoholic_fatty_liver_disease_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Nonalcoholic_fatty_liver_disease_R10_full_outcome.Inhibitory_neurons.MR.sensitivity
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, outcome=Nonalcoholic_fatty_liver_disease_R10_full_outcome, cell_type=Inhibitory_neurons
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 29 21:47:01 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.Excitatory_neurons.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-GCST90406924_38_MSA_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.GCST90406924_38_MSA_full_outcome.Excitatory_neurons.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-GCST90406924_38_MSA_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.GCST90406924_38_MSA_full_outcome.Excitatory_neurons.MR.sensitivity
+    jobid: 354
+    reason: Missing output files: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-GCST90406924_38_MSA_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.GCST90406924_38_MSA_full_outcome.Excitatory_neurons.MR.sensitivity, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-GCST90406924_38_MSA_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.GCST90406924_38_MSA_full_outcome.Excitatory_neurons.MR.res
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, outcome=GCST90406924_38_MSA_full_outcome, cell_type=Excitatory_neurons
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 29 21:47:01 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.pb.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Post_traumatic_stress_disorder_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Post_traumatic_stress_disorder_R10_full_outcome.pb.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Post_traumatic_stress_disorder_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Post_traumatic_stress_disorder_R10_full_outcome.pb.MR.sensitivity
+    jobid: 478
+    reason: Missing output files: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Post_traumatic_stress_disorder_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Post_traumatic_stress_disorder_R10_full_outcome.pb.MR.sensitivity, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Post_traumatic_stress_disorder_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Post_traumatic_stress_disorder_R10_full_outcome.pb.MR.res
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, outcome=Post_traumatic_stress_disorder_R10_full_outcome, cell_type=pb
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 29 21:47:01 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.Microglia.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Scoliosis_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Scoliosis_R10_full_outcome.Microglia.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Scoliosis_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Scoliosis_R10_full_outcome.Microglia.MR.sensitivity
+    jobid: 217
+    reason: Missing output files: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Scoliosis_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Scoliosis_R10_full_outcome.Microglia.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Scoliosis_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Scoliosis_R10_full_outcome.Microglia.MR.sensitivity
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, outcome=Scoliosis_R10_full_outcome, cell_type=Microglia
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 29 21:47:01 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.Oligodendrocytes.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Gonarthrosis_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Gonarthrosis_R10_full_outcome.Oligodendrocytes.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Gonarthrosis_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Gonarthrosis_R10_full_outcome.Oligodendrocytes.MR.sensitivity
+    jobid: 307
+    reason: Missing output files: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Gonarthrosis_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Gonarthrosis_R10_full_outcome.Oligodendrocytes.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Gonarthrosis_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Gonarthrosis_R10_full_outcome.Oligodendrocytes.MR.sensitivity
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, outcome=Gonarthrosis_R10_full_outcome, cell_type=Oligodendrocytes
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 29 21:47:01 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.Excitatory_neurons.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-AD_ieu_b_2_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.AD_ieu_b_2_full_outcome.Excitatory_neurons.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-AD_ieu_b_2_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.AD_ieu_b_2_full_outcome.Excitatory_neurons.MR.sensitivity
+    jobid: 375
+    reason: Missing output files: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-AD_ieu_b_2_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.AD_ieu_b_2_full_outcome.Excitatory_neurons.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-AD_ieu_b_2_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.AD_ieu_b_2_full_outcome.Excitatory_neurons.MR.sensitivity
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, outcome=AD_ieu_b_2_full_outcome, cell_type=Excitatory_neurons
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 29 21:47:01 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.Excitatory_neurons.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Low_back_pain_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Low_back_pain_R10_full_outcome.Excitatory_neurons.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Low_back_pain_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Low_back_pain_R10_full_outcome.Excitatory_neurons.MR.sensitivity
+    jobid: 389
+    reason: Missing output files: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Low_back_pain_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Low_back_pain_R10_full_outcome.Excitatory_neurons.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Low_back_pain_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Low_back_pain_R10_full_outcome.Excitatory_neurons.MR.sensitivity
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, outcome=Low_back_pain_R10_full_outcome, cell_type=Excitatory_neurons
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 29 21:47:01 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.Astrocytes.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Scoliosis_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Scoliosis_R10_full_outcome.Astrocytes.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Scoliosis_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Scoliosis_R10_full_outcome.Astrocytes.MR.sensitivity
+    jobid: 429
+    reason: Missing output files: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Scoliosis_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Scoliosis_R10_full_outcome.Astrocytes.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Scoliosis_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Scoliosis_R10_full_outcome.Astrocytes.MR.sensitivity
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, outcome=Scoliosis_R10_full_outcome, cell_type=Astrocytes
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 29 21:47:01 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.pb.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Senile_cataract_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Senile_cataract_R10_full_outcome.pb.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Senile_cataract_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Senile_cataract_R10_full_outcome.pb.MR.sensitivity
+    jobid: 471
+    reason: Missing output files: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Senile_cataract_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Senile_cataract_R10_full_outcome.pb.MR.sensitivity, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Senile_cataract_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Senile_cataract_R10_full_outcome.pb.MR.res
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, outcome=Senile_cataract_R10_full_outcome, cell_type=pb
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 29 21:47:01 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.Endothelial.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Scoliosis_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Scoliosis_R10_full_outcome.Endothelial.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Scoliosis_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Scoliosis_R10_full_outcome.Endothelial.MR.sensitivity
+    jobid: 58
+    reason: Missing output files: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Scoliosis_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Scoliosis_R10_full_outcome.Endothelial.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Scoliosis_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Scoliosis_R10_full_outcome.Endothelial.MR.sensitivity
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, outcome=Scoliosis_R10_full_outcome, cell_type=Endothelial
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 29 21:47:01 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.Pericytes.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Senile_cataract_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Senile_cataract_R10_full_outcome.Pericytes.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Senile_cataract_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Senile_cataract_R10_full_outcome.Pericytes.MR.sensitivity
+    jobid: 100
+    reason: Missing output files: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Senile_cataract_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Senile_cataract_R10_full_outcome.Pericytes.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Senile_cataract_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Senile_cataract_R10_full_outcome.Pericytes.MR.sensitivity
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, outcome=Senile_cataract_R10_full_outcome, cell_type=Pericytes
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 29 21:47:01 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.Inhibitory_neurons.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Gonarthrosis_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Gonarthrosis_R10_full_outcome.Inhibitory_neurons.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Gonarthrosis_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Gonarthrosis_R10_full_outcome.Inhibitory_neurons.MR.sensitivity
+    jobid: 254
+    reason: Missing output files: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Gonarthrosis_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Gonarthrosis_R10_full_outcome.Inhibitory_neurons.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Gonarthrosis_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Gonarthrosis_R10_full_outcome.Inhibitory_neurons.MR.sensitivity
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, outcome=Gonarthrosis_R10_full_outcome, cell_type=Inhibitory_neurons
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 29 21:47:01 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.Excitatory_neurons.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Scoliosis_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Scoliosis_R10_full_outcome.Excitatory_neurons.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Scoliosis_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Scoliosis_R10_full_outcome.Excitatory_neurons.MR.sensitivity
+    jobid: 376
+    reason: Missing output files: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Scoliosis_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Scoliosis_R10_full_outcome.Excitatory_neurons.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Scoliosis_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Scoliosis_R10_full_outcome.Excitatory_neurons.MR.sensitivity
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, outcome=Scoliosis_R10_full_outcome, cell_type=Excitatory_neurons
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 29 21:47:01 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.pb.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Nonalcoholic_fatty_liver_disease_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Nonalcoholic_fatty_liver_disease_R10_full_outcome.pb.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Nonalcoholic_fatty_liver_disease_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Nonalcoholic_fatty_liver_disease_R10_full_outcome.pb.MR.sensitivity
+    jobid: 458
+    reason: Missing output files: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Nonalcoholic_fatty_liver_disease_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Nonalcoholic_fatty_liver_disease_R10_full_outcome.pb.MR.sensitivity, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Nonalcoholic_fatty_liver_disease_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Nonalcoholic_fatty_liver_disease_R10_full_outcome.pb.MR.res
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, outcome=Nonalcoholic_fatty_liver_disease_R10_full_outcome, cell_type=pb
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 29 21:47:01 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.OPCs.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Scoliosis_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Scoliosis_R10_full_outcome.OPCs.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Scoliosis_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Scoliosis_R10_full_outcome.OPCs.MR.sensitivity
+    jobid: 164
+    reason: Missing output files: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Scoliosis_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Scoliosis_R10_full_outcome.OPCs.MR.sensitivity, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Scoliosis_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Scoliosis_R10_full_outcome.OPCs.MR.res
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, outcome=Scoliosis_R10_full_outcome, cell_type=OPCs
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 29 21:47:01 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.Microglia.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Senile_cataract_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Senile_cataract_R10_full_outcome.Microglia.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Senile_cataract_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Senile_cataract_R10_full_outcome.Microglia.MR.sensitivity
+    jobid: 206
+    reason: Missing output files: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Senile_cataract_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Senile_cataract_R10_full_outcome.Microglia.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Senile_cataract_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Senile_cataract_R10_full_outcome.Microglia.MR.sensitivity
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, outcome=Senile_cataract_R10_full_outcome, cell_type=Microglia
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 29 21:47:01 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.pb.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Type_2_diabetes/Ulcerative_colitis_full_exposure_ieu_a_970.Type_2_diabetes.pb.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Type_2_diabetes/Ulcerative_colitis_full_exposure_ieu_a_970.Type_2_diabetes.pb.MR.sensitivity
+    jobid: 452
+    reason: Missing output files: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Type_2_diabetes/Ulcerative_colitis_full_exposure_ieu_a_970.Type_2_diabetes.pb.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Type_2_diabetes/Ulcerative_colitis_full_exposure_ieu_a_970.Type_2_diabetes.pb.MR.sensitivity
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, outcome=Type_2_diabetes, cell_type=pb
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 29 21:47:01 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.pb.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Gonarthrosis_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Gonarthrosis_R10_full_outcome.pb.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Gonarthrosis_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Gonarthrosis_R10_full_outcome.pb.MR.sensitivity
+    jobid: 466
+    reason: Missing output files: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Gonarthrosis_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Gonarthrosis_R10_full_outcome.pb.MR.sensitivity, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Gonarthrosis_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Gonarthrosis_R10_full_outcome.pb.MR.res
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, outcome=Gonarthrosis_R10_full_outcome, cell_type=pb
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 29 21:47:01 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.Oligodendrocytes.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Nonalcoholic_fatty_liver_disease_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Nonalcoholic_fatty_liver_disease_R10_full_outcome.Oligodendrocytes.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Nonalcoholic_fatty_liver_disease_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Nonalcoholic_fatty_liver_disease_R10_full_outcome.Oligodendrocytes.MR.sensitivity
+    jobid: 299
+    reason: Missing output files: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Nonalcoholic_fatty_liver_disease_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Nonalcoholic_fatty_liver_disease_R10_full_outcome.Oligodendrocytes.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Nonalcoholic_fatty_liver_disease_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Nonalcoholic_fatty_liver_disease_R10_full_outcome.Oligodendrocytes.MR.sensitivity
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, outcome=Nonalcoholic_fatty_liver_disease_R10_full_outcome, cell_type=Oligodendrocytes
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 29 21:47:01 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.Pericytes.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Nonalcoholic_fatty_liver_disease_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Nonalcoholic_fatty_liver_disease_R10_full_outcome.Pericytes.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Nonalcoholic_fatty_liver_disease_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Nonalcoholic_fatty_liver_disease_R10_full_outcome.Pericytes.MR.sensitivity
+    jobid: 87
+    reason: Missing output files: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Nonalcoholic_fatty_liver_disease_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Nonalcoholic_fatty_liver_disease_R10_full_outcome.Pericytes.MR.sensitivity, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Nonalcoholic_fatty_liver_disease_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Nonalcoholic_fatty_liver_disease_R10_full_outcome.Pericytes.MR.res
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, outcome=Nonalcoholic_fatty_liver_disease_R10_full_outcome, cell_type=Pericytes
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 29 21:47:01 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.Oligodendrocytes.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Scoliosis_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Scoliosis_R10_full_outcome.Oligodendrocytes.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Scoliosis_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Scoliosis_R10_full_outcome.Oligodendrocytes.MR.sensitivity
+    jobid: 323
+    reason: Missing output files: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Scoliosis_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Scoliosis_R10_full_outcome.Oligodendrocytes.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Scoliosis_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Scoliosis_R10_full_outcome.Oligodendrocytes.MR.sensitivity
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, outcome=Scoliosis_R10_full_outcome, cell_type=Oligodendrocytes
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 29 21:47:01 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.Microglia.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Nonalcoholic_fatty_liver_disease_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Nonalcoholic_fatty_liver_disease_R10_full_outcome.Microglia.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Nonalcoholic_fatty_liver_disease_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Nonalcoholic_fatty_liver_disease_R10_full_outcome.Microglia.MR.sensitivity
+    jobid: 193
+    reason: Missing output files: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Nonalcoholic_fatty_liver_disease_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Nonalcoholic_fatty_liver_disease_R10_full_outcome.Microglia.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Nonalcoholic_fatty_liver_disease_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Nonalcoholic_fatty_liver_disease_R10_full_outcome.Microglia.MR.sensitivity
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, outcome=Nonalcoholic_fatty_liver_disease_R10_full_outcome, cell_type=Microglia
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 29 21:47:01 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.Pericytes.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Gonarthrosis_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Gonarthrosis_R10_full_outcome.Pericytes.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Gonarthrosis_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Gonarthrosis_R10_full_outcome.Pericytes.MR.sensitivity
+    jobid: 95
+    reason: Missing output files: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Gonarthrosis_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Gonarthrosis_R10_full_outcome.Pericytes.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Gonarthrosis_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Gonarthrosis_R10_full_outcome.Pericytes.MR.sensitivity
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, outcome=Gonarthrosis_R10_full_outcome, cell_type=Pericytes
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 29 21:47:01 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.Inhibitory_neurons.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Scoliosis_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Scoliosis_R10_full_outcome.Inhibitory_neurons.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Scoliosis_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Scoliosis_R10_full_outcome.Inhibitory_neurons.MR.sensitivity
+    jobid: 270
+    reason: Missing output files: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Scoliosis_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Scoliosis_R10_full_outcome.Inhibitory_neurons.MR.sensitivity, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Scoliosis_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Scoliosis_R10_full_outcome.Inhibitory_neurons.MR.res
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, outcome=Scoliosis_R10_full_outcome, cell_type=Inhibitory_neurons
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 29 21:47:01 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.Excitatory_neurons.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-GCST90027158_AD_38_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.GCST90027158_AD_38_full_outcome.Excitatory_neurons.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-GCST90027158_AD_38_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.GCST90027158_AD_38_full_outcome.Excitatory_neurons.MR.sensitivity
+    jobid: 350
+    reason: Missing output files: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-GCST90027158_AD_38_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.GCST90027158_AD_38_full_outcome.Excitatory_neurons.MR.sensitivity, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-GCST90027158_AD_38_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.GCST90027158_AD_38_full_outcome.Excitatory_neurons.MR.res
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, outcome=GCST90027158_AD_38_full_outcome, cell_type=Excitatory_neurons
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 29 21:47:01 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.Excitatory_neurons.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Myocardial_infarction_strict_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Myocardial_infarction_strict_R10_full_outcome.Excitatory_neurons.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Myocardial_infarction_strict_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Myocardial_infarction_strict_R10_full_outcome.Excitatory_neurons.MR.sensitivity
+    jobid: 392
+    reason: Missing output files: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Myocardial_infarction_strict_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Myocardial_infarction_strict_R10_full_outcome.Excitatory_neurons.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Myocardial_infarction_strict_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Myocardial_infarction_strict_R10_full_outcome.Excitatory_neurons.MR.sensitivity
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, outcome=Myocardial_infarction_strict_R10_full_outcome, cell_type=Excitatory_neurons
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 29 21:47:01 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.Inhibitory_neurons.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Senile_cataract_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Senile_cataract_R10_full_outcome.Inhibitory_neurons.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Senile_cataract_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Senile_cataract_R10_full_outcome.Inhibitory_neurons.MR.sensitivity
+    jobid: 259
+    reason: Missing output files: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Senile_cataract_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Senile_cataract_R10_full_outcome.Inhibitory_neurons.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Senile_cataract_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Senile_cataract_R10_full_outcome.Inhibitory_neurons.MR.sensitivity
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, outcome=Senile_cataract_R10_full_outcome, cell_type=Inhibitory_neurons
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 29 21:47:01 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.Astrocytes.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Senile_cataract_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Senile_cataract_R10_full_outcome.Astrocytes.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Senile_cataract_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Senile_cataract_R10_full_outcome.Astrocytes.MR.sensitivity
+    jobid: 418
+    reason: Missing output files: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Senile_cataract_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Senile_cataract_R10_full_outcome.Astrocytes.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Senile_cataract_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Senile_cataract_R10_full_outcome.Astrocytes.MR.sensitivity
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, outcome=Senile_cataract_R10_full_outcome, cell_type=Astrocytes
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 29 21:47:01 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.Excitatory_neurons.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Autism_spectrum_disorder_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Autism_spectrum_disorder_full_outcome.Excitatory_neurons.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Autism_spectrum_disorder_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Autism_spectrum_disorder_full_outcome.Excitatory_neurons.MR.sensitivity
+    jobid: 344
+    reason: Missing output files: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Autism_spectrum_disorder_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Autism_spectrum_disorder_full_outcome.Excitatory_neurons.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Autism_spectrum_disorder_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Autism_spectrum_disorder_full_outcome.Excitatory_neurons.MR.sensitivity
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, outcome=Autism_spectrum_disorder_full_outcome, cell_type=Excitatory_neurons
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 29 21:47:01 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.pb.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Scoliosis_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Scoliosis_R10_full_outcome.pb.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Scoliosis_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Scoliosis_R10_full_outcome.pb.MR.sensitivity
+    jobid: 482
+    reason: Missing output files: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Scoliosis_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Scoliosis_R10_full_outcome.pb.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Scoliosis_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Scoliosis_R10_full_outcome.pb.MR.sensitivity
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, outcome=Scoliosis_R10_full_outcome, cell_type=pb
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 29 21:47:01 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.Microglia.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Gonarthrosis_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Gonarthrosis_R10_full_outcome.Microglia.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Gonarthrosis_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Gonarthrosis_R10_full_outcome.Microglia.MR.sensitivity
+    jobid: 201
+    reason: Missing output files: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Gonarthrosis_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Gonarthrosis_R10_full_outcome.Microglia.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Gonarthrosis_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Gonarthrosis_R10_full_outcome.Microglia.MR.sensitivity
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, outcome=Gonarthrosis_R10_full_outcome, cell_type=Microglia
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 29 21:47:01 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.Endothelial.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Senile_cataract_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Senile_cataract_R10_full_outcome.Endothelial.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Senile_cataract_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Senile_cataract_R10_full_outcome.Endothelial.MR.sensitivity
+    jobid: 47
+    reason: Missing output files: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Senile_cataract_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Senile_cataract_R10_full_outcome.Endothelial.MR.sensitivity, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Senile_cataract_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Senile_cataract_R10_full_outcome.Endothelial.MR.res
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, outcome=Senile_cataract_R10_full_outcome, cell_type=Endothelial
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 29 21:47:01 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.Excitatory_neurons.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Senile_cataract_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Senile_cataract_R10_full_outcome.Excitatory_neurons.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Senile_cataract_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Senile_cataract_R10_full_outcome.Excitatory_neurons.MR.sensitivity
+    jobid: 365
+    reason: Missing output files: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Senile_cataract_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Senile_cataract_R10_full_outcome.Excitatory_neurons.MR.sensitivity, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Senile_cataract_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Senile_cataract_R10_full_outcome.Excitatory_neurons.MR.res
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, outcome=Senile_cataract_R10_full_outcome, cell_type=Excitatory_neurons
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 29 21:47:01 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.Astrocytes.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Nonalcoholic_fatty_liver_disease_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Nonalcoholic_fatty_liver_disease_R10_full_outcome.Astrocytes.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Nonalcoholic_fatty_liver_disease_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Nonalcoholic_fatty_liver_disease_R10_full_outcome.Astrocytes.MR.sensitivity
+    jobid: 405
+    reason: Missing output files: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Nonalcoholic_fatty_liver_disease_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Nonalcoholic_fatty_liver_disease_R10_full_outcome.Astrocytes.MR.sensitivity, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Nonalcoholic_fatty_liver_disease_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Nonalcoholic_fatty_liver_disease_R10_full_outcome.Astrocytes.MR.res
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, outcome=Nonalcoholic_fatty_liver_disease_R10_full_outcome, cell_type=Astrocytes
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 29 21:47:01 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.pb.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Cardiac_arrest_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Cardiac_arrest_R10_full_outcome.pb.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Cardiac_arrest_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Cardiac_arrest_R10_full_outcome.pb.MR.sensitivity
+    jobid: 489
+    reason: Missing output files: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Cardiac_arrest_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Cardiac_arrest_R10_full_outcome.pb.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Cardiac_arrest_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Cardiac_arrest_R10_full_outcome.pb.MR.sensitivity
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, outcome=Cardiac_arrest_R10_full_outcome, cell_type=pb
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 29 21:47:01 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.Pericytes.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Scoliosis_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Scoliosis_R10_full_outcome.Pericytes.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Scoliosis_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Scoliosis_R10_full_outcome.Pericytes.MR.sensitivity
+    jobid: 111
+    reason: Missing output files: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Scoliosis_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Scoliosis_R10_full_outcome.Pericytes.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Scoliosis_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Scoliosis_R10_full_outcome.Pericytes.MR.sensitivity
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, outcome=Scoliosis_R10_full_outcome, cell_type=Pericytes
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 29 21:47:01 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.OPCs.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Senile_cataract_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Senile_cataract_R10_full_outcome.OPCs.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Senile_cataract_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Senile_cataract_R10_full_outcome.OPCs.MR.sensitivity
+    jobid: 153
+    reason: Missing output files: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Senile_cataract_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Senile_cataract_R10_full_outcome.OPCs.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Senile_cataract_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Senile_cataract_R10_full_outcome.OPCs.MR.sensitivity
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, outcome=Senile_cataract_R10_full_outcome, cell_type=OPCs
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 29 21:47:01 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.Astrocytes.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Gonarthrosis_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Gonarthrosis_R10_full_outcome.Astrocytes.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Gonarthrosis_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Gonarthrosis_R10_full_outcome.Astrocytes.MR.sensitivity
+    jobid: 413
+    reason: Missing output files: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Gonarthrosis_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Gonarthrosis_R10_full_outcome.Astrocytes.MR.sensitivity, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Gonarthrosis_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Gonarthrosis_R10_full_outcome.Astrocytes.MR.res
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, outcome=Gonarthrosis_R10_full_outcome, cell_type=Astrocytes
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 29 21:47:01 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.pb.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Metal_38_Essential_tremor_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Metal_38_Essential_tremor_outcome.pb.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Metal_38_Essential_tremor_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Metal_38_Essential_tremor_outcome.pb.MR.sensitivity
+    jobid: 483
+    reason: Missing output files: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Metal_38_Essential_tremor_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Metal_38_Essential_tremor_outcome.pb.MR.sensitivity, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Metal_38_Essential_tremor_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Metal_38_Essential_tremor_outcome.pb.MR.res
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, outcome=Metal_38_Essential_tremor_outcome, cell_type=pb
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 29 21:47:01 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.Endothelial.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Nonalcoholic_fatty_liver_disease_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Nonalcoholic_fatty_liver_disease_R10_full_outcome.Endothelial.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Nonalcoholic_fatty_liver_disease_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Nonalcoholic_fatty_liver_disease_R10_full_outcome.Endothelial.MR.sensitivity
+    jobid: 34
+    reason: Missing output files: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Nonalcoholic_fatty_liver_disease_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Nonalcoholic_fatty_liver_disease_R10_full_outcome.Endothelial.MR.sensitivity, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Nonalcoholic_fatty_liver_disease_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Nonalcoholic_fatty_liver_disease_R10_full_outcome.Endothelial.MR.res
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, outcome=Nonalcoholic_fatty_liver_disease_R10_full_outcome, cell_type=Endothelial
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 29 21:47:01 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.Oligodendrocytes.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Senile_cataract_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Senile_cataract_R10_full_outcome.Oligodendrocytes.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Senile_cataract_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Senile_cataract_R10_full_outcome.Oligodendrocytes.MR.sensitivity
+    jobid: 312
+    reason: Missing output files: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Senile_cataract_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Senile_cataract_R10_full_outcome.Oligodendrocytes.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Senile_cataract_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Senile_cataract_R10_full_outcome.Oligodendrocytes.MR.sensitivity
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, outcome=Senile_cataract_R10_full_outcome, cell_type=Oligodendrocytes
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 29 21:47:01 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.Excitatory_neurons.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Nonalcoholic_fatty_liver_disease_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Nonalcoholic_fatty_liver_disease_R10_full_outcome.Excitatory_neurons.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Nonalcoholic_fatty_liver_disease_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Nonalcoholic_fatty_liver_disease_R10_full_outcome.Excitatory_neurons.MR.sensitivity
+    jobid: 352
+    reason: Missing output files: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Nonalcoholic_fatty_liver_disease_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Nonalcoholic_fatty_liver_disease_R10_full_outcome.Excitatory_neurons.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Nonalcoholic_fatty_liver_disease_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Nonalcoholic_fatty_liver_disease_R10_full_outcome.Excitatory_neurons.MR.sensitivity
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, outcome=Nonalcoholic_fatty_liver_disease_R10_full_outcome, cell_type=Excitatory_neurons
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 29 21:47:01 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.pb.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Type_2_diabetes_definitions_combined_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Type_2_diabetes_definitions_combined_R10_full_outcome.pb.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Type_2_diabetes_definitions_combined_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Type_2_diabetes_definitions_combined_R10_full_outcome.pb.MR.sensitivity
+    jobid: 476
+    reason: Missing output files: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Type_2_diabetes_definitions_combined_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Type_2_diabetes_definitions_combined_R10_full_outcome.pb.MR.sensitivity, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Type_2_diabetes_definitions_combined_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Type_2_diabetes_definitions_combined_R10_full_outcome.pb.MR.res
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, outcome=Type_2_diabetes_definitions_combined_R10_full_outcome, cell_type=pb
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 29 21:47:01 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.Excitatory_neurons.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Bipolar_affective_disorders_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Bipolar_affective_disorders_R10_full_outcome.Excitatory_neurons.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Bipolar_affective_disorders_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Bipolar_affective_disorders_R10_full_outcome.Excitatory_neurons.MR.sensitivity
+    jobid: 367
+    reason: Missing output files: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Bipolar_affective_disorders_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Bipolar_affective_disorders_R10_full_outcome.Excitatory_neurons.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Bipolar_affective_disorders_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Bipolar_affective_disorders_R10_full_outcome.Excitatory_neurons.MR.sensitivity
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, outcome=Bipolar_affective_disorders_R10_full_outcome, cell_type=Excitatory_neurons
+    resources: tmpdir=/tmp
+
+[Thu Aug 29 21:47:57 2024]
+Finished job 360.
+1 of 50 steps (2%) done
+[Thu Aug 29 21:48:32 2024]
+Error in rule MR:
+    jobid: 344
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.Excitatory_neurons.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Autism_spectrum_disorder_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Autism_spectrum_disorder_full_outcome.Excitatory_neurons.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Autism_spectrum_disorder_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Autism_spectrum_disorder_full_outcome.Excitatory_neurons.MR.sensitivity
+    shell:
+        Rscript scripts/csMR.r -e /home/u/csMR/example/BMI_GWAS/Ulcerative_colitis_full_exposure_ieu_a_970.ma -o example/outcomes/Autism_spectrum_disorder_full_outcome.ma -c csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.Excitatory_neurons.clumped -r /home/u/csMR/data/reference_genome_1000G_EUR
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Thu Aug 29 21:48:38 2024]
+Finished job 354.
+2 of 50 steps (4%) done
+[Thu Aug 29 21:48:42 2024]
+Finished job 375.
+3 of 50 steps (6%) done
+[Thu Aug 29 21:48:44 2024]
+Error in rule MR:
+    jobid: 483
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.pb.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Metal_38_Essential_tremor_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Metal_38_Essential_tremor_outcome.pb.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Metal_38_Essential_tremor_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Metal_38_Essential_tremor_outcome.pb.MR.sensitivity
+    shell:
+        Rscript scripts/csMR.r -e /home/u/csMR/example/BMI_GWAS/Ulcerative_colitis_full_exposure_ieu_a_970.ma -o example/outcomes/Metal_38_Essential_tremor_outcome.ma -c csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.pb.clumped -r /home/u/csMR/data/reference_genome_1000G_EUR
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Thu Aug 29 21:48:48 2024]
+Finished job 452.
+4 of 50 steps (8%) done
+[Thu Aug 29 21:49:01 2024]
+Finished job 95.
+5 of 50 steps (10%) done
+[Thu Aug 29 21:49:04 2024]
+Finished job 193.
+6 of 50 steps (12%) done
+[Thu Aug 29 21:49:04 2024]
+Finished job 111.
+7 of 50 steps (14%) done
+[Thu Aug 29 21:49:04 2024]
+Finished job 42.
+8 of 50 steps (16%) done
+[Thu Aug 29 21:49:04 2024]
+Finished job 246.
+9 of 50 steps (18%) done
+[Thu Aug 29 21:49:05 2024]
+Finished job 100.
+10 of 50 steps (20%) done
+[Thu Aug 29 21:49:05 2024]
+Finished job 413.
+11 of 50 steps (22%) done
+[Thu Aug 29 21:49:05 2024]
+Finished job 34.
+12 of 50 steps (24%) done
+[Thu Aug 29 21:49:05 2024]
+Finished job 259.
+13 of 50 steps (26%) done
+[Thu Aug 29 21:49:05 2024]
+Finished job 254.
+14 of 50 steps (28%) done
+[Thu Aug 29 21:49:05 2024]
+Finished job 47.
+15 of 50 steps (30%) done
+[Thu Aug 29 21:49:05 2024]
+Finished job 58.
+16 of 50 steps (32%) done
+[Thu Aug 29 21:49:05 2024]
+Finished job 418.
+17 of 50 steps (34%) done
+[Thu Aug 29 21:49:05 2024]
+Finished job 206.
+18 of 50 steps (36%) done
+[Thu Aug 29 21:49:06 2024]
+Finished job 87.
+19 of 50 steps (38%) done
+[Thu Aug 29 21:49:06 2024]
+Finished job 405.
+20 of 50 steps (40%) done
+[Thu Aug 29 21:49:06 2024]
+Finished job 270.
+21 of 50 steps (42%) done
+[Thu Aug 29 21:49:06 2024]
+Finished job 217.
+22 of 50 steps (44%) done
+[Thu Aug 29 21:49:07 2024]
+Finished job 429.
+23 of 50 steps (46%) done
+[Thu Aug 29 21:49:08 2024]
+Finished job 201.
+24 of 50 steps (48%) done
+[Thu Aug 29 21:49:12 2024]
+Finished job 307.
+25 of 50 steps (50%) done
+[Thu Aug 29 21:49:12 2024]
+Finished job 323.
+26 of 50 steps (52%) done
+[Thu Aug 29 21:49:12 2024]
+Finished job 299.
+27 of 50 steps (54%) done
+[Thu Aug 29 21:49:12 2024]
+Finished job 312.
+28 of 50 steps (56%) done
+[Thu Aug 29 21:49:18 2024]
+Finished job 140.
+29 of 50 steps (58%) done
+[Thu Aug 29 21:49:19 2024]
+Error in rule MR:
+    jobid: 392
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.Excitatory_neurons.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Myocardial_infarction_strict_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Myocardial_infarction_strict_R10_full_outcome.Excitatory_neurons.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Myocardial_infarction_strict_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Myocardial_infarction_strict_R10_full_outcome.Excitatory_neurons.MR.sensitivity
+    shell:
+        Rscript scripts/csMR.r -e /home/u/csMR/example/BMI_GWAS/Ulcerative_colitis_full_exposure_ieu_a_970.ma -o example/outcomes/Myocardial_infarction_strict_R10_full_outcome.ma -c csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.Excitatory_neurons.clumped -r /home/u/csMR/data/reference_genome_1000G_EUR
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Thu Aug 29 21:49:19 2024]
+Finished job 148.
+30 of 50 steps (60%) done
+[Thu Aug 29 21:49:20 2024]
+Error in rule MR:
+    jobid: 367
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.Excitatory_neurons.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Bipolar_affective_disorders_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Bipolar_affective_disorders_R10_full_outcome.Excitatory_neurons.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Bipolar_affective_disorders_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Bipolar_affective_disorders_R10_full_outcome.Excitatory_neurons.MR.sensitivity
+    shell:
+        Rscript scripts/csMR.r -e /home/u/csMR/example/BMI_GWAS/Ulcerative_colitis_full_exposure_ieu_a_970.ma -o example/outcomes/Bipolar_affective_disorders_R10_full_outcome.ma -c csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.Excitatory_neurons.clumped -r /home/u/csMR/data/reference_genome_1000G_EUR
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Thu Aug 29 21:49:21 2024]
+Error in rule MR:
+    jobid: 389
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.Excitatory_neurons.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Low_back_pain_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Low_back_pain_R10_full_outcome.Excitatory_neurons.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Low_back_pain_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Low_back_pain_R10_full_outcome.Excitatory_neurons.MR.sensitivity
+    shell:
+        Rscript scripts/csMR.r -e /home/u/csMR/example/BMI_GWAS/Ulcerative_colitis_full_exposure_ieu_a_970.ma -o example/outcomes/Low_back_pain_R10_full_outcome.ma -c csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.Excitatory_neurons.clumped -r /home/u/csMR/data/reference_genome_1000G_EUR
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Thu Aug 29 21:49:22 2024]
+Finished job 476.
+31 of 50 steps (62%) done
+[Thu Aug 29 21:49:24 2024]
+Finished job 164.
+32 of 50 steps (64%) done
+[Thu Aug 29 21:49:25 2024]
+Finished job 153.
+33 of 50 steps (66%) done
+[Thu Aug 29 21:49:25 2024]
+Finished job 478.
+34 of 50 steps (68%) done
+[Thu Aug 29 21:49:25 2024]
+Finished job 376.
+35 of 50 steps (70%) done
+[Thu Aug 29 21:49:27 2024]
+Finished job 352.
+36 of 50 steps (72%) done
+[Thu Aug 29 21:49:27 2024]
+Finished job 471.
+37 of 50 steps (74%) done
+[Thu Aug 29 21:49:27 2024]
+Finished job 365.
+38 of 50 steps (76%) done
+[Thu Aug 29 21:49:28 2024]
+Finished job 466.
+39 of 50 steps (78%) done
+[Thu Aug 29 21:49:28 2024]
+Finished job 482.
+40 of 50 steps (80%) done
+[Thu Aug 29 21:49:28 2024]
+Finished job 489.
+41 of 50 steps (82%) done
+[Thu Aug 29 21:49:28 2024]
+Finished job 498.
+42 of 50 steps (84%) done
+[Thu Aug 29 21:49:29 2024]
+Finished job 458.
+43 of 50 steps (86%) done
+[Thu Aug 29 21:49:30 2024]
+Finished job 350.
+44 of 50 steps (88%) done
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2024-08-29T214651.785685.snakemake.log

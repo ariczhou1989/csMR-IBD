@@ -1,0 +1,1193 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 60
+Rules claiming more threads will be scaled down.
+Job stats:
+job                   count    min threads    max threads
+------------------  -------  -------------  -------------
+MR                       63              1              1
+all                       1              1              1
+clump                    63              1              1
+coloc_summary             7              1              1
+eqtl_rdata                1              1              1
+fine_mapping              1              1              1
+get_intersect_pair       63              1              1
+gwas_rdata                7              1              1
+run_coloc                 1              1              1
+snp_filter                7              1              1
+split_eqtl                9              1              1
+split_gwas                7              1              1
+total                   230              1              1
+
+Select jobs to execute...
+
+[Fri Aug 30 16:09:47 2024]
+rule split_gwas:
+    input: /home/u/csMR/example/BMI_GWAS/Crohn_disease.ma
+    output: csMR-EXAMPLE/precomputation/Crohn_disease.GWAS_split/Crohn_disease.5e-8SNP.100kb.merged_nomhc.bed
+    jobid: 17
+    reason: Missing output files: csMR-EXAMPLE/precomputation/Crohn_disease.GWAS_split/Crohn_disease.5e-8SNP.100kb.merged_nomhc.bed
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Crohn_disease
+    resources: tmpdir=/tmp
+
+
+[Fri Aug 30 16:09:47 2024]
+rule split_gwas:
+    input: /home/u/csMR/example/BMI_GWAS/mtag_Crohn_ebi_a_GCST003044.ma
+    output: csMR-EXAMPLE/precomputation/mtag_Crohn_ebi_a_GCST003044.GWAS_split/mtag_Crohn_ebi_a_GCST003044.5e-8SNP.100kb.merged_nomhc.bed
+    jobid: 19
+    reason: Missing output files: csMR-EXAMPLE/precomputation/mtag_Crohn_ebi_a_GCST003044.GWAS_split/mtag_Crohn_ebi_a_GCST003044.5e-8SNP.100kb.merged_nomhc.bed
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=mtag_Crohn_ebi_a_GCST003044
+    resources: tmpdir=/tmp
+
+
+[Fri Aug 30 16:09:47 2024]
+rule split_gwas:
+    input: /home/u/csMR/example/BMI_GWAS/mtag_Inflammatory_bowel_disease.ma
+    output: csMR-EXAMPLE/precomputation/mtag_Inflammatory_bowel_disease.GWAS_split/mtag_Inflammatory_bowel_disease.5e-8SNP.100kb.merged_nomhc.bed
+    jobid: 21
+    reason: Missing output files: csMR-EXAMPLE/precomputation/mtag_Inflammatory_bowel_disease.GWAS_split/mtag_Inflammatory_bowel_disease.5e-8SNP.100kb.merged_nomhc.bed
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=mtag_Inflammatory_bowel_disease
+    resources: tmpdir=/tmp
+
+
+[Fri Aug 30 16:09:47 2024]
+rule split_gwas:
+    input: /home/u/csMR/example/BMI_GWAS/mtag_Ulcerative_colitis_full_exposure.ma
+    output: csMR-EXAMPLE/precomputation/mtag_Ulcerative_colitis_full_exposure.GWAS_split/mtag_Ulcerative_colitis_full_exposure.5e-8SNP.100kb.merged_nomhc.bed
+    jobid: 23
+    reason: Missing output files: csMR-EXAMPLE/precomputation/mtag_Ulcerative_colitis_full_exposure.GWAS_split/mtag_Ulcerative_colitis_full_exposure.5e-8SNP.100kb.merged_nomhc.bed
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=mtag_Ulcerative_colitis_full_exposure
+    resources: tmpdir=/tmp
+
+
+[Fri Aug 30 16:09:47 2024]
+rule split_gwas:
+    input: /home/u/csMR/example/BMI_GWAS/Ulcerative_colitis_full_exposure_ieu_a_970.ma
+    output: csMR-EXAMPLE/precomputation/Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split/Ulcerative_colitis_full_exposure_ieu_a_970.5e-8SNP.100kb.merged_nomhc.bed
+    jobid: 11
+    reason: Missing output files: csMR-EXAMPLE/precomputation/Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split/Ulcerative_colitis_full_exposure_ieu_a_970.5e-8SNP.100kb.merged_nomhc.bed
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970
+    resources: tmpdir=/tmp
+
+
+[Fri Aug 30 16:09:47 2024]
+rule split_gwas:
+    input: /home/u/csMR/example/BMI_GWAS/Ulcerative_colitis.ma
+    output: csMR-EXAMPLE/precomputation/Ulcerative_colitis.GWAS_split/Ulcerative_colitis.5e-8SNP.100kb.merged_nomhc.bed
+    jobid: 13
+    reason: Missing output files: csMR-EXAMPLE/precomputation/Ulcerative_colitis.GWAS_split/Ulcerative_colitis.5e-8SNP.100kb.merged_nomhc.bed
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis
+    resources: tmpdir=/tmp
+
+
+[Fri Aug 30 16:09:47 2024]
+rule split_gwas:
+    input: /home/u/csMR/example/BMI_GWAS/Inflammatory_bowel_disease.ma
+    output: csMR-EXAMPLE/precomputation/Inflammatory_bowel_disease.GWAS_split/Inflammatory_bowel_disease.5e-8SNP.100kb.merged_nomhc.bed
+    jobid: 15
+    reason: Missing output files: csMR-EXAMPLE/precomputation/Inflammatory_bowel_disease.GWAS_split/Inflammatory_bowel_disease.5e-8SNP.100kb.merged_nomhc.bed
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Inflammatory_bowel_disease
+    resources: tmpdir=/tmp
+
+[Fri Aug 30 16:09:50 2024]
+Finished job 23.
+1 of 230 steps (0.4%) done
+Select jobs to execute...
+
+[Fri Aug 30 16:09:50 2024]
+rule gwas_rdata:
+    input: csMR-EXAMPLE/precomputation/mtag_Ulcerative_colitis_full_exposure.GWAS_split/mtag_Ulcerative_colitis_full_exposure.5e-8SNP.100kb.merged_nomhc.bed
+    output: csMR-EXAMPLE/precomputation/mtag_Ulcerative_colitis_full_exposure.GWAS_split/mtag_Ulcerative_colitis_full_exposure.GWAS_split.maflist
+    jobid: 22
+    reason: Missing output files: csMR-EXAMPLE/precomputation/mtag_Ulcerative_colitis_full_exposure.GWAS_split/mtag_Ulcerative_colitis_full_exposure.GWAS_split.maflist; Input files updated by another job: csMR-EXAMPLE/precomputation/mtag_Ulcerative_colitis_full_exposure.GWAS_split/mtag_Ulcerative_colitis_full_exposure.5e-8SNP.100kb.merged_nomhc.bed
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=mtag_Ulcerative_colitis_full_exposure
+    resources: tmpdir=/tmp
+
+[Fri Aug 30 16:09:50 2024]
+Finished job 19.
+2 of 230 steps (1%) done
+Select jobs to execute...
+
+[Fri Aug 30 16:09:50 2024]
+rule gwas_rdata:
+    input: csMR-EXAMPLE/precomputation/mtag_Crohn_ebi_a_GCST003044.GWAS_split/mtag_Crohn_ebi_a_GCST003044.5e-8SNP.100kb.merged_nomhc.bed
+    output: csMR-EXAMPLE/precomputation/mtag_Crohn_ebi_a_GCST003044.GWAS_split/mtag_Crohn_ebi_a_GCST003044.GWAS_split.maflist
+    jobid: 18
+    reason: Missing output files: csMR-EXAMPLE/precomputation/mtag_Crohn_ebi_a_GCST003044.GWAS_split/mtag_Crohn_ebi_a_GCST003044.GWAS_split.maflist; Input files updated by another job: csMR-EXAMPLE/precomputation/mtag_Crohn_ebi_a_GCST003044.GWAS_split/mtag_Crohn_ebi_a_GCST003044.5e-8SNP.100kb.merged_nomhc.bed
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=mtag_Crohn_ebi_a_GCST003044
+    resources: tmpdir=/tmp
+
+[Fri Aug 30 16:09:50 2024]
+Finished job 15.
+3 of 230 steps (1%) done
+Select jobs to execute...
+
+[Fri Aug 30 16:09:50 2024]
+rule gwas_rdata:
+    input: csMR-EXAMPLE/precomputation/Inflammatory_bowel_disease.GWAS_split/Inflammatory_bowel_disease.5e-8SNP.100kb.merged_nomhc.bed
+    output: csMR-EXAMPLE/precomputation/Inflammatory_bowel_disease.GWAS_split/Inflammatory_bowel_disease.GWAS_split.maflist
+    jobid: 14
+    reason: Missing output files: csMR-EXAMPLE/precomputation/Inflammatory_bowel_disease.GWAS_split/Inflammatory_bowel_disease.GWAS_split.maflist; Input files updated by another job: csMR-EXAMPLE/precomputation/Inflammatory_bowel_disease.GWAS_split/Inflammatory_bowel_disease.5e-8SNP.100kb.merged_nomhc.bed
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Inflammatory_bowel_disease
+    resources: tmpdir=/tmp
+
+[Fri Aug 30 16:09:50 2024]
+Finished job 21.
+4 of 230 steps (2%) done
+Select jobs to execute...
+
+[Fri Aug 30 16:09:50 2024]
+rule gwas_rdata:
+    input: csMR-EXAMPLE/precomputation/mtag_Inflammatory_bowel_disease.GWAS_split/mtag_Inflammatory_bowel_disease.5e-8SNP.100kb.merged_nomhc.bed
+    output: csMR-EXAMPLE/precomputation/mtag_Inflammatory_bowel_disease.GWAS_split/mtag_Inflammatory_bowel_disease.GWAS_split.maflist
+    jobid: 20
+    reason: Missing output files: csMR-EXAMPLE/precomputation/mtag_Inflammatory_bowel_disease.GWAS_split/mtag_Inflammatory_bowel_disease.GWAS_split.maflist; Input files updated by another job: csMR-EXAMPLE/precomputation/mtag_Inflammatory_bowel_disease.GWAS_split/mtag_Inflammatory_bowel_disease.5e-8SNP.100kb.merged_nomhc.bed
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=mtag_Inflammatory_bowel_disease
+    resources: tmpdir=/tmp
+
+[Fri Aug 30 16:09:50 2024]
+Finished job 11.
+5 of 230 steps (2%) done
+Select jobs to execute...
+
+[Fri Aug 30 16:09:50 2024]
+rule gwas_rdata:
+    input: csMR-EXAMPLE/precomputation/Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split/Ulcerative_colitis_full_exposure_ieu_a_970.5e-8SNP.100kb.merged_nomhc.bed
+    output: csMR-EXAMPLE/precomputation/Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split/Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.maflist
+    jobid: 10
+    reason: Missing output files: csMR-EXAMPLE/precomputation/Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split/Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.maflist; Input files updated by another job: csMR-EXAMPLE/precomputation/Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split/Ulcerative_colitis_full_exposure_ieu_a_970.5e-8SNP.100kb.merged_nomhc.bed
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970
+    resources: tmpdir=/tmp
+
+[Fri Aug 30 16:09:50 2024]
+Finished job 17.
+6 of 230 steps (3%) done
+Select jobs to execute...
+
+[Fri Aug 30 16:09:50 2024]
+rule gwas_rdata:
+    input: csMR-EXAMPLE/precomputation/Crohn_disease.GWAS_split/Crohn_disease.5e-8SNP.100kb.merged_nomhc.bed
+    output: csMR-EXAMPLE/precomputation/Crohn_disease.GWAS_split/Crohn_disease.GWAS_split.maflist
+    jobid: 16
+    reason: Missing output files: csMR-EXAMPLE/precomputation/Crohn_disease.GWAS_split/Crohn_disease.GWAS_split.maflist; Input files updated by another job: csMR-EXAMPLE/precomputation/Crohn_disease.GWAS_split/Crohn_disease.5e-8SNP.100kb.merged_nomhc.bed
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Crohn_disease
+    resources: tmpdir=/tmp
+
+[Fri Aug 30 16:09:58 2024]
+Finished job 13.
+7 of 230 steps (3%) done
+Select jobs to execute...
+
+[Fri Aug 30 16:09:58 2024]
+rule gwas_rdata:
+    input: csMR-EXAMPLE/precomputation/Ulcerative_colitis.GWAS_split/Ulcerative_colitis.5e-8SNP.100kb.merged_nomhc.bed
+    output: csMR-EXAMPLE/precomputation/Ulcerative_colitis.GWAS_split/Ulcerative_colitis.GWAS_split.maflist
+    jobid: 12
+    reason: Missing output files: csMR-EXAMPLE/precomputation/Ulcerative_colitis.GWAS_split/Ulcerative_colitis.GWAS_split.maflist; Input files updated by another job: csMR-EXAMPLE/precomputation/Ulcerative_colitis.GWAS_split/Ulcerative_colitis.5e-8SNP.100kb.merged_nomhc.bed
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis
+    resources: tmpdir=/tmp
+
+[Fri Aug 30 16:10:16 2024]
+Finished job 22.
+8 of 230 steps (3%) done
+[Fri Aug 30 16:10:16 2024]
+Finished job 12.
+9 of 230 steps (4%) done
+[Fri Aug 30 16:10:17 2024]
+Finished job 10.
+10 of 230 steps (4%) done
+[Fri Aug 30 16:10:17 2024]
+Finished job 14.
+11 of 230 steps (5%) done
+[Fri Aug 30 16:10:17 2024]
+Finished job 20.
+12 of 230 steps (5%) done
+[Fri Aug 30 16:10:17 2024]
+Finished job 16.
+13 of 230 steps (6%) done
+[Fri Aug 30 16:10:17 2024]
+Finished job 18.
+14 of 230 steps (6%) done
+Select jobs to execute...
+
+[Fri Aug 30 16:10:17 2024]
+rule split_eqtl:
+    input: csMR-EXAMPLE/precomputation/Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split/Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.maflist, csMR-EXAMPLE/precomputation/Ulcerative_colitis.GWAS_split/Ulcerative_colitis.GWAS_split.maflist, csMR-EXAMPLE/precomputation/Inflammatory_bowel_disease.GWAS_split/Inflammatory_bowel_disease.GWAS_split.maflist, csMR-EXAMPLE/precomputation/Crohn_disease.GWAS_split/Crohn_disease.GWAS_split.maflist, csMR-EXAMPLE/precomputation/mtag_Crohn_ebi_a_GCST003044.GWAS_split/mtag_Crohn_ebi_a_GCST003044.GWAS_split.maflist, csMR-EXAMPLE/precomputation/mtag_Inflammatory_bowel_disease.GWAS_split/mtag_Inflammatory_bowel_disease.GWAS_split.maflist, csMR-EXAMPLE/precomputation/mtag_Ulcerative_colitis_full_exposure.GWAS_split/mtag_Ulcerative_colitis_full_exposure.GWAS_split.maflist, /home/u/csMR/example/single-cell-eQTL/Inhibitory_neurons.ma
+    output: csMR-EXAMPLE/precomputation/Inhibitory_neurons.eQTL_split
+    jobid: 31
+    reason: Missing output files: csMR-EXAMPLE/precomputation/Inhibitory_neurons.eQTL_split; Input files updated by another job: csMR-EXAMPLE/precomputation/Ulcerative_colitis.GWAS_split/Ulcerative_colitis.GWAS_split.maflist, csMR-EXAMPLE/precomputation/Crohn_disease.GWAS_split/Crohn_disease.GWAS_split.maflist, csMR-EXAMPLE/precomputation/mtag_Ulcerative_colitis_full_exposure.GWAS_split/mtag_Ulcerative_colitis_full_exposure.GWAS_split.maflist, csMR-EXAMPLE/precomputation/mtag_Inflammatory_bowel_disease.GWAS_split/mtag_Inflammatory_bowel_disease.GWAS_split.maflist, csMR-EXAMPLE/precomputation/Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split/Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.maflist, csMR-EXAMPLE/precomputation/Inflammatory_bowel_disease.GWAS_split/Inflammatory_bowel_disease.GWAS_split.maflist, csMR-EXAMPLE/precomputation/mtag_Crohn_ebi_a_GCST003044.GWAS_split/mtag_Crohn_ebi_a_GCST003044.GWAS_split.maflist
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, cell_type=Inhibitory_neurons
+    resources: tmpdir=/tmp
+
+
+[Fri Aug 30 16:10:17 2024]
+rule split_eqtl:
+    input: csMR-EXAMPLE/precomputation/Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split/Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.maflist, csMR-EXAMPLE/precomputation/Ulcerative_colitis.GWAS_split/Ulcerative_colitis.GWAS_split.maflist, csMR-EXAMPLE/precomputation/Inflammatory_bowel_disease.GWAS_split/Inflammatory_bowel_disease.GWAS_split.maflist, csMR-EXAMPLE/precomputation/Crohn_disease.GWAS_split/Crohn_disease.GWAS_split.maflist, csMR-EXAMPLE/precomputation/mtag_Crohn_ebi_a_GCST003044.GWAS_split/mtag_Crohn_ebi_a_GCST003044.GWAS_split.maflist, csMR-EXAMPLE/precomputation/mtag_Inflammatory_bowel_disease.GWAS_split/mtag_Inflammatory_bowel_disease.GWAS_split.maflist, csMR-EXAMPLE/precomputation/mtag_Ulcerative_colitis_full_exposure.GWAS_split/mtag_Ulcerative_colitis_full_exposure.GWAS_split.maflist, /home/u/csMR/example/single-cell-eQTL/Oligodendrocytes.ma
+    output: csMR-EXAMPLE/precomputation/Oligodendrocytes.eQTL_split
+    jobid: 33
+    reason: Missing output files: csMR-EXAMPLE/precomputation/Oligodendrocytes.eQTL_split; Input files updated by another job: csMR-EXAMPLE/precomputation/Ulcerative_colitis.GWAS_split/Ulcerative_colitis.GWAS_split.maflist, csMR-EXAMPLE/precomputation/Crohn_disease.GWAS_split/Crohn_disease.GWAS_split.maflist, csMR-EXAMPLE/precomputation/mtag_Ulcerative_colitis_full_exposure.GWAS_split/mtag_Ulcerative_colitis_full_exposure.GWAS_split.maflist, csMR-EXAMPLE/precomputation/mtag_Inflammatory_bowel_disease.GWAS_split/mtag_Inflammatory_bowel_disease.GWAS_split.maflist, csMR-EXAMPLE/precomputation/Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split/Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.maflist, csMR-EXAMPLE/precomputation/Inflammatory_bowel_disease.GWAS_split/Inflammatory_bowel_disease.GWAS_split.maflist, csMR-EXAMPLE/precomputation/mtag_Crohn_ebi_a_GCST003044.GWAS_split/mtag_Crohn_ebi_a_GCST003044.GWAS_split.maflist
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, cell_type=Oligodendrocytes
+    resources: tmpdir=/tmp
+
+
+[Fri Aug 30 16:10:17 2024]
+rule split_eqtl:
+    input: csMR-EXAMPLE/precomputation/Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split/Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.maflist, csMR-EXAMPLE/precomputation/Ulcerative_colitis.GWAS_split/Ulcerative_colitis.GWAS_split.maflist, csMR-EXAMPLE/precomputation/Inflammatory_bowel_disease.GWAS_split/Inflammatory_bowel_disease.GWAS_split.maflist, csMR-EXAMPLE/precomputation/Crohn_disease.GWAS_split/Crohn_disease.GWAS_split.maflist, csMR-EXAMPLE/precomputation/mtag_Crohn_ebi_a_GCST003044.GWAS_split/mtag_Crohn_ebi_a_GCST003044.GWAS_split.maflist, csMR-EXAMPLE/precomputation/mtag_Inflammatory_bowel_disease.GWAS_split/mtag_Inflammatory_bowel_disease.GWAS_split.maflist, csMR-EXAMPLE/precomputation/mtag_Ulcerative_colitis_full_exposure.GWAS_split/mtag_Ulcerative_colitis_full_exposure.GWAS_split.maflist, /home/u/csMR/example/single-cell-eQTL/Excitatory_neurons.ma
+    output: csMR-EXAMPLE/precomputation/Excitatory_neurons.eQTL_split
+    jobid: 35
+    reason: Missing output files: csMR-EXAMPLE/precomputation/Excitatory_neurons.eQTL_split; Input files updated by another job: csMR-EXAMPLE/precomputation/Ulcerative_colitis.GWAS_split/Ulcerative_colitis.GWAS_split.maflist, csMR-EXAMPLE/precomputation/Crohn_disease.GWAS_split/Crohn_disease.GWAS_split.maflist, csMR-EXAMPLE/precomputation/mtag_Ulcerative_colitis_full_exposure.GWAS_split/mtag_Ulcerative_colitis_full_exposure.GWAS_split.maflist, csMR-EXAMPLE/precomputation/mtag_Inflammatory_bowel_disease.GWAS_split/mtag_Inflammatory_bowel_disease.GWAS_split.maflist, csMR-EXAMPLE/precomputation/Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split/Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.maflist, csMR-EXAMPLE/precomputation/Inflammatory_bowel_disease.GWAS_split/Inflammatory_bowel_disease.GWAS_split.maflist, csMR-EXAMPLE/precomputation/mtag_Crohn_ebi_a_GCST003044.GWAS_split/mtag_Crohn_ebi_a_GCST003044.GWAS_split.maflist
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, cell_type=Excitatory_neurons
+    resources: tmpdir=/tmp
+
+
+[Fri Aug 30 16:10:17 2024]
+rule split_eqtl:
+    input: csMR-EXAMPLE/precomputation/Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split/Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.maflist, csMR-EXAMPLE/precomputation/Ulcerative_colitis.GWAS_split/Ulcerative_colitis.GWAS_split.maflist, csMR-EXAMPLE/precomputation/Inflammatory_bowel_disease.GWAS_split/Inflammatory_bowel_disease.GWAS_split.maflist, csMR-EXAMPLE/precomputation/Crohn_disease.GWAS_split/Crohn_disease.GWAS_split.maflist, csMR-EXAMPLE/precomputation/mtag_Crohn_ebi_a_GCST003044.GWAS_split/mtag_Crohn_ebi_a_GCST003044.GWAS_split.maflist, csMR-EXAMPLE/precomputation/mtag_Inflammatory_bowel_disease.GWAS_split/mtag_Inflammatory_bowel_disease.GWAS_split.maflist, csMR-EXAMPLE/precomputation/mtag_Ulcerative_colitis_full_exposure.GWAS_split/mtag_Ulcerative_colitis_full_exposure.GWAS_split.maflist, /home/u/csMR/example/single-cell-eQTL/Endothelial.ma
+    output: csMR-EXAMPLE/precomputation/Endothelial.eQTL_split
+    jobid: 9
+    reason: Missing output files: csMR-EXAMPLE/precomputation/Endothelial.eQTL_split; Input files updated by another job: csMR-EXAMPLE/precomputation/Ulcerative_colitis.GWAS_split/Ulcerative_colitis.GWAS_split.maflist, csMR-EXAMPLE/precomputation/Crohn_disease.GWAS_split/Crohn_disease.GWAS_split.maflist, csMR-EXAMPLE/precomputation/mtag_Ulcerative_colitis_full_exposure.GWAS_split/mtag_Ulcerative_colitis_full_exposure.GWAS_split.maflist, csMR-EXAMPLE/precomputation/mtag_Inflammatory_bowel_disease.GWAS_split/mtag_Inflammatory_bowel_disease.GWAS_split.maflist, csMR-EXAMPLE/precomputation/Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split/Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.maflist, csMR-EXAMPLE/precomputation/Inflammatory_bowel_disease.GWAS_split/Inflammatory_bowel_disease.GWAS_split.maflist, csMR-EXAMPLE/precomputation/mtag_Crohn_ebi_a_GCST003044.GWAS_split/mtag_Crohn_ebi_a_GCST003044.GWAS_split.maflist
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, cell_type=Endothelial
+    resources: tmpdir=/tmp
+
+
+[Fri Aug 30 16:10:17 2024]
+rule split_eqtl:
+    input: csMR-EXAMPLE/precomputation/Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split/Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.maflist, csMR-EXAMPLE/precomputation/Ulcerative_colitis.GWAS_split/Ulcerative_colitis.GWAS_split.maflist, csMR-EXAMPLE/precomputation/Inflammatory_bowel_disease.GWAS_split/Inflammatory_bowel_disease.GWAS_split.maflist, csMR-EXAMPLE/precomputation/Crohn_disease.GWAS_split/Crohn_disease.GWAS_split.maflist, csMR-EXAMPLE/precomputation/mtag_Crohn_ebi_a_GCST003044.GWAS_split/mtag_Crohn_ebi_a_GCST003044.GWAS_split.maflist, csMR-EXAMPLE/precomputation/mtag_Inflammatory_bowel_disease.GWAS_split/mtag_Inflammatory_bowel_disease.GWAS_split.maflist, csMR-EXAMPLE/precomputation/mtag_Ulcerative_colitis_full_exposure.GWAS_split/mtag_Ulcerative_colitis_full_exposure.GWAS_split.maflist, /home/u/csMR/example/single-cell-eQTL/Astrocytes.ma
+    output: csMR-EXAMPLE/precomputation/Astrocytes.eQTL_split
+    jobid: 37
+    reason: Missing output files: csMR-EXAMPLE/precomputation/Astrocytes.eQTL_split; Input files updated by another job: csMR-EXAMPLE/precomputation/Ulcerative_colitis.GWAS_split/Ulcerative_colitis.GWAS_split.maflist, csMR-EXAMPLE/precomputation/Crohn_disease.GWAS_split/Crohn_disease.GWAS_split.maflist, csMR-EXAMPLE/precomputation/mtag_Ulcerative_colitis_full_exposure.GWAS_split/mtag_Ulcerative_colitis_full_exposure.GWAS_split.maflist, csMR-EXAMPLE/precomputation/mtag_Inflammatory_bowel_disease.GWAS_split/mtag_Inflammatory_bowel_disease.GWAS_split.maflist, csMR-EXAMPLE/precomputation/Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split/Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.maflist, csMR-EXAMPLE/precomputation/Inflammatory_bowel_disease.GWAS_split/Inflammatory_bowel_disease.GWAS_split.maflist, csMR-EXAMPLE/precomputation/mtag_Crohn_ebi_a_GCST003044.GWAS_split/mtag_Crohn_ebi_a_GCST003044.GWAS_split.maflist
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, cell_type=Astrocytes
+    resources: tmpdir=/tmp
+
+
+[Fri Aug 30 16:10:17 2024]
+rule split_eqtl:
+    input: csMR-EXAMPLE/precomputation/Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split/Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.maflist, csMR-EXAMPLE/precomputation/Ulcerative_colitis.GWAS_split/Ulcerative_colitis.GWAS_split.maflist, csMR-EXAMPLE/precomputation/Inflammatory_bowel_disease.GWAS_split/Inflammatory_bowel_disease.GWAS_split.maflist, csMR-EXAMPLE/precomputation/Crohn_disease.GWAS_split/Crohn_disease.GWAS_split.maflist, csMR-EXAMPLE/precomputation/mtag_Crohn_ebi_a_GCST003044.GWAS_split/mtag_Crohn_ebi_a_GCST003044.GWAS_split.maflist, csMR-EXAMPLE/precomputation/mtag_Inflammatory_bowel_disease.GWAS_split/mtag_Inflammatory_bowel_disease.GWAS_split.maflist, csMR-EXAMPLE/precomputation/mtag_Ulcerative_colitis_full_exposure.GWAS_split/mtag_Ulcerative_colitis_full_exposure.GWAS_split.maflist, /home/u/csMR/example/single-cell-eQTL/Pericytes.ma
+    output: csMR-EXAMPLE/precomputation/Pericytes.eQTL_split
+    jobid: 25
+    reason: Missing output files: csMR-EXAMPLE/precomputation/Pericytes.eQTL_split; Input files updated by another job: csMR-EXAMPLE/precomputation/Ulcerative_colitis.GWAS_split/Ulcerative_colitis.GWAS_split.maflist, csMR-EXAMPLE/precomputation/Crohn_disease.GWAS_split/Crohn_disease.GWAS_split.maflist, csMR-EXAMPLE/precomputation/mtag_Ulcerative_colitis_full_exposure.GWAS_split/mtag_Ulcerative_colitis_full_exposure.GWAS_split.maflist, csMR-EXAMPLE/precomputation/mtag_Inflammatory_bowel_disease.GWAS_split/mtag_Inflammatory_bowel_disease.GWAS_split.maflist, csMR-EXAMPLE/precomputation/Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split/Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.maflist, csMR-EXAMPLE/precomputation/Inflammatory_bowel_disease.GWAS_split/Inflammatory_bowel_disease.GWAS_split.maflist, csMR-EXAMPLE/precomputation/mtag_Crohn_ebi_a_GCST003044.GWAS_split/mtag_Crohn_ebi_a_GCST003044.GWAS_split.maflist
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, cell_type=Pericytes
+    resources: tmpdir=/tmp
+
+
+[Fri Aug 30 16:10:17 2024]
+rule split_eqtl:
+    input: csMR-EXAMPLE/precomputation/Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split/Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.maflist, csMR-EXAMPLE/precomputation/Ulcerative_colitis.GWAS_split/Ulcerative_colitis.GWAS_split.maflist, csMR-EXAMPLE/precomputation/Inflammatory_bowel_disease.GWAS_split/Inflammatory_bowel_disease.GWAS_split.maflist, csMR-EXAMPLE/precomputation/Crohn_disease.GWAS_split/Crohn_disease.GWAS_split.maflist, csMR-EXAMPLE/precomputation/mtag_Crohn_ebi_a_GCST003044.GWAS_split/mtag_Crohn_ebi_a_GCST003044.GWAS_split.maflist, csMR-EXAMPLE/precomputation/mtag_Inflammatory_bowel_disease.GWAS_split/mtag_Inflammatory_bowel_disease.GWAS_split.maflist, csMR-EXAMPLE/precomputation/mtag_Ulcerative_colitis_full_exposure.GWAS_split/mtag_Ulcerative_colitis_full_exposure.GWAS_split.maflist, /home/u/csMR/example/single-cell-eQTL/pb.ma
+    output: csMR-EXAMPLE/precomputation/pb.eQTL_split
+    jobid: 39
+    reason: Missing output files: csMR-EXAMPLE/precomputation/pb.eQTL_split; Input files updated by another job: csMR-EXAMPLE/precomputation/Ulcerative_colitis.GWAS_split/Ulcerative_colitis.GWAS_split.maflist, csMR-EXAMPLE/precomputation/Crohn_disease.GWAS_split/Crohn_disease.GWAS_split.maflist, csMR-EXAMPLE/precomputation/mtag_Ulcerative_colitis_full_exposure.GWAS_split/mtag_Ulcerative_colitis_full_exposure.GWAS_split.maflist, csMR-EXAMPLE/precomputation/mtag_Inflammatory_bowel_disease.GWAS_split/mtag_Inflammatory_bowel_disease.GWAS_split.maflist, csMR-EXAMPLE/precomputation/Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split/Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.maflist, csMR-EXAMPLE/precomputation/Inflammatory_bowel_disease.GWAS_split/Inflammatory_bowel_disease.GWAS_split.maflist, csMR-EXAMPLE/precomputation/mtag_Crohn_ebi_a_GCST003044.GWAS_split/mtag_Crohn_ebi_a_GCST003044.GWAS_split.maflist
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, cell_type=pb
+    resources: tmpdir=/tmp
+
+
+[Fri Aug 30 16:10:17 2024]
+rule split_eqtl:
+    input: csMR-EXAMPLE/precomputation/Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split/Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.maflist, csMR-EXAMPLE/precomputation/Ulcerative_colitis.GWAS_split/Ulcerative_colitis.GWAS_split.maflist, csMR-EXAMPLE/precomputation/Inflammatory_bowel_disease.GWAS_split/Inflammatory_bowel_disease.GWAS_split.maflist, csMR-EXAMPLE/precomputation/Crohn_disease.GWAS_split/Crohn_disease.GWAS_split.maflist, csMR-EXAMPLE/precomputation/mtag_Crohn_ebi_a_GCST003044.GWAS_split/mtag_Crohn_ebi_a_GCST003044.GWAS_split.maflist, csMR-EXAMPLE/precomputation/mtag_Inflammatory_bowel_disease.GWAS_split/mtag_Inflammatory_bowel_disease.GWAS_split.maflist, csMR-EXAMPLE/precomputation/mtag_Ulcerative_colitis_full_exposure.GWAS_split/mtag_Ulcerative_colitis_full_exposure.GWAS_split.maflist, /home/u/csMR/example/single-cell-eQTL/OPCs.ma
+    output: csMR-EXAMPLE/precomputation/OPCs.eQTL_split
+    jobid: 27
+    reason: Missing output files: csMR-EXAMPLE/precomputation/OPCs.eQTL_split; Input files updated by another job: csMR-EXAMPLE/precomputation/Ulcerative_colitis.GWAS_split/Ulcerative_colitis.GWAS_split.maflist, csMR-EXAMPLE/precomputation/Crohn_disease.GWAS_split/Crohn_disease.GWAS_split.maflist, csMR-EXAMPLE/precomputation/mtag_Ulcerative_colitis_full_exposure.GWAS_split/mtag_Ulcerative_colitis_full_exposure.GWAS_split.maflist, csMR-EXAMPLE/precomputation/mtag_Inflammatory_bowel_disease.GWAS_split/mtag_Inflammatory_bowel_disease.GWAS_split.maflist, csMR-EXAMPLE/precomputation/Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split/Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.maflist, csMR-EXAMPLE/precomputation/Inflammatory_bowel_disease.GWAS_split/Inflammatory_bowel_disease.GWAS_split.maflist, csMR-EXAMPLE/precomputation/mtag_Crohn_ebi_a_GCST003044.GWAS_split/mtag_Crohn_ebi_a_GCST003044.GWAS_split.maflist
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, cell_type=OPCs
+    resources: tmpdir=/tmp
+
+
+[Fri Aug 30 16:10:17 2024]
+rule split_eqtl:
+    input: csMR-EXAMPLE/precomputation/Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split/Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.maflist, csMR-EXAMPLE/precomputation/Ulcerative_colitis.GWAS_split/Ulcerative_colitis.GWAS_split.maflist, csMR-EXAMPLE/precomputation/Inflammatory_bowel_disease.GWAS_split/Inflammatory_bowel_disease.GWAS_split.maflist, csMR-EXAMPLE/precomputation/Crohn_disease.GWAS_split/Crohn_disease.GWAS_split.maflist, csMR-EXAMPLE/precomputation/mtag_Crohn_ebi_a_GCST003044.GWAS_split/mtag_Crohn_ebi_a_GCST003044.GWAS_split.maflist, csMR-EXAMPLE/precomputation/mtag_Inflammatory_bowel_disease.GWAS_split/mtag_Inflammatory_bowel_disease.GWAS_split.maflist, csMR-EXAMPLE/precomputation/mtag_Ulcerative_colitis_full_exposure.GWAS_split/mtag_Ulcerative_colitis_full_exposure.GWAS_split.maflist, /home/u/csMR/example/single-cell-eQTL/Microglia.ma
+    output: csMR-EXAMPLE/precomputation/Microglia.eQTL_split
+    jobid: 29
+    reason: Missing output files: csMR-EXAMPLE/precomputation/Microglia.eQTL_split; Input files updated by another job: csMR-EXAMPLE/precomputation/Ulcerative_colitis.GWAS_split/Ulcerative_colitis.GWAS_split.maflist, csMR-EXAMPLE/precomputation/Crohn_disease.GWAS_split/Crohn_disease.GWAS_split.maflist, csMR-EXAMPLE/precomputation/mtag_Ulcerative_colitis_full_exposure.GWAS_split/mtag_Ulcerative_colitis_full_exposure.GWAS_split.maflist, csMR-EXAMPLE/precomputation/mtag_Inflammatory_bowel_disease.GWAS_split/mtag_Inflammatory_bowel_disease.GWAS_split.maflist, csMR-EXAMPLE/precomputation/Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split/Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.maflist, csMR-EXAMPLE/precomputation/Inflammatory_bowel_disease.GWAS_split/Inflammatory_bowel_disease.GWAS_split.maflist, csMR-EXAMPLE/precomputation/mtag_Crohn_ebi_a_GCST003044.GWAS_split/mtag_Crohn_ebi_a_GCST003044.GWAS_split.maflist
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, cell_type=Microglia
+    resources: tmpdir=/tmp
+
+[Fri Aug 30 16:10:22 2024]
+Finished job 25.
+15 of 230 steps (7%) done
+Select jobs to execute...
+
+[Fri Aug 30 16:10:22 2024]
+rule get_intersect_pair:
+    input: csMR-EXAMPLE/precomputation/Pericytes.eQTL_split
+    output: csMR-EXAMPLE/precomputation/coloc.mtag_Ulcerative_colitis_full_exposure.GWAS_split.Pericytes.eQTL_split.pairs
+    jobid: 86
+    reason: Missing output files: csMR-EXAMPLE/precomputation/coloc.mtag_Ulcerative_colitis_full_exposure.GWAS_split.Pericytes.eQTL_split.pairs; Input files updated by another job: csMR-EXAMPLE/precomputation/Pericytes.eQTL_split
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=mtag_Ulcerative_colitis_full_exposure, cell_type=Pericytes
+    resources: tmpdir=/tmp
+
+
+[Fri Aug 30 16:10:22 2024]
+rule get_intersect_pair:
+    input: csMR-EXAMPLE/precomputation/Pericytes.eQTL_split
+    output: csMR-EXAMPLE/precomputation/coloc.Crohn_disease.GWAS_split.Pericytes.eQTL_split.pairs
+    jobid: 59
+    reason: Missing output files: csMR-EXAMPLE/precomputation/coloc.Crohn_disease.GWAS_split.Pericytes.eQTL_split.pairs; Input files updated by another job: csMR-EXAMPLE/precomputation/Pericytes.eQTL_split
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Crohn_disease, cell_type=Pericytes
+    resources: tmpdir=/tmp
+
+
+[Fri Aug 30 16:10:22 2024]
+rule get_intersect_pair:
+    input: csMR-EXAMPLE/precomputation/Pericytes.eQTL_split
+    output: csMR-EXAMPLE/precomputation/coloc.mtag_Inflammatory_bowel_disease.GWAS_split.Pericytes.eQTL_split.pairs
+    jobid: 77
+    reason: Missing output files: csMR-EXAMPLE/precomputation/coloc.mtag_Inflammatory_bowel_disease.GWAS_split.Pericytes.eQTL_split.pairs; Input files updated by another job: csMR-EXAMPLE/precomputation/Pericytes.eQTL_split
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=mtag_Inflammatory_bowel_disease, cell_type=Pericytes
+    resources: tmpdir=/tmp
+
+
+[Fri Aug 30 16:10:22 2024]
+rule get_intersect_pair:
+    input: csMR-EXAMPLE/precomputation/Pericytes.eQTL_split
+    output: csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis.GWAS_split.Pericytes.eQTL_split.pairs
+    jobid: 41
+    reason: Missing output files: csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis.GWAS_split.Pericytes.eQTL_split.pairs; Input files updated by another job: csMR-EXAMPLE/precomputation/Pericytes.eQTL_split
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis, cell_type=Pericytes
+    resources: tmpdir=/tmp
+
+
+[Fri Aug 30 16:10:22 2024]
+rule get_intersect_pair:
+    input: csMR-EXAMPLE/precomputation/Pericytes.eQTL_split
+    output: csMR-EXAMPLE/precomputation/coloc.Inflammatory_bowel_disease.GWAS_split.Pericytes.eQTL_split.pairs
+    jobid: 50
+    reason: Missing output files: csMR-EXAMPLE/precomputation/coloc.Inflammatory_bowel_disease.GWAS_split.Pericytes.eQTL_split.pairs; Input files updated by another job: csMR-EXAMPLE/precomputation/Pericytes.eQTL_split
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Inflammatory_bowel_disease, cell_type=Pericytes
+    resources: tmpdir=/tmp
+
+
+[Fri Aug 30 16:10:22 2024]
+rule get_intersect_pair:
+    input: csMR-EXAMPLE/precomputation/Pericytes.eQTL_split
+    output: csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.Pericytes.eQTL_split.pairs
+    jobid: 24
+    reason: Missing output files: csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.Pericytes.eQTL_split.pairs; Input files updated by another job: csMR-EXAMPLE/precomputation/Pericytes.eQTL_split
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, cell_type=Pericytes
+    resources: tmpdir=/tmp
+
+
+[Fri Aug 30 16:10:22 2024]
+rule get_intersect_pair:
+    input: csMR-EXAMPLE/precomputation/Pericytes.eQTL_split
+    output: csMR-EXAMPLE/precomputation/coloc.mtag_Crohn_ebi_a_GCST003044.GWAS_split.Pericytes.eQTL_split.pairs
+    jobid: 68
+    reason: Missing output files: csMR-EXAMPLE/precomputation/coloc.mtag_Crohn_ebi_a_GCST003044.GWAS_split.Pericytes.eQTL_split.pairs; Input files updated by another job: csMR-EXAMPLE/precomputation/Pericytes.eQTL_split
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=mtag_Crohn_ebi_a_GCST003044, cell_type=Pericytes
+    resources: tmpdir=/tmp
+
+[Fri Aug 30 16:10:22 2024]
+Finished job 41.
+16 of 230 steps (7%) done
+[Fri Aug 30 16:10:22 2024]
+Finished job 59.
+17 of 230 steps (7%) done
+[Fri Aug 30 16:10:22 2024]
+Finished job 86.
+18 of 230 steps (8%) done
+[Fri Aug 30 16:10:22 2024]
+Finished job 77.
+19 of 230 steps (8%) done
+[Fri Aug 30 16:10:22 2024]
+Finished job 50.
+20 of 230 steps (9%) done
+[Fri Aug 30 16:10:22 2024]
+Finished job 68.
+21 of 230 steps (9%) done
+[Fri Aug 30 16:10:22 2024]
+Finished job 24.
+22 of 230 steps (10%) done
+[Fri Aug 30 16:10:28 2024]
+Finished job 9.
+23 of 230 steps (10%) done
+Select jobs to execute...
+
+[Fri Aug 30 16:10:28 2024]
+rule get_intersect_pair:
+    input: csMR-EXAMPLE/precomputation/Endothelial.eQTL_split
+    output: csMR-EXAMPLE/precomputation/coloc.Crohn_disease.GWAS_split.Endothelial.eQTL_split.pairs
+    jobid: 58
+    reason: Missing output files: csMR-EXAMPLE/precomputation/coloc.Crohn_disease.GWAS_split.Endothelial.eQTL_split.pairs; Input files updated by another job: csMR-EXAMPLE/precomputation/Endothelial.eQTL_split
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Crohn_disease, cell_type=Endothelial
+    resources: tmpdir=/tmp
+
+
+[Fri Aug 30 16:10:28 2024]
+rule get_intersect_pair:
+    input: csMR-EXAMPLE/precomputation/Endothelial.eQTL_split
+    output: csMR-EXAMPLE/precomputation/coloc.Inflammatory_bowel_disease.GWAS_split.Endothelial.eQTL_split.pairs
+    jobid: 49
+    reason: Missing output files: csMR-EXAMPLE/precomputation/coloc.Inflammatory_bowel_disease.GWAS_split.Endothelial.eQTL_split.pairs; Input files updated by another job: csMR-EXAMPLE/precomputation/Endothelial.eQTL_split
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Inflammatory_bowel_disease, cell_type=Endothelial
+    resources: tmpdir=/tmp
+
+
+[Fri Aug 30 16:10:28 2024]
+rule get_intersect_pair:
+    input: csMR-EXAMPLE/precomputation/Endothelial.eQTL_split
+    output: csMR-EXAMPLE/precomputation/coloc.mtag_Crohn_ebi_a_GCST003044.GWAS_split.Endothelial.eQTL_split.pairs
+    jobid: 67
+    reason: Missing output files: csMR-EXAMPLE/precomputation/coloc.mtag_Crohn_ebi_a_GCST003044.GWAS_split.Endothelial.eQTL_split.pairs; Input files updated by another job: csMR-EXAMPLE/precomputation/Endothelial.eQTL_split
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=mtag_Crohn_ebi_a_GCST003044, cell_type=Endothelial
+    resources: tmpdir=/tmp
+
+
+[Fri Aug 30 16:10:28 2024]
+rule get_intersect_pair:
+    input: csMR-EXAMPLE/precomputation/Endothelial.eQTL_split
+    output: csMR-EXAMPLE/precomputation/coloc.mtag_Ulcerative_colitis_full_exposure.GWAS_split.Endothelial.eQTL_split.pairs
+    jobid: 85
+    reason: Missing output files: csMR-EXAMPLE/precomputation/coloc.mtag_Ulcerative_colitis_full_exposure.GWAS_split.Endothelial.eQTL_split.pairs; Input files updated by another job: csMR-EXAMPLE/precomputation/Endothelial.eQTL_split
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=mtag_Ulcerative_colitis_full_exposure, cell_type=Endothelial
+    resources: tmpdir=/tmp
+
+
+[Fri Aug 30 16:10:28 2024]
+rule get_intersect_pair:
+    input: csMR-EXAMPLE/precomputation/Endothelial.eQTL_split
+    output: csMR-EXAMPLE/precomputation/coloc.mtag_Inflammatory_bowel_disease.GWAS_split.Endothelial.eQTL_split.pairs
+    jobid: 76
+    reason: Missing output files: csMR-EXAMPLE/precomputation/coloc.mtag_Inflammatory_bowel_disease.GWAS_split.Endothelial.eQTL_split.pairs; Input files updated by another job: csMR-EXAMPLE/precomputation/Endothelial.eQTL_split
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=mtag_Inflammatory_bowel_disease, cell_type=Endothelial
+    resources: tmpdir=/tmp
+
+
+[Fri Aug 30 16:10:28 2024]
+rule get_intersect_pair:
+    input: csMR-EXAMPLE/precomputation/Endothelial.eQTL_split
+    output: csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.Endothelial.eQTL_split.pairs
+    jobid: 8
+    reason: Missing output files: csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.Endothelial.eQTL_split.pairs; Input files updated by another job: csMR-EXAMPLE/precomputation/Endothelial.eQTL_split
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, cell_type=Endothelial
+    resources: tmpdir=/tmp
+
+
+[Fri Aug 30 16:10:28 2024]
+rule get_intersect_pair:
+    input: csMR-EXAMPLE/precomputation/Endothelial.eQTL_split
+    output: csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis.GWAS_split.Endothelial.eQTL_split.pairs
+    jobid: 40
+    reason: Missing output files: csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis.GWAS_split.Endothelial.eQTL_split.pairs; Input files updated by another job: csMR-EXAMPLE/precomputation/Endothelial.eQTL_split
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis, cell_type=Endothelial
+    resources: tmpdir=/tmp
+
+[Fri Aug 30 16:10:29 2024]
+Finished job 58.
+24 of 230 steps (10%) done
+[Fri Aug 30 16:10:29 2024]
+Finished job 49.
+25 of 230 steps (11%) done
+[Fri Aug 30 16:10:29 2024]
+Finished job 85.
+26 of 230 steps (11%) done
+[Fri Aug 30 16:10:29 2024]
+Finished job 67.
+27 of 230 steps (12%) done
+[Fri Aug 30 16:10:29 2024]
+Finished job 8.
+28 of 230 steps (12%) done
+[Fri Aug 30 16:10:29 2024]
+Finished job 76.
+29 of 230 steps (13%) done
+[Fri Aug 30 16:10:29 2024]
+Finished job 40.
+30 of 230 steps (13%) done
+[Fri Aug 30 16:10:51 2024]
+Finished job 29.
+31 of 230 steps (13%) done
+Select jobs to execute...
+
+[Fri Aug 30 16:10:51 2024]
+rule get_intersect_pair:
+    input: csMR-EXAMPLE/precomputation/Microglia.eQTL_split
+    output: csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.Microglia.eQTL_split.pairs
+    jobid: 28
+    reason: Missing output files: csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.Microglia.eQTL_split.pairs; Input files updated by another job: csMR-EXAMPLE/precomputation/Microglia.eQTL_split
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, cell_type=Microglia
+    resources: tmpdir=/tmp
+
+
+[Fri Aug 30 16:10:51 2024]
+rule get_intersect_pair:
+    input: csMR-EXAMPLE/precomputation/Microglia.eQTL_split
+    output: csMR-EXAMPLE/precomputation/coloc.Crohn_disease.GWAS_split.Microglia.eQTL_split.pairs
+    jobid: 61
+    reason: Missing output files: csMR-EXAMPLE/precomputation/coloc.Crohn_disease.GWAS_split.Microglia.eQTL_split.pairs; Input files updated by another job: csMR-EXAMPLE/precomputation/Microglia.eQTL_split
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Crohn_disease, cell_type=Microglia
+    resources: tmpdir=/tmp
+
+
+[Fri Aug 30 16:10:51 2024]
+rule get_intersect_pair:
+    input: csMR-EXAMPLE/precomputation/Microglia.eQTL_split
+    output: csMR-EXAMPLE/precomputation/coloc.mtag_Inflammatory_bowel_disease.GWAS_split.Microglia.eQTL_split.pairs
+    jobid: 79
+    reason: Missing output files: csMR-EXAMPLE/precomputation/coloc.mtag_Inflammatory_bowel_disease.GWAS_split.Microglia.eQTL_split.pairs; Input files updated by another job: csMR-EXAMPLE/precomputation/Microglia.eQTL_split
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=mtag_Inflammatory_bowel_disease, cell_type=Microglia
+    resources: tmpdir=/tmp
+
+
+[Fri Aug 30 16:10:51 2024]
+rule get_intersect_pair:
+    input: csMR-EXAMPLE/precomputation/Microglia.eQTL_split
+    output: csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis.GWAS_split.Microglia.eQTL_split.pairs
+    jobid: 43
+    reason: Missing output files: csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis.GWAS_split.Microglia.eQTL_split.pairs; Input files updated by another job: csMR-EXAMPLE/precomputation/Microglia.eQTL_split
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis, cell_type=Microglia
+    resources: tmpdir=/tmp
+
+
+[Fri Aug 30 16:10:51 2024]
+rule get_intersect_pair:
+    input: csMR-EXAMPLE/precomputation/Microglia.eQTL_split
+    output: csMR-EXAMPLE/precomputation/coloc.mtag_Ulcerative_colitis_full_exposure.GWAS_split.Microglia.eQTL_split.pairs
+    jobid: 88
+    reason: Missing output files: csMR-EXAMPLE/precomputation/coloc.mtag_Ulcerative_colitis_full_exposure.GWAS_split.Microglia.eQTL_split.pairs; Input files updated by another job: csMR-EXAMPLE/precomputation/Microglia.eQTL_split
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=mtag_Ulcerative_colitis_full_exposure, cell_type=Microglia
+    resources: tmpdir=/tmp
+
+
+[Fri Aug 30 16:10:51 2024]
+rule get_intersect_pair:
+    input: csMR-EXAMPLE/precomputation/Microglia.eQTL_split
+    output: csMR-EXAMPLE/precomputation/coloc.Inflammatory_bowel_disease.GWAS_split.Microglia.eQTL_split.pairs
+    jobid: 52
+    reason: Missing output files: csMR-EXAMPLE/precomputation/coloc.Inflammatory_bowel_disease.GWAS_split.Microglia.eQTL_split.pairs; Input files updated by another job: csMR-EXAMPLE/precomputation/Microglia.eQTL_split
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Inflammatory_bowel_disease, cell_type=Microglia
+    resources: tmpdir=/tmp
+
+
+[Fri Aug 30 16:10:51 2024]
+rule get_intersect_pair:
+    input: csMR-EXAMPLE/precomputation/Microglia.eQTL_split
+    output: csMR-EXAMPLE/precomputation/coloc.mtag_Crohn_ebi_a_GCST003044.GWAS_split.Microglia.eQTL_split.pairs
+    jobid: 70
+    reason: Missing output files: csMR-EXAMPLE/precomputation/coloc.mtag_Crohn_ebi_a_GCST003044.GWAS_split.Microglia.eQTL_split.pairs; Input files updated by another job: csMR-EXAMPLE/precomputation/Microglia.eQTL_split
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=mtag_Crohn_ebi_a_GCST003044, cell_type=Microglia
+    resources: tmpdir=/tmp
+
+[Fri Aug 30 16:10:51 2024]
+Finished job 28.
+32 of 230 steps (14%) done
+[Fri Aug 30 16:10:51 2024]
+Finished job 61.
+33 of 230 steps (14%) done
+[Fri Aug 30 16:10:51 2024]
+Finished job 79.
+34 of 230 steps (15%) done
+[Fri Aug 30 16:10:51 2024]
+Finished job 43.
+35 of 230 steps (15%) done
+[Fri Aug 30 16:10:51 2024]
+Finished job 52.
+36 of 230 steps (16%) done
+[Fri Aug 30 16:10:51 2024]
+Finished job 88.
+37 of 230 steps (16%) done
+[Fri Aug 30 16:10:51 2024]
+Finished job 70.
+38 of 230 steps (17%) done
+[Fri Aug 30 16:10:54 2024]
+Finished job 27.
+39 of 230 steps (17%) done
+Select jobs to execute...
+
+[Fri Aug 30 16:10:54 2024]
+rule get_intersect_pair:
+    input: csMR-EXAMPLE/precomputation/OPCs.eQTL_split
+    output: csMR-EXAMPLE/precomputation/coloc.mtag_Ulcerative_colitis_full_exposure.GWAS_split.OPCs.eQTL_split.pairs
+    jobid: 87
+    reason: Missing output files: csMR-EXAMPLE/precomputation/coloc.mtag_Ulcerative_colitis_full_exposure.GWAS_split.OPCs.eQTL_split.pairs; Input files updated by another job: csMR-EXAMPLE/precomputation/OPCs.eQTL_split
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=mtag_Ulcerative_colitis_full_exposure, cell_type=OPCs
+    resources: tmpdir=/tmp
+
+
+[Fri Aug 30 16:10:54 2024]
+rule get_intersect_pair:
+    input: csMR-EXAMPLE/precomputation/OPCs.eQTL_split
+    output: csMR-EXAMPLE/precomputation/coloc.Inflammatory_bowel_disease.GWAS_split.OPCs.eQTL_split.pairs
+    jobid: 51
+    reason: Missing output files: csMR-EXAMPLE/precomputation/coloc.Inflammatory_bowel_disease.GWAS_split.OPCs.eQTL_split.pairs; Input files updated by another job: csMR-EXAMPLE/precomputation/OPCs.eQTL_split
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Inflammatory_bowel_disease, cell_type=OPCs
+    resources: tmpdir=/tmp
+
+
+[Fri Aug 30 16:10:54 2024]
+rule get_intersect_pair:
+    input: csMR-EXAMPLE/precomputation/OPCs.eQTL_split
+    output: csMR-EXAMPLE/precomputation/coloc.mtag_Crohn_ebi_a_GCST003044.GWAS_split.OPCs.eQTL_split.pairs
+    jobid: 69
+    reason: Missing output files: csMR-EXAMPLE/precomputation/coloc.mtag_Crohn_ebi_a_GCST003044.GWAS_split.OPCs.eQTL_split.pairs; Input files updated by another job: csMR-EXAMPLE/precomputation/OPCs.eQTL_split
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=mtag_Crohn_ebi_a_GCST003044, cell_type=OPCs
+    resources: tmpdir=/tmp
+
+
+[Fri Aug 30 16:10:54 2024]
+rule get_intersect_pair:
+    input: csMR-EXAMPLE/precomputation/OPCs.eQTL_split
+    output: csMR-EXAMPLE/precomputation/coloc.Crohn_disease.GWAS_split.OPCs.eQTL_split.pairs
+    jobid: 60
+    reason: Missing output files: csMR-EXAMPLE/precomputation/coloc.Crohn_disease.GWAS_split.OPCs.eQTL_split.pairs; Input files updated by another job: csMR-EXAMPLE/precomputation/OPCs.eQTL_split
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Crohn_disease, cell_type=OPCs
+    resources: tmpdir=/tmp
+
+
+[Fri Aug 30 16:10:54 2024]
+rule get_intersect_pair:
+    input: csMR-EXAMPLE/precomputation/OPCs.eQTL_split
+    output: csMR-EXAMPLE/precomputation/coloc.mtag_Inflammatory_bowel_disease.GWAS_split.OPCs.eQTL_split.pairs
+    jobid: 78
+    reason: Missing output files: csMR-EXAMPLE/precomputation/coloc.mtag_Inflammatory_bowel_disease.GWAS_split.OPCs.eQTL_split.pairs; Input files updated by another job: csMR-EXAMPLE/precomputation/OPCs.eQTL_split
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=mtag_Inflammatory_bowel_disease, cell_type=OPCs
+    resources: tmpdir=/tmp
+
+
+[Fri Aug 30 16:10:54 2024]
+rule get_intersect_pair:
+    input: csMR-EXAMPLE/precomputation/OPCs.eQTL_split
+    output: csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.OPCs.eQTL_split.pairs
+    jobid: 26
+    reason: Missing output files: csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.OPCs.eQTL_split.pairs; Input files updated by another job: csMR-EXAMPLE/precomputation/OPCs.eQTL_split
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, cell_type=OPCs
+    resources: tmpdir=/tmp
+
+
+[Fri Aug 30 16:10:54 2024]
+rule get_intersect_pair:
+    input: csMR-EXAMPLE/precomputation/OPCs.eQTL_split
+    output: csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis.GWAS_split.OPCs.eQTL_split.pairs
+    jobid: 42
+    reason: Missing output files: csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis.GWAS_split.OPCs.eQTL_split.pairs; Input files updated by another job: csMR-EXAMPLE/precomputation/OPCs.eQTL_split
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis, cell_type=OPCs
+    resources: tmpdir=/tmp
+
+[Fri Aug 30 16:10:54 2024]
+Finished job 87.
+40 of 230 steps (17%) done
+[Fri Aug 30 16:10:54 2024]
+Finished job 51.
+41 of 230 steps (18%) done
+[Fri Aug 30 16:10:54 2024]
+Finished job 69.
+42 of 230 steps (18%) done
+[Fri Aug 30 16:10:54 2024]
+Finished job 60.
+43 of 230 steps (19%) done
+[Fri Aug 30 16:10:54 2024]
+Finished job 78.
+44 of 230 steps (19%) done
+[Fri Aug 30 16:10:54 2024]
+Finished job 26.
+45 of 230 steps (20%) done
+[Fri Aug 30 16:10:54 2024]
+Finished job 42.
+46 of 230 steps (20%) done
+[Fri Aug 30 16:11:24 2024]
+Finished job 31.
+47 of 230 steps (20%) done
+Select jobs to execute...
+
+[Fri Aug 30 16:11:24 2024]
+rule get_intersect_pair:
+    input: csMR-EXAMPLE/precomputation/Inhibitory_neurons.eQTL_split
+    output: csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.Inhibitory_neurons.eQTL_split.pairs
+    jobid: 30
+    reason: Missing output files: csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.Inhibitory_neurons.eQTL_split.pairs; Input files updated by another job: csMR-EXAMPLE/precomputation/Inhibitory_neurons.eQTL_split
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, cell_type=Inhibitory_neurons
+    resources: tmpdir=/tmp
+
+
+[Fri Aug 30 16:11:24 2024]
+rule get_intersect_pair:
+    input: csMR-EXAMPLE/precomputation/Inhibitory_neurons.eQTL_split
+    output: csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis.GWAS_split.Inhibitory_neurons.eQTL_split.pairs
+    jobid: 44
+    reason: Missing output files: csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis.GWAS_split.Inhibitory_neurons.eQTL_split.pairs; Input files updated by another job: csMR-EXAMPLE/precomputation/Inhibitory_neurons.eQTL_split
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis, cell_type=Inhibitory_neurons
+    resources: tmpdir=/tmp
+
+
+[Fri Aug 30 16:11:24 2024]
+rule get_intersect_pair:
+    input: csMR-EXAMPLE/precomputation/Inhibitory_neurons.eQTL_split
+    output: csMR-EXAMPLE/precomputation/coloc.mtag_Ulcerative_colitis_full_exposure.GWAS_split.Inhibitory_neurons.eQTL_split.pairs
+    jobid: 89
+    reason: Missing output files: csMR-EXAMPLE/precomputation/coloc.mtag_Ulcerative_colitis_full_exposure.GWAS_split.Inhibitory_neurons.eQTL_split.pairs; Input files updated by another job: csMR-EXAMPLE/precomputation/Inhibitory_neurons.eQTL_split
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=mtag_Ulcerative_colitis_full_exposure, cell_type=Inhibitory_neurons
+    resources: tmpdir=/tmp
+
+
+[Fri Aug 30 16:11:24 2024]
+rule get_intersect_pair:
+    input: csMR-EXAMPLE/precomputation/Inhibitory_neurons.eQTL_split
+    output: csMR-EXAMPLE/precomputation/coloc.Inflammatory_bowel_disease.GWAS_split.Inhibitory_neurons.eQTL_split.pairs
+    jobid: 53
+    reason: Missing output files: csMR-EXAMPLE/precomputation/coloc.Inflammatory_bowel_disease.GWAS_split.Inhibitory_neurons.eQTL_split.pairs; Input files updated by another job: csMR-EXAMPLE/precomputation/Inhibitory_neurons.eQTL_split
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Inflammatory_bowel_disease, cell_type=Inhibitory_neurons
+    resources: tmpdir=/tmp
+
+
+[Fri Aug 30 16:11:24 2024]
+rule get_intersect_pair:
+    input: csMR-EXAMPLE/precomputation/Inhibitory_neurons.eQTL_split
+    output: csMR-EXAMPLE/precomputation/coloc.mtag_Crohn_ebi_a_GCST003044.GWAS_split.Inhibitory_neurons.eQTL_split.pairs
+    jobid: 71
+    reason: Missing output files: csMR-EXAMPLE/precomputation/coloc.mtag_Crohn_ebi_a_GCST003044.GWAS_split.Inhibitory_neurons.eQTL_split.pairs; Input files updated by another job: csMR-EXAMPLE/precomputation/Inhibitory_neurons.eQTL_split
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=mtag_Crohn_ebi_a_GCST003044, cell_type=Inhibitory_neurons
+    resources: tmpdir=/tmp
+
+
+[Fri Aug 30 16:11:24 2024]
+rule get_intersect_pair:
+    input: csMR-EXAMPLE/precomputation/Inhibitory_neurons.eQTL_split
+    output: csMR-EXAMPLE/precomputation/coloc.Crohn_disease.GWAS_split.Inhibitory_neurons.eQTL_split.pairs
+    jobid: 62
+    reason: Missing output files: csMR-EXAMPLE/precomputation/coloc.Crohn_disease.GWAS_split.Inhibitory_neurons.eQTL_split.pairs; Input files updated by another job: csMR-EXAMPLE/precomputation/Inhibitory_neurons.eQTL_split
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Crohn_disease, cell_type=Inhibitory_neurons
+    resources: tmpdir=/tmp
+
+
+[Fri Aug 30 16:11:24 2024]
+rule get_intersect_pair:
+    input: csMR-EXAMPLE/precomputation/Inhibitory_neurons.eQTL_split
+    output: csMR-EXAMPLE/precomputation/coloc.mtag_Inflammatory_bowel_disease.GWAS_split.Inhibitory_neurons.eQTL_split.pairs
+    jobid: 80
+    reason: Missing output files: csMR-EXAMPLE/precomputation/coloc.mtag_Inflammatory_bowel_disease.GWAS_split.Inhibitory_neurons.eQTL_split.pairs; Input files updated by another job: csMR-EXAMPLE/precomputation/Inhibitory_neurons.eQTL_split
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=mtag_Inflammatory_bowel_disease, cell_type=Inhibitory_neurons
+    resources: tmpdir=/tmp
+
+[Fri Aug 30 16:11:24 2024]
+Finished job 80.
+48 of 230 steps (21%) done
+[Fri Aug 30 16:11:24 2024]
+Finished job 71.
+49 of 230 steps (21%) done
+[Fri Aug 30 16:11:24 2024]
+Finished job 53.
+50 of 230 steps (22%) done
+[Fri Aug 30 16:11:24 2024]
+Finished job 30.
+51 of 230 steps (22%) done
+[Fri Aug 30 16:11:24 2024]
+Finished job 89.
+52 of 230 steps (23%) done
+[Fri Aug 30 16:11:24 2024]
+Finished job 44.
+53 of 230 steps (23%) done
+[Fri Aug 30 16:11:24 2024]
+Finished job 62.
+54 of 230 steps (23%) done
+[Fri Aug 30 16:11:31 2024]
+Finished job 37.
+55 of 230 steps (24%) done
+Select jobs to execute...
+
+[Fri Aug 30 16:11:31 2024]
+rule get_intersect_pair:
+    input: csMR-EXAMPLE/precomputation/Astrocytes.eQTL_split
+    output: csMR-EXAMPLE/precomputation/coloc.mtag_Ulcerative_colitis_full_exposure.GWAS_split.Astrocytes.eQTL_split.pairs
+    jobid: 92
+    reason: Missing output files: csMR-EXAMPLE/precomputation/coloc.mtag_Ulcerative_colitis_full_exposure.GWAS_split.Astrocytes.eQTL_split.pairs; Input files updated by another job: csMR-EXAMPLE/precomputation/Astrocytes.eQTL_split
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=mtag_Ulcerative_colitis_full_exposure, cell_type=Astrocytes
+    resources: tmpdir=/tmp
+
+
+[Fri Aug 30 16:11:31 2024]
+rule get_intersect_pair:
+    input: csMR-EXAMPLE/precomputation/Astrocytes.eQTL_split
+    output: csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis.GWAS_split.Astrocytes.eQTL_split.pairs
+    jobid: 47
+    reason: Missing output files: csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis.GWAS_split.Astrocytes.eQTL_split.pairs; Input files updated by another job: csMR-EXAMPLE/precomputation/Astrocytes.eQTL_split
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis, cell_type=Astrocytes
+    resources: tmpdir=/tmp
+
+
+[Fri Aug 30 16:11:31 2024]
+rule get_intersect_pair:
+    input: csMR-EXAMPLE/precomputation/Astrocytes.eQTL_split
+    output: csMR-EXAMPLE/precomputation/coloc.Crohn_disease.GWAS_split.Astrocytes.eQTL_split.pairs
+    jobid: 65
+    reason: Missing output files: csMR-EXAMPLE/precomputation/coloc.Crohn_disease.GWAS_split.Astrocytes.eQTL_split.pairs; Input files updated by another job: csMR-EXAMPLE/precomputation/Astrocytes.eQTL_split
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Crohn_disease, cell_type=Astrocytes
+    resources: tmpdir=/tmp
+
+
+[Fri Aug 30 16:11:31 2024]
+rule get_intersect_pair:
+    input: csMR-EXAMPLE/precomputation/Astrocytes.eQTL_split
+    output: csMR-EXAMPLE/precomputation/coloc.mtag_Inflammatory_bowel_disease.GWAS_split.Astrocytes.eQTL_split.pairs
+    jobid: 83
+    reason: Missing output files: csMR-EXAMPLE/precomputation/coloc.mtag_Inflammatory_bowel_disease.GWAS_split.Astrocytes.eQTL_split.pairs; Input files updated by another job: csMR-EXAMPLE/precomputation/Astrocytes.eQTL_split
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=mtag_Inflammatory_bowel_disease, cell_type=Astrocytes
+    resources: tmpdir=/tmp
+
+
+[Fri Aug 30 16:11:31 2024]
+rule get_intersect_pair:
+    input: csMR-EXAMPLE/precomputation/Astrocytes.eQTL_split
+    output: csMR-EXAMPLE/precomputation/coloc.mtag_Crohn_ebi_a_GCST003044.GWAS_split.Astrocytes.eQTL_split.pairs
+    jobid: 74
+    reason: Missing output files: csMR-EXAMPLE/precomputation/coloc.mtag_Crohn_ebi_a_GCST003044.GWAS_split.Astrocytes.eQTL_split.pairs; Input files updated by another job: csMR-EXAMPLE/precomputation/Astrocytes.eQTL_split
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=mtag_Crohn_ebi_a_GCST003044, cell_type=Astrocytes
+    resources: tmpdir=/tmp
+
+
+[Fri Aug 30 16:11:31 2024]
+rule get_intersect_pair:
+    input: csMR-EXAMPLE/precomputation/Astrocytes.eQTL_split
+    output: csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.Astrocytes.eQTL_split.pairs
+    jobid: 36
+    reason: Missing output files: csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.Astrocytes.eQTL_split.pairs; Input files updated by another job: csMR-EXAMPLE/precomputation/Astrocytes.eQTL_split
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, cell_type=Astrocytes
+    resources: tmpdir=/tmp
+
+
+[Fri Aug 30 16:11:31 2024]
+rule get_intersect_pair:
+    input: csMR-EXAMPLE/precomputation/Astrocytes.eQTL_split
+    output: csMR-EXAMPLE/precomputation/coloc.Inflammatory_bowel_disease.GWAS_split.Astrocytes.eQTL_split.pairs
+    jobid: 56
+    reason: Missing output files: csMR-EXAMPLE/precomputation/coloc.Inflammatory_bowel_disease.GWAS_split.Astrocytes.eQTL_split.pairs; Input files updated by another job: csMR-EXAMPLE/precomputation/Astrocytes.eQTL_split
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Inflammatory_bowel_disease, cell_type=Astrocytes
+    resources: tmpdir=/tmp
+
+[Fri Aug 30 16:11:31 2024]
+Finished job 92.
+56 of 230 steps (24%) done
+[Fri Aug 30 16:11:31 2024]
+Finished job 47.
+57 of 230 steps (25%) done
+[Fri Aug 30 16:11:31 2024]
+Finished job 65.
+58 of 230 steps (25%) done
+[Fri Aug 30 16:11:31 2024]
+Finished job 83.
+59 of 230 steps (26%) done
+[Fri Aug 30 16:11:31 2024]
+Finished job 36.
+60 of 230 steps (26%) done
+[Fri Aug 30 16:11:31 2024]
+Finished job 74.
+61 of 230 steps (27%) done
+[Fri Aug 30 16:11:31 2024]
+Finished job 56.
+62 of 230 steps (27%) done
+[Fri Aug 30 16:12:30 2024]
+Finished job 33.
+63 of 230 steps (27%) done
+Select jobs to execute...
+
+[Fri Aug 30 16:12:30 2024]
+rule get_intersect_pair:
+    input: csMR-EXAMPLE/precomputation/Oligodendrocytes.eQTL_split
+    output: csMR-EXAMPLE/precomputation/coloc.mtag_Crohn_ebi_a_GCST003044.GWAS_split.Oligodendrocytes.eQTL_split.pairs
+    jobid: 72
+    reason: Missing output files: csMR-EXAMPLE/precomputation/coloc.mtag_Crohn_ebi_a_GCST003044.GWAS_split.Oligodendrocytes.eQTL_split.pairs; Input files updated by another job: csMR-EXAMPLE/precomputation/Oligodendrocytes.eQTL_split
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=mtag_Crohn_ebi_a_GCST003044, cell_type=Oligodendrocytes
+    resources: tmpdir=/tmp
+
+
+[Fri Aug 30 16:12:30 2024]
+rule get_intersect_pair:
+    input: csMR-EXAMPLE/precomputation/Oligodendrocytes.eQTL_split
+    output: csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis.GWAS_split.Oligodendrocytes.eQTL_split.pairs
+    jobid: 45
+    reason: Missing output files: csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis.GWAS_split.Oligodendrocytes.eQTL_split.pairs; Input files updated by another job: csMR-EXAMPLE/precomputation/Oligodendrocytes.eQTL_split
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis, cell_type=Oligodendrocytes
+    resources: tmpdir=/tmp
+
+
+[Fri Aug 30 16:12:30 2024]
+rule get_intersect_pair:
+    input: csMR-EXAMPLE/precomputation/Oligodendrocytes.eQTL_split
+    output: csMR-EXAMPLE/precomputation/coloc.Crohn_disease.GWAS_split.Oligodendrocytes.eQTL_split.pairs
+    jobid: 63
+    reason: Missing output files: csMR-EXAMPLE/precomputation/coloc.Crohn_disease.GWAS_split.Oligodendrocytes.eQTL_split.pairs; Input files updated by another job: csMR-EXAMPLE/precomputation/Oligodendrocytes.eQTL_split
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Crohn_disease, cell_type=Oligodendrocytes
+    resources: tmpdir=/tmp
+
+
+[Fri Aug 30 16:12:30 2024]
+rule get_intersect_pair:
+    input: csMR-EXAMPLE/precomputation/Oligodendrocytes.eQTL_split
+    output: csMR-EXAMPLE/precomputation/coloc.mtag_Inflammatory_bowel_disease.GWAS_split.Oligodendrocytes.eQTL_split.pairs
+    jobid: 81
+    reason: Missing output files: csMR-EXAMPLE/precomputation/coloc.mtag_Inflammatory_bowel_disease.GWAS_split.Oligodendrocytes.eQTL_split.pairs; Input files updated by another job: csMR-EXAMPLE/precomputation/Oligodendrocytes.eQTL_split
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=mtag_Inflammatory_bowel_disease, cell_type=Oligodendrocytes
+    resources: tmpdir=/tmp
+
+
+[Fri Aug 30 16:12:30 2024]
+rule get_intersect_pair:
+    input: csMR-EXAMPLE/precomputation/Oligodendrocytes.eQTL_split
+    output: csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.Oligodendrocytes.eQTL_split.pairs
+    jobid: 32
+    reason: Missing output files: csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.Oligodendrocytes.eQTL_split.pairs; Input files updated by another job: csMR-EXAMPLE/precomputation/Oligodendrocytes.eQTL_split
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, cell_type=Oligodendrocytes
+    resources: tmpdir=/tmp
+
+
+[Fri Aug 30 16:12:30 2024]
+rule get_intersect_pair:
+    input: csMR-EXAMPLE/precomputation/Oligodendrocytes.eQTL_split
+    output: csMR-EXAMPLE/precomputation/coloc.mtag_Ulcerative_colitis_full_exposure.GWAS_split.Oligodendrocytes.eQTL_split.pairs
+    jobid: 90
+    reason: Missing output files: csMR-EXAMPLE/precomputation/coloc.mtag_Ulcerative_colitis_full_exposure.GWAS_split.Oligodendrocytes.eQTL_split.pairs; Input files updated by another job: csMR-EXAMPLE/precomputation/Oligodendrocytes.eQTL_split
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=mtag_Ulcerative_colitis_full_exposure, cell_type=Oligodendrocytes
+    resources: tmpdir=/tmp
+
+
+[Fri Aug 30 16:12:30 2024]
+rule get_intersect_pair:
+    input: csMR-EXAMPLE/precomputation/Oligodendrocytes.eQTL_split
+    output: csMR-EXAMPLE/precomputation/coloc.Inflammatory_bowel_disease.GWAS_split.Oligodendrocytes.eQTL_split.pairs
+    jobid: 54
+    reason: Missing output files: csMR-EXAMPLE/precomputation/coloc.Inflammatory_bowel_disease.GWAS_split.Oligodendrocytes.eQTL_split.pairs; Input files updated by another job: csMR-EXAMPLE/precomputation/Oligodendrocytes.eQTL_split
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Inflammatory_bowel_disease, cell_type=Oligodendrocytes
+    resources: tmpdir=/tmp
+
+[Fri Aug 30 16:12:30 2024]
+Finished job 72.
+64 of 230 steps (28%) done
+[Fri Aug 30 16:12:30 2024]
+Finished job 63.
+65 of 230 steps (28%) done
+[Fri Aug 30 16:12:30 2024]
+Finished job 45.
+66 of 230 steps (29%) done
+[Fri Aug 30 16:12:30 2024]
+Finished job 81.
+67 of 230 steps (29%) done
+[Fri Aug 30 16:12:30 2024]
+Finished job 32.
+68 of 230 steps (30%) done
+[Fri Aug 30 16:12:30 2024]
+Finished job 54.
+69 of 230 steps (30%) done
+[Fri Aug 30 16:12:30 2024]
+Finished job 90.
+70 of 230 steps (30%) done
+[Fri Aug 30 16:13:19 2024]
+Finished job 35.
+71 of 230 steps (31%) done
+Select jobs to execute...
+
+[Fri Aug 30 16:13:19 2024]
+rule get_intersect_pair:
+    input: csMR-EXAMPLE/precomputation/Excitatory_neurons.eQTL_split
+    output: csMR-EXAMPLE/precomputation/coloc.mtag_Crohn_ebi_a_GCST003044.GWAS_split.Excitatory_neurons.eQTL_split.pairs
+    jobid: 73
+    reason: Missing output files: csMR-EXAMPLE/precomputation/coloc.mtag_Crohn_ebi_a_GCST003044.GWAS_split.Excitatory_neurons.eQTL_split.pairs; Input files updated by another job: csMR-EXAMPLE/precomputation/Excitatory_neurons.eQTL_split
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=mtag_Crohn_ebi_a_GCST003044, cell_type=Excitatory_neurons
+    resources: tmpdir=/tmp
+
+
+[Fri Aug 30 16:13:19 2024]
+rule get_intersect_pair:
+    input: csMR-EXAMPLE/precomputation/Excitatory_neurons.eQTL_split
+    output: csMR-EXAMPLE/precomputation/coloc.mtag_Ulcerative_colitis_full_exposure.GWAS_split.Excitatory_neurons.eQTL_split.pairs
+    jobid: 91
+    reason: Missing output files: csMR-EXAMPLE/precomputation/coloc.mtag_Ulcerative_colitis_full_exposure.GWAS_split.Excitatory_neurons.eQTL_split.pairs; Input files updated by another job: csMR-EXAMPLE/precomputation/Excitatory_neurons.eQTL_split
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=mtag_Ulcerative_colitis_full_exposure, cell_type=Excitatory_neurons
+    resources: tmpdir=/tmp
+
+
+[Fri Aug 30 16:13:19 2024]
+rule get_intersect_pair:
+    input: csMR-EXAMPLE/precomputation/Excitatory_neurons.eQTL_split
+    output: csMR-EXAMPLE/precomputation/coloc.Inflammatory_bowel_disease.GWAS_split.Excitatory_neurons.eQTL_split.pairs
+    jobid: 55
+    reason: Missing output files: csMR-EXAMPLE/precomputation/coloc.Inflammatory_bowel_disease.GWAS_split.Excitatory_neurons.eQTL_split.pairs; Input files updated by another job: csMR-EXAMPLE/precomputation/Excitatory_neurons.eQTL_split
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Inflammatory_bowel_disease, cell_type=Excitatory_neurons
+    resources: tmpdir=/tmp
+
+
+[Fri Aug 30 16:13:19 2024]
+rule get_intersect_pair:
+    input: csMR-EXAMPLE/precomputation/Excitatory_neurons.eQTL_split
+    output: csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis.GWAS_split.Excitatory_neurons.eQTL_split.pairs
+    jobid: 46
+    reason: Missing output files: csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis.GWAS_split.Excitatory_neurons.eQTL_split.pairs; Input files updated by another job: csMR-EXAMPLE/precomputation/Excitatory_neurons.eQTL_split
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis, cell_type=Excitatory_neurons
+    resources: tmpdir=/tmp
+
+
+[Fri Aug 30 16:13:19 2024]
+rule get_intersect_pair:
+    input: csMR-EXAMPLE/precomputation/Excitatory_neurons.eQTL_split
+    output: csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.Excitatory_neurons.eQTL_split.pairs
+    jobid: 34
+    reason: Missing output files: csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.Excitatory_neurons.eQTL_split.pairs; Input files updated by another job: csMR-EXAMPLE/precomputation/Excitatory_neurons.eQTL_split
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, cell_type=Excitatory_neurons
+    resources: tmpdir=/tmp
+
+
+[Fri Aug 30 16:13:19 2024]
+rule get_intersect_pair:
+    input: csMR-EXAMPLE/precomputation/Excitatory_neurons.eQTL_split
+    output: csMR-EXAMPLE/precomputation/coloc.Crohn_disease.GWAS_split.Excitatory_neurons.eQTL_split.pairs
+    jobid: 64
+    reason: Missing output files: csMR-EXAMPLE/precomputation/coloc.Crohn_disease.GWAS_split.Excitatory_neurons.eQTL_split.pairs; Input files updated by another job: csMR-EXAMPLE/precomputation/Excitatory_neurons.eQTL_split
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Crohn_disease, cell_type=Excitatory_neurons
+    resources: tmpdir=/tmp
+
+
+[Fri Aug 30 16:13:19 2024]
+rule get_intersect_pair:
+    input: csMR-EXAMPLE/precomputation/Excitatory_neurons.eQTL_split
+    output: csMR-EXAMPLE/precomputation/coloc.mtag_Inflammatory_bowel_disease.GWAS_split.Excitatory_neurons.eQTL_split.pairs
+    jobid: 82
+    reason: Missing output files: csMR-EXAMPLE/precomputation/coloc.mtag_Inflammatory_bowel_disease.GWAS_split.Excitatory_neurons.eQTL_split.pairs; Input files updated by another job: csMR-EXAMPLE/precomputation/Excitatory_neurons.eQTL_split
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=mtag_Inflammatory_bowel_disease, cell_type=Excitatory_neurons
+    resources: tmpdir=/tmp
+
+[Fri Aug 30 16:13:19 2024]
+Finished job 91.
+72 of 230 steps (31%) done
+[Fri Aug 30 16:13:19 2024]
+Finished job 73.
+73 of 230 steps (32%) done
+[Fri Aug 30 16:13:19 2024]
+Finished job 46.
+74 of 230 steps (32%) done
+[Fri Aug 30 16:13:19 2024]
+Finished job 55.
+75 of 230 steps (33%) done
+[Fri Aug 30 16:13:19 2024]
+Finished job 64.
+76 of 230 steps (33%) done
+[Fri Aug 30 16:13:19 2024]
+Finished job 82.
+77 of 230 steps (33%) done
+[Fri Aug 30 16:13:19 2024]
+Finished job 34.
+78 of 230 steps (34%) done
+[Fri Aug 30 16:13:37 2024]
+Finished job 39.
+79 of 230 steps (34%) done
+Select jobs to execute...
+
+[Fri Aug 30 16:13:37 2024]
+rule get_intersect_pair:
+    input: csMR-EXAMPLE/precomputation/pb.eQTL_split
+    output: csMR-EXAMPLE/precomputation/coloc.mtag_Crohn_ebi_a_GCST003044.GWAS_split.pb.eQTL_split.pairs
+    jobid: 75
+    reason: Missing output files: csMR-EXAMPLE/precomputation/coloc.mtag_Crohn_ebi_a_GCST003044.GWAS_split.pb.eQTL_split.pairs; Input files updated by another job: csMR-EXAMPLE/precomputation/pb.eQTL_split
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=mtag_Crohn_ebi_a_GCST003044, cell_type=pb
+    resources: tmpdir=/tmp
+
+
+[Fri Aug 30 16:13:37 2024]
+rule get_intersect_pair:
+    input: csMR-EXAMPLE/precomputation/pb.eQTL_split
+    output: csMR-EXAMPLE/precomputation/coloc.mtag_Ulcerative_colitis_full_exposure.GWAS_split.pb.eQTL_split.pairs
+    jobid: 93
+    reason: Missing output files: csMR-EXAMPLE/precomputation/coloc.mtag_Ulcerative_colitis_full_exposure.GWAS_split.pb.eQTL_split.pairs; Input files updated by another job: csMR-EXAMPLE/precomputation/pb.eQTL_split
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=mtag_Ulcerative_colitis_full_exposure, cell_type=pb
+    resources: tmpdir=/tmp
+
+
+[Fri Aug 30 16:13:37 2024]
+rule get_intersect_pair:
+    input: csMR-EXAMPLE/precomputation/pb.eQTL_split
+    output: csMR-EXAMPLE/precomputation/coloc.Crohn_disease.GWAS_split.pb.eQTL_split.pairs
+    jobid: 66
+    reason: Missing output files: csMR-EXAMPLE/precomputation/coloc.Crohn_disease.GWAS_split.pb.eQTL_split.pairs; Input files updated by another job: csMR-EXAMPLE/precomputation/pb.eQTL_split
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Crohn_disease, cell_type=pb
+    resources: tmpdir=/tmp
+
+
+[Fri Aug 30 16:13:37 2024]
+rule get_intersect_pair:
+    input: csMR-EXAMPLE/precomputation/pb.eQTL_split
+    output: csMR-EXAMPLE/precomputation/coloc.Inflammatory_bowel_disease.GWAS_split.pb.eQTL_split.pairs
+    jobid: 57
+    reason: Missing output files: csMR-EXAMPLE/precomputation/coloc.Inflammatory_bowel_disease.GWAS_split.pb.eQTL_split.pairs; Input files updated by another job: csMR-EXAMPLE/precomputation/pb.eQTL_split
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Inflammatory_bowel_disease, cell_type=pb
+    resources: tmpdir=/tmp
+
+
+[Fri Aug 30 16:13:37 2024]
+rule get_intersect_pair:
+    input: csMR-EXAMPLE/precomputation/pb.eQTL_split
+    output: csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis.GWAS_split.pb.eQTL_split.pairs
+    jobid: 48
+    reason: Missing output files: csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis.GWAS_split.pb.eQTL_split.pairs; Input files updated by another job: csMR-EXAMPLE/precomputation/pb.eQTL_split
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis, cell_type=pb
+    resources: tmpdir=/tmp
+
+
+[Fri Aug 30 16:13:37 2024]
+rule get_intersect_pair:
+    input: csMR-EXAMPLE/precomputation/pb.eQTL_split
+    output: csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.pb.eQTL_split.pairs
+    jobid: 38
+    reason: Missing output files: csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.pb.eQTL_split.pairs; Input files updated by another job: csMR-EXAMPLE/precomputation/pb.eQTL_split
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, cell_type=pb
+    resources: tmpdir=/tmp
+
+
+[Fri Aug 30 16:13:37 2024]
+rule get_intersect_pair:
+    input: csMR-EXAMPLE/precomputation/pb.eQTL_split
+    output: csMR-EXAMPLE/precomputation/coloc.mtag_Inflammatory_bowel_disease.GWAS_split.pb.eQTL_split.pairs
+    jobid: 84
+    reason: Missing output files: csMR-EXAMPLE/precomputation/coloc.mtag_Inflammatory_bowel_disease.GWAS_split.pb.eQTL_split.pairs; Input files updated by another job: csMR-EXAMPLE/precomputation/pb.eQTL_split
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=mtag_Inflammatory_bowel_disease, cell_type=pb
+    resources: tmpdir=/tmp
+
+[Fri Aug 30 16:13:37 2024]
+Finished job 75.
+80 of 230 steps (35%) done
+[Fri Aug 30 16:13:37 2024]
+Finished job 93.
+81 of 230 steps (35%) done
+[Fri Aug 30 16:13:37 2024]
+Finished job 66.
+82 of 230 steps (36%) done
+[Fri Aug 30 16:13:37 2024]
+Finished job 84.
+83 of 230 steps (36%) done
+[Fri Aug 30 16:13:37 2024]
+Finished job 38.
+84 of 230 steps (37%) done
+[Fri Aug 30 16:13:37 2024]
+Finished job 57.
+85 of 230 steps (37%) done
+[Fri Aug 30 16:13:37 2024]
+Finished job 48.
+86 of 230 steps (37%) done
+Select jobs to execute...
+
+[Fri Aug 30 16:13:37 2024]
+rule eqtl_rdata:
+    input: csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.Endothelial.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.Pericytes.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.OPCs.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.Microglia.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.Inhibitory_neurons.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.Oligodendrocytes.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.Excitatory_neurons.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.Astrocytes.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.pb.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis.GWAS_split.Endothelial.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis.GWAS_split.Pericytes.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis.GWAS_split.OPCs.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis.GWAS_split.Microglia.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis.GWAS_split.Inhibitory_neurons.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis.GWAS_split.Oligodendrocytes.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis.GWAS_split.Excitatory_neurons.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis.GWAS_split.Astrocytes.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis.GWAS_split.pb.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Inflammatory_bowel_disease.GWAS_split.Endothelial.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Inflammatory_bowel_disease.GWAS_split.Pericytes.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Inflammatory_bowel_disease.GWAS_split.OPCs.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Inflammatory_bowel_disease.GWAS_split.Microglia.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Inflammatory_bowel_disease.GWAS_split.Inhibitory_neurons.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Inflammatory_bowel_disease.GWAS_split.Oligodendrocytes.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Inflammatory_bowel_disease.GWAS_split.Excitatory_neurons.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Inflammatory_bowel_disease.GWAS_split.Astrocytes.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Inflammatory_bowel_disease.GWAS_split.pb.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Crohn_disease.GWAS_split.Endothelial.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Crohn_disease.GWAS_split.Pericytes.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Crohn_disease.GWAS_split.OPCs.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Crohn_disease.GWAS_split.Microglia.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Crohn_disease.GWAS_split.Inhibitory_neurons.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Crohn_disease.GWAS_split.Oligodendrocytes.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Crohn_disease.GWAS_split.Excitatory_neurons.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Crohn_disease.GWAS_split.Astrocytes.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Crohn_disease.GWAS_split.pb.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.mtag_Crohn_ebi_a_GCST003044.GWAS_split.Endothelial.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.mtag_Crohn_ebi_a_GCST003044.GWAS_split.Pericytes.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.mtag_Crohn_ebi_a_GCST003044.GWAS_split.OPCs.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.mtag_Crohn_ebi_a_GCST003044.GWAS_split.Microglia.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.mtag_Crohn_ebi_a_GCST003044.GWAS_split.Inhibitory_neurons.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.mtag_Crohn_ebi_a_GCST003044.GWAS_split.Oligodendrocytes.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.mtag_Crohn_ebi_a_GCST003044.GWAS_split.Excitatory_neurons.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.mtag_Crohn_ebi_a_GCST003044.GWAS_split.Astrocytes.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.mtag_Crohn_ebi_a_GCST003044.GWAS_split.pb.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.mtag_Inflammatory_bowel_disease.GWAS_split.Endothelial.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.mtag_Inflammatory_bowel_disease.GWAS_split.Pericytes.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.mtag_Inflammatory_bowel_disease.GWAS_split.OPCs.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.mtag_Inflammatory_bowel_disease.GWAS_split.Microglia.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.mtag_Inflammatory_bowel_disease.GWAS_split.Inhibitory_neurons.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.mtag_Inflammatory_bowel_disease.GWAS_split.Oligodendrocytes.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.mtag_Inflammatory_bowel_disease.GWAS_split.Excitatory_neurons.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.mtag_Inflammatory_bowel_disease.GWAS_split.Astrocytes.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.mtag_Inflammatory_bowel_disease.GWAS_split.pb.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.mtag_Ulcerative_colitis_full_exposure.GWAS_split.Endothelial.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.mtag_Ulcerative_colitis_full_exposure.GWAS_split.Pericytes.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.mtag_Ulcerative_colitis_full_exposure.GWAS_split.OPCs.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.mtag_Ulcerative_colitis_full_exposure.GWAS_split.Microglia.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.mtag_Ulcerative_colitis_full_exposure.GWAS_split.Inhibitory_neurons.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.mtag_Ulcerative_colitis_full_exposure.GWAS_split.Oligodendrocytes.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.mtag_Ulcerative_colitis_full_exposure.GWAS_split.Excitatory_neurons.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.mtag_Ulcerative_colitis_full_exposure.GWAS_split.Astrocytes.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.mtag_Ulcerative_colitis_full_exposure.GWAS_split.pb.eQTL_split.pairs
+    output: csMR-EXAMPLE/precomputation/eqtl_maf.list
+    jobid: 7
+    reason: Missing output files: csMR-EXAMPLE/precomputation/eqtl_maf.list; Input files updated by another job: csMR-EXAMPLE/precomputation/coloc.mtag_Ulcerative_colitis_full_exposure.GWAS_split.Pericytes.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.mtag_Crohn_ebi_a_GCST003044.GWAS_split.Astrocytes.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.mtag_Crohn_ebi_a_GCST003044.GWAS_split.Pericytes.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.Astrocytes.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Inflammatory_bowel_disease.GWAS_split.OPCs.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.mtag_Ulcerative_colitis_full_exposure.GWAS_split.pb.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.mtag_Inflammatory_bowel_disease.GWAS_split.Pericytes.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.mtag_Inflammatory_bowel_disease.GWAS_split.Inhibitory_neurons.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis.GWAS_split.Excitatory_neurons.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.mtag_Ulcerative_colitis_full_exposure.GWAS_split.OPCs.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.mtag_Inflammatory_bowel_disease.GWAS_split.OPCs.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.mtag_Crohn_ebi_a_GCST003044.GWAS_split.Oligodendrocytes.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.mtag_Inflammatory_bowel_disease.GWAS_split.Astrocytes.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.mtag_Crohn_ebi_a_GCST003044.GWAS_split.OPCs.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Inflammatory_bowel_disease.GWAS_split.Pericytes.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Crohn_disease.GWAS_split.OPCs.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Crohn_disease.GWAS_split.Oligodendrocytes.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.mtag_Inflammatory_bowel_disease.GWAS_split.Endothelial.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Inflammatory_bowel_disease.GWAS_split.pb.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Inflammatory_bowel_disease.GWAS_split.Microglia.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis.GWAS_split.Microglia.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.Pericytes.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.mtag_Crohn_ebi_a_GCST003044.GWAS_split.Endothelial.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Crohn_disease.GWAS_split.Endothelial.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.Excitatory_neurons.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Crohn_disease.GWAS_split.Inhibitory_neurons.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis.GWAS_split.pb.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Crohn_disease.GWAS_split.Excitatory_neurons.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.OPCs.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.mtag_Inflammatory_bowel_disease.GWAS_split.Oligodendrocytes.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Inflammatory_bowel_disease.GWAS_split.Excitatory_neurons.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis.GWAS_split.Pericytes.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.mtag_Ulcerative_colitis_full_exposure.GWAS_split.Endothelial.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Crohn_disease.GWAS_split.Astrocytes.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Crohn_disease.GWAS_split.Pericytes.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Inflammatory_bowel_disease.GWAS_split.Astrocytes.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.pb.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.mtag_Inflammatory_bowel_disease.GWAS_split.Excitatory_neurons.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Inflammatory_bowel_disease.GWAS_split.Endothelial.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.mtag_Ulcerative_colitis_full_exposure.GWAS_split.Astrocytes.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Crohn_disease.GWAS_split.pb.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.mtag_Ulcerative_colitis_full_exposure.GWAS_split.Excitatory_neurons.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.mtag_Crohn_ebi_a_GCST003044.GWAS_split.Microglia.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.Oligodendrocytes.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Inflammatory_bowel_disease.GWAS_split.Inhibitory_neurons.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.mtag_Inflammatory_bowel_disease.GWAS_split.Microglia.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.Inhibitory_neurons.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis.GWAS_split.Endothelial.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.mtag_Ulcerative_colitis_full_exposure.GWAS_split.Inhibitory_neurons.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Inflammatory_bowel_disease.GWAS_split.Oligodendrocytes.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.Microglia.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.mtag_Crohn_ebi_a_GCST003044.GWAS_split.Inhibitory_neurons.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.mtag_Crohn_ebi_a_GCST003044.GWAS_split.pb.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.mtag_Ulcerative_colitis_full_exposure.GWAS_split.Microglia.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.mtag_Inflammatory_bowel_disease.GWAS_split.pb.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis.GWAS_split.Oligodendrocytes.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.mtag_Crohn_ebi_a_GCST003044.GWAS_split.Excitatory_neurons.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis.GWAS_split.Inhibitory_neurons.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis.GWAS_split.Astrocytes.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis.GWAS_split.OPCs.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Crohn_disease.GWAS_split.Microglia.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.Endothelial.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.mtag_Ulcerative_colitis_full_exposure.GWAS_split.Oligodendrocytes.eQTL_split.pairs
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE
+    resources: tmpdir=/tmp
+
+[Fri Aug 30 16:17:28 2024]
+Finished job 7.
+87 of 230 steps (38%) done
+Select jobs to execute...
+
+[Fri Aug 30 16:17:28 2024]
+rule fine_mapping:
+    input: csMR-EXAMPLE/precomputation/eqtl_maf.list
+    output: csMR-EXAMPLE/precomputation/gwas_maf_finemap.list, csMR-EXAMPLE/precomputation/eqtl_maf_finemap.list
+    jobid: 6
+    reason: Missing output files: csMR-EXAMPLE/precomputation/gwas_maf_finemap.list, csMR-EXAMPLE/precomputation/eqtl_maf_finemap.list; Input files updated by another job: csMR-EXAMPLE/precomputation/eqtl_maf.list
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE
+    resources: tmpdir=/tmp
+
+Terminating processes on user request, this might take some time.
+[Fri Aug 30 16:21:19 2024]
+Error in rule fine_mapping:
+    jobid: 6
+    input: csMR-EXAMPLE/precomputation/eqtl_maf.list
+    output: csMR-EXAMPLE/precomputation/gwas_maf_finemap.list, csMR-EXAMPLE/precomputation/eqtl_maf_finemap.list
+    shell:
+        python scripts/susie_finemap.py -o csMR-EXAMPLE -d '{"Ulcerative_colitis_full_exposure_ieu_a_970":"quant","Ulcerative_colitis":"quant","Inflammatory_bowel_disease":"quant","Crohn_disease":"quant","mtag_Crohn_ebi_a_GCST003044":"quant","mtag_Inflammatory_bowel_disease":"quant","mtag_Ulcerative_colitis_full_exposure":"quant"}' -c 0.9 -j 60
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Complete log: .snakemake/log/2024-08-30T160946.526160.snakemake.log

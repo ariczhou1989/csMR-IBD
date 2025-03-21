@@ -1,0 +1,2192 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 60
+Rules claiming more threads will be scaled down.
+Job stats:
+job                   count    min threads    max threads
+------------------  -------  -------------  -------------
+MR                      663              1              1
+all                       1              1              1
+clump                    51              1              1
+coloc_summary             3              1              1
+eqtl_rdata                1              1              1
+fine_mapping              1              1              1
+get_intersect_pair       51              1              1
+run_coloc                 1              1              1
+snp_filter                3              1              1
+total                   775              1              1
+
+Select jobs to execute...
+
+[Sat Aug 31 10:08:54 2024]
+rule get_intersect_pair:
+    input: csMR-EXAMPLE/precomputation/L6_IT.eQTL_split
+    output: csMR-EXAMPLE/precomputation/coloc.Inflammatory_bowel_disease.GWAS_split.L6_IT.eQTL_split.pairs
+    jobid: 55
+    reason: Missing output files: csMR-EXAMPLE/precomputation/coloc.Inflammatory_bowel_disease.GWAS_split.L6_IT.eQTL_split.pairs
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Inflammatory_bowel_disease, cell_type=L6_IT
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 10:08:54 2024]
+rule get_intersect_pair:
+    input: csMR-EXAMPLE/precomputation/L5_6_NP.eQTL_split
+    output: csMR-EXAMPLE/precomputation/coloc.Crohn_disease.GWAS_split.L5_6_NP.eQTL_split.pairs
+    jobid: 69
+    reason: Missing output files: csMR-EXAMPLE/precomputation/coloc.Crohn_disease.GWAS_split.L5_6_NP.eQTL_split.pairs
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Crohn_disease, cell_type=L5_6_NP
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 10:08:54 2024]
+rule get_intersect_pair:
+    input: csMR-EXAMPLE/precomputation/L4_IT.eQTL_split
+    output: csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.L4_IT.eQTL_split.pairs
+    jobid: 20
+    reason: Missing output files: csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.L4_IT.eQTL_split.pairs
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, cell_type=L4_IT
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 10:08:54 2024]
+rule get_intersect_pair:
+    input: csMR-EXAMPLE/precomputation/Chandelier_Pvalb.eQTL_split
+    output: csMR-EXAMPLE/precomputation/coloc.Inflammatory_bowel_disease.GWAS_split.Chandelier_Pvalb.eQTL_split.pairs
+    jobid: 49
+    reason: Missing output files: csMR-EXAMPLE/precomputation/coloc.Inflammatory_bowel_disease.GWAS_split.Chandelier_Pvalb.eQTL_split.pairs
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Inflammatory_bowel_disease, cell_type=Chandelier_Pvalb
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 10:08:54 2024]
+rule get_intersect_pair:
+    input: csMR-EXAMPLE/precomputation/SST_SST_Chodl.eQTL_split
+    output: csMR-EXAMPLE/precomputation/coloc.Inflammatory_bowel_disease.GWAS_split.SST_SST_Chodl.eQTL_split.pairs
+    jobid: 63
+    reason: Missing output files: csMR-EXAMPLE/precomputation/coloc.Inflammatory_bowel_disease.GWAS_split.SST_SST_Chodl.eQTL_split.pairs
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Inflammatory_bowel_disease, cell_type=SST_SST_Chodl
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 10:08:54 2024]
+rule get_intersect_pair:
+    input: csMR-EXAMPLE/precomputation/Oligo.eQTL_split
+    output: csMR-EXAMPLE/precomputation/coloc.Crohn_disease.GWAS_split.Oligo.eQTL_split.pairs
+    jobid: 77
+    reason: Missing output files: csMR-EXAMPLE/precomputation/coloc.Crohn_disease.GWAS_split.Oligo.eQTL_split.pairs
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Crohn_disease, cell_type=Oligo
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 10:08:54 2024]
+rule get_intersect_pair:
+    input: csMR-EXAMPLE/precomputation/L6_IT.eQTL_split
+    output: csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.L6_IT.eQTL_split.pairs
+    jobid: 28
+    reason: Missing output files: csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.L6_IT.eQTL_split.pairs
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, cell_type=L6_IT
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 10:08:54 2024]
+rule get_intersect_pair:
+    input: csMR-EXAMPLE/precomputation/PC.eQTL_split
+    output: csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.PC.eQTL_split.pairs
+    jobid: 42
+    reason: Missing output files: csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.PC.eQTL_split.pairs
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, cell_type=PC
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 10:08:54 2024]
+rule get_intersect_pair:
+    input: csMR-EXAMPLE/precomputation/sL6b.eQTL_split
+    output: csMR-EXAMPLE/precomputation/coloc.Inflammatory_bowel_disease.GWAS_split.sL6b.eQTL_split.pairs
+    jobid: 56
+    reason: Missing output files: csMR-EXAMPLE/precomputation/coloc.Inflammatory_bowel_disease.GWAS_split.sL6b.eQTL_split.pairs
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Inflammatory_bowel_disease, cell_type=sL6b
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 10:08:54 2024]
+rule get_intersect_pair:
+    input: csMR-EXAMPLE/precomputation/L5_IT.eQTL_split
+    output: csMR-EXAMPLE/precomputation/coloc.Crohn_disease.GWAS_split.L5_IT.eQTL_split.pairs
+    jobid: 70
+    reason: Missing output files: csMR-EXAMPLE/precomputation/coloc.Crohn_disease.GWAS_split.L5_IT.eQTL_split.pairs
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Crohn_disease, cell_type=L5_IT
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 10:08:54 2024]
+rule get_intersect_pair:
+    input: csMR-EXAMPLE/precomputation/Micro_PVM.eQTL_split
+    output: csMR-EXAMPLE/precomputation/coloc.Crohn_disease.GWAS_split.Micro_PVM.eQTL_split.pairs
+    jobid: 76
+    reason: Missing output files: csMR-EXAMPLE/precomputation/coloc.Crohn_disease.GWAS_split.Micro_PVM.eQTL_split.pairs
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Crohn_disease, cell_type=Micro_PVM
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 10:08:54 2024]
+rule get_intersect_pair:
+    input: csMR-EXAMPLE/precomputation/L2_3_IT.eQTL_split
+    output: csMR-EXAMPLE/precomputation/coloc.Inflammatory_bowel_disease.GWAS_split.L2_3_IT.eQTL_split.pairs
+    jobid: 50
+    reason: Missing output files: csMR-EXAMPLE/precomputation/coloc.Inflammatory_bowel_disease.GWAS_split.L2_3_IT.eQTL_split.pairs
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Inflammatory_bowel_disease, cell_type=L2_3_IT
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 10:08:54 2024]
+rule get_intersect_pair:
+    input: csMR-EXAMPLE/precomputation/L5_6_NP.eQTL_split
+    output: csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.L5_6_NP.eQTL_split.pairs
+    jobid: 22
+    reason: Missing output files: csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.L5_6_NP.eQTL_split.pairs
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, cell_type=L5_6_NP
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 10:08:54 2024]
+rule get_intersect_pair:
+    input: csMR-EXAMPLE/precomputation/Astro.eQTL_split
+    output: csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.Astro.eQTL_split.pairs
+    jobid: 8
+    reason: Missing output files: csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.Astro.eQTL_split.pairs
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, cell_type=Astro
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 10:08:54 2024]
+rule get_intersect_pair:
+    input: csMR-EXAMPLE/precomputation/Vip.eQTL_split
+    output: csMR-EXAMPLE/precomputation/coloc.Inflammatory_bowel_disease.GWAS_split.Vip.eQTL_split.pairs
+    jobid: 64
+    reason: Missing output files: csMR-EXAMPLE/precomputation/coloc.Inflammatory_bowel_disease.GWAS_split.Vip.eQTL_split.pairs
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Inflammatory_bowel_disease, cell_type=Vip
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 10:08:54 2024]
+rule get_intersect_pair:
+    input: csMR-EXAMPLE/precomputation/OPC.eQTL_split
+    output: csMR-EXAMPLE/precomputation/coloc.Crohn_disease.GWAS_split.OPC.eQTL_split.pairs
+    jobid: 78
+    reason: Missing output files: csMR-EXAMPLE/precomputation/coloc.Crohn_disease.GWAS_split.OPC.eQTL_split.pairs
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Crohn_disease, cell_type=OPC
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 10:08:54 2024]
+rule get_intersect_pair:
+    input: csMR-EXAMPLE/precomputation/Micro_PVM.eQTL_split
+    output: csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.Micro_PVM.eQTL_split.pairs
+    jobid: 36
+    reason: Missing output files: csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.Micro_PVM.eQTL_split.pairs
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, cell_type=Micro_PVM
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 10:08:54 2024]
+rule get_intersect_pair:
+    input: csMR-EXAMPLE/precomputation/Lamp5.eQTL_split
+    output: csMR-EXAMPLE/precomputation/coloc.Inflammatory_bowel_disease.GWAS_split.Lamp5.eQTL_split.pairs
+    jobid: 57
+    reason: Missing output files: csMR-EXAMPLE/precomputation/coloc.Inflammatory_bowel_disease.GWAS_split.Lamp5.eQTL_split.pairs
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Inflammatory_bowel_disease, cell_type=Lamp5
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 10:08:54 2024]
+rule get_intersect_pair:
+    input: csMR-EXAMPLE/precomputation/L6_CT.eQTL_split
+    output: csMR-EXAMPLE/precomputation/coloc.Crohn_disease.GWAS_split.L6_CT.eQTL_split.pairs
+    jobid: 71
+    reason: Missing output files: csMR-EXAMPLE/precomputation/coloc.Crohn_disease.GWAS_split.L6_CT.eQTL_split.pairs
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Crohn_disease, cell_type=L6_CT
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 10:08:54 2024]
+rule get_intersect_pair:
+    input: csMR-EXAMPLE/precomputation/Lamp5_Lhx6.eQTL_split
+    output: csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.Lamp5_Lhx6.eQTL_split.pairs
+    jobid: 34
+    reason: Missing output files: csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.Lamp5_Lhx6.eQTL_split.pairs
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, cell_type=Lamp5_Lhx6
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 10:08:54 2024]
+rule get_intersect_pair:
+    input: csMR-EXAMPLE/precomputation/L4_IT.eQTL_split
+    output: csMR-EXAMPLE/precomputation/coloc.Inflammatory_bowel_disease.GWAS_split.L4_IT.eQTL_split.pairs
+    jobid: 51
+    reason: Missing output files: csMR-EXAMPLE/precomputation/coloc.Inflammatory_bowel_disease.GWAS_split.L4_IT.eQTL_split.pairs
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Inflammatory_bowel_disease, cell_type=L4_IT
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 10:08:54 2024]
+rule get_intersect_pair:
+    input: csMR-EXAMPLE/precomputation/Astro.eQTL_split
+    output: csMR-EXAMPLE/precomputation/coloc.Crohn_disease.GWAS_split.Astro.eQTL_split.pairs
+    jobid: 65
+    reason: Missing output files: csMR-EXAMPLE/precomputation/coloc.Crohn_disease.GWAS_split.Astro.eQTL_split.pairs
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Crohn_disease, cell_type=Astro
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 10:08:54 2024]
+rule get_intersect_pair:
+    input: csMR-EXAMPLE/precomputation/PC.eQTL_split
+    output: csMR-EXAMPLE/precomputation/coloc.Crohn_disease.GWAS_split.PC.eQTL_split.pairs
+    jobid: 79
+    reason: Missing output files: csMR-EXAMPLE/precomputation/coloc.Crohn_disease.GWAS_split.PC.eQTL_split.pairs
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Crohn_disease, cell_type=PC
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 10:08:54 2024]
+rule get_intersect_pair:
+    input: csMR-EXAMPLE/precomputation/SST_SST_Chodl.eQTL_split
+    output: csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.SST_SST_Chodl.eQTL_split.pairs
+    jobid: 44
+    reason: Missing output files: csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.SST_SST_Chodl.eQTL_split.pairs
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, cell_type=SST_SST_Chodl
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 10:08:54 2024]
+rule get_intersect_pair:
+    input: csMR-EXAMPLE/precomputation/sL6b.eQTL_split
+    output: csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.sL6b.eQTL_split.pairs
+    jobid: 30
+    reason: Missing output files: csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.sL6b.eQTL_split.pairs
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, cell_type=sL6b
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 10:08:54 2024]
+rule get_intersect_pair:
+    input: csMR-EXAMPLE/precomputation/Chandelier_Pvalb.eQTL_split
+    output: csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.Chandelier_Pvalb.eQTL_split.pairs
+    jobid: 16
+    reason: Missing output files: csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.Chandelier_Pvalb.eQTL_split.pairs
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, cell_type=Chandelier_Pvalb
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 10:08:54 2024]
+rule get_intersect_pair:
+    input: csMR-EXAMPLE/precomputation/Lamp5_Lhx6.eQTL_split
+    output: csMR-EXAMPLE/precomputation/coloc.Inflammatory_bowel_disease.GWAS_split.Lamp5_Lhx6.eQTL_split.pairs
+    jobid: 58
+    reason: Missing output files: csMR-EXAMPLE/precomputation/coloc.Inflammatory_bowel_disease.GWAS_split.Lamp5_Lhx6.eQTL_split.pairs
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Inflammatory_bowel_disease, cell_type=Lamp5_Lhx6
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 10:08:54 2024]
+rule get_intersect_pair:
+    input: csMR-EXAMPLE/precomputation/L6_IT.eQTL_split
+    output: csMR-EXAMPLE/precomputation/coloc.Crohn_disease.GWAS_split.L6_IT.eQTL_split.pairs
+    jobid: 72
+    reason: Missing output files: csMR-EXAMPLE/precomputation/coloc.Crohn_disease.GWAS_split.L6_IT.eQTL_split.pairs
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Crohn_disease, cell_type=L6_IT
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 10:08:54 2024]
+rule get_intersect_pair:
+    input: csMR-EXAMPLE/precomputation/L5_6_NP.eQTL_split
+    output: csMR-EXAMPLE/precomputation/coloc.Inflammatory_bowel_disease.GWAS_split.L5_6_NP.eQTL_split.pairs
+    jobid: 52
+    reason: Missing output files: csMR-EXAMPLE/precomputation/coloc.Inflammatory_bowel_disease.GWAS_split.L5_6_NP.eQTL_split.pairs
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Inflammatory_bowel_disease, cell_type=L5_6_NP
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 10:08:54 2024]
+rule get_intersect_pair:
+    input: csMR-EXAMPLE/precomputation/Oligo.eQTL_split
+    output: csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.Oligo.eQTL_split.pairs
+    jobid: 38
+    reason: Missing output files: csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.Oligo.eQTL_split.pairs
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, cell_type=Oligo
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 10:08:54 2024]
+rule get_intersect_pair:
+    input: csMR-EXAMPLE/precomputation/L5_IT.eQTL_split
+    output: csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.L5_IT.eQTL_split.pairs
+    jobid: 24
+    reason: Missing output files: csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.L5_IT.eQTL_split.pairs
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, cell_type=L5_IT
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 10:08:54 2024]
+rule get_intersect_pair:
+    input: csMR-EXAMPLE/precomputation/Chandelier_Pvalb.eQTL_split
+    output: csMR-EXAMPLE/precomputation/coloc.Crohn_disease.GWAS_split.Chandelier_Pvalb.eQTL_split.pairs
+    jobid: 66
+    reason: Missing output files: csMR-EXAMPLE/precomputation/coloc.Crohn_disease.GWAS_split.Chandelier_Pvalb.eQTL_split.pairs
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Crohn_disease, cell_type=Chandelier_Pvalb
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 10:08:54 2024]
+rule get_intersect_pair:
+    input: csMR-EXAMPLE/precomputation/SST_SST_Chodl.eQTL_split
+    output: csMR-EXAMPLE/precomputation/coloc.Crohn_disease.GWAS_split.SST_SST_Chodl.eQTL_split.pairs
+    jobid: 80
+    reason: Missing output files: csMR-EXAMPLE/precomputation/coloc.Crohn_disease.GWAS_split.SST_SST_Chodl.eQTL_split.pairs
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Crohn_disease, cell_type=SST_SST_Chodl
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 10:08:54 2024]
+rule get_intersect_pair:
+    input: csMR-EXAMPLE/precomputation/Micro_PVM.eQTL_split
+    output: csMR-EXAMPLE/precomputation/coloc.Inflammatory_bowel_disease.GWAS_split.Micro_PVM.eQTL_split.pairs
+    jobid: 59
+    reason: Missing output files: csMR-EXAMPLE/precomputation/coloc.Inflammatory_bowel_disease.GWAS_split.Micro_PVM.eQTL_split.pairs
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Inflammatory_bowel_disease, cell_type=Micro_PVM
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 10:08:54 2024]
+rule get_intersect_pair:
+    input: csMR-EXAMPLE/precomputation/sL6b.eQTL_split
+    output: csMR-EXAMPLE/precomputation/coloc.Crohn_disease.GWAS_split.sL6b.eQTL_split.pairs
+    jobid: 73
+    reason: Missing output files: csMR-EXAMPLE/precomputation/coloc.Crohn_disease.GWAS_split.sL6b.eQTL_split.pairs
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Crohn_disease, cell_type=sL6b
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 10:08:54 2024]
+rule get_intersect_pair:
+    input: csMR-EXAMPLE/precomputation/L5_IT.eQTL_split
+    output: csMR-EXAMPLE/precomputation/coloc.Inflammatory_bowel_disease.GWAS_split.L5_IT.eQTL_split.pairs
+    jobid: 53
+    reason: Missing output files: csMR-EXAMPLE/precomputation/coloc.Inflammatory_bowel_disease.GWAS_split.L5_IT.eQTL_split.pairs
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Inflammatory_bowel_disease, cell_type=L5_IT
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 10:08:54 2024]
+rule get_intersect_pair:
+    input: csMR-EXAMPLE/precomputation/L2_3_IT.eQTL_split
+    output: csMR-EXAMPLE/precomputation/coloc.Crohn_disease.GWAS_split.L2_3_IT.eQTL_split.pairs
+    jobid: 67
+    reason: Missing output files: csMR-EXAMPLE/precomputation/coloc.Crohn_disease.GWAS_split.L2_3_IT.eQTL_split.pairs
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Crohn_disease, cell_type=L2_3_IT
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 10:08:54 2024]
+rule get_intersect_pair:
+    input: csMR-EXAMPLE/precomputation/Vip.eQTL_split
+    output: csMR-EXAMPLE/precomputation/coloc.Crohn_disease.GWAS_split.Vip.eQTL_split.pairs
+    jobid: 81
+    reason: Missing output files: csMR-EXAMPLE/precomputation/coloc.Crohn_disease.GWAS_split.Vip.eQTL_split.pairs
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Crohn_disease, cell_type=Vip
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 10:08:54 2024]
+rule get_intersect_pair:
+    input: csMR-EXAMPLE/precomputation/Vip.eQTL_split
+    output: csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.Vip.eQTL_split.pairs
+    jobid: 46
+    reason: Missing output files: csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.Vip.eQTL_split.pairs
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, cell_type=Vip
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 10:08:54 2024]
+rule get_intersect_pair:
+    input: csMR-EXAMPLE/precomputation/Lamp5.eQTL_split
+    output: csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.Lamp5.eQTL_split.pairs
+    jobid: 32
+    reason: Missing output files: csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.Lamp5.eQTL_split.pairs
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, cell_type=Lamp5
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 10:08:55 2024]
+rule get_intersect_pair:
+    input: csMR-EXAMPLE/precomputation/L2_3_IT.eQTL_split
+    output: csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.L2_3_IT.eQTL_split.pairs
+    jobid: 18
+    reason: Missing output files: csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.L2_3_IT.eQTL_split.pairs
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, cell_type=L2_3_IT
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 10:08:55 2024]
+rule get_intersect_pair:
+    input: csMR-EXAMPLE/precomputation/Oligo.eQTL_split
+    output: csMR-EXAMPLE/precomputation/coloc.Inflammatory_bowel_disease.GWAS_split.Oligo.eQTL_split.pairs
+    jobid: 60
+    reason: Missing output files: csMR-EXAMPLE/precomputation/coloc.Inflammatory_bowel_disease.GWAS_split.Oligo.eQTL_split.pairs
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Inflammatory_bowel_disease, cell_type=Oligo
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 10:08:55 2024]
+rule get_intersect_pair:
+    input: csMR-EXAMPLE/precomputation/Lamp5.eQTL_split
+    output: csMR-EXAMPLE/precomputation/coloc.Crohn_disease.GWAS_split.Lamp5.eQTL_split.pairs
+    jobid: 74
+    reason: Missing output files: csMR-EXAMPLE/precomputation/coloc.Crohn_disease.GWAS_split.Lamp5.eQTL_split.pairs
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Crohn_disease, cell_type=Lamp5
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 10:08:55 2024]
+rule get_intersect_pair:
+    input: csMR-EXAMPLE/precomputation/OPC.eQTL_split
+    output: csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.OPC.eQTL_split.pairs
+    jobid: 40
+    reason: Missing output files: csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.OPC.eQTL_split.pairs
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, cell_type=OPC
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 10:08:55 2024]
+rule get_intersect_pair:
+    input: csMR-EXAMPLE/precomputation/L6_CT.eQTL_split
+    output: csMR-EXAMPLE/precomputation/coloc.Inflammatory_bowel_disease.GWAS_split.L6_CT.eQTL_split.pairs
+    jobid: 54
+    reason: Missing output files: csMR-EXAMPLE/precomputation/coloc.Inflammatory_bowel_disease.GWAS_split.L6_CT.eQTL_split.pairs
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Inflammatory_bowel_disease, cell_type=L6_CT
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 10:08:55 2024]
+rule get_intersect_pair:
+    input: csMR-EXAMPLE/precomputation/L6_CT.eQTL_split
+    output: csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.L6_CT.eQTL_split.pairs
+    jobid: 26
+    reason: Missing output files: csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.L6_CT.eQTL_split.pairs
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, cell_type=L6_CT
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 10:08:55 2024]
+rule get_intersect_pair:
+    input: csMR-EXAMPLE/precomputation/L4_IT.eQTL_split
+    output: csMR-EXAMPLE/precomputation/coloc.Crohn_disease.GWAS_split.L4_IT.eQTL_split.pairs
+    jobid: 68
+    reason: Missing output files: csMR-EXAMPLE/precomputation/coloc.Crohn_disease.GWAS_split.L4_IT.eQTL_split.pairs
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Crohn_disease, cell_type=L4_IT
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 10:08:55 2024]
+rule get_intersect_pair:
+    input: csMR-EXAMPLE/precomputation/OPC.eQTL_split
+    output: csMR-EXAMPLE/precomputation/coloc.Inflammatory_bowel_disease.GWAS_split.OPC.eQTL_split.pairs
+    jobid: 61
+    reason: Missing output files: csMR-EXAMPLE/precomputation/coloc.Inflammatory_bowel_disease.GWAS_split.OPC.eQTL_split.pairs
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Inflammatory_bowel_disease, cell_type=OPC
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 10:08:55 2024]
+rule get_intersect_pair:
+    input: csMR-EXAMPLE/precomputation/Lamp5_Lhx6.eQTL_split
+    output: csMR-EXAMPLE/precomputation/coloc.Crohn_disease.GWAS_split.Lamp5_Lhx6.eQTL_split.pairs
+    jobid: 75
+    reason: Missing output files: csMR-EXAMPLE/precomputation/coloc.Crohn_disease.GWAS_split.Lamp5_Lhx6.eQTL_split.pairs
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Crohn_disease, cell_type=Lamp5_Lhx6
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 10:08:55 2024]
+rule get_intersect_pair:
+    input: csMR-EXAMPLE/precomputation/Astro.eQTL_split
+    output: csMR-EXAMPLE/precomputation/coloc.Inflammatory_bowel_disease.GWAS_split.Astro.eQTL_split.pairs
+    jobid: 48
+    reason: Missing output files: csMR-EXAMPLE/precomputation/coloc.Inflammatory_bowel_disease.GWAS_split.Astro.eQTL_split.pairs
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Inflammatory_bowel_disease, cell_type=Astro
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 10:08:55 2024]
+rule get_intersect_pair:
+    input: csMR-EXAMPLE/precomputation/PC.eQTL_split
+    output: csMR-EXAMPLE/precomputation/coloc.Inflammatory_bowel_disease.GWAS_split.PC.eQTL_split.pairs
+    jobid: 62
+    reason: Missing output files: csMR-EXAMPLE/precomputation/coloc.Inflammatory_bowel_disease.GWAS_split.PC.eQTL_split.pairs
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Inflammatory_bowel_disease, cell_type=PC
+    resources: tmpdir=/tmp
+
+[Sat Aug 31 10:08:55 2024]
+Finished job 54.
+1 of 775 steps (0.1%) done
+[Sat Aug 31 10:08:55 2024]
+Finished job 52.
+2 of 775 steps (0.3%) done
+[Sat Aug 31 10:08:55 2024]
+Finished job 56.
+3 of 775 steps (0.4%) done
+[Sat Aug 31 10:08:55 2024]
+Finished job 26.
+4 of 775 steps (1%) done
+[Sat Aug 31 10:08:55 2024]
+Finished job 58.
+5 of 775 steps (1%) done
+[Sat Aug 31 10:08:55 2024]
+Finished job 34.
+6 of 775 steps (1%) done
+[Sat Aug 31 10:08:55 2024]
+Finished job 61.
+7 of 775 steps (1%) done
+[Sat Aug 31 10:08:55 2024]
+Finished job 30.
+8 of 775 steps (1%) done
+[Sat Aug 31 10:08:55 2024]
+Finished job 40.
+9 of 775 steps (1%) done
+[Sat Aug 31 10:08:55 2024]
+Finished job 44.
+10 of 775 steps (1%) done
+[Sat Aug 31 10:08:55 2024]
+Finished job 63.
+11 of 775 steps (1%) done
+[Sat Aug 31 10:08:55 2024]
+Finished job 42.
+12 of 775 steps (2%) done
+[Sat Aug 31 10:08:55 2024]
+Finished job 59.
+13 of 775 steps (2%) done
+[Sat Aug 31 10:08:55 2024]
+Finished job 36.
+14 of 775 steps (2%) done
+[Sat Aug 31 10:08:55 2024]
+Finished job 75.
+15 of 775 steps (2%) done
+[Sat Aug 31 10:08:55 2024]
+Finished job 69.
+16 of 775 steps (2%) done
+[Sat Aug 31 10:08:55 2024]
+Finished job 32.
+17 of 775 steps (2%) done
+[Sat Aug 31 10:08:55 2024]
+Finished job 62.
+18 of 775 steps (2%) done
+[Sat Aug 31 10:08:55 2024]
+Finished job 64.
+19 of 775 steps (2%) done
+[Sat Aug 31 10:08:55 2024]
+Finished job 73.
+20 of 775 steps (3%) done
+[Sat Aug 31 10:08:55 2024]
+Finished job 46.
+21 of 775 steps (3%) done
+[Sat Aug 31 10:08:55 2024]
+Finished job 81.
+22 of 775 steps (3%) done
+[Sat Aug 31 10:08:55 2024]
+Finished job 74.
+23 of 775 steps (3%) done
+[Sat Aug 31 10:08:55 2024]
+Finished job 22.
+24 of 775 steps (3%) done
+[Sat Aug 31 10:08:55 2024]
+Finished job 57.
+25 of 775 steps (3%) done
+[Sat Aug 31 10:08:55 2024]
+Finished job 78.
+26 of 775 steps (3%) done
+[Sat Aug 31 10:08:55 2024]
+Finished job 71.
+27 of 775 steps (3%) done
+[Sat Aug 31 10:08:55 2024]
+Finished job 79.
+28 of 775 steps (4%) done
+[Sat Aug 31 10:08:55 2024]
+Finished job 80.
+29 of 775 steps (4%) done
+[Sat Aug 31 10:08:55 2024]
+Finished job 76.
+30 of 775 steps (4%) done
+[Sat Aug 31 10:08:55 2024]
+Finished job 8.
+31 of 775 steps (4%) done
+[Sat Aug 31 10:08:55 2024]
+Finished job 65.
+32 of 775 steps (4%) done
+[Sat Aug 31 10:08:55 2024]
+Finished job 48.
+33 of 775 steps (4%) done
+[Sat Aug 31 10:08:55 2024]
+Finished job 66.
+34 of 775 steps (4%) done
+[Sat Aug 31 10:08:55 2024]
+Finished job 49.
+35 of 775 steps (5%) done
+[Sat Aug 31 10:08:55 2024]
+Finished job 16.
+36 of 775 steps (5%) done
+[Sat Aug 31 10:08:55 2024]
+Finished job 38.
+37 of 775 steps (5%) done
+[Sat Aug 31 10:08:55 2024]
+Finished job 60.
+38 of 775 steps (5%) done
+[Sat Aug 31 10:08:55 2024]
+Finished job 72.
+39 of 775 steps (5%) done
+[Sat Aug 31 10:08:55 2024]
+Finished job 77.
+40 of 775 steps (5%) done
+[Sat Aug 31 10:08:55 2024]
+Finished job 28.
+41 of 775 steps (5%) done
+[Sat Aug 31 10:08:55 2024]
+Finished job 55.
+42 of 775 steps (5%) done
+[Sat Aug 31 10:08:55 2024]
+Finished job 68.
+43 of 775 steps (6%) done
+[Sat Aug 31 10:08:55 2024]
+Finished job 20.
+44 of 775 steps (6%) done
+[Sat Aug 31 10:08:55 2024]
+Finished job 51.
+45 of 775 steps (6%) done
+[Sat Aug 31 10:08:55 2024]
+Finished job 70.
+46 of 775 steps (6%) done
+[Sat Aug 31 10:08:55 2024]
+Finished job 53.
+47 of 775 steps (6%) done
+[Sat Aug 31 10:08:55 2024]
+Finished job 24.
+48 of 775 steps (6%) done
+[Sat Aug 31 10:08:56 2024]
+Finished job 18.
+49 of 775 steps (6%) done
+[Sat Aug 31 10:08:56 2024]
+Finished job 67.
+50 of 775 steps (6%) done
+[Sat Aug 31 10:08:56 2024]
+Finished job 50.
+51 of 775 steps (7%) done
+Select jobs to execute...
+
+[Sat Aug 31 10:08:56 2024]
+rule eqtl_rdata:
+    input: csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.Astro.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.Chandelier_Pvalb.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.L2_3_IT.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.L4_IT.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.L5_6_NP.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.L5_IT.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.L6_CT.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.L6_IT.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.sL6b.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.Lamp5.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.Lamp5_Lhx6.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.Micro_PVM.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.Oligo.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.OPC.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.PC.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.SST_SST_Chodl.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.Vip.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Inflammatory_bowel_disease.GWAS_split.Astro.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Inflammatory_bowel_disease.GWAS_split.Chandelier_Pvalb.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Inflammatory_bowel_disease.GWAS_split.L2_3_IT.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Inflammatory_bowel_disease.GWAS_split.L4_IT.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Inflammatory_bowel_disease.GWAS_split.L5_6_NP.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Inflammatory_bowel_disease.GWAS_split.L5_IT.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Inflammatory_bowel_disease.GWAS_split.L6_CT.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Inflammatory_bowel_disease.GWAS_split.L6_IT.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Inflammatory_bowel_disease.GWAS_split.sL6b.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Inflammatory_bowel_disease.GWAS_split.Lamp5.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Inflammatory_bowel_disease.GWAS_split.Lamp5_Lhx6.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Inflammatory_bowel_disease.GWAS_split.Micro_PVM.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Inflammatory_bowel_disease.GWAS_split.Oligo.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Inflammatory_bowel_disease.GWAS_split.OPC.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Inflammatory_bowel_disease.GWAS_split.PC.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Inflammatory_bowel_disease.GWAS_split.SST_SST_Chodl.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Inflammatory_bowel_disease.GWAS_split.Vip.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Crohn_disease.GWAS_split.Astro.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Crohn_disease.GWAS_split.Chandelier_Pvalb.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Crohn_disease.GWAS_split.L2_3_IT.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Crohn_disease.GWAS_split.L4_IT.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Crohn_disease.GWAS_split.L5_6_NP.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Crohn_disease.GWAS_split.L5_IT.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Crohn_disease.GWAS_split.L6_CT.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Crohn_disease.GWAS_split.L6_IT.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Crohn_disease.GWAS_split.sL6b.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Crohn_disease.GWAS_split.Lamp5.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Crohn_disease.GWAS_split.Lamp5_Lhx6.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Crohn_disease.GWAS_split.Micro_PVM.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Crohn_disease.GWAS_split.Oligo.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Crohn_disease.GWAS_split.OPC.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Crohn_disease.GWAS_split.PC.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Crohn_disease.GWAS_split.SST_SST_Chodl.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Crohn_disease.GWAS_split.Vip.eQTL_split.pairs
+    output: csMR-EXAMPLE/precomputation/eqtl_maf.list
+    jobid: 7
+    reason: Missing output files: csMR-EXAMPLE/precomputation/eqtl_maf.list; Input files updated by another job: csMR-EXAMPLE/precomputation/coloc.Crohn_disease.GWAS_split.Lamp5.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Inflammatory_bowel_disease.GWAS_split.OPC.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Inflammatory_bowel_disease.GWAS_split.L2_3_IT.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.L5_6_NP.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.L2_3_IT.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.Vip.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.PC.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Crohn_disease.GWAS_split.L2_3_IT.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.L6_IT.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.Lamp5_Lhx6.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Crohn_disease.GWAS_split.L6_CT.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Crohn_disease.GWAS_split.L6_IT.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Crohn_disease.GWAS_split.L5_6_NP.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Crohn_disease.GWAS_split.Lamp5_Lhx6.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Inflammatory_bowel_disease.GWAS_split.L6_CT.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Inflammatory_bowel_disease.GWAS_split.L5_6_NP.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.Astro.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Inflammatory_bowel_disease.GWAS_split.PC.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Inflammatory_bowel_disease.GWAS_split.sL6b.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Crohn_disease.GWAS_split.SST_SST_Chodl.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Inflammatory_bowel_disease.GWAS_split.SST_SST_Chodl.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Crohn_disease.GWAS_split.Chandelier_Pvalb.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Inflammatory_bowel_disease.GWAS_split.Lamp5.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.sL6b.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.Lamp5.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.SST_SST_Chodl.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Inflammatory_bowel_disease.GWAS_split.Micro_PVM.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Inflammatory_bowel_disease.GWAS_split.Oligo.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Inflammatory_bowel_disease.GWAS_split.L6_IT.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Crohn_disease.GWAS_split.L4_IT.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.Chandelier_Pvalb.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.L4_IT.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Inflammatory_bowel_disease.GWAS_split.L4_IT.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Crohn_disease.GWAS_split.Micro_PVM.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Crohn_disease.GWAS_split.Vip.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.OPC.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Crohn_disease.GWAS_split.PC.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Crohn_disease.GWAS_split.Astro.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Inflammatory_bowel_disease.GWAS_split.Chandelier_Pvalb.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Crohn_disease.GWAS_split.L5_IT.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Crohn_disease.GWAS_split.OPC.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Crohn_disease.GWAS_split.sL6b.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Crohn_disease.GWAS_split.Oligo.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.L5_IT.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.Oligo.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Inflammatory_bowel_disease.GWAS_split.Astro.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Inflammatory_bowel_disease.GWAS_split.Lamp5_Lhx6.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Inflammatory_bowel_disease.GWAS_split.Vip.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Inflammatory_bowel_disease.GWAS_split.L5_IT.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.L6_CT.eQTL_split.pairs, csMR-EXAMPLE/precomputation/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.Micro_PVM.eQTL_split.pairs; Set of input files has changed since last execution
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE
+    resources: tmpdir=/tmp
+
+[Sat Aug 31 10:09:12 2024]
+Finished job 7.
+52 of 775 steps (7%) done
+Select jobs to execute...
+
+[Sat Aug 31 10:09:12 2024]
+rule fine_mapping:
+    input: csMR-EXAMPLE/precomputation/eqtl_maf.list
+    output: csMR-EXAMPLE/precomputation/gwas_maf_finemap.list, csMR-EXAMPLE/precomputation/eqtl_maf_finemap.list
+    jobid: 6
+    reason: Missing output files: csMR-EXAMPLE/precomputation/gwas_maf_finemap.list, csMR-EXAMPLE/precomputation/eqtl_maf_finemap.list; Input files updated by another job: csMR-EXAMPLE/precomputation/eqtl_maf.list
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE
+    resources: tmpdir=/tmp
+
+[Sat Aug 31 10:09:19 2024]
+Finished job 6.
+53 of 775 steps (7%) done
+Select jobs to execute...
+
+[Sat Aug 31 10:09:19 2024]
+rule run_coloc:
+    input: csMR-EXAMPLE/precomputation/gwas_maf_finemap.list, csMR-EXAMPLE/precomputation/eqtl_maf_finemap.list
+    output: csMR-EXAMPLE/COLOC/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.Astro.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.Chandelier_Pvalb.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.L2_3_IT.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.L4_IT.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.L5_6_NP.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.L5_IT.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.L6_CT.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.L6_IT.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.sL6b.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.Lamp5.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.Lamp5_Lhx6.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.Micro_PVM.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.Oligo.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.OPC.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.PC.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.SST_SST_Chodl.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.Vip.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Inflammatory_bowel_disease.GWAS_split.Astro.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Inflammatory_bowel_disease.GWAS_split.Chandelier_Pvalb.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Inflammatory_bowel_disease.GWAS_split.L2_3_IT.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Inflammatory_bowel_disease.GWAS_split.L4_IT.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Inflammatory_bowel_disease.GWAS_split.L5_6_NP.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Inflammatory_bowel_disease.GWAS_split.L5_IT.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Inflammatory_bowel_disease.GWAS_split.L6_CT.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Inflammatory_bowel_disease.GWAS_split.L6_IT.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Inflammatory_bowel_disease.GWAS_split.sL6b.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Inflammatory_bowel_disease.GWAS_split.Lamp5.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Inflammatory_bowel_disease.GWAS_split.Lamp5_Lhx6.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Inflammatory_bowel_disease.GWAS_split.Micro_PVM.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Inflammatory_bowel_disease.GWAS_split.Oligo.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Inflammatory_bowel_disease.GWAS_split.OPC.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Inflammatory_bowel_disease.GWAS_split.PC.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Inflammatory_bowel_disease.GWAS_split.SST_SST_Chodl.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Inflammatory_bowel_disease.GWAS_split.Vip.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Crohn_disease.GWAS_split.Astro.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Crohn_disease.GWAS_split.Chandelier_Pvalb.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Crohn_disease.GWAS_split.L2_3_IT.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Crohn_disease.GWAS_split.L4_IT.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Crohn_disease.GWAS_split.L5_6_NP.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Crohn_disease.GWAS_split.L5_IT.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Crohn_disease.GWAS_split.L6_CT.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Crohn_disease.GWAS_split.L6_IT.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Crohn_disease.GWAS_split.sL6b.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Crohn_disease.GWAS_split.Lamp5.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Crohn_disease.GWAS_split.Lamp5_Lhx6.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Crohn_disease.GWAS_split.Micro_PVM.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Crohn_disease.GWAS_split.Oligo.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Crohn_disease.GWAS_split.OPC.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Crohn_disease.GWAS_split.PC.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Crohn_disease.GWAS_split.SST_SST_Chodl.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Crohn_disease.GWAS_split.Vip.eQTL_split.pairs.coloc_results
+    jobid: 5
+    reason: Input files updated by another job: csMR-EXAMPLE/precomputation/gwas_maf_finemap.list, csMR-EXAMPLE/precomputation/eqtl_maf_finemap.list
+    resources: tmpdir=/tmp
+
+[Sat Aug 31 10:09:46 2024]
+Finished job 5.
+54 of 775 steps (7%) done
+Select jobs to execute...
+
+[Sat Aug 31 10:09:46 2024]
+rule coloc_summary:
+    input: csMR-EXAMPLE/COLOC/coloc.Crohn_disease.GWAS_split.Astro.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Crohn_disease.GWAS_split.Chandelier_Pvalb.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Crohn_disease.GWAS_split.L2_3_IT.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Crohn_disease.GWAS_split.L4_IT.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Crohn_disease.GWAS_split.L5_6_NP.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Crohn_disease.GWAS_split.L5_IT.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Crohn_disease.GWAS_split.L6_CT.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Crohn_disease.GWAS_split.L6_IT.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Crohn_disease.GWAS_split.sL6b.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Crohn_disease.GWAS_split.Lamp5.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Crohn_disease.GWAS_split.Lamp5_Lhx6.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Crohn_disease.GWAS_split.Micro_PVM.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Crohn_disease.GWAS_split.Oligo.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Crohn_disease.GWAS_split.OPC.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Crohn_disease.GWAS_split.PC.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Crohn_disease.GWAS_split.SST_SST_Chodl.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Crohn_disease.GWAS_split.Vip.eQTL_split.pairs.coloc_results
+    output: csMR-EXAMPLE/COLOC/Susie_coloc.Crohn_disease.results.coverage.0.9.PPH4.0.8
+    jobid: 561
+    reason: Input files updated by another job: csMR-EXAMPLE/COLOC/coloc.Crohn_disease.GWAS_split.Astro.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Crohn_disease.GWAS_split.L5_IT.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Crohn_disease.GWAS_split.OPC.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Crohn_disease.GWAS_split.SST_SST_Chodl.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Crohn_disease.GWAS_split.Lamp5.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Crohn_disease.GWAS_split.L5_6_NP.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Crohn_disease.GWAS_split.Chandelier_Pvalb.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Crohn_disease.GWAS_split.Lamp5_Lhx6.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Crohn_disease.GWAS_split.L6_IT.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Crohn_disease.GWAS_split.Micro_PVM.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Crohn_disease.GWAS_split.L2_3_IT.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Crohn_disease.GWAS_split.Vip.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Crohn_disease.GWAS_split.sL6b.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Crohn_disease.GWAS_split.L4_IT.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Crohn_disease.GWAS_split.Oligo.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Crohn_disease.GWAS_split.L6_CT.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Crohn_disease.GWAS_split.PC.eQTL_split.pairs.coloc_results
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Crohn_disease, coverage=0.9, coloc_cutoff=0.8
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 10:09:46 2024]
+rule coloc_summary:
+    input: csMR-EXAMPLE/COLOC/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.Astro.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.Chandelier_Pvalb.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.L2_3_IT.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.L4_IT.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.L5_6_NP.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.L5_IT.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.L6_CT.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.L6_IT.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.sL6b.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.Lamp5.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.Lamp5_Lhx6.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.Micro_PVM.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.Oligo.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.OPC.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.PC.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.SST_SST_Chodl.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.Vip.eQTL_split.pairs.coloc_results
+    output: csMR-EXAMPLE/COLOC/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8
+    jobid: 4
+    reason: Input files updated by another job: csMR-EXAMPLE/COLOC/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.Lamp5_Lhx6.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.L5_IT.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.L4_IT.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.L6_CT.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.L6_IT.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.Astro.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.Lamp5.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.Vip.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.Oligo.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.L5_6_NP.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.PC.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.Micro_PVM.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.OPC.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.sL6b.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.L2_3_IT.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.SST_SST_Chodl.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.Chandelier_Pvalb.eQTL_split.pairs.coloc_results
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, coverage=0.9, coloc_cutoff=0.8
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 10:09:46 2024]
+rule coloc_summary:
+    input: csMR-EXAMPLE/COLOC/coloc.Inflammatory_bowel_disease.GWAS_split.Astro.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Inflammatory_bowel_disease.GWAS_split.Chandelier_Pvalb.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Inflammatory_bowel_disease.GWAS_split.L2_3_IT.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Inflammatory_bowel_disease.GWAS_split.L4_IT.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Inflammatory_bowel_disease.GWAS_split.L5_6_NP.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Inflammatory_bowel_disease.GWAS_split.L5_IT.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Inflammatory_bowel_disease.GWAS_split.L6_CT.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Inflammatory_bowel_disease.GWAS_split.L6_IT.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Inflammatory_bowel_disease.GWAS_split.sL6b.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Inflammatory_bowel_disease.GWAS_split.Lamp5.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Inflammatory_bowel_disease.GWAS_split.Lamp5_Lhx6.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Inflammatory_bowel_disease.GWAS_split.Micro_PVM.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Inflammatory_bowel_disease.GWAS_split.Oligo.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Inflammatory_bowel_disease.GWAS_split.OPC.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Inflammatory_bowel_disease.GWAS_split.PC.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Inflammatory_bowel_disease.GWAS_split.SST_SST_Chodl.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Inflammatory_bowel_disease.GWAS_split.Vip.eQTL_split.pairs.coloc_results
+    output: csMR-EXAMPLE/COLOC/Susie_coloc.Inflammatory_bowel_disease.results.coverage.0.9.PPH4.0.8
+    jobid: 321
+    reason: Input files updated by another job: csMR-EXAMPLE/COLOC/coloc.Inflammatory_bowel_disease.GWAS_split.L5_IT.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Inflammatory_bowel_disease.GWAS_split.Astro.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Inflammatory_bowel_disease.GWAS_split.Oligo.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Inflammatory_bowel_disease.GWAS_split.Lamp5.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Inflammatory_bowel_disease.GWAS_split.L4_IT.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Inflammatory_bowel_disease.GWAS_split.OPC.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Inflammatory_bowel_disease.GWAS_split.PC.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Inflammatory_bowel_disease.GWAS_split.L2_3_IT.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Inflammatory_bowel_disease.GWAS_split.Micro_PVM.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Inflammatory_bowel_disease.GWAS_split.L5_6_NP.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Inflammatory_bowel_disease.GWAS_split.Vip.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Inflammatory_bowel_disease.GWAS_split.L6_CT.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Inflammatory_bowel_disease.GWAS_split.SST_SST_Chodl.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Inflammatory_bowel_disease.GWAS_split.Lamp5_Lhx6.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Inflammatory_bowel_disease.GWAS_split.Chandelier_Pvalb.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Inflammatory_bowel_disease.GWAS_split.L6_IT.eQTL_split.pairs.coloc_results, csMR-EXAMPLE/COLOC/coloc.Inflammatory_bowel_disease.GWAS_split.sL6b.eQTL_split.pairs.coloc_results
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Inflammatory_bowel_disease, coverage=0.9, coloc_cutoff=0.8
+    resources: tmpdir=/tmp
+
+[Sat Aug 31 10:09:47 2024]
+Finished job 561.
+55 of 775 steps (7%) done
+Select jobs to execute...
+
+[Sat Aug 31 10:09:47 2024]
+rule snp_filter:
+    input: csMR-EXAMPLE/COLOC/Susie_coloc.Crohn_disease.results.coverage.0.9.PPH4.0.8
+    output: csMR-EXAMPLE/MR/Susie_coloc.Crohn_disease.results.coverage.0.9.PPH4.0.8.cells
+    jobid: 560
+    reason: Input files updated by another job: csMR-EXAMPLE/COLOC/Susie_coloc.Crohn_disease.results.coverage.0.9.PPH4.0.8
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Crohn_disease, coverage=0.9, coloc_cutoff=0.8
+    resources: tmpdir=/tmp
+
+[Sat Aug 31 10:09:47 2024]
+Finished job 4.
+56 of 775 steps (7%) done
+Select jobs to execute...
+
+[Sat Aug 31 10:09:47 2024]
+rule snp_filter:
+    input: csMR-EXAMPLE/COLOC/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8
+    output: csMR-EXAMPLE/MR/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.cells
+    jobid: 3
+    reason: Input files updated by another job: csMR-EXAMPLE/COLOC/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, coverage=0.9, coloc_cutoff=0.8
+    resources: tmpdir=/tmp
+
+[Sat Aug 31 10:09:47 2024]
+Finished job 321.
+57 of 775 steps (7%) done
+Select jobs to execute...
+
+[Sat Aug 31 10:09:47 2024]
+rule snp_filter:
+    input: csMR-EXAMPLE/COLOC/Susie_coloc.Inflammatory_bowel_disease.results.coverage.0.9.PPH4.0.8
+    output: csMR-EXAMPLE/MR/Susie_coloc.Inflammatory_bowel_disease.results.coverage.0.9.PPH4.0.8.cells
+    jobid: 320
+    reason: Input files updated by another job: csMR-EXAMPLE/COLOC/Susie_coloc.Inflammatory_bowel_disease.results.coverage.0.9.PPH4.0.8
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Inflammatory_bowel_disease, coverage=0.9, coloc_cutoff=0.8
+    resources: tmpdir=/tmp
+
+[Sat Aug 31 10:09:48 2024]
+Finished job 3.
+58 of 775 steps (7%) done
+Select jobs to execute...
+
+[Sat Aug 31 10:09:48 2024]
+rule clump:
+    input: csMR-EXAMPLE/MR/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.cells
+    output: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.L6_CT.clumped
+    jobid: 165
+    reason: Input files updated by another job: csMR-EXAMPLE/MR/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.cells
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, coverage=0.9, coloc_cutoff=0.8, cell_type=L6_CT
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 10:09:48 2024]
+rule clump:
+    input: csMR-EXAMPLE/MR/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.cells
+    output: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.L4_IT.clumped
+    jobid: 123
+    reason: Input files updated by another job: csMR-EXAMPLE/MR/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.cells
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, coverage=0.9, coloc_cutoff=0.8, cell_type=L4_IT
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 10:09:48 2024]
+rule clump:
+    input: csMR-EXAMPLE/MR/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.cells
+    output: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.L5_6_NP.clumped
+    jobid: 137
+    reason: Input files updated by another job: csMR-EXAMPLE/MR/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.cells
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, coverage=0.9, coloc_cutoff=0.8, cell_type=L5_6_NP
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 10:09:48 2024]
+rule clump:
+    input: csMR-EXAMPLE/MR/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.cells
+    output: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.L5_IT.clumped
+    jobid: 151
+    reason: Input files updated by another job: csMR-EXAMPLE/MR/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.cells
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, coverage=0.9, coloc_cutoff=0.8, cell_type=L5_IT
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 10:09:48 2024]
+rule clump:
+    input: csMR-EXAMPLE/MR/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.cells
+    output: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.OPC.clumped
+    jobid: 263
+    reason: Input files updated by another job: csMR-EXAMPLE/MR/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.cells
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, coverage=0.9, coloc_cutoff=0.8, cell_type=OPC
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 10:09:48 2024]
+rule clump:
+    input: csMR-EXAMPLE/MR/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.cells
+    output: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.Lamp5.clumped
+    jobid: 207
+    reason: Input files updated by another job: csMR-EXAMPLE/MR/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.cells
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, coverage=0.9, coloc_cutoff=0.8, cell_type=Lamp5
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 10:09:48 2024]
+rule clump:
+    input: csMR-EXAMPLE/MR/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.cells
+    output: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.sL6b.clumped
+    jobid: 193
+    reason: Input files updated by another job: csMR-EXAMPLE/MR/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.cells
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, coverage=0.9, coloc_cutoff=0.8, cell_type=sL6b
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 10:09:48 2024]
+rule clump:
+    input: csMR-EXAMPLE/MR/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.cells
+    output: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.Micro_PVM.clumped
+    jobid: 235
+    reason: Input files updated by another job: csMR-EXAMPLE/MR/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.cells
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, coverage=0.9, coloc_cutoff=0.8, cell_type=Micro_PVM
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 10:09:48 2024]
+rule clump:
+    input: csMR-EXAMPLE/MR/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.cells
+    output: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.L6_IT.clumped
+    jobid: 179
+    reason: Input files updated by another job: csMR-EXAMPLE/MR/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.cells
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, coverage=0.9, coloc_cutoff=0.8, cell_type=L6_IT
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 10:09:48 2024]
+rule clump:
+    input: csMR-EXAMPLE/MR/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.cells
+    output: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.Lamp5_Lhx6.clumped
+    jobid: 221
+    reason: Input files updated by another job: csMR-EXAMPLE/MR/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.cells
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, coverage=0.9, coloc_cutoff=0.8, cell_type=Lamp5_Lhx6
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 10:09:48 2024]
+rule clump:
+    input: csMR-EXAMPLE/MR/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.cells
+    output: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.Vip.clumped
+    jobid: 305
+    reason: Input files updated by another job: csMR-EXAMPLE/MR/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.cells
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, coverage=0.9, coloc_cutoff=0.8, cell_type=Vip
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 10:09:48 2024]
+rule clump:
+    input: csMR-EXAMPLE/MR/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.cells
+    output: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.Oligo.clumped
+    jobid: 249
+    reason: Input files updated by another job: csMR-EXAMPLE/MR/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.cells
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, coverage=0.9, coloc_cutoff=0.8, cell_type=Oligo
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 10:09:48 2024]
+rule clump:
+    input: csMR-EXAMPLE/MR/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.cells
+    output: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.PC.clumped
+    jobid: 277
+    reason: Input files updated by another job: csMR-EXAMPLE/MR/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.cells
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, coverage=0.9, coloc_cutoff=0.8, cell_type=PC
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 10:09:48 2024]
+rule clump:
+    input: csMR-EXAMPLE/MR/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.cells
+    output: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.Chandelier_Pvalb.clumped
+    jobid: 95
+    reason: Input files updated by another job: csMR-EXAMPLE/MR/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.cells
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, coverage=0.9, coloc_cutoff=0.8, cell_type=Chandelier_Pvalb
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 10:09:48 2024]
+rule clump:
+    input: csMR-EXAMPLE/MR/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.cells
+    output: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.Astro.clumped
+    jobid: 2
+    reason: Input files updated by another job: csMR-EXAMPLE/MR/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.cells
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, coverage=0.9, coloc_cutoff=0.8, cell_type=Astro
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 10:09:48 2024]
+rule clump:
+    input: csMR-EXAMPLE/MR/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.cells
+    output: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.SST_SST_Chodl.clumped
+    jobid: 291
+    reason: Input files updated by another job: csMR-EXAMPLE/MR/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.cells
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, coverage=0.9, coloc_cutoff=0.8, cell_type=SST_SST_Chodl
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 10:09:48 2024]
+rule clump:
+    input: csMR-EXAMPLE/MR/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.cells
+    output: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.L2_3_IT.clumped
+    jobid: 109
+    reason: Input files updated by another job: csMR-EXAMPLE/MR/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.cells
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, coverage=0.9, coloc_cutoff=0.8, cell_type=L2_3_IT
+    resources: tmpdir=/tmp
+
+[Sat Aug 31 10:09:48 2024]
+Finished job 560.
+59 of 775 steps (8%) done
+[Sat Aug 31 10:09:48 2024]
+Finished job 320.
+60 of 775 steps (8%) done
+Select jobs to execute...
+
+[Sat Aug 31 10:09:48 2024]
+rule clump:
+    input: csMR-EXAMPLE/MR/Susie_coloc.Inflammatory_bowel_disease.results.coverage.0.9.PPH4.0.8.cells
+    output: csMR-EXAMPLE/MR/clump/Susie_coloc.Inflammatory_bowel_disease.results.coverage.0.9.PPH4.0.8.Chandelier_Pvalb.clumped
+    jobid: 335
+    reason: Input files updated by another job: csMR-EXAMPLE/MR/Susie_coloc.Inflammatory_bowel_disease.results.coverage.0.9.PPH4.0.8.cells
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Inflammatory_bowel_disease, coverage=0.9, coloc_cutoff=0.8, cell_type=Chandelier_Pvalb
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 10:09:48 2024]
+rule clump:
+    input: csMR-EXAMPLE/MR/Susie_coloc.Inflammatory_bowel_disease.results.coverage.0.9.PPH4.0.8.cells
+    output: csMR-EXAMPLE/MR/clump/Susie_coloc.Inflammatory_bowel_disease.results.coverage.0.9.PPH4.0.8.L4_IT.clumped
+    jobid: 363
+    reason: Input files updated by another job: csMR-EXAMPLE/MR/Susie_coloc.Inflammatory_bowel_disease.results.coverage.0.9.PPH4.0.8.cells
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Inflammatory_bowel_disease, coverage=0.9, coloc_cutoff=0.8, cell_type=L4_IT
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 10:09:48 2024]
+rule clump:
+    input: csMR-EXAMPLE/MR/Susie_coloc.Inflammatory_bowel_disease.results.coverage.0.9.PPH4.0.8.cells
+    output: csMR-EXAMPLE/MR/clump/Susie_coloc.Inflammatory_bowel_disease.results.coverage.0.9.PPH4.0.8.L5_6_NP.clumped
+    jobid: 377
+    reason: Input files updated by another job: csMR-EXAMPLE/MR/Susie_coloc.Inflammatory_bowel_disease.results.coverage.0.9.PPH4.0.8.cells
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Inflammatory_bowel_disease, coverage=0.9, coloc_cutoff=0.8, cell_type=L5_6_NP
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 10:09:48 2024]
+rule clump:
+    input: csMR-EXAMPLE/MR/Susie_coloc.Inflammatory_bowel_disease.results.coverage.0.9.PPH4.0.8.cells
+    output: csMR-EXAMPLE/MR/clump/Susie_coloc.Inflammatory_bowel_disease.results.coverage.0.9.PPH4.0.8.L5_IT.clumped
+    jobid: 391
+    reason: Input files updated by another job: csMR-EXAMPLE/MR/Susie_coloc.Inflammatory_bowel_disease.results.coverage.0.9.PPH4.0.8.cells
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Inflammatory_bowel_disease, coverage=0.9, coloc_cutoff=0.8, cell_type=L5_IT
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 10:09:48 2024]
+rule clump:
+    input: csMR-EXAMPLE/MR/Susie_coloc.Inflammatory_bowel_disease.results.coverage.0.9.PPH4.0.8.cells
+    output: csMR-EXAMPLE/MR/clump/Susie_coloc.Inflammatory_bowel_disease.results.coverage.0.9.PPH4.0.8.L2_3_IT.clumped
+    jobid: 349
+    reason: Input files updated by another job: csMR-EXAMPLE/MR/Susie_coloc.Inflammatory_bowel_disease.results.coverage.0.9.PPH4.0.8.cells
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Inflammatory_bowel_disease, coverage=0.9, coloc_cutoff=0.8, cell_type=L2_3_IT
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 10:09:48 2024]
+rule clump:
+    input: csMR-EXAMPLE/MR/Susie_coloc.Inflammatory_bowel_disease.results.coverage.0.9.PPH4.0.8.cells
+    output: csMR-EXAMPLE/MR/clump/Susie_coloc.Inflammatory_bowel_disease.results.coverage.0.9.PPH4.0.8.L6_CT.clumped
+    jobid: 405
+    reason: Input files updated by another job: csMR-EXAMPLE/MR/Susie_coloc.Inflammatory_bowel_disease.results.coverage.0.9.PPH4.0.8.cells
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Inflammatory_bowel_disease, coverage=0.9, coloc_cutoff=0.8, cell_type=L6_CT
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 10:09:48 2024]
+rule clump:
+    input: csMR-EXAMPLE/MR/Susie_coloc.Inflammatory_bowel_disease.results.coverage.0.9.PPH4.0.8.cells
+    output: csMR-EXAMPLE/MR/clump/Susie_coloc.Inflammatory_bowel_disease.results.coverage.0.9.PPH4.0.8.L6_IT.clumped
+    jobid: 419
+    reason: Input files updated by another job: csMR-EXAMPLE/MR/Susie_coloc.Inflammatory_bowel_disease.results.coverage.0.9.PPH4.0.8.cells
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Inflammatory_bowel_disease, coverage=0.9, coloc_cutoff=0.8, cell_type=L6_IT
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 10:09:48 2024]
+rule clump:
+    input: csMR-EXAMPLE/MR/Susie_coloc.Inflammatory_bowel_disease.results.coverage.0.9.PPH4.0.8.cells
+    output: csMR-EXAMPLE/MR/clump/Susie_coloc.Inflammatory_bowel_disease.results.coverage.0.9.PPH4.0.8.sL6b.clumped
+    jobid: 433
+    reason: Input files updated by another job: csMR-EXAMPLE/MR/Susie_coloc.Inflammatory_bowel_disease.results.coverage.0.9.PPH4.0.8.cells
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Inflammatory_bowel_disease, coverage=0.9, coloc_cutoff=0.8, cell_type=sL6b
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 10:09:48 2024]
+rule clump:
+    input: csMR-EXAMPLE/MR/Susie_coloc.Inflammatory_bowel_disease.results.coverage.0.9.PPH4.0.8.cells
+    output: csMR-EXAMPLE/MR/clump/Susie_coloc.Inflammatory_bowel_disease.results.coverage.0.9.PPH4.0.8.Lamp5.clumped
+    jobid: 447
+    reason: Input files updated by another job: csMR-EXAMPLE/MR/Susie_coloc.Inflammatory_bowel_disease.results.coverage.0.9.PPH4.0.8.cells
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Inflammatory_bowel_disease, coverage=0.9, coloc_cutoff=0.8, cell_type=Lamp5
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 10:09:48 2024]
+rule clump:
+    input: csMR-EXAMPLE/MR/Susie_coloc.Inflammatory_bowel_disease.results.coverage.0.9.PPH4.0.8.cells
+    output: csMR-EXAMPLE/MR/clump/Susie_coloc.Inflammatory_bowel_disease.results.coverage.0.9.PPH4.0.8.Oligo.clumped
+    jobid: 489
+    reason: Input files updated by another job: csMR-EXAMPLE/MR/Susie_coloc.Inflammatory_bowel_disease.results.coverage.0.9.PPH4.0.8.cells
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Inflammatory_bowel_disease, coverage=0.9, coloc_cutoff=0.8, cell_type=Oligo
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 10:09:48 2024]
+rule clump:
+    input: csMR-EXAMPLE/MR/Susie_coloc.Crohn_disease.results.coverage.0.9.PPH4.0.8.cells
+    output: csMR-EXAMPLE/MR/clump/Susie_coloc.Crohn_disease.results.coverage.0.9.PPH4.0.8.L2_3_IT.clumped
+    jobid: 589
+    reason: Input files updated by another job: csMR-EXAMPLE/MR/Susie_coloc.Crohn_disease.results.coverage.0.9.PPH4.0.8.cells
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Crohn_disease, coverage=0.9, coloc_cutoff=0.8, cell_type=L2_3_IT
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 10:09:48 2024]
+rule clump:
+    input: csMR-EXAMPLE/MR/Susie_coloc.Crohn_disease.results.coverage.0.9.PPH4.0.8.cells
+    output: csMR-EXAMPLE/MR/clump/Susie_coloc.Crohn_disease.results.coverage.0.9.PPH4.0.8.Astro.clumped
+    jobid: 559
+    reason: Input files updated by another job: csMR-EXAMPLE/MR/Susie_coloc.Crohn_disease.results.coverage.0.9.PPH4.0.8.cells
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Crohn_disease, coverage=0.9, coloc_cutoff=0.8, cell_type=Astro
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 10:09:48 2024]
+rule clump:
+    input: csMR-EXAMPLE/MR/Susie_coloc.Inflammatory_bowel_disease.results.coverage.0.9.PPH4.0.8.cells
+    output: csMR-EXAMPLE/MR/clump/Susie_coloc.Inflammatory_bowel_disease.results.coverage.0.9.PPH4.0.8.Vip.clumped
+    jobid: 545
+    reason: Input files updated by another job: csMR-EXAMPLE/MR/Susie_coloc.Inflammatory_bowel_disease.results.coverage.0.9.PPH4.0.8.cells
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Inflammatory_bowel_disease, coverage=0.9, coloc_cutoff=0.8, cell_type=Vip
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 10:09:48 2024]
+rule clump:
+    input: csMR-EXAMPLE/MR/Susie_coloc.Inflammatory_bowel_disease.results.coverage.0.9.PPH4.0.8.cells
+    output: csMR-EXAMPLE/MR/clump/Susie_coloc.Inflammatory_bowel_disease.results.coverage.0.9.PPH4.0.8.PC.clumped
+    jobid: 517
+    reason: Input files updated by another job: csMR-EXAMPLE/MR/Susie_coloc.Inflammatory_bowel_disease.results.coverage.0.9.PPH4.0.8.cells
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Inflammatory_bowel_disease, coverage=0.9, coloc_cutoff=0.8, cell_type=PC
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 10:09:48 2024]
+rule clump:
+    input: csMR-EXAMPLE/MR/Susie_coloc.Inflammatory_bowel_disease.results.coverage.0.9.PPH4.0.8.cells
+    output: csMR-EXAMPLE/MR/clump/Susie_coloc.Inflammatory_bowel_disease.results.coverage.0.9.PPH4.0.8.SST_SST_Chodl.clumped
+    jobid: 531
+    reason: Input files updated by another job: csMR-EXAMPLE/MR/Susie_coloc.Inflammatory_bowel_disease.results.coverage.0.9.PPH4.0.8.cells
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Inflammatory_bowel_disease, coverage=0.9, coloc_cutoff=0.8, cell_type=SST_SST_Chodl
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 10:09:48 2024]
+rule clump:
+    input: csMR-EXAMPLE/MR/Susie_coloc.Inflammatory_bowel_disease.results.coverage.0.9.PPH4.0.8.cells
+    output: csMR-EXAMPLE/MR/clump/Susie_coloc.Inflammatory_bowel_disease.results.coverage.0.9.PPH4.0.8.Lamp5_Lhx6.clumped
+    jobid: 461
+    reason: Input files updated by another job: csMR-EXAMPLE/MR/Susie_coloc.Inflammatory_bowel_disease.results.coverage.0.9.PPH4.0.8.cells
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Inflammatory_bowel_disease, coverage=0.9, coloc_cutoff=0.8, cell_type=Lamp5_Lhx6
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 10:09:48 2024]
+rule clump:
+    input: csMR-EXAMPLE/MR/Susie_coloc.Crohn_disease.results.coverage.0.9.PPH4.0.8.cells
+    output: csMR-EXAMPLE/MR/clump/Susie_coloc.Crohn_disease.results.coverage.0.9.PPH4.0.8.L4_IT.clumped
+    jobid: 603
+    reason: Input files updated by another job: csMR-EXAMPLE/MR/Susie_coloc.Crohn_disease.results.coverage.0.9.PPH4.0.8.cells
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Crohn_disease, coverage=0.9, coloc_cutoff=0.8, cell_type=L4_IT
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 10:09:48 2024]
+rule clump:
+    input: csMR-EXAMPLE/MR/Susie_coloc.Crohn_disease.results.coverage.0.9.PPH4.0.8.cells
+    output: csMR-EXAMPLE/MR/clump/Susie_coloc.Crohn_disease.results.coverage.0.9.PPH4.0.8.L6_IT.clumped
+    jobid: 659
+    reason: Input files updated by another job: csMR-EXAMPLE/MR/Susie_coloc.Crohn_disease.results.coverage.0.9.PPH4.0.8.cells
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Crohn_disease, coverage=0.9, coloc_cutoff=0.8, cell_type=L6_IT
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 10:09:48 2024]
+rule clump:
+    input: csMR-EXAMPLE/MR/Susie_coloc.Crohn_disease.results.coverage.0.9.PPH4.0.8.cells
+    output: csMR-EXAMPLE/MR/clump/Susie_coloc.Crohn_disease.results.coverage.0.9.PPH4.0.8.Lamp5.clumped
+    jobid: 687
+    reason: Input files updated by another job: csMR-EXAMPLE/MR/Susie_coloc.Crohn_disease.results.coverage.0.9.PPH4.0.8.cells
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Crohn_disease, coverage=0.9, coloc_cutoff=0.8, cell_type=Lamp5
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 10:09:48 2024]
+rule clump:
+    input: csMR-EXAMPLE/MR/Susie_coloc.Crohn_disease.results.coverage.0.9.PPH4.0.8.cells
+    output: csMR-EXAMPLE/MR/clump/Susie_coloc.Crohn_disease.results.coverage.0.9.PPH4.0.8.L5_IT.clumped
+    jobid: 631
+    reason: Input files updated by another job: csMR-EXAMPLE/MR/Susie_coloc.Crohn_disease.results.coverage.0.9.PPH4.0.8.cells
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Crohn_disease, coverage=0.9, coloc_cutoff=0.8, cell_type=L5_IT
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 10:09:48 2024]
+rule clump:
+    input: csMR-EXAMPLE/MR/Susie_coloc.Crohn_disease.results.coverage.0.9.PPH4.0.8.cells
+    output: csMR-EXAMPLE/MR/clump/Susie_coloc.Crohn_disease.results.coverage.0.9.PPH4.0.8.PC.clumped
+    jobid: 757
+    reason: Input files updated by another job: csMR-EXAMPLE/MR/Susie_coloc.Crohn_disease.results.coverage.0.9.PPH4.0.8.cells
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Crohn_disease, coverage=0.9, coloc_cutoff=0.8, cell_type=PC
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 10:09:48 2024]
+rule clump:
+    input: csMR-EXAMPLE/MR/Susie_coloc.Crohn_disease.results.coverage.0.9.PPH4.0.8.cells
+    output: csMR-EXAMPLE/MR/clump/Susie_coloc.Crohn_disease.results.coverage.0.9.PPH4.0.8.Oligo.clumped
+    jobid: 729
+    reason: Input files updated by another job: csMR-EXAMPLE/MR/Susie_coloc.Crohn_disease.results.coverage.0.9.PPH4.0.8.cells
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Crohn_disease, coverage=0.9, coloc_cutoff=0.8, cell_type=Oligo
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 10:09:48 2024]
+rule clump:
+    input: csMR-EXAMPLE/MR/Susie_coloc.Crohn_disease.results.coverage.0.9.PPH4.0.8.cells
+    output: csMR-EXAMPLE/MR/clump/Susie_coloc.Crohn_disease.results.coverage.0.9.PPH4.0.8.Lamp5_Lhx6.clumped
+    jobid: 701
+    reason: Input files updated by another job: csMR-EXAMPLE/MR/Susie_coloc.Crohn_disease.results.coverage.0.9.PPH4.0.8.cells
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Crohn_disease, coverage=0.9, coloc_cutoff=0.8, cell_type=Lamp5_Lhx6
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 10:09:48 2024]
+rule clump:
+    input: csMR-EXAMPLE/MR/Susie_coloc.Crohn_disease.results.coverage.0.9.PPH4.0.8.cells
+    output: csMR-EXAMPLE/MR/clump/Susie_coloc.Crohn_disease.results.coverage.0.9.PPH4.0.8.Vip.clumped
+    jobid: 785
+    reason: Input files updated by another job: csMR-EXAMPLE/MR/Susie_coloc.Crohn_disease.results.coverage.0.9.PPH4.0.8.cells
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Crohn_disease, coverage=0.9, coloc_cutoff=0.8, cell_type=Vip
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 10:09:48 2024]
+rule clump:
+    input: csMR-EXAMPLE/MR/Susie_coloc.Crohn_disease.results.coverage.0.9.PPH4.0.8.cells
+    output: csMR-EXAMPLE/MR/clump/Susie_coloc.Crohn_disease.results.coverage.0.9.PPH4.0.8.SST_SST_Chodl.clumped
+    jobid: 771
+    reason: Input files updated by another job: csMR-EXAMPLE/MR/Susie_coloc.Crohn_disease.results.coverage.0.9.PPH4.0.8.cells
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Crohn_disease, coverage=0.9, coloc_cutoff=0.8, cell_type=SST_SST_Chodl
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 10:09:48 2024]
+rule clump:
+    input: csMR-EXAMPLE/MR/Susie_coloc.Crohn_disease.results.coverage.0.9.PPH4.0.8.cells
+    output: csMR-EXAMPLE/MR/clump/Susie_coloc.Crohn_disease.results.coverage.0.9.PPH4.0.8.Chandelier_Pvalb.clumped
+    jobid: 575
+    reason: Input files updated by another job: csMR-EXAMPLE/MR/Susie_coloc.Crohn_disease.results.coverage.0.9.PPH4.0.8.cells
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Crohn_disease, coverage=0.9, coloc_cutoff=0.8, cell_type=Chandelier_Pvalb
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 10:09:48 2024]
+rule clump:
+    input: csMR-EXAMPLE/MR/Susie_coloc.Crohn_disease.results.coverage.0.9.PPH4.0.8.cells
+    output: csMR-EXAMPLE/MR/clump/Susie_coloc.Crohn_disease.results.coverage.0.9.PPH4.0.8.L5_6_NP.clumped
+    jobid: 617
+    reason: Input files updated by another job: csMR-EXAMPLE/MR/Susie_coloc.Crohn_disease.results.coverage.0.9.PPH4.0.8.cells
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Crohn_disease, coverage=0.9, coloc_cutoff=0.8, cell_type=L5_6_NP
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 10:09:48 2024]
+rule clump:
+    input: csMR-EXAMPLE/MR/Susie_coloc.Crohn_disease.results.coverage.0.9.PPH4.0.8.cells
+    output: csMR-EXAMPLE/MR/clump/Susie_coloc.Crohn_disease.results.coverage.0.9.PPH4.0.8.OPC.clumped
+    jobid: 743
+    reason: Input files updated by another job: csMR-EXAMPLE/MR/Susie_coloc.Crohn_disease.results.coverage.0.9.PPH4.0.8.cells
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Crohn_disease, coverage=0.9, coloc_cutoff=0.8, cell_type=OPC
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 10:09:48 2024]
+rule clump:
+    input: csMR-EXAMPLE/MR/Susie_coloc.Inflammatory_bowel_disease.results.coverage.0.9.PPH4.0.8.cells
+    output: csMR-EXAMPLE/MR/clump/Susie_coloc.Inflammatory_bowel_disease.results.coverage.0.9.PPH4.0.8.Astro.clumped
+    jobid: 319
+    reason: Input files updated by another job: csMR-EXAMPLE/MR/Susie_coloc.Inflammatory_bowel_disease.results.coverage.0.9.PPH4.0.8.cells
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Inflammatory_bowel_disease, coverage=0.9, coloc_cutoff=0.8, cell_type=Astro
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 10:09:48 2024]
+rule clump:
+    input: csMR-EXAMPLE/MR/Susie_coloc.Crohn_disease.results.coverage.0.9.PPH4.0.8.cells
+    output: csMR-EXAMPLE/MR/clump/Susie_coloc.Crohn_disease.results.coverage.0.9.PPH4.0.8.sL6b.clumped
+    jobid: 673
+    reason: Input files updated by another job: csMR-EXAMPLE/MR/Susie_coloc.Crohn_disease.results.coverage.0.9.PPH4.0.8.cells
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Crohn_disease, coverage=0.9, coloc_cutoff=0.8, cell_type=sL6b
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 10:09:48 2024]
+rule clump:
+    input: csMR-EXAMPLE/MR/Susie_coloc.Inflammatory_bowel_disease.results.coverage.0.9.PPH4.0.8.cells
+    output: csMR-EXAMPLE/MR/clump/Susie_coloc.Inflammatory_bowel_disease.results.coverage.0.9.PPH4.0.8.Micro_PVM.clumped
+    jobid: 475
+    reason: Input files updated by another job: csMR-EXAMPLE/MR/Susie_coloc.Inflammatory_bowel_disease.results.coverage.0.9.PPH4.0.8.cells
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Inflammatory_bowel_disease, coverage=0.9, coloc_cutoff=0.8, cell_type=Micro_PVM
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 10:09:48 2024]
+rule clump:
+    input: csMR-EXAMPLE/MR/Susie_coloc.Inflammatory_bowel_disease.results.coverage.0.9.PPH4.0.8.cells
+    output: csMR-EXAMPLE/MR/clump/Susie_coloc.Inflammatory_bowel_disease.results.coverage.0.9.PPH4.0.8.OPC.clumped
+    jobid: 503
+    reason: Input files updated by another job: csMR-EXAMPLE/MR/Susie_coloc.Inflammatory_bowel_disease.results.coverage.0.9.PPH4.0.8.cells
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Inflammatory_bowel_disease, coverage=0.9, coloc_cutoff=0.8, cell_type=OPC
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 10:09:48 2024]
+rule clump:
+    input: csMR-EXAMPLE/MR/Susie_coloc.Crohn_disease.results.coverage.0.9.PPH4.0.8.cells
+    output: csMR-EXAMPLE/MR/clump/Susie_coloc.Crohn_disease.results.coverage.0.9.PPH4.0.8.L6_CT.clumped
+    jobid: 645
+    reason: Input files updated by another job: csMR-EXAMPLE/MR/Susie_coloc.Crohn_disease.results.coverage.0.9.PPH4.0.8.cells
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Crohn_disease, coverage=0.9, coloc_cutoff=0.8, cell_type=L6_CT
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 10:09:48 2024]
+rule clump:
+    input: csMR-EXAMPLE/MR/Susie_coloc.Crohn_disease.results.coverage.0.9.PPH4.0.8.cells
+    output: csMR-EXAMPLE/MR/clump/Susie_coloc.Crohn_disease.results.coverage.0.9.PPH4.0.8.Micro_PVM.clumped
+    jobid: 715
+    reason: Input files updated by another job: csMR-EXAMPLE/MR/Susie_coloc.Crohn_disease.results.coverage.0.9.PPH4.0.8.cells
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Crohn_disease, coverage=0.9, coloc_cutoff=0.8, cell_type=Micro_PVM
+    resources: tmpdir=/tmp
+
+[Sat Aug 31 10:09:49 2024]
+Finished job 165.
+61 of 775 steps (8%) done
+Select jobs to execute...
+
+[Sat Aug 31 10:09:49 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.L6_CT.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Epilepsy_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Epilepsy_R10_full_outcome.L6_CT.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Epilepsy_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Epilepsy_R10_full_outcome.L6_CT.MR.sensitivity
+    jobid: 166
+    reason: Missing output files: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Epilepsy_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Epilepsy_R10_full_outcome.L6_CT.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Epilepsy_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Epilepsy_R10_full_outcome.L6_CT.MR.sensitivity; Input files updated by another job: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.L6_CT.clumped
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, outcome=Epilepsy_R10_full_outcome, cell_type=L6_CT
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 10:09:49 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.L6_CT.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-MS-disease_Multiple_Sclerosis_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.MS-disease_Multiple_Sclerosis_R10_full_outcome.L6_CT.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-MS-disease_Multiple_Sclerosis_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.MS-disease_Multiple_Sclerosis_R10_full_outcome.L6_CT.MR.sensitivity
+    jobid: 167
+    reason: Missing output files: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-MS-disease_Multiple_Sclerosis_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.MS-disease_Multiple_Sclerosis_R10_full_outcome.L6_CT.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-MS-disease_Multiple_Sclerosis_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.MS-disease_Multiple_Sclerosis_R10_full_outcome.L6_CT.MR.sensitivity; Input files updated by another job: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.L6_CT.clumped
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, outcome=MS-disease_Multiple_Sclerosis_R10_full_outcome, cell_type=L6_CT
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 10:09:49 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.L6_CT.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Sleep_disorders_combined_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Sleep_disorders_combined_R10_full_outcome.L6_CT.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Sleep_disorders_combined_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Sleep_disorders_combined_R10_full_outcome.L6_CT.MR.sensitivity
+    jobid: 169
+    reason: Missing output files: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Sleep_disorders_combined_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Sleep_disorders_combined_R10_full_outcome.L6_CT.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Sleep_disorders_combined_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Sleep_disorders_combined_R10_full_outcome.L6_CT.MR.sensitivity; Input files updated by another job: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.L6_CT.clumped
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, outcome=Sleep_disorders_combined_R10_full_outcome, cell_type=L6_CT
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 10:09:49 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.L6_CT.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Cerebral_aneurysm_nonruptured_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Cerebral_aneurysm_nonruptured_R10_full_outcome.L6_CT.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Cerebral_aneurysm_nonruptured_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Cerebral_aneurysm_nonruptured_R10_full_outcome.L6_CT.MR.sensitivity
+    jobid: 171
+    reason: Missing output files: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Cerebral_aneurysm_nonruptured_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Cerebral_aneurysm_nonruptured_R10_full_outcome.L6_CT.MR.sensitivity, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Cerebral_aneurysm_nonruptured_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Cerebral_aneurysm_nonruptured_R10_full_outcome.L6_CT.MR.res; Input files updated by another job: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.L6_CT.clumped
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, outcome=Cerebral_aneurysm_nonruptured_R10_full_outcome, cell_type=L6_CT
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 10:09:49 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.L6_CT.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-AD_ieu_b_2_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.AD_ieu_b_2_full_outcome.L6_CT.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-AD_ieu_b_2_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.AD_ieu_b_2_full_outcome.L6_CT.MR.sensitivity
+    jobid: 173
+    reason: Missing output files: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-AD_ieu_b_2_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.AD_ieu_b_2_full_outcome.L6_CT.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-AD_ieu_b_2_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.AD_ieu_b_2_full_outcome.L6_CT.MR.sensitivity; Input files updated by another job: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.L6_CT.clumped
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, outcome=AD_ieu_b_2_full_outcome, cell_type=L6_CT
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 10:09:49 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.L6_CT.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-ALS_ieu_a_1085_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.ALS_ieu_a_1085_full_outcome.L6_CT.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-ALS_ieu_a_1085_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.ALS_ieu_a_1085_full_outcome.L6_CT.MR.sensitivity
+    jobid: 175
+    reason: Missing output files: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-ALS_ieu_a_1085_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.ALS_ieu_a_1085_full_outcome.L6_CT.MR.sensitivity, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-ALS_ieu_a_1085_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.ALS_ieu_a_1085_full_outcome.L6_CT.MR.res; Input files updated by another job: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.L6_CT.clumped
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, outcome=ALS_ieu_a_1085_full_outcome, cell_type=L6_CT
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 10:09:49 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.L6_CT.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Schizophrenia_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Schizophrenia_full_outcome.L6_CT.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Schizophrenia_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Schizophrenia_full_outcome.L6_CT.MR.sensitivity
+    jobid: 177
+    reason: Missing output files: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Schizophrenia_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Schizophrenia_full_outcome.L6_CT.MR.sensitivity, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Schizophrenia_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Schizophrenia_full_outcome.L6_CT.MR.res; Input files updated by another job: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.L6_CT.clumped
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, outcome=Schizophrenia_full_outcome, cell_type=L6_CT
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 10:09:49 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.L6_CT.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Generalized_anxiety_disorder_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Generalized_anxiety_disorder_R10_full_outcome.L6_CT.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Generalized_anxiety_disorder_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Generalized_anxiety_disorder_R10_full_outcome.L6_CT.MR.sensitivity
+    jobid: 174
+    reason: Missing output files: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Generalized_anxiety_disorder_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Generalized_anxiety_disorder_R10_full_outcome.L6_CT.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Generalized_anxiety_disorder_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Generalized_anxiety_disorder_R10_full_outcome.L6_CT.MR.sensitivity; Input files updated by another job: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.L6_CT.clumped
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, outcome=Generalized_anxiety_disorder_R10_full_outcome, cell_type=L6_CT
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 10:09:49 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.L6_CT.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-ADHA/Ulcerative_colitis_full_exposure_ieu_a_970.ADHA.L6_CT.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-ADHA/Ulcerative_colitis_full_exposure_ieu_a_970.ADHA.L6_CT.MR.sensitivity
+    jobid: 176
+    reason: Missing output files: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-ADHA/Ulcerative_colitis_full_exposure_ieu_a_970.ADHA.L6_CT.MR.sensitivity, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-ADHA/Ulcerative_colitis_full_exposure_ieu_a_970.ADHA.L6_CT.MR.res; Input files updated by another job: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.L6_CT.clumped
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, outcome=ADHA, cell_type=L6_CT
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 10:09:49 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.L6_CT.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Parkinsons_disease_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Parkinsons_disease_R10_full_outcome.L6_CT.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Parkinsons_disease_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Parkinsons_disease_R10_full_outcome.L6_CT.MR.sensitivity
+    jobid: 164
+    reason: Missing output files: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Parkinsons_disease_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Parkinsons_disease_R10_full_outcome.L6_CT.MR.sensitivity, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Parkinsons_disease_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Parkinsons_disease_R10_full_outcome.L6_CT.MR.res; Input files updated by another job: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.L6_CT.clumped
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, outcome=Parkinsons_disease_R10_full_outcome, cell_type=L6_CT
+    resources: tmpdir=/tmp
+
+[Sat Aug 31 10:09:49 2024]
+Finished job 235.
+62 of 775 steps (8%) done
+Select jobs to execute...
+
+[Sat Aug 31 10:09:49 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.Micro_PVM.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Epilepsy_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Epilepsy_R10_full_outcome.Micro_PVM.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Epilepsy_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Epilepsy_R10_full_outcome.Micro_PVM.MR.sensitivity
+    jobid: 236
+    reason: Missing output files: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Epilepsy_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Epilepsy_R10_full_outcome.Micro_PVM.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Epilepsy_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Epilepsy_R10_full_outcome.Micro_PVM.MR.sensitivity; Input files updated by another job: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.Micro_PVM.clumped
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, outcome=Epilepsy_R10_full_outcome, cell_type=Micro_PVM
+    resources: tmpdir=/tmp
+
+[Sat Aug 31 10:09:49 2024]
+Finished job 137.
+63 of 775 steps (8%) done
+[Sat Aug 31 10:09:49 2024]
+Finished job 207.
+64 of 775 steps (8%) done
+[Sat Aug 31 10:09:49 2024]
+Finished job 305.
+65 of 775 steps (8%) done
+[Sat Aug 31 10:09:49 2024]
+Finished job 221.
+66 of 775 steps (9%) done
+Select jobs to execute...
+
+[Sat Aug 31 10:09:49 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.Vip.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Cerebral_aneurysm_nonruptured_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Cerebral_aneurysm_nonruptured_R10_full_outcome.Vip.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Cerebral_aneurysm_nonruptured_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Cerebral_aneurysm_nonruptured_R10_full_outcome.Vip.MR.sensitivity
+    jobid: 311
+    reason: Missing output files: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Cerebral_aneurysm_nonruptured_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Cerebral_aneurysm_nonruptured_R10_full_outcome.Vip.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Cerebral_aneurysm_nonruptured_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Cerebral_aneurysm_nonruptured_R10_full_outcome.Vip.MR.sensitivity; Input files updated by another job: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.Vip.clumped
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, outcome=Cerebral_aneurysm_nonruptured_R10_full_outcome, cell_type=Vip
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 10:09:49 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.Micro_PVM.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Carpal_tunnel_syndrome_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Carpal_tunnel_syndrome_R10_full_outcome.Micro_PVM.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Carpal_tunnel_syndrome_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Carpal_tunnel_syndrome_R10_full_outcome.Micro_PVM.MR.sensitivity
+    jobid: 242
+    reason: Missing output files: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Carpal_tunnel_syndrome_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Carpal_tunnel_syndrome_R10_full_outcome.Micro_PVM.MR.sensitivity, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Carpal_tunnel_syndrome_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Carpal_tunnel_syndrome_R10_full_outcome.Micro_PVM.MR.res; Input files updated by another job: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.Micro_PVM.clumped
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, outcome=Carpal_tunnel_syndrome_R10_full_outcome, cell_type=Micro_PVM
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 10:09:49 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.L5_6_NP.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Carpal_tunnel_syndrome_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Carpal_tunnel_syndrome_R10_full_outcome.L5_6_NP.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Carpal_tunnel_syndrome_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Carpal_tunnel_syndrome_R10_full_outcome.L5_6_NP.MR.sensitivity
+    jobid: 144
+    reason: Missing output files: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Carpal_tunnel_syndrome_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Carpal_tunnel_syndrome_R10_full_outcome.L5_6_NP.MR.sensitivity, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Carpal_tunnel_syndrome_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Carpal_tunnel_syndrome_R10_full_outcome.L5_6_NP.MR.res; Input files updated by another job: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.L5_6_NP.clumped
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, outcome=Carpal_tunnel_syndrome_R10_full_outcome, cell_type=L5_6_NP
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 10:09:49 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.Lamp5.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Carpal_tunnel_syndrome_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Carpal_tunnel_syndrome_R10_full_outcome.Lamp5.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Carpal_tunnel_syndrome_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Carpal_tunnel_syndrome_R10_full_outcome.Lamp5.MR.sensitivity
+    jobid: 214
+    reason: Missing output files: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Carpal_tunnel_syndrome_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Carpal_tunnel_syndrome_R10_full_outcome.Lamp5.MR.sensitivity, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Carpal_tunnel_syndrome_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Carpal_tunnel_syndrome_R10_full_outcome.Lamp5.MR.res; Input files updated by another job: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.Lamp5.clumped
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, outcome=Carpal_tunnel_syndrome_R10_full_outcome, cell_type=Lamp5
+    resources: tmpdir=/tmp
+
+[Sat Aug 31 10:09:49 2024]
+Finished job 277.
+67 of 775 steps (9%) done
+Select jobs to execute...
+
+[Sat Aug 31 10:09:49 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.L5_6_NP.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Sleep_disorders_combined_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Sleep_disorders_combined_R10_full_outcome.L5_6_NP.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Sleep_disorders_combined_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Sleep_disorders_combined_R10_full_outcome.L5_6_NP.MR.sensitivity
+    jobid: 141
+    reason: Missing output files: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Sleep_disorders_combined_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Sleep_disorders_combined_R10_full_outcome.L5_6_NP.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Sleep_disorders_combined_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Sleep_disorders_combined_R10_full_outcome.L5_6_NP.MR.sensitivity; Input files updated by another job: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.L5_6_NP.clumped
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, outcome=Sleep_disorders_combined_R10_full_outcome, cell_type=L5_6_NP
+    resources: tmpdir=/tmp
+
+[Sat Aug 31 10:09:49 2024]
+Finished job 377.
+68 of 775 steps (9%) done
+Select jobs to execute...
+
+[Sat Aug 31 10:09:49 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.Vip.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-MS-disease_Multiple_Sclerosis_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.MS-disease_Multiple_Sclerosis_R10_full_outcome.Vip.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-MS-disease_Multiple_Sclerosis_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.MS-disease_Multiple_Sclerosis_R10_full_outcome.Vip.MR.sensitivity
+    jobid: 307
+    reason: Missing output files: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-MS-disease_Multiple_Sclerosis_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.MS-disease_Multiple_Sclerosis_R10_full_outcome.Vip.MR.sensitivity, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-MS-disease_Multiple_Sclerosis_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.MS-disease_Multiple_Sclerosis_R10_full_outcome.Vip.MR.res; Input files updated by another job: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.Vip.clumped
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, outcome=MS-disease_Multiple_Sclerosis_R10_full_outcome, cell_type=Vip
+    resources: tmpdir=/tmp
+
+Select jobs to execute...
+[Sat Aug 31 10:09:49 2024]
+Finished job 517.
+69 of 775 steps (9%) done
+
+[Sat Aug 31 10:09:49 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.Micro_PVM.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Generalized_anxiety_disorder_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Generalized_anxiety_disorder_R10_full_outcome.Micro_PVM.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Generalized_anxiety_disorder_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Generalized_anxiety_disorder_R10_full_outcome.Micro_PVM.MR.sensitivity
+    jobid: 244
+    reason: Missing output files: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Generalized_anxiety_disorder_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Generalized_anxiety_disorder_R10_full_outcome.Micro_PVM.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Generalized_anxiety_disorder_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Generalized_anxiety_disorder_R10_full_outcome.Micro_PVM.MR.sensitivity; Input files updated by another job: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.Micro_PVM.clumped
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, outcome=Generalized_anxiety_disorder_R10_full_outcome, cell_type=Micro_PVM
+    resources: tmpdir=/tmp
+
+[Sat Aug 31 10:09:49 2024]
+Finished job 461.
+70 of 775 steps (9%) done
+[Sat Aug 31 10:09:49 2024]
+Finished job 701.
+71 of 775 steps (9%) done
+[Sat Aug 31 10:09:49 2024]
+Finished job 757.
+72 of 775 steps (9%) done
+[Sat Aug 31 10:09:49 2024]
+Finished job 617.
+73 of 775 steps (9%) done
+Select jobs to execute...
+
+[Sat Aug 31 10:09:50 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.Lamp5_Lhx6.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-ADHA/Ulcerative_colitis_full_exposure_ieu_a_970.ADHA.Lamp5_Lhx6.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-ADHA/Ulcerative_colitis_full_exposure_ieu_a_970.ADHA.Lamp5_Lhx6.MR.sensitivity
+    jobid: 232
+    reason: Missing output files: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-ADHA/Ulcerative_colitis_full_exposure_ieu_a_970.ADHA.Lamp5_Lhx6.MR.sensitivity, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-ADHA/Ulcerative_colitis_full_exposure_ieu_a_970.ADHA.Lamp5_Lhx6.MR.res; Input files updated by another job: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.Lamp5_Lhx6.clumped
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, outcome=ADHA, cell_type=Lamp5_Lhx6
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 10:09:50 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.L6_CT.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Major_depression_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Major_depression_full_outcome.L6_CT.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Major_depression_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Major_depression_full_outcome.L6_CT.MR.sensitivity
+    jobid: 168
+    reason: Missing output files: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Major_depression_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Major_depression_full_outcome.L6_CT.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Major_depression_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Major_depression_full_outcome.L6_CT.MR.sensitivity; Input files updated by another job: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.L6_CT.clumped
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, outcome=Major_depression_full_outcome, cell_type=L6_CT
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 10:09:50 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.Vip.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-ADHA/Ulcerative_colitis_full_exposure_ieu_a_970.ADHA.Vip.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-ADHA/Ulcerative_colitis_full_exposure_ieu_a_970.ADHA.Vip.MR.sensitivity
+    jobid: 316
+    reason: Missing output files: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-ADHA/Ulcerative_colitis_full_exposure_ieu_a_970.ADHA.Vip.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-ADHA/Ulcerative_colitis_full_exposure_ieu_a_970.ADHA.Vip.MR.sensitivity; Input files updated by another job: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.Vip.clumped
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, outcome=ADHA, cell_type=Vip
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 10:09:50 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.L5_6_NP.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Parkinsons_disease_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Parkinsons_disease_R10_full_outcome.L5_6_NP.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Parkinsons_disease_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Parkinsons_disease_R10_full_outcome.L5_6_NP.MR.sensitivity
+    jobid: 136
+    reason: Missing output files: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Parkinsons_disease_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Parkinsons_disease_R10_full_outcome.L5_6_NP.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Parkinsons_disease_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Parkinsons_disease_R10_full_outcome.L5_6_NP.MR.sensitivity; Input files updated by another job: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.L5_6_NP.clumped
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, outcome=Parkinsons_disease_R10_full_outcome, cell_type=L5_6_NP
+    resources: tmpdir=/tmp
+
+Select jobs to execute...
+[Sat Aug 31 10:10:00 2024]
+Finished job 176.
+74 of 775 steps (10%) done
+
+[Sat Aug 31 10:10:00 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.Lamp5_Lhx6.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Sleep_disorders_combined_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Sleep_disorders_combined_R10_full_outcome.Lamp5_Lhx6.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Sleep_disorders_combined_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Sleep_disorders_combined_R10_full_outcome.Lamp5_Lhx6.MR.sensitivity
+    jobid: 225
+    reason: Missing output files: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Sleep_disorders_combined_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Sleep_disorders_combined_R10_full_outcome.Lamp5_Lhx6.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Sleep_disorders_combined_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Sleep_disorders_combined_R10_full_outcome.Lamp5_Lhx6.MR.sensitivity; Input files updated by another job: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.Lamp5_Lhx6.clumped
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, outcome=Sleep_disorders_combined_R10_full_outcome, cell_type=Lamp5_Lhx6
+    resources: tmpdir=/tmp
+
+[Sat Aug 31 10:10:00 2024]
+Finished job 232.
+75 of 775 steps (10%) done
+Select jobs to execute...
+
+[Sat Aug 31 10:10:01 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Crohn_disease.results.coverage.0.9.PPH4.0.8.PC.clumped
+    output: csMR-EXAMPLE/MR/Crohn_disease-Schizophrenia_full_outcome/Crohn_disease.Schizophrenia_full_outcome.PC.MR.res, csMR-EXAMPLE/MR/Crohn_disease-Schizophrenia_full_outcome/Crohn_disease.Schizophrenia_full_outcome.PC.MR.sensitivity
+    jobid: 769
+    reason: Missing output files: csMR-EXAMPLE/MR/Crohn_disease-Schizophrenia_full_outcome/Crohn_disease.Schizophrenia_full_outcome.PC.MR.res, csMR-EXAMPLE/MR/Crohn_disease-Schizophrenia_full_outcome/Crohn_disease.Schizophrenia_full_outcome.PC.MR.sensitivity; Input files updated by another job: csMR-EXAMPLE/MR/clump/Susie_coloc.Crohn_disease.results.coverage.0.9.PPH4.0.8.PC.clumped
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Crohn_disease, outcome=Schizophrenia_full_outcome, cell_type=PC
+    resources: tmpdir=/tmp
+
+[Sat Aug 31 10:10:01 2024]
+Finished job 173.
+76 of 775 steps (10%) done
+Select jobs to execute...
+
+[Sat Aug 31 10:10:01 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.L5_6_NP.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Obsessive_compulsive_disorder_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Obsessive_compulsive_disorder_full_outcome.L5_6_NP.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Obsessive_compulsive_disorder_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Obsessive_compulsive_disorder_full_outcome.L5_6_NP.MR.sensitivity
+    jobid: 142
+    reason: Missing output files: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Obsessive_compulsive_disorder_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Obsessive_compulsive_disorder_full_outcome.L5_6_NP.MR.sensitivity, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Obsessive_compulsive_disorder_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Obsessive_compulsive_disorder_full_outcome.L5_6_NP.MR.res; Input files updated by another job: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.L5_6_NP.clumped
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, outcome=Obsessive_compulsive_disorder_full_outcome, cell_type=L5_6_NP
+    resources: tmpdir=/tmp
+
+[Sat Aug 31 10:10:01 2024]
+Finished job 175.
+77 of 775 steps (10%) done
+Select jobs to execute...
+
+[Sat Aug 31 10:10:01 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.L6_CT.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Obsessive_compulsive_disorder_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Obsessive_compulsive_disorder_full_outcome.L6_CT.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Obsessive_compulsive_disorder_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Obsessive_compulsive_disorder_full_outcome.L6_CT.MR.sensitivity
+    jobid: 170
+    reason: Missing output files: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Obsessive_compulsive_disorder_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Obsessive_compulsive_disorder_full_outcome.L6_CT.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Obsessive_compulsive_disorder_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Obsessive_compulsive_disorder_full_outcome.L6_CT.MR.sensitivity; Input files updated by another job: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.L6_CT.clumped
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, outcome=Obsessive_compulsive_disorder_full_outcome, cell_type=L6_CT
+    resources: tmpdir=/tmp
+
+[Sat Aug 31 10:10:01 2024]
+Finished job 177.
+78 of 775 steps (10%) done
+Select jobs to execute...
+
+[Sat Aug 31 10:10:01 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.Lamp5_Lhx6.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Obsessive_compulsive_disorder_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Obsessive_compulsive_disorder_full_outcome.Lamp5_Lhx6.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Obsessive_compulsive_disorder_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Obsessive_compulsive_disorder_full_outcome.Lamp5_Lhx6.MR.sensitivity
+    jobid: 226
+    reason: Missing output files: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Obsessive_compulsive_disorder_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Obsessive_compulsive_disorder_full_outcome.Lamp5_Lhx6.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Obsessive_compulsive_disorder_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Obsessive_compulsive_disorder_full_outcome.Lamp5_Lhx6.MR.sensitivity; Input files updated by another job: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.Lamp5_Lhx6.clumped
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, outcome=Obsessive_compulsive_disorder_full_outcome, cell_type=Lamp5_Lhx6
+    resources: tmpdir=/tmp
+
+[Sat Aug 31 10:10:01 2024]
+Finished job 316.
+79 of 775 steps (10%) done
+Select jobs to execute...
+
+[Sat Aug 31 10:10:01 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Inflammatory_bowel_disease.results.coverage.0.9.PPH4.0.8.L5_6_NP.clumped
+    output: csMR-EXAMPLE/MR/Inflammatory_bowel_disease-Major_depression_full_outcome/Inflammatory_bowel_disease.Major_depression_full_outcome.L5_6_NP.MR.res, csMR-EXAMPLE/MR/Inflammatory_bowel_disease-Major_depression_full_outcome/Inflammatory_bowel_disease.Major_depression_full_outcome.L5_6_NP.MR.sensitivity
+    jobid: 380
+    reason: Missing output files: csMR-EXAMPLE/MR/Inflammatory_bowel_disease-Major_depression_full_outcome/Inflammatory_bowel_disease.Major_depression_full_outcome.L5_6_NP.MR.res, csMR-EXAMPLE/MR/Inflammatory_bowel_disease-Major_depression_full_outcome/Inflammatory_bowel_disease.Major_depression_full_outcome.L5_6_NP.MR.sensitivity; Input files updated by another job: csMR-EXAMPLE/MR/clump/Susie_coloc.Inflammatory_bowel_disease.results.coverage.0.9.PPH4.0.8.L5_6_NP.clumped
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Inflammatory_bowel_disease, outcome=Major_depression_full_outcome, cell_type=L5_6_NP
+    resources: tmpdir=/tmp
+
+[Sat Aug 31 10:10:03 2024]
+Finished job 168.
+80 of 775 steps (10%) done
+Select jobs to execute...
+
+[Sat Aug 31 10:10:03 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.L5_6_NP.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Cerebral_aneurysm_nonruptured_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Cerebral_aneurysm_nonruptured_R10_full_outcome.L5_6_NP.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Cerebral_aneurysm_nonruptured_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Cerebral_aneurysm_nonruptured_R10_full_outcome.L5_6_NP.MR.sensitivity
+    jobid: 143
+    reason: Missing output files: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Cerebral_aneurysm_nonruptured_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Cerebral_aneurysm_nonruptured_R10_full_outcome.L5_6_NP.MR.sensitivity, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Cerebral_aneurysm_nonruptured_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Cerebral_aneurysm_nonruptured_R10_full_outcome.L5_6_NP.MR.res; Input files updated by another job: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.L5_6_NP.clumped
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, outcome=Cerebral_aneurysm_nonruptured_R10_full_outcome, cell_type=L5_6_NP
+    resources: tmpdir=/tmp
+
+[Sat Aug 31 10:10:11 2024]
+Finished job 170.
+81 of 775 steps (10%) done
+Select jobs to execute...
+
+[Sat Aug 31 10:10:11 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.Lamp5_Lhx6.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Cerebral_aneurysm_nonruptured_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Cerebral_aneurysm_nonruptured_R10_full_outcome.Lamp5_Lhx6.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Cerebral_aneurysm_nonruptured_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Cerebral_aneurysm_nonruptured_R10_full_outcome.Lamp5_Lhx6.MR.sensitivity
+    jobid: 227
+    reason: Missing output files: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Cerebral_aneurysm_nonruptured_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Cerebral_aneurysm_nonruptured_R10_full_outcome.Lamp5_Lhx6.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Cerebral_aneurysm_nonruptured_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Cerebral_aneurysm_nonruptured_R10_full_outcome.Lamp5_Lhx6.MR.sensitivity; Input files updated by another job: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.Lamp5_Lhx6.clumped
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, outcome=Cerebral_aneurysm_nonruptured_R10_full_outcome, cell_type=Lamp5_Lhx6
+    resources: tmpdir=/tmp
+
+[Sat Aug 31 10:10:12 2024]
+Finished job 142.
+82 of 775 steps (11%) done
+Select jobs to execute...
+
+[Sat Aug 31 10:10:12 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.L5_6_NP.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-MS-disease_Multiple_Sclerosis_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.MS-disease_Multiple_Sclerosis_R10_full_outcome.L5_6_NP.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-MS-disease_Multiple_Sclerosis_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.MS-disease_Multiple_Sclerosis_R10_full_outcome.L5_6_NP.MR.sensitivity
+    jobid: 139
+    reason: Missing output files: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-MS-disease_Multiple_Sclerosis_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.MS-disease_Multiple_Sclerosis_R10_full_outcome.L5_6_NP.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-MS-disease_Multiple_Sclerosis_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.MS-disease_Multiple_Sclerosis_R10_full_outcome.L5_6_NP.MR.sensitivity; Input files updated by another job: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.L5_6_NP.clumped
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, outcome=MS-disease_Multiple_Sclerosis_R10_full_outcome, cell_type=L5_6_NP
+    resources: tmpdir=/tmp
+
+[Sat Aug 31 10:10:12 2024]
+Finished job 769.
+83 of 775 steps (11%) done
+Select jobs to execute...
+
+[Sat Aug 31 10:10:12 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Inflammatory_bowel_disease.results.coverage.0.9.PPH4.0.8.L5_6_NP.clumped
+    output: csMR-EXAMPLE/MR/Inflammatory_bowel_disease-Obsessive_compulsive_disorder_full_outcome/Inflammatory_bowel_disease.Obsessive_compulsive_disorder_full_outcome.L5_6_NP.MR.res, csMR-EXAMPLE/MR/Inflammatory_bowel_disease-Obsessive_compulsive_disorder_full_outcome/Inflammatory_bowel_disease.Obsessive_compulsive_disorder_full_outcome.L5_6_NP.MR.sensitivity
+    jobid: 382
+    reason: Missing output files: csMR-EXAMPLE/MR/Inflammatory_bowel_disease-Obsessive_compulsive_disorder_full_outcome/Inflammatory_bowel_disease.Obsessive_compulsive_disorder_full_outcome.L5_6_NP.MR.sensitivity, csMR-EXAMPLE/MR/Inflammatory_bowel_disease-Obsessive_compulsive_disorder_full_outcome/Inflammatory_bowel_disease.Obsessive_compulsive_disorder_full_outcome.L5_6_NP.MR.res; Input files updated by another job: csMR-EXAMPLE/MR/clump/Susie_coloc.Inflammatory_bowel_disease.results.coverage.0.9.PPH4.0.8.L5_6_NP.clumped
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Inflammatory_bowel_disease, outcome=Obsessive_compulsive_disorder_full_outcome, cell_type=L5_6_NP
+    resources: tmpdir=/tmp
+
+[Sat Aug 31 10:10:12 2024]
+Finished job 226.
+84 of 775 steps (11%) done
+Select jobs to execute...
+
+[Sat Aug 31 10:10:12 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.Lamp5_Lhx6.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Carpal_tunnel_syndrome_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Carpal_tunnel_syndrome_R10_full_outcome.Lamp5_Lhx6.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Carpal_tunnel_syndrome_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Carpal_tunnel_syndrome_R10_full_outcome.Lamp5_Lhx6.MR.sensitivity
+    jobid: 228
+    reason: Missing output files: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Carpal_tunnel_syndrome_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Carpal_tunnel_syndrome_R10_full_outcome.Lamp5_Lhx6.MR.sensitivity, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Carpal_tunnel_syndrome_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Carpal_tunnel_syndrome_R10_full_outcome.Lamp5_Lhx6.MR.res; Input files updated by another job: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.Lamp5_Lhx6.clumped
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, outcome=Carpal_tunnel_syndrome_R10_full_outcome, cell_type=Lamp5_Lhx6
+    resources: tmpdir=/tmp
+
+[Sat Aug 31 10:10:13 2024]
+Finished job 380.
+85 of 775 steps (11%) done
+Select jobs to execute...
+
+[Sat Aug 31 10:10:13 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.Micro_PVM.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-AD_ieu_b_2_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.AD_ieu_b_2_full_outcome.Micro_PVM.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-AD_ieu_b_2_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.AD_ieu_b_2_full_outcome.Micro_PVM.MR.sensitivity
+    jobid: 243
+    reason: Missing output files: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-AD_ieu_b_2_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.AD_ieu_b_2_full_outcome.Micro_PVM.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-AD_ieu_b_2_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.AD_ieu_b_2_full_outcome.Micro_PVM.MR.sensitivity; Input files updated by another job: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.Micro_PVM.clumped
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, outcome=AD_ieu_b_2_full_outcome, cell_type=Micro_PVM
+    resources: tmpdir=/tmp
+
+[Sat Aug 31 10:10:23 2024]
+Finished job 382.
+86 of 775 steps (11%) done
+Select jobs to execute...
+
+[Sat Aug 31 10:10:23 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.Vip.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-AD_ieu_b_2_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.AD_ieu_b_2_full_outcome.Vip.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-AD_ieu_b_2_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.AD_ieu_b_2_full_outcome.Vip.MR.sensitivity
+    jobid: 313
+    reason: Missing output files: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-AD_ieu_b_2_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.AD_ieu_b_2_full_outcome.Vip.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-AD_ieu_b_2_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.AD_ieu_b_2_full_outcome.Vip.MR.sensitivity; Input files updated by another job: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.Vip.clumped
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, outcome=AD_ieu_b_2_full_outcome, cell_type=Vip
+    resources: tmpdir=/tmp
+
+[Sat Aug 31 10:10:24 2024]
+Finished job 243.
+87 of 775 steps (11%) done
+Select jobs to execute...
+
+[Sat Aug 31 10:10:24 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.Vip.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Sleep_disorders_combined_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Sleep_disorders_combined_R10_full_outcome.Vip.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Sleep_disorders_combined_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Sleep_disorders_combined_R10_full_outcome.Vip.MR.sensitivity
+    jobid: 309
+    reason: Missing output files: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Sleep_disorders_combined_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Sleep_disorders_combined_R10_full_outcome.Vip.MR.sensitivity, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Sleep_disorders_combined_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Sleep_disorders_combined_R10_full_outcome.Vip.MR.res; Input files updated by another job: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.Vip.clumped
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, outcome=Sleep_disorders_combined_R10_full_outcome, cell_type=Vip
+    resources: tmpdir=/tmp
+
+[Sat Aug 31 10:10:30 2024]
+Finished job 174.
+88 of 775 steps (11%) done
+Select jobs to execute...
+
+[Sat Aug 31 10:10:30 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Crohn_disease.results.coverage.0.9.PPH4.0.8.Lamp5_Lhx6.clumped
+    output: csMR-EXAMPLE/MR/Crohn_disease-Schizophrenia_full_outcome/Crohn_disease.Schizophrenia_full_outcome.Lamp5_Lhx6.MR.res, csMR-EXAMPLE/MR/Crohn_disease-Schizophrenia_full_outcome/Crohn_disease.Schizophrenia_full_outcome.Lamp5_Lhx6.MR.sensitivity
+    jobid: 713
+    reason: Missing output files: csMR-EXAMPLE/MR/Crohn_disease-Schizophrenia_full_outcome/Crohn_disease.Schizophrenia_full_outcome.Lamp5_Lhx6.MR.res, csMR-EXAMPLE/MR/Crohn_disease-Schizophrenia_full_outcome/Crohn_disease.Schizophrenia_full_outcome.Lamp5_Lhx6.MR.sensitivity; Input files updated by another job: csMR-EXAMPLE/MR/clump/Susie_coloc.Crohn_disease.results.coverage.0.9.PPH4.0.8.Lamp5_Lhx6.clumped
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Crohn_disease, outcome=Schizophrenia_full_outcome, cell_type=Lamp5_Lhx6
+    resources: tmpdir=/tmp
+
+[Sat Aug 31 10:10:30 2024]
+Finished job 236.
+89 of 775 steps (11%) done
+Select jobs to execute...
+
+[Sat Aug 31 10:10:30 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Crohn_disease.results.coverage.0.9.PPH4.0.8.Lamp5_Lhx6.clumped
+    output: csMR-EXAMPLE/MR/Crohn_disease-Generalized_anxiety_disorder_R10_full_outcome/Crohn_disease.Generalized_anxiety_disorder_R10_full_outcome.Lamp5_Lhx6.MR.res, csMR-EXAMPLE/MR/Crohn_disease-Generalized_anxiety_disorder_R10_full_outcome/Crohn_disease.Generalized_anxiety_disorder_R10_full_outcome.Lamp5_Lhx6.MR.sensitivity
+    jobid: 710
+    reason: Missing output files: csMR-EXAMPLE/MR/Crohn_disease-Generalized_anxiety_disorder_R10_full_outcome/Crohn_disease.Generalized_anxiety_disorder_R10_full_outcome.Lamp5_Lhx6.MR.res, csMR-EXAMPLE/MR/Crohn_disease-Generalized_anxiety_disorder_R10_full_outcome/Crohn_disease.Generalized_anxiety_disorder_R10_full_outcome.Lamp5_Lhx6.MR.sensitivity; Input files updated by another job: csMR-EXAMPLE/MR/clump/Susie_coloc.Crohn_disease.results.coverage.0.9.PPH4.0.8.Lamp5_Lhx6.clumped
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Crohn_disease, outcome=Generalized_anxiety_disorder_R10_full_outcome, cell_type=Lamp5_Lhx6
+    resources: tmpdir=/tmp
+
+[Sat Aug 31 10:10:31 2024]
+Finished job 311.
+90 of 775 steps (12%) done
+Select jobs to execute...
+
+[Sat Aug 31 10:10:31 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Crohn_disease.results.coverage.0.9.PPH4.0.8.PC.clumped
+    output: csMR-EXAMPLE/MR/Crohn_disease-Generalized_anxiety_disorder_R10_full_outcome/Crohn_disease.Generalized_anxiety_disorder_R10_full_outcome.PC.MR.res, csMR-EXAMPLE/MR/Crohn_disease-Generalized_anxiety_disorder_R10_full_outcome/Crohn_disease.Generalized_anxiety_disorder_R10_full_outcome.PC.MR.sensitivity
+    jobid: 766
+    reason: Missing output files: csMR-EXAMPLE/MR/Crohn_disease-Generalized_anxiety_disorder_R10_full_outcome/Crohn_disease.Generalized_anxiety_disorder_R10_full_outcome.PC.MR.res, csMR-EXAMPLE/MR/Crohn_disease-Generalized_anxiety_disorder_R10_full_outcome/Crohn_disease.Generalized_anxiety_disorder_R10_full_outcome.PC.MR.sensitivity; Input files updated by another job: csMR-EXAMPLE/MR/clump/Susie_coloc.Crohn_disease.results.coverage.0.9.PPH4.0.8.PC.clumped
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Crohn_disease, outcome=Generalized_anxiety_disorder_R10_full_outcome, cell_type=PC
+    resources: tmpdir=/tmp
+
+[Sat Aug 31 10:10:31 2024]
+Finished job 214.
+91 of 775 steps (12%) done
+Select jobs to execute...
+
+[Sat Aug 31 10:10:31 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Crohn_disease.results.coverage.0.9.PPH4.0.8.L5_6_NP.clumped
+    output: csMR-EXAMPLE/MR/Crohn_disease-Generalized_anxiety_disorder_R10_full_outcome/Crohn_disease.Generalized_anxiety_disorder_R10_full_outcome.L5_6_NP.MR.res, csMR-EXAMPLE/MR/Crohn_disease-Generalized_anxiety_disorder_R10_full_outcome/Crohn_disease.Generalized_anxiety_disorder_R10_full_outcome.L5_6_NP.MR.sensitivity
+    jobid: 626
+    reason: Missing output files: csMR-EXAMPLE/MR/Crohn_disease-Generalized_anxiety_disorder_R10_full_outcome/Crohn_disease.Generalized_anxiety_disorder_R10_full_outcome.L5_6_NP.MR.res, csMR-EXAMPLE/MR/Crohn_disease-Generalized_anxiety_disorder_R10_full_outcome/Crohn_disease.Generalized_anxiety_disorder_R10_full_outcome.L5_6_NP.MR.sensitivity; Input files updated by another job: csMR-EXAMPLE/MR/clump/Susie_coloc.Crohn_disease.results.coverage.0.9.PPH4.0.8.L5_6_NP.clumped
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Crohn_disease, outcome=Generalized_anxiety_disorder_R10_full_outcome, cell_type=L5_6_NP
+    resources: tmpdir=/tmp
+
+[Sat Aug 31 10:10:31 2024]
+Finished job 242.
+92 of 775 steps (12%) done
+Select jobs to execute...
+
+[Sat Aug 31 10:10:31 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.Micro_PVM.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Obsessive_compulsive_disorder_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Obsessive_compulsive_disorder_full_outcome.Micro_PVM.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Obsessive_compulsive_disorder_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Obsessive_compulsive_disorder_full_outcome.Micro_PVM.MR.sensitivity
+    jobid: 240
+    reason: Missing output files: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Obsessive_compulsive_disorder_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Obsessive_compulsive_disorder_full_outcome.Micro_PVM.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Obsessive_compulsive_disorder_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Obsessive_compulsive_disorder_full_outcome.Micro_PVM.MR.sensitivity; Input files updated by another job: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.Micro_PVM.clumped
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, outcome=Obsessive_compulsive_disorder_full_outcome, cell_type=Micro_PVM
+    resources: tmpdir=/tmp
+
+[Sat Aug 31 10:10:31 2024]
+Finished job 244.
+93 of 775 steps (12%) done
+[Sat Aug 31 10:10:31 2024]
+Finished job 144.
+94 of 775 steps (12%) done
+Select jobs to execute...
+
+[Sat Aug 31 10:10:31 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.Lamp5_Lhx6.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Major_depression_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Major_depression_full_outcome.Lamp5_Lhx6.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Major_depression_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Major_depression_full_outcome.Lamp5_Lhx6.MR.sensitivity
+    jobid: 224
+    reason: Missing output files: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Major_depression_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Major_depression_full_outcome.Lamp5_Lhx6.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Major_depression_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Major_depression_full_outcome.Lamp5_Lhx6.MR.sensitivity; Input files updated by another job: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.Lamp5_Lhx6.clumped
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, outcome=Major_depression_full_outcome, cell_type=Lamp5_Lhx6
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 10:10:31 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Crohn_disease.results.coverage.0.9.PPH4.0.8.L5_6_NP.clumped
+    output: csMR-EXAMPLE/MR/Crohn_disease-Schizophrenia_full_outcome/Crohn_disease.Schizophrenia_full_outcome.L5_6_NP.MR.res, csMR-EXAMPLE/MR/Crohn_disease-Schizophrenia_full_outcome/Crohn_disease.Schizophrenia_full_outcome.L5_6_NP.MR.sensitivity
+    jobid: 629
+    reason: Missing output files: csMR-EXAMPLE/MR/Crohn_disease-Schizophrenia_full_outcome/Crohn_disease.Schizophrenia_full_outcome.L5_6_NP.MR.res, csMR-EXAMPLE/MR/Crohn_disease-Schizophrenia_full_outcome/Crohn_disease.Schizophrenia_full_outcome.L5_6_NP.MR.sensitivity; Input files updated by another job: csMR-EXAMPLE/MR/clump/Susie_coloc.Crohn_disease.results.coverage.0.9.PPH4.0.8.L5_6_NP.clumped
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Crohn_disease, outcome=Schizophrenia_full_outcome, cell_type=L5_6_NP
+    resources: tmpdir=/tmp
+
+[Sat Aug 31 10:10:31 2024]
+Finished job 141.
+95 of 775 steps (12%) done
+Select jobs to execute...
+
+[Sat Aug 31 10:10:31 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.L6_CT.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Carpal_tunnel_syndrome_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Carpal_tunnel_syndrome_R10_full_outcome.L6_CT.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Carpal_tunnel_syndrome_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Carpal_tunnel_syndrome_R10_full_outcome.L6_CT.MR.sensitivity
+    jobid: 172
+    reason: Missing output files: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Carpal_tunnel_syndrome_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Carpal_tunnel_syndrome_R10_full_outcome.L6_CT.MR.sensitivity, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Carpal_tunnel_syndrome_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Carpal_tunnel_syndrome_R10_full_outcome.L6_CT.MR.res; Input files updated by another job: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.L6_CT.clumped
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, outcome=Carpal_tunnel_syndrome_R10_full_outcome, cell_type=L6_CT
+    resources: tmpdir=/tmp
+
+Select jobs to execute...
+[Sat Aug 31 10:10:31 2024]
+Finished job 164.
+96 of 775 steps (12%) done
+
+[Sat Aug 31 10:10:31 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.L5_6_NP.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-AD_ieu_b_2_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.AD_ieu_b_2_full_outcome.L5_6_NP.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-AD_ieu_b_2_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.AD_ieu_b_2_full_outcome.L5_6_NP.MR.sensitivity
+    jobid: 145
+    reason: Missing output files: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-AD_ieu_b_2_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.AD_ieu_b_2_full_outcome.L5_6_NP.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-AD_ieu_b_2_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.AD_ieu_b_2_full_outcome.L5_6_NP.MR.sensitivity; Input files updated by another job: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.L5_6_NP.clumped
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, outcome=AD_ieu_b_2_full_outcome, cell_type=L5_6_NP
+    resources: tmpdir=/tmp
+
+[Sat Aug 31 10:10:32 2024]
+Finished job 307.
+97 of 775 steps (13%) done
+Select jobs to execute...
+
+[Sat Aug 31 10:10:32 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.Lamp5_Lhx6.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-AD_ieu_b_2_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.AD_ieu_b_2_full_outcome.Lamp5_Lhx6.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-AD_ieu_b_2_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.AD_ieu_b_2_full_outcome.Lamp5_Lhx6.MR.sensitivity
+    jobid: 229
+    reason: Missing output files: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-AD_ieu_b_2_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.AD_ieu_b_2_full_outcome.Lamp5_Lhx6.MR.sensitivity, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-AD_ieu_b_2_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.AD_ieu_b_2_full_outcome.Lamp5_Lhx6.MR.res; Input files updated by another job: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.Lamp5_Lhx6.clumped
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, outcome=AD_ieu_b_2_full_outcome, cell_type=Lamp5_Lhx6
+    resources: tmpdir=/tmp
+
+[Sat Aug 31 10:10:32 2024]
+Finished job 169.
+98 of 775 steps (13%) done
+Select jobs to execute...
+
+[Sat Aug 31 10:10:32 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Inflammatory_bowel_disease.results.coverage.0.9.PPH4.0.8.L5_6_NP.clumped
+    output: csMR-EXAMPLE/MR/Inflammatory_bowel_disease-Carpal_tunnel_syndrome_R10_full_outcome/Inflammatory_bowel_disease.Carpal_tunnel_syndrome_R10_full_outcome.L5_6_NP.MR.res, csMR-EXAMPLE/MR/Inflammatory_bowel_disease-Carpal_tunnel_syndrome_R10_full_outcome/Inflammatory_bowel_disease.Carpal_tunnel_syndrome_R10_full_outcome.L5_6_NP.MR.sensitivity
+    jobid: 384
+    reason: Missing output files: csMR-EXAMPLE/MR/Inflammatory_bowel_disease-Carpal_tunnel_syndrome_R10_full_outcome/Inflammatory_bowel_disease.Carpal_tunnel_syndrome_R10_full_outcome.L5_6_NP.MR.sensitivity, csMR-EXAMPLE/MR/Inflammatory_bowel_disease-Carpal_tunnel_syndrome_R10_full_outcome/Inflammatory_bowel_disease.Carpal_tunnel_syndrome_R10_full_outcome.L5_6_NP.MR.res; Input files updated by another job: csMR-EXAMPLE/MR/clump/Susie_coloc.Inflammatory_bowel_disease.results.coverage.0.9.PPH4.0.8.L5_6_NP.clumped
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Inflammatory_bowel_disease, outcome=Carpal_tunnel_syndrome_R10_full_outcome, cell_type=L5_6_NP
+    resources: tmpdir=/tmp
+
+[Sat Aug 31 10:10:32 2024]
+Finished job 171.
+99 of 775 steps (13%) done
+Select jobs to execute...
+
+[Sat Aug 31 10:10:32 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.Vip.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Generalized_anxiety_disorder_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Generalized_anxiety_disorder_R10_full_outcome.Vip.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Generalized_anxiety_disorder_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Generalized_anxiety_disorder_R10_full_outcome.Vip.MR.sensitivity
+    jobid: 314
+    reason: Missing output files: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Generalized_anxiety_disorder_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Generalized_anxiety_disorder_R10_full_outcome.Vip.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Generalized_anxiety_disorder_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Generalized_anxiety_disorder_R10_full_outcome.Vip.MR.sensitivity; Input files updated by another job: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.Vip.clumped
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, outcome=Generalized_anxiety_disorder_R10_full_outcome, cell_type=Vip
+    resources: tmpdir=/tmp
+
+[Sat Aug 31 10:10:32 2024]
+Finished job 166.
+100 of 775 steps (13%) done
+[Sat Aug 31 10:10:32 2024]
+Finished job 136.
+101 of 775 steps (13%) done
+Select jobs to execute...
+
+[Sat Aug 31 10:10:32 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.PC.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Cerebral_aneurysm_nonruptured_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Cerebral_aneurysm_nonruptured_R10_full_outcome.PC.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Cerebral_aneurysm_nonruptured_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Cerebral_aneurysm_nonruptured_R10_full_outcome.PC.MR.sensitivity
+    jobid: 283
+    reason: Missing output files: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Cerebral_aneurysm_nonruptured_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Cerebral_aneurysm_nonruptured_R10_full_outcome.PC.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Cerebral_aneurysm_nonruptured_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Cerebral_aneurysm_nonruptured_R10_full_outcome.PC.MR.sensitivity; Input files updated by another job: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.PC.clumped
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, outcome=Cerebral_aneurysm_nonruptured_R10_full_outcome, cell_type=PC
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 10:10:32 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Crohn_disease.results.coverage.0.9.PPH4.0.8.Lamp5_Lhx6.clumped
+    output: csMR-EXAMPLE/MR/Crohn_disease-MS-disease_Multiple_Sclerosis_R10_full_outcome/Crohn_disease.MS-disease_Multiple_Sclerosis_R10_full_outcome.Lamp5_Lhx6.MR.res, csMR-EXAMPLE/MR/Crohn_disease-MS-disease_Multiple_Sclerosis_R10_full_outcome/Crohn_disease.MS-disease_Multiple_Sclerosis_R10_full_outcome.Lamp5_Lhx6.MR.sensitivity
+    jobid: 703
+    reason: Missing output files: csMR-EXAMPLE/MR/Crohn_disease-MS-disease_Multiple_Sclerosis_R10_full_outcome/Crohn_disease.MS-disease_Multiple_Sclerosis_R10_full_outcome.Lamp5_Lhx6.MR.res, csMR-EXAMPLE/MR/Crohn_disease-MS-disease_Multiple_Sclerosis_R10_full_outcome/Crohn_disease.MS-disease_Multiple_Sclerosis_R10_full_outcome.Lamp5_Lhx6.MR.sensitivity; Input files updated by another job: csMR-EXAMPLE/MR/clump/Susie_coloc.Crohn_disease.results.coverage.0.9.PPH4.0.8.Lamp5_Lhx6.clumped
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Crohn_disease, outcome=MS-disease_Multiple_Sclerosis_R10_full_outcome, cell_type=Lamp5_Lhx6
+    resources: tmpdir=/tmp
+
+Select jobs to execute...
+[Sat Aug 31 10:10:32 2024]
+Finished job 167.
+102 of 775 steps (13%) done
+
+[Sat Aug 31 10:10:32 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Crohn_disease.results.coverage.0.9.PPH4.0.8.Lamp5_Lhx6.clumped
+    output: csMR-EXAMPLE/MR/Crohn_disease-ALS_ieu_a_1085_full_outcome/Crohn_disease.ALS_ieu_a_1085_full_outcome.Lamp5_Lhx6.MR.res, csMR-EXAMPLE/MR/Crohn_disease-ALS_ieu_a_1085_full_outcome/Crohn_disease.ALS_ieu_a_1085_full_outcome.Lamp5_Lhx6.MR.sensitivity
+    jobid: 711
+    reason: Missing output files: csMR-EXAMPLE/MR/Crohn_disease-ALS_ieu_a_1085_full_outcome/Crohn_disease.ALS_ieu_a_1085_full_outcome.Lamp5_Lhx6.MR.sensitivity, csMR-EXAMPLE/MR/Crohn_disease-ALS_ieu_a_1085_full_outcome/Crohn_disease.ALS_ieu_a_1085_full_outcome.Lamp5_Lhx6.MR.res; Input files updated by another job: csMR-EXAMPLE/MR/clump/Susie_coloc.Crohn_disease.results.coverage.0.9.PPH4.0.8.Lamp5_Lhx6.clumped
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Crohn_disease, outcome=ALS_ieu_a_1085_full_outcome, cell_type=Lamp5_Lhx6
+    resources: tmpdir=/tmp
+
+[Sat Aug 31 10:10:35 2024]
+Finished job 313.
+103 of 775 steps (13%) done
+Select jobs to execute...
+
+[Sat Aug 31 10:10:35 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.L5_6_NP.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-ALS_ieu_a_1085_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.ALS_ieu_a_1085_full_outcome.L5_6_NP.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-ALS_ieu_a_1085_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.ALS_ieu_a_1085_full_outcome.L5_6_NP.MR.sensitivity
+    jobid: 147
+    reason: Missing output files: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-ALS_ieu_a_1085_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.ALS_ieu_a_1085_full_outcome.L5_6_NP.MR.sensitivity, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-ALS_ieu_a_1085_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.ALS_ieu_a_1085_full_outcome.L5_6_NP.MR.res; Input files updated by another job: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.L5_6_NP.clumped
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, outcome=ALS_ieu_a_1085_full_outcome, cell_type=L5_6_NP
+    resources: tmpdir=/tmp
+
+[Sat Aug 31 10:10:42 2024]
+Finished job 713.
+104 of 775 steps (13%) done
+Select jobs to execute...
+
+[Sat Aug 31 10:10:42 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Inflammatory_bowel_disease.results.coverage.0.9.PPH4.0.8.L5_6_NP.clumped
+    output: csMR-EXAMPLE/MR/Inflammatory_bowel_disease-AD_ieu_b_2_full_outcome/Inflammatory_bowel_disease.AD_ieu_b_2_full_outcome.L5_6_NP.MR.res, csMR-EXAMPLE/MR/Inflammatory_bowel_disease-AD_ieu_b_2_full_outcome/Inflammatory_bowel_disease.AD_ieu_b_2_full_outcome.L5_6_NP.MR.sensitivity
+    jobid: 385
+    reason: Missing output files: csMR-EXAMPLE/MR/Inflammatory_bowel_disease-AD_ieu_b_2_full_outcome/Inflammatory_bowel_disease.AD_ieu_b_2_full_outcome.L5_6_NP.MR.res, csMR-EXAMPLE/MR/Inflammatory_bowel_disease-AD_ieu_b_2_full_outcome/Inflammatory_bowel_disease.AD_ieu_b_2_full_outcome.L5_6_NP.MR.sensitivity; Input files updated by another job: csMR-EXAMPLE/MR/clump/Susie_coloc.Inflammatory_bowel_disease.results.coverage.0.9.PPH4.0.8.L5_6_NP.clumped
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Inflammatory_bowel_disease, outcome=AD_ieu_b_2_full_outcome, cell_type=L5_6_NP
+    resources: tmpdir=/tmp
+
+[Sat Aug 31 10:10:42 2024]
+Finished job 240.
+105 of 775 steps (14%) done
+Select jobs to execute...
+
+[Sat Aug 31 10:10:42 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.Micro_PVM.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-ADHA/Ulcerative_colitis_full_exposure_ieu_a_970.ADHA.Micro_PVM.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-ADHA/Ulcerative_colitis_full_exposure_ieu_a_970.ADHA.Micro_PVM.MR.sensitivity
+    jobid: 246
+    reason: Missing output files: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-ADHA/Ulcerative_colitis_full_exposure_ieu_a_970.ADHA.Micro_PVM.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-ADHA/Ulcerative_colitis_full_exposure_ieu_a_970.ADHA.Micro_PVM.MR.sensitivity; Input files updated by another job: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.Micro_PVM.clumped
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, outcome=ADHA, cell_type=Micro_PVM
+    resources: tmpdir=/tmp
+
+[Sat Aug 31 10:10:43 2024]
+Finished job 145.
+106 of 775 steps (14%) done
+Select jobs to execute...
+
+[Sat Aug 31 10:10:43 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Inflammatory_bowel_disease.results.coverage.0.9.PPH4.0.8.L5_6_NP.clumped
+    output: csMR-EXAMPLE/MR/Inflammatory_bowel_disease-Generalized_anxiety_disorder_R10_full_outcome/Inflammatory_bowel_disease.Generalized_anxiety_disorder_R10_full_outcome.L5_6_NP.MR.res, csMR-EXAMPLE/MR/Inflammatory_bowel_disease-Generalized_anxiety_disorder_R10_full_outcome/Inflammatory_bowel_disease.Generalized_anxiety_disorder_R10_full_outcome.L5_6_NP.MR.sensitivity
+    jobid: 386
+    reason: Missing output files: csMR-EXAMPLE/MR/Inflammatory_bowel_disease-Generalized_anxiety_disorder_R10_full_outcome/Inflammatory_bowel_disease.Generalized_anxiety_disorder_R10_full_outcome.L5_6_NP.MR.sensitivity, csMR-EXAMPLE/MR/Inflammatory_bowel_disease-Generalized_anxiety_disorder_R10_full_outcome/Inflammatory_bowel_disease.Generalized_anxiety_disorder_R10_full_outcome.L5_6_NP.MR.res; Input files updated by another job: csMR-EXAMPLE/MR/clump/Susie_coloc.Inflammatory_bowel_disease.results.coverage.0.9.PPH4.0.8.L5_6_NP.clumped
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Inflammatory_bowel_disease, outcome=Generalized_anxiety_disorder_R10_full_outcome, cell_type=L5_6_NP
+    resources: tmpdir=/tmp
+
+[Sat Aug 31 10:10:43 2024]
+Finished job 629.
+107 of 775 steps (14%) done
+Select jobs to execute...
+
+[Sat Aug 31 10:10:43 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.L5_6_NP.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Schizophrenia_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Schizophrenia_full_outcome.L5_6_NP.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Schizophrenia_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Schizophrenia_full_outcome.L5_6_NP.MR.sensitivity
+    jobid: 149
+    reason: Missing output files: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Schizophrenia_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Schizophrenia_full_outcome.L5_6_NP.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Schizophrenia_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Schizophrenia_full_outcome.L5_6_NP.MR.sensitivity; Input files updated by another job: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.L5_6_NP.clumped
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, outcome=Schizophrenia_full_outcome, cell_type=L5_6_NP
+    resources: tmpdir=/tmp
+
+[Sat Aug 31 10:10:44 2024]
+Finished job 229.
+108 of 775 steps (14%) done
+Select jobs to execute...
+
+[Sat Aug 31 10:10:44 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.Lamp5_Lhx6.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Schizophrenia_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Schizophrenia_full_outcome.Lamp5_Lhx6.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Schizophrenia_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Schizophrenia_full_outcome.Lamp5_Lhx6.MR.sensitivity
+    jobid: 233
+    reason: Missing output files: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Schizophrenia_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Schizophrenia_full_outcome.Lamp5_Lhx6.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Schizophrenia_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Schizophrenia_full_outcome.Lamp5_Lhx6.MR.sensitivity; Input files updated by another job: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.Lamp5_Lhx6.clumped
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, outcome=Schizophrenia_full_outcome, cell_type=Lamp5_Lhx6
+    resources: tmpdir=/tmp
+
+[Sat Aug 31 10:10:44 2024]
+Finished job 225.
+109 of 775 steps (14%) done
+Select jobs to execute...
+
+[Sat Aug 31 10:10:44 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Inflammatory_bowel_disease.results.coverage.0.9.PPH4.0.8.L5_6_NP.clumped
+    output: csMR-EXAMPLE/MR/Inflammatory_bowel_disease-ALS_ieu_a_1085_full_outcome/Inflammatory_bowel_disease.ALS_ieu_a_1085_full_outcome.L5_6_NP.MR.res, csMR-EXAMPLE/MR/Inflammatory_bowel_disease-ALS_ieu_a_1085_full_outcome/Inflammatory_bowel_disease.ALS_ieu_a_1085_full_outcome.L5_6_NP.MR.sensitivity
+    jobid: 387
+    reason: Missing output files: csMR-EXAMPLE/MR/Inflammatory_bowel_disease-ALS_ieu_a_1085_full_outcome/Inflammatory_bowel_disease.ALS_ieu_a_1085_full_outcome.L5_6_NP.MR.res, csMR-EXAMPLE/MR/Inflammatory_bowel_disease-ALS_ieu_a_1085_full_outcome/Inflammatory_bowel_disease.ALS_ieu_a_1085_full_outcome.L5_6_NP.MR.sensitivity; Input files updated by another job: csMR-EXAMPLE/MR/clump/Susie_coloc.Inflammatory_bowel_disease.results.coverage.0.9.PPH4.0.8.L5_6_NP.clumped
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Inflammatory_bowel_disease, outcome=ALS_ieu_a_1085_full_outcome, cell_type=L5_6_NP
+    resources: tmpdir=/tmp
+
+[Sat Aug 31 10:10:44 2024]
+Finished job 711.
+110 of 775 steps (14%) done
+Select jobs to execute...
+
+[Sat Aug 31 10:10:44 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.Micro_PVM.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Parkinsons_disease_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Parkinsons_disease_R10_full_outcome.Micro_PVM.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Parkinsons_disease_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Parkinsons_disease_R10_full_outcome.Micro_PVM.MR.sensitivity
+    jobid: 234
+    reason: Missing output files: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Parkinsons_disease_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Parkinsons_disease_R10_full_outcome.Micro_PVM.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Parkinsons_disease_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Parkinsons_disease_R10_full_outcome.Micro_PVM.MR.sensitivity; Input files updated by another job: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.Micro_PVM.clumped
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, outcome=Parkinsons_disease_R10_full_outcome, cell_type=Micro_PVM
+    resources: tmpdir=/tmp
+
+[Sat Aug 31 10:10:45 2024]
+Finished job 224.
+111 of 775 steps (14%) done
+Select jobs to execute...
+
+[Sat Aug 31 10:10:45 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Inflammatory_bowel_disease.results.coverage.0.9.PPH4.0.8.L5_6_NP.clumped
+    output: csMR-EXAMPLE/MR/Inflammatory_bowel_disease-Schizophrenia_full_outcome/Inflammatory_bowel_disease.Schizophrenia_full_outcome.L5_6_NP.MR.res, csMR-EXAMPLE/MR/Inflammatory_bowel_disease-Schizophrenia_full_outcome/Inflammatory_bowel_disease.Schizophrenia_full_outcome.L5_6_NP.MR.sensitivity
+    jobid: 389
+    reason: Missing output files: csMR-EXAMPLE/MR/Inflammatory_bowel_disease-Schizophrenia_full_outcome/Inflammatory_bowel_disease.Schizophrenia_full_outcome.L5_6_NP.MR.sensitivity, csMR-EXAMPLE/MR/Inflammatory_bowel_disease-Schizophrenia_full_outcome/Inflammatory_bowel_disease.Schizophrenia_full_outcome.L5_6_NP.MR.res; Input files updated by another job: csMR-EXAMPLE/MR/clump/Susie_coloc.Inflammatory_bowel_disease.results.coverage.0.9.PPH4.0.8.L5_6_NP.clumped
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Inflammatory_bowel_disease, outcome=Schizophrenia_full_outcome, cell_type=L5_6_NP
+    resources: tmpdir=/tmp
+
+[Sat Aug 31 10:10:45 2024]
+Finished job 143.
+112 of 775 steps (14%) done
+Select jobs to execute...
+
+[Sat Aug 31 10:10:45 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.Lamp5.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Epilepsy_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Epilepsy_R10_full_outcome.Lamp5.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Epilepsy_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Epilepsy_R10_full_outcome.Lamp5.MR.sensitivity
+    jobid: 208
+    reason: Missing output files: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Epilepsy_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Epilepsy_R10_full_outcome.Lamp5.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Epilepsy_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Epilepsy_R10_full_outcome.Lamp5.MR.sensitivity; Input files updated by another job: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.Lamp5.clumped
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, outcome=Epilepsy_R10_full_outcome, cell_type=Lamp5
+    resources: tmpdir=/tmp
+
+Terminating processes on user request, this might take some time.
+[Sat Aug 31 10:10:46 2024]
+Error in rule MR:
+    jobid: 208
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.Lamp5.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Epilepsy_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Epilepsy_R10_full_outcome.Lamp5.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Epilepsy_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Epilepsy_R10_full_outcome.Lamp5.MR.sensitivity
+    shell:
+        Rscript scripts/csMR.r -e /home/u/csMR/example/BMI_GWAS/Ulcerative_colitis_full_exposure_ieu_a_970.ma -o example/outcomes/Epilepsy_R10_full_outcome.ma -c csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.Lamp5.clumped -r /home/u/csMR/data/reference_genome_1000G_EUR
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Sat Aug 31 10:10:46 2024]
+Error in rule MR:
+    jobid: 234
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.Micro_PVM.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Parkinsons_disease_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Parkinsons_disease_R10_full_outcome.Micro_PVM.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Parkinsons_disease_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Parkinsons_disease_R10_full_outcome.Micro_PVM.MR.sensitivity
+    shell:
+        Rscript scripts/csMR.r -e /home/u/csMR/example/BMI_GWAS/Ulcerative_colitis_full_exposure_ieu_a_970.ma -o example/outcomes/Parkinsons_disease_R10_full_outcome.ma -c csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.Micro_PVM.clumped -r /home/u/csMR/data/reference_genome_1000G_EUR
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Sat Aug 31 10:10:46 2024]
+Error in rule MR:
+    jobid: 233
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.Lamp5_Lhx6.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Schizophrenia_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Schizophrenia_full_outcome.Lamp5_Lhx6.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Schizophrenia_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Schizophrenia_full_outcome.Lamp5_Lhx6.MR.sensitivity
+    shell:
+        Rscript scripts/csMR.r -e /home/u/csMR/example/BMI_GWAS/Ulcerative_colitis_full_exposure_ieu_a_970.ma -o example/outcomes/Schizophrenia_full_outcome.ma -c csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.Lamp5_Lhx6.clumped -r /home/u/csMR/data/reference_genome_1000G_EUR
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Sat Aug 31 10:10:46 2024]
+Error in rule MR:
+    jobid: 149
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.L5_6_NP.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Schizophrenia_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Schizophrenia_full_outcome.L5_6_NP.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Schizophrenia_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Schizophrenia_full_outcome.L5_6_NP.MR.sensitivity
+    shell:
+        Rscript scripts/csMR.r -e /home/u/csMR/example/BMI_GWAS/Ulcerative_colitis_full_exposure_ieu_a_970.ma -o example/outcomes/Schizophrenia_full_outcome.ma -c csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.L5_6_NP.clumped -r /home/u/csMR/data/reference_genome_1000G_EUR
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Sat Aug 31 10:10:46 2024]
+Error in rule MR:
+    jobid: 386
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Inflammatory_bowel_disease.results.coverage.0.9.PPH4.0.8.L5_6_NP.clumped
+    output: csMR-EXAMPLE/MR/Inflammatory_bowel_disease-Generalized_anxiety_disorder_R10_full_outcome/Inflammatory_bowel_disease.Generalized_anxiety_disorder_R10_full_outcome.L5_6_NP.MR.res, csMR-EXAMPLE/MR/Inflammatory_bowel_disease-Generalized_anxiety_disorder_R10_full_outcome/Inflammatory_bowel_disease.Generalized_anxiety_disorder_R10_full_outcome.L5_6_NP.MR.sensitivity
+    shell:
+        Rscript scripts/csMR.r -e /home/u/csMR/example/BMI_GWAS/Inflammatory_bowel_disease.ma -o example/outcomes/Generalized_anxiety_disorder_R10_full_outcome.ma -c csMR-EXAMPLE/MR/clump/Susie_coloc.Inflammatory_bowel_disease.results.coverage.0.9.PPH4.0.8.L5_6_NP.clumped -r /home/u/csMR/data/reference_genome_1000G_EUR
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Sat Aug 31 10:10:46 2024]
+Error in rule MR:
+    jobid: 389
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Inflammatory_bowel_disease.results.coverage.0.9.PPH4.0.8.L5_6_NP.clumped
+    output: csMR-EXAMPLE/MR/Inflammatory_bowel_disease-Schizophrenia_full_outcome/Inflammatory_bowel_disease.Schizophrenia_full_outcome.L5_6_NP.MR.res, csMR-EXAMPLE/MR/Inflammatory_bowel_disease-Schizophrenia_full_outcome/Inflammatory_bowel_disease.Schizophrenia_full_outcome.L5_6_NP.MR.sensitivity
+    shell:
+        Rscript scripts/csMR.r -e /home/u/csMR/example/BMI_GWAS/Inflammatory_bowel_disease.ma -o example/outcomes/Schizophrenia_full_outcome.ma -c csMR-EXAMPLE/MR/clump/Susie_coloc.Inflammatory_bowel_disease.results.coverage.0.9.PPH4.0.8.L5_6_NP.clumped -r /home/u/csMR/data/reference_genome_1000G_EUR
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Sat Aug 31 10:10:46 2024]
+Error in rule MR:
+    jobid: 387
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Inflammatory_bowel_disease.results.coverage.0.9.PPH4.0.8.L5_6_NP.clumped
+    output: csMR-EXAMPLE/MR/Inflammatory_bowel_disease-ALS_ieu_a_1085_full_outcome/Inflammatory_bowel_disease.ALS_ieu_a_1085_full_outcome.L5_6_NP.MR.res, csMR-EXAMPLE/MR/Inflammatory_bowel_disease-ALS_ieu_a_1085_full_outcome/Inflammatory_bowel_disease.ALS_ieu_a_1085_full_outcome.L5_6_NP.MR.sensitivity
+    shell:
+        Rscript scripts/csMR.r -e /home/u/csMR/example/BMI_GWAS/Inflammatory_bowel_disease.ma -o example/outcomes/ALS_ieu_a_1085_full_outcome.ma -c csMR-EXAMPLE/MR/clump/Susie_coloc.Inflammatory_bowel_disease.results.coverage.0.9.PPH4.0.8.L5_6_NP.clumped -r /home/u/csMR/data/reference_genome_1000G_EUR
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Cancelling snakemake on user request.

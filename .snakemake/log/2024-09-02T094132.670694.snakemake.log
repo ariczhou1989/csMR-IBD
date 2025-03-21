@@ -1,0 +1,4 @@
+Building DAG of jobs...
+MissingInputException in line 133 of /home/u/csMR/work_flow.snakefile:
+Missing input files for rule split_eqtl:
+/home/u/csMR/example/single-cell-eQTL/SST_SST_Chodl.ma

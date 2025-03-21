@@ -1,0 +1,46 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 60
+Rules claiming more threads will be scaled down.
+Job stats:
+job      count    min threads    max threads
+-----  -------  -------------  -------------
+MR           2              1              1
+all          1              1              1
+total        3              1              1
+
+Select jobs to execute...
+
+[Fri Aug 30 13:00:37 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.Excitatory_neurons.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Suicide_or_other_Intentional_self-harm_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Suicide_or_other_Intentional_self-harm_R10_full_outcome.Excitatory_neurons.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Suicide_or_other_Intentional_self-harm_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Suicide_or_other_Intentional_self-harm_R10_full_outcome.Excitatory_neurons.MR.sensitivity
+    jobid: 404
+    reason: Missing output files: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Suicide_or_other_Intentional_self-harm_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Suicide_or_other_Intentional_self-harm_R10_full_outcome.Excitatory_neurons.MR.sensitivity, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Suicide_or_other_Intentional_self-harm_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Suicide_or_other_Intentional_self-harm_R10_full_outcome.Excitatory_neurons.MR.res
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, outcome=Suicide_or_other_Intentional_self-harm_R10_full_outcome, cell_type=Excitatory_neurons
+    resources: tmpdir=/tmp
+
+
+[Fri Aug 30 13:00:37 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.mtag_Ulcerative_colitis_full_exposure.results.coverage.0.9.PPH4.0.8.Excitatory_neurons.clumped
+    output: csMR-EXAMPLE/MR/mtag_Ulcerative_colitis_full_exposure-GCST90406924_38_MSA_full_outcome/mtag_Ulcerative_colitis_full_exposure.GCST90406924_38_MSA_full_outcome.Excitatory_neurons.MR.res, csMR-EXAMPLE/MR/mtag_Ulcerative_colitis_full_exposure-GCST90406924_38_MSA_full_outcome/mtag_Ulcerative_colitis_full_exposure.GCST90406924_38_MSA_full_outcome.Excitatory_neurons.MR.sensitivity
+    jobid: 2869
+    reason: Missing output files: csMR-EXAMPLE/MR/mtag_Ulcerative_colitis_full_exposure-GCST90406924_38_MSA_full_outcome/mtag_Ulcerative_colitis_full_exposure.GCST90406924_38_MSA_full_outcome.Excitatory_neurons.MR.sensitivity, csMR-EXAMPLE/MR/mtag_Ulcerative_colitis_full_exposure-GCST90406924_38_MSA_full_outcome/mtag_Ulcerative_colitis_full_exposure.GCST90406924_38_MSA_full_outcome.Excitatory_neurons.MR.res
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=mtag_Ulcerative_colitis_full_exposure, outcome=GCST90406924_38_MSA_full_outcome, cell_type=Excitatory_neurons
+    resources: tmpdir=/tmp
+
+[Fri Aug 30 13:01:14 2024]
+Error in rule MR:
+    jobid: 2869
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.mtag_Ulcerative_colitis_full_exposure.results.coverage.0.9.PPH4.0.8.Excitatory_neurons.clumped
+    output: csMR-EXAMPLE/MR/mtag_Ulcerative_colitis_full_exposure-GCST90406924_38_MSA_full_outcome/mtag_Ulcerative_colitis_full_exposure.GCST90406924_38_MSA_full_outcome.Excitatory_neurons.MR.res, csMR-EXAMPLE/MR/mtag_Ulcerative_colitis_full_exposure-GCST90406924_38_MSA_full_outcome/mtag_Ulcerative_colitis_full_exposure.GCST90406924_38_MSA_full_outcome.Excitatory_neurons.MR.sensitivity
+    shell:
+        Rscript scripts/csMR.r -e /home/u/csMR/example/BMI_GWAS/mtag_Ulcerative_colitis_full_exposure.ma -o example/outcomes/GCST90406924_38_MSA_full_outcome.ma -c csMR-EXAMPLE/MR/clump/Susie_coloc.mtag_Ulcerative_colitis_full_exposure.results.coverage.0.9.PPH4.0.8.Excitatory_neurons.clumped -r /home/u/csMR/data/reference_genome_1000G_EUR
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Fri Aug 30 13:01:31 2024]
+Finished job 404.
+1 of 3 steps (33%) done
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2024-08-30T130033.326142.snakemake.log

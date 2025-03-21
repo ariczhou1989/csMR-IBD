@@ -1,0 +1,176 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 60
+Rules claiming more threads will be scaled down.
+Job stats:
+job      count    min threads    max threads
+-----  -------  -------------  -------------
+MR          12              1              1
+all          1              1              1
+total       13              1              1
+
+Select jobs to execute...
+
+[Sat Aug 31 01:33:59 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.mtag_Inflammatory_bowel_disease.results.coverage.0.9.PPH4.0.8.pb.clumped
+    output: csMR-EXAMPLE/MR/mtag_Inflammatory_bowel_disease-Recurrent_or_chronic_depression_R10_full_outcome/mtag_Inflammatory_bowel_disease.Recurrent_or_chronic_depression_R10_full_outcome.pb.MR.res, csMR-EXAMPLE/MR/mtag_Inflammatory_bowel_disease-Recurrent_or_chronic_depression_R10_full_outcome/mtag_Inflammatory_bowel_disease.Recurrent_or_chronic_depression_R10_full_outcome.pb.MR.sensitivity
+    jobid: 317
+    reason: Missing output files: csMR-EXAMPLE/MR/mtag_Inflammatory_bowel_disease-Recurrent_or_chronic_depression_R10_full_outcome/mtag_Inflammatory_bowel_disease.Recurrent_or_chronic_depression_R10_full_outcome.pb.MR.sensitivity, csMR-EXAMPLE/MR/mtag_Inflammatory_bowel_disease-Recurrent_or_chronic_depression_R10_full_outcome/mtag_Inflammatory_bowel_disease.Recurrent_or_chronic_depression_R10_full_outcome.pb.MR.res
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=mtag_Inflammatory_bowel_disease, outcome=Recurrent_or_chronic_depression_R10_full_outcome, cell_type=pb
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 01:33:59 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Inflammatory_bowel_disease.results.coverage.0.9.PPH4.0.8.Oligodendrocytes.clumped
+    output: csMR-EXAMPLE/MR/Inflammatory_bowel_disease-Recurrent_or_chronic_depression_R10_full_outcome/Inflammatory_bowel_disease.Recurrent_or_chronic_depression_R10_full_outcome.Oligodendrocytes.MR.res, csMR-EXAMPLE/MR/Inflammatory_bowel_disease-Recurrent_or_chronic_depression_R10_full_outcome/Inflammatory_bowel_disease.Recurrent_or_chronic_depression_R10_full_outcome.Oligodendrocytes.MR.sensitivity
+    jobid: 191
+    reason: Missing output files: csMR-EXAMPLE/MR/Inflammatory_bowel_disease-Recurrent_or_chronic_depression_R10_full_outcome/Inflammatory_bowel_disease.Recurrent_or_chronic_depression_R10_full_outcome.Oligodendrocytes.MR.sensitivity, csMR-EXAMPLE/MR/Inflammatory_bowel_disease-Recurrent_or_chronic_depression_R10_full_outcome/Inflammatory_bowel_disease.Recurrent_or_chronic_depression_R10_full_outcome.Oligodendrocytes.MR.res
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Inflammatory_bowel_disease, outcome=Recurrent_or_chronic_depression_R10_full_outcome, cell_type=Oligodendrocytes
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 01:33:59 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.mtag_Crohn_ebi_a_GCST003044.results.coverage.0.9.PPH4.0.8.Inhibitory_neurons.clumped
+    output: csMR-EXAMPLE/MR/mtag_Crohn_ebi_a_GCST003044-Recurrent_or_chronic_depression_R10_full_outcome/mtag_Crohn_ebi_a_GCST003044.Recurrent_or_chronic_depression_R10_full_outcome.Inhibitory_neurons.MR.res, csMR-EXAMPLE/MR/mtag_Crohn_ebi_a_GCST003044-Recurrent_or_chronic_depression_R10_full_outcome/mtag_Crohn_ebi_a_GCST003044.Recurrent_or_chronic_depression_R10_full_outcome.Inhibitory_neurons.MR.sensitivity
+    jobid: 263
+    reason: Missing output files: csMR-EXAMPLE/MR/mtag_Crohn_ebi_a_GCST003044-Recurrent_or_chronic_depression_R10_full_outcome/mtag_Crohn_ebi_a_GCST003044.Recurrent_or_chronic_depression_R10_full_outcome.Inhibitory_neurons.MR.sensitivity, csMR-EXAMPLE/MR/mtag_Crohn_ebi_a_GCST003044-Recurrent_or_chronic_depression_R10_full_outcome/mtag_Crohn_ebi_a_GCST003044.Recurrent_or_chronic_depression_R10_full_outcome.Inhibitory_neurons.MR.res
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=mtag_Crohn_ebi_a_GCST003044, outcome=Recurrent_or_chronic_depression_R10_full_outcome, cell_type=Inhibitory_neurons
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 01:33:59 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Crohn_disease.results.coverage.0.9.PPH4.0.8.Endothelial.clumped
+    output: csMR-EXAMPLE/MR/Crohn_disease-Recurrent_or_chronic_depression_R10_full_outcome/Crohn_disease.Recurrent_or_chronic_depression_R10_full_outcome.Endothelial.MR.res, csMR-EXAMPLE/MR/Crohn_disease-Recurrent_or_chronic_depression_R10_full_outcome/Crohn_disease.Recurrent_or_chronic_depression_R10_full_outcome.Endothelial.MR.sensitivity
+    jobid: 209
+    reason: Missing output files: csMR-EXAMPLE/MR/Crohn_disease-Recurrent_or_chronic_depression_R10_full_outcome/Crohn_disease.Recurrent_or_chronic_depression_R10_full_outcome.Endothelial.MR.res, csMR-EXAMPLE/MR/Crohn_disease-Recurrent_or_chronic_depression_R10_full_outcome/Crohn_disease.Recurrent_or_chronic_depression_R10_full_outcome.Endothelial.MR.sensitivity
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Crohn_disease, outcome=Recurrent_or_chronic_depression_R10_full_outcome, cell_type=Endothelial
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 01:33:59 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Inflammatory_bowel_disease.results.coverage.0.9.PPH4.0.8.Microglia.clumped
+    output: csMR-EXAMPLE/MR/Inflammatory_bowel_disease-Recurrent_or_chronic_depression_R10_full_outcome/Inflammatory_bowel_disease.Recurrent_or_chronic_depression_R10_full_outcome.Microglia.MR.res, csMR-EXAMPLE/MR/Inflammatory_bowel_disease-Recurrent_or_chronic_depression_R10_full_outcome/Inflammatory_bowel_disease.Recurrent_or_chronic_depression_R10_full_outcome.Microglia.MR.sensitivity
+    jobid: 183
+    reason: Missing output files: csMR-EXAMPLE/MR/Inflammatory_bowel_disease-Recurrent_or_chronic_depression_R10_full_outcome/Inflammatory_bowel_disease.Recurrent_or_chronic_depression_R10_full_outcome.Microglia.MR.res, csMR-EXAMPLE/MR/Inflammatory_bowel_disease-Recurrent_or_chronic_depression_R10_full_outcome/Inflammatory_bowel_disease.Recurrent_or_chronic_depression_R10_full_outcome.Microglia.MR.sensitivity
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Inflammatory_bowel_disease, outcome=Recurrent_or_chronic_depression_R10_full_outcome, cell_type=Microglia
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 01:33:59 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.pb.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Recurrent_or_chronic_depression_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Recurrent_or_chronic_depression_R10_full_outcome.pb.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Recurrent_or_chronic_depression_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Recurrent_or_chronic_depression_R10_full_outcome.pb.MR.sensitivity
+    jobid: 127
+    reason: Missing output files: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Recurrent_or_chronic_depression_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Recurrent_or_chronic_depression_R10_full_outcome.pb.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Recurrent_or_chronic_depression_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Recurrent_or_chronic_depression_R10_full_outcome.pb.MR.sensitivity
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, outcome=Recurrent_or_chronic_depression_R10_full_outcome, cell_type=pb
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 01:33:59 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Crohn_disease.results.coverage.0.9.PPH4.0.8.pb.clumped
+    output: csMR-EXAMPLE/MR/Crohn_disease-Recurrent_or_chronic_depression_R10_full_outcome/Crohn_disease.Recurrent_or_chronic_depression_R10_full_outcome.pb.MR.res, csMR-EXAMPLE/MR/Crohn_disease-Recurrent_or_chronic_depression_R10_full_outcome/Crohn_disease.Recurrent_or_chronic_depression_R10_full_outcome.pb.MR.sensitivity
+    jobid: 241
+    reason: Missing output files: csMR-EXAMPLE/MR/Crohn_disease-Recurrent_or_chronic_depression_R10_full_outcome/Crohn_disease.Recurrent_or_chronic_depression_R10_full_outcome.pb.MR.sensitivity, csMR-EXAMPLE/MR/Crohn_disease-Recurrent_or_chronic_depression_R10_full_outcome/Crohn_disease.Recurrent_or_chronic_depression_R10_full_outcome.pb.MR.res
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Crohn_disease, outcome=Recurrent_or_chronic_depression_R10_full_outcome, cell_type=pb
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 01:34:00 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.mtag_Ulcerative_colitis_full_exposure.results.coverage.0.9.PPH4.0.8.Inhibitory_neurons.clumped
+    output: csMR-EXAMPLE/MR/mtag_Ulcerative_colitis_full_exposure-Recurrent_or_chronic_depression_R10_full_outcome/mtag_Ulcerative_colitis_full_exposure.Recurrent_or_chronic_depression_R10_full_outcome.Inhibitory_neurons.MR.res, csMR-EXAMPLE/MR/mtag_Ulcerative_colitis_full_exposure-Recurrent_or_chronic_depression_R10_full_outcome/mtag_Ulcerative_colitis_full_exposure.Recurrent_or_chronic_depression_R10_full_outcome.Inhibitory_neurons.MR.sensitivity
+    jobid: 339
+    reason: Missing output files: csMR-EXAMPLE/MR/mtag_Ulcerative_colitis_full_exposure-Recurrent_or_chronic_depression_R10_full_outcome/mtag_Ulcerative_colitis_full_exposure.Recurrent_or_chronic_depression_R10_full_outcome.Inhibitory_neurons.MR.res, csMR-EXAMPLE/MR/mtag_Ulcerative_colitis_full_exposure-Recurrent_or_chronic_depression_R10_full_outcome/mtag_Ulcerative_colitis_full_exposure.Recurrent_or_chronic_depression_R10_full_outcome.Inhibitory_neurons.MR.sensitivity
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=mtag_Ulcerative_colitis_full_exposure, outcome=Recurrent_or_chronic_depression_R10_full_outcome, cell_type=Inhibitory_neurons
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 01:34:00 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.mtag_Crohn_ebi_a_GCST003044.results.coverage.0.9.PPH4.0.8.Astrocytes.clumped
+    output: csMR-EXAMPLE/MR/mtag_Crohn_ebi_a_GCST003044-Depression_R10_full_outcome/mtag_Crohn_ebi_a_GCST003044.Depression_R10_full_outcome.Astrocytes.MR.res, csMR-EXAMPLE/MR/mtag_Crohn_ebi_a_GCST003044-Depression_R10_full_outcome/mtag_Crohn_ebi_a_GCST003044.Depression_R10_full_outcome.Astrocytes.MR.sensitivity
+    jobid: 274
+    reason: Missing output files: csMR-EXAMPLE/MR/mtag_Crohn_ebi_a_GCST003044-Depression_R10_full_outcome/mtag_Crohn_ebi_a_GCST003044.Depression_R10_full_outcome.Astrocytes.MR.sensitivity, csMR-EXAMPLE/MR/mtag_Crohn_ebi_a_GCST003044-Depression_R10_full_outcome/mtag_Crohn_ebi_a_GCST003044.Depression_R10_full_outcome.Astrocytes.MR.res
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=mtag_Crohn_ebi_a_GCST003044, outcome=Depression_R10_full_outcome, cell_type=Astrocytes
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 01:34:00 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Crohn_disease.results.coverage.0.9.PPH4.0.8.Inhibitory_neurons.clumped
+    output: csMR-EXAMPLE/MR/Crohn_disease-Major_depression_full_outcome/Crohn_disease.Major_depression_full_outcome.Inhibitory_neurons.MR.res, csMR-EXAMPLE/MR/Crohn_disease-Major_depression_full_outcome/Crohn_disease.Major_depression_full_outcome.Inhibitory_neurons.MR.sensitivity
+    jobid: 222
+    reason: Missing output files: csMR-EXAMPLE/MR/Crohn_disease-Major_depression_full_outcome/Crohn_disease.Major_depression_full_outcome.Inhibitory_neurons.MR.sensitivity, csMR-EXAMPLE/MR/Crohn_disease-Major_depression_full_outcome/Crohn_disease.Major_depression_full_outcome.Inhibitory_neurons.MR.res
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Crohn_disease, outcome=Major_depression_full_outcome, cell_type=Inhibitory_neurons
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 01:34:00 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.pb.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Depression_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Depression_R10_full_outcome.pb.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Depression_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Depression_R10_full_outcome.pb.MR.sensitivity
+    jobid: 126
+    reason: Missing output files: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Depression_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Depression_R10_full_outcome.pb.MR.sensitivity, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Depression_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Depression_R10_full_outcome.pb.MR.res
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, outcome=Depression_R10_full_outcome, cell_type=pb
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 01:34:00 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Inflammatory_bowel_disease.results.coverage.0.9.PPH4.0.8.Astrocytes.clumped
+    output: csMR-EXAMPLE/MR/Inflammatory_bowel_disease-Depression_R10_full_outcome/Inflammatory_bowel_disease.Depression_R10_full_outcome.Astrocytes.MR.res, csMR-EXAMPLE/MR/Inflammatory_bowel_disease-Depression_R10_full_outcome/Inflammatory_bowel_disease.Depression_R10_full_outcome.Astrocytes.MR.sensitivity
+    jobid: 198
+    reason: Missing output files: csMR-EXAMPLE/MR/Inflammatory_bowel_disease-Depression_R10_full_outcome/Inflammatory_bowel_disease.Depression_R10_full_outcome.Astrocytes.MR.sensitivity, csMR-EXAMPLE/MR/Inflammatory_bowel_disease-Depression_R10_full_outcome/Inflammatory_bowel_disease.Depression_R10_full_outcome.Astrocytes.MR.res
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Inflammatory_bowel_disease, outcome=Depression_R10_full_outcome, cell_type=Astrocytes
+    resources: tmpdir=/tmp
+
+[Sat Aug 31 01:34:29 2024]
+Finished job 222.
+1 of 13 steps (8%) done
+[Sat Aug 31 01:34:43 2024]
+Finished job 339.
+2 of 13 steps (15%) done
+[Sat Aug 31 01:34:50 2024]
+Finished job 209.
+3 of 13 steps (23%) done
+[Sat Aug 31 01:34:52 2024]
+Finished job 263.
+4 of 13 steps (31%) done
+[Sat Aug 31 01:35:00 2024]
+Finished job 183.
+5 of 13 steps (38%) done
+[Sat Aug 31 01:35:01 2024]
+Error in rule MR:
+    jobid: 198
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Inflammatory_bowel_disease.results.coverage.0.9.PPH4.0.8.Astrocytes.clumped
+    output: csMR-EXAMPLE/MR/Inflammatory_bowel_disease-Depression_R10_full_outcome/Inflammatory_bowel_disease.Depression_R10_full_outcome.Astrocytes.MR.res, csMR-EXAMPLE/MR/Inflammatory_bowel_disease-Depression_R10_full_outcome/Inflammatory_bowel_disease.Depression_R10_full_outcome.Astrocytes.MR.sensitivity
+    shell:
+        Rscript scripts/csMR.r -e /home/u/csMR/example/BMI_GWAS/Inflammatory_bowel_disease.ma -o example/outcomes/Depression_R10_full_outcome.ma -c csMR-EXAMPLE/MR/clump/Susie_coloc.Inflammatory_bowel_disease.results.coverage.0.9.PPH4.0.8.Astrocytes.clumped -r /home/u/csMR/data/reference_genome_1000G_EUR
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Sat Aug 31 01:35:04 2024]
+Finished job 127.
+6 of 13 steps (46%) done
+[Sat Aug 31 01:35:06 2024]
+Finished job 241.
+7 of 13 steps (54%) done
+[Sat Aug 31 01:35:06 2024]
+Finished job 317.
+8 of 13 steps (62%) done
+[Sat Aug 31 01:35:06 2024]
+Finished job 274.
+9 of 13 steps (69%) done
+[Sat Aug 31 01:35:07 2024]
+Finished job 191.
+10 of 13 steps (77%) done
+[Sat Aug 31 01:35:08 2024]
+Finished job 126.
+11 of 13 steps (85%) done
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2024-08-31T013342.037963.snakemake.log

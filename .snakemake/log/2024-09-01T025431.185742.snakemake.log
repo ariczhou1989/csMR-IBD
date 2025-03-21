@@ -1,0 +1,367 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 60
+Rules claiming more threads will be scaled down.
+Job stats:
+job                   count    min threads    max threads
+------------------  -------  -------------  -------------
+MR                    21105              1              1
+all                       1              1              1
+clump                   315              1              1
+coloc_summary            21              1              1
+eqtl_rdata                1              1              1
+fine_mapping              1              1              1
+get_intersect_pair      315              1              1
+gwas_rdata               21              1              1
+run_coloc                 1              1              1
+snp_filter               21              1              1
+split_eqtl               15              1              1
+split_gwas               21              1              1
+total                 21838              1              1
+
+Select jobs to execute...
+
+[Sun Sep  1 02:55:14 2024]
+rule split_gwas:
+    input: /home/u/csMR/example/BMI_GWAS/Serum_25_Hydroxyvitamin_D.ma
+    output: csMR-EXAMPLE/precomputation/Serum_25_Hydroxyvitamin_D.GWAS_split/Serum_25_Hydroxyvitamin_D.5e-8SNP.100kb.merged_nomhc.bed
+    jobid: 11
+    reason: Missing output files: csMR-EXAMPLE/precomputation/Serum_25_Hydroxyvitamin_D.GWAS_split/Serum_25_Hydroxyvitamin_D.5e-8SNP.100kb.merged_nomhc.bed
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Serum_25_Hydroxyvitamin_D
+    resources: tmpdir=/tmp
+
+
+[Sun Sep  1 02:55:14 2024]
+rule split_gwas:
+    input: /home/u/csMR/example/BMI_GWAS/Glucose_full_exposure_pan.ma
+    output: csMR-EXAMPLE/precomputation/Glucose_full_exposure_pan.GWAS_split/Glucose_full_exposure_pan.5e-8SNP.100kb.merged_nomhc.bed
+    jobid: 19
+    reason: Missing output files: csMR-EXAMPLE/precomputation/Glucose_full_exposure_pan.GWAS_split/Glucose_full_exposure_pan.5e-8SNP.100kb.merged_nomhc.bed
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Glucose_full_exposure_pan
+    resources: tmpdir=/tmp
+
+
+[Sun Sep  1 02:55:14 2024]
+rule split_gwas:
+    input: /home/u/csMR/example/BMI_GWAS/Ulcerative_colitis_full_exposure_ieu_a_970.ma
+    output: csMR-EXAMPLE/precomputation/Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split/Ulcerative_colitis_full_exposure_ieu_a_970.5e-8SNP.100kb.merged_nomhc.bed
+    jobid: 47
+    reason: Missing output files: csMR-EXAMPLE/precomputation/Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split/Ulcerative_colitis_full_exposure_ieu_a_970.5e-8SNP.100kb.merged_nomhc.bed
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970
+    resources: tmpdir=/tmp
+
+
+[Sun Sep  1 02:55:14 2024]
+rule split_gwas:
+    input: /home/u/csMR/example/BMI_GWAS/Apolipoprotein_A_I.ma
+    output: csMR-EXAMPLE/precomputation/Apolipoprotein_A_I.GWAS_split/Apolipoprotein_A_I.5e-8SNP.100kb.merged_nomhc.bed
+    jobid: 33
+    reason: Missing output files: csMR-EXAMPLE/precomputation/Apolipoprotein_A_I.GWAS_split/Apolipoprotein_A_I.5e-8SNP.100kb.merged_nomhc.bed
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Apolipoprotein_A_I
+    resources: tmpdir=/tmp
+
+
+[Sun Sep  1 02:55:14 2024]
+rule split_gwas:
+    input: /home/u/csMR/example/BMI_GWAS/Alcohol_intake_frequency.ma
+    output: csMR-EXAMPLE/precomputation/Alcohol_intake_frequency.GWAS_split/Alcohol_intake_frequency.5e-8SNP.100kb.merged_nomhc.bed
+    jobid: 27
+    reason: Missing output files: csMR-EXAMPLE/precomputation/Alcohol_intake_frequency.GWAS_split/Alcohol_intake_frequency.5e-8SNP.100kb.merged_nomhc.bed
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Alcohol_intake_frequency
+    resources: tmpdir=/tmp
+
+
+[Sun Sep  1 02:55:14 2024]
+rule split_gwas:
+    input: /home/u/csMR/example/BMI_GWAS/Triglycerides.ma
+    output: csMR-EXAMPLE/precomputation/Triglycerides.GWAS_split/Triglycerides.5e-8SNP.100kb.merged_nomhc.bed
+    jobid: 41
+    reason: Missing output files: csMR-EXAMPLE/precomputation/Triglycerides.GWAS_split/Triglycerides.5e-8SNP.100kb.merged_nomhc.bed
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Triglycerides
+    resources: tmpdir=/tmp
+
+
+[Sun Sep  1 02:55:14 2024]
+rule split_gwas:
+    input: /home/u/csMR/example/BMI_GWAS/Vitamin_D.ma
+    output: csMR-EXAMPLE/precomputation/Vitamin_D.GWAS_split/Vitamin_D.5e-8SNP.100kb.merged_nomhc.bed
+    jobid: 13
+    reason: Missing output files: csMR-EXAMPLE/precomputation/Vitamin_D.GWAS_split/Vitamin_D.5e-8SNP.100kb.merged_nomhc.bed
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Vitamin_D
+    resources: tmpdir=/tmp
+
+
+[Sun Sep  1 02:55:14 2024]
+rule split_gwas:
+    input: /home/u/csMR/example/BMI_GWAS/Type_2_diabetes.ma
+    output: csMR-EXAMPLE/precomputation/Type_2_diabetes.GWAS_split/Type_2_diabetes.5e-8SNP.100kb.merged_nomhc.bed
+    jobid: 21
+    reason: Missing output files: csMR-EXAMPLE/precomputation/Type_2_diabetes.GWAS_split/Type_2_diabetes.5e-8SNP.100kb.merged_nomhc.bed
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Type_2_diabetes
+    resources: tmpdir=/tmp
+
+
+[Sun Sep  1 02:55:14 2024]
+rule split_gwas:
+    input: /home/u/csMR/example/BMI_GWAS/Apolipoprotein_B.ma
+    output: csMR-EXAMPLE/precomputation/Apolipoprotein_B.GWAS_split/Apolipoprotein_B.5e-8SNP.100kb.merged_nomhc.bed
+    jobid: 35
+    reason: Missing output files: csMR-EXAMPLE/precomputation/Apolipoprotein_B.GWAS_split/Apolipoprotein_B.5e-8SNP.100kb.merged_nomhc.bed
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Apolipoprotein_B
+    resources: tmpdir=/tmp
+
+
+[Sun Sep  1 02:55:14 2024]
+rule split_gwas:
+    input: /home/u/csMR/example/BMI_GWAS/Inflammatory_bowel_disease.ma
+    output: csMR-EXAMPLE/precomputation/Inflammatory_bowel_disease.GWAS_split/Inflammatory_bowel_disease.5e-8SNP.100kb.merged_nomhc.bed
+    jobid: 49
+    reason: Missing output files: csMR-EXAMPLE/precomputation/Inflammatory_bowel_disease.GWAS_split/Inflammatory_bowel_disease.5e-8SNP.100kb.merged_nomhc.bed
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Inflammatory_bowel_disease
+    resources: tmpdir=/tmp
+
+
+[Sun Sep  1 02:55:14 2024]
+rule split_gwas:
+    input: /home/u/csMR/example/BMI_GWAS/PAU_EUR_full_exposure.ma
+    output: csMR-EXAMPLE/precomputation/PAU_EUR_full_exposure.GWAS_split/PAU_EUR_full_exposure.5e-8SNP.100kb.merged_nomhc.bed
+    jobid: 25
+    reason: Missing output files: csMR-EXAMPLE/precomputation/PAU_EUR_full_exposure.GWAS_split/PAU_EUR_full_exposure.5e-8SNP.100kb.merged_nomhc.bed
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=PAU_EUR_full_exposure
+    resources: tmpdir=/tmp
+
+
+[Sun Sep  1 02:55:14 2024]
+rule split_gwas:
+    input: /home/u/csMR/example/BMI_GWAS/Smoking_status.ma
+    output: csMR-EXAMPLE/precomputation/Smoking_status.GWAS_split/Smoking_status.5e-8SNP.100kb.merged_nomhc.bed
+    jobid: 29
+    reason: Missing output files: csMR-EXAMPLE/precomputation/Smoking_status.GWAS_split/Smoking_status.5e-8SNP.100kb.merged_nomhc.bed
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Smoking_status
+    resources: tmpdir=/tmp
+
+
+[Sun Sep  1 02:55:14 2024]
+rule split_gwas:
+    input: /home/u/csMR/example/BMI_GWAS/Cholesterol.ma
+    output: csMR-EXAMPLE/precomputation/Cholesterol.GWAS_split/Cholesterol.5e-8SNP.100kb.merged_nomhc.bed
+    jobid: 43
+    reason: Missing output files: csMR-EXAMPLE/precomputation/Cholesterol.GWAS_split/Cholesterol.5e-8SNP.100kb.merged_nomhc.bed
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Cholesterol
+    resources: tmpdir=/tmp
+
+
+[Sun Sep  1 02:55:14 2024]
+rule split_gwas:
+    input: /home/u/csMR/example/BMI_GWAS/Vitamin_D_deficiency.ma
+    output: csMR-EXAMPLE/precomputation/Vitamin_D_deficiency.GWAS_split/Vitamin_D_deficiency.5e-8SNP.100kb.merged_nomhc.bed
+    jobid: 15
+    reason: Missing output files: csMR-EXAMPLE/precomputation/Vitamin_D_deficiency.GWAS_split/Vitamin_D_deficiency.5e-8SNP.100kb.merged_nomhc.bed
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Vitamin_D_deficiency
+    resources: tmpdir=/tmp
+
+
+[Sun Sep  1 02:55:14 2024]
+rule split_gwas:
+    input: /home/u/csMR/example/BMI_GWAS/Crohn_disease.ma
+    output: csMR-EXAMPLE/precomputation/Crohn_disease.GWAS_split/Crohn_disease.5e-8SNP.100kb.merged_nomhc.bed
+    jobid: 51
+    reason: Missing output files: csMR-EXAMPLE/precomputation/Crohn_disease.GWAS_split/Crohn_disease.5e-8SNP.100kb.merged_nomhc.bed
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Crohn_disease
+    resources: tmpdir=/tmp
+
+
+[Sun Sep  1 02:55:14 2024]
+rule split_gwas:
+    input: /home/u/csMR/example/BMI_GWAS/HDL_cholesterol.ma
+    output: csMR-EXAMPLE/precomputation/HDL_cholesterol.GWAS_split/HDL_cholesterol.5e-8SNP.100kb.merged_nomhc.bed
+    jobid: 37
+    reason: Missing output files: csMR-EXAMPLE/precomputation/HDL_cholesterol.GWAS_split/HDL_cholesterol.5e-8SNP.100kb.merged_nomhc.bed
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=HDL_cholesterol
+    resources: tmpdir=/tmp
+
+
+[Sun Sep  1 02:55:14 2024]
+rule split_gwas:
+    input: /home/u/csMR/example/BMI_GWAS/Problematic_alcohol_use.ma
+    output: csMR-EXAMPLE/precomputation/Problematic_alcohol_use.GWAS_split/Problematic_alcohol_use.5e-8SNP.100kb.merged_nomhc.bed
+    jobid: 23
+    reason: Missing output files: csMR-EXAMPLE/precomputation/Problematic_alcohol_use.GWAS_split/Problematic_alcohol_use.5e-8SNP.100kb.merged_nomhc.bed
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Problematic_alcohol_use
+    resources: tmpdir=/tmp
+
+
+[Sun Sep  1 02:55:14 2024]
+rule split_gwas:
+    input: /home/u/csMR/example/BMI_GWAS/telomere_length.ma
+    output: csMR-EXAMPLE/precomputation/telomere_length.GWAS_split/telomere_length.5e-8SNP.100kb.merged_nomhc.bed
+    jobid: 31
+    reason: Missing output files: csMR-EXAMPLE/precomputation/telomere_length.GWAS_split/telomere_length.5e-8SNP.100kb.merged_nomhc.bed
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=telomere_length
+    resources: tmpdir=/tmp
+
+
+[Sun Sep  1 02:55:14 2024]
+rule split_gwas:
+    input: /home/u/csMR/example/BMI_GWAS/BMI.ma
+    output: csMR-EXAMPLE/precomputation/BMI.GWAS_split/BMI.5e-8SNP.100kb.merged_nomhc.bed
+    jobid: 45
+    reason: Missing output files: csMR-EXAMPLE/precomputation/BMI.GWAS_split/BMI.5e-8SNP.100kb.merged_nomhc.bed
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=BMI
+    resources: tmpdir=/tmp
+
+
+[Sun Sep  1 02:55:14 2024]
+rule split_gwas:
+    input: /home/u/csMR/example/BMI_GWAS/Glycated_haemoglobin_HbA1c.ma
+    output: csMR-EXAMPLE/precomputation/Glycated_haemoglobin_HbA1c.GWAS_split/Glycated_haemoglobin_HbA1c.5e-8SNP.100kb.merged_nomhc.bed
+    jobid: 17
+    reason: Missing output files: csMR-EXAMPLE/precomputation/Glycated_haemoglobin_HbA1c.GWAS_split/Glycated_haemoglobin_HbA1c.5e-8SNP.100kb.merged_nomhc.bed
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Glycated_haemoglobin_HbA1c
+    resources: tmpdir=/tmp
+
+
+[Sun Sep  1 02:55:14 2024]
+rule split_gwas:
+    input: /home/u/csMR/example/BMI_GWAS/LDL_direct.ma
+    output: csMR-EXAMPLE/precomputation/LDL_direct.GWAS_split/LDL_direct.5e-8SNP.100kb.merged_nomhc.bed
+    jobid: 39
+    reason: Missing output files: csMR-EXAMPLE/precomputation/LDL_direct.GWAS_split/LDL_direct.5e-8SNP.100kb.merged_nomhc.bed
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=LDL_direct
+    resources: tmpdir=/tmp
+
+[Sun Sep  1 02:55:22 2024]
+Finished job 49.
+1 of 21838 steps (0.0%) done
+Select jobs to execute...
+
+[Sun Sep  1 02:55:22 2024]
+rule gwas_rdata:
+    input: csMR-EXAMPLE/precomputation/Inflammatory_bowel_disease.GWAS_split/Inflammatory_bowel_disease.5e-8SNP.100kb.merged_nomhc.bed
+    output: csMR-EXAMPLE/precomputation/Inflammatory_bowel_disease.GWAS_split/Inflammatory_bowel_disease.GWAS_split.maflist
+    jobid: 48
+    reason: Missing output files: csMR-EXAMPLE/precomputation/Inflammatory_bowel_disease.GWAS_split/Inflammatory_bowel_disease.GWAS_split.maflist; Input files updated by another job: csMR-EXAMPLE/precomputation/Inflammatory_bowel_disease.GWAS_split/Inflammatory_bowel_disease.5e-8SNP.100kb.merged_nomhc.bed
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Inflammatory_bowel_disease
+    resources: tmpdir=/tmp
+
+[Sun Sep  1 02:55:22 2024]
+Finished job 47.
+2 of 21838 steps (0.0%) done
+[Sun Sep  1 02:55:22 2024]
+Finished job 51.
+3 of 21838 steps (0.0%) done
+Select jobs to execute...
+
+[Sun Sep  1 02:55:23 2024]
+rule gwas_rdata:
+    input: csMR-EXAMPLE/precomputation/Crohn_disease.GWAS_split/Crohn_disease.5e-8SNP.100kb.merged_nomhc.bed
+    output: csMR-EXAMPLE/precomputation/Crohn_disease.GWAS_split/Crohn_disease.GWAS_split.maflist
+    jobid: 50
+    reason: Missing output files: csMR-EXAMPLE/precomputation/Crohn_disease.GWAS_split/Crohn_disease.GWAS_split.maflist; Input files updated by another job: csMR-EXAMPLE/precomputation/Crohn_disease.GWAS_split/Crohn_disease.5e-8SNP.100kb.merged_nomhc.bed
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Crohn_disease
+    resources: tmpdir=/tmp
+
+
+[Sun Sep  1 02:55:23 2024]
+rule gwas_rdata:
+    input: csMR-EXAMPLE/precomputation/Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split/Ulcerative_colitis_full_exposure_ieu_a_970.5e-8SNP.100kb.merged_nomhc.bed
+    output: csMR-EXAMPLE/precomputation/Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split/Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.maflist
+    jobid: 46
+    reason: Missing output files: csMR-EXAMPLE/precomputation/Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split/Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.maflist; Input files updated by another job: csMR-EXAMPLE/precomputation/Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split/Ulcerative_colitis_full_exposure_ieu_a_970.5e-8SNP.100kb.merged_nomhc.bed
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970
+    resources: tmpdir=/tmp
+
+Waiting at most 5 seconds for missing files.
+Terminating processes on user request, this might take some time.
+[Sun Sep  1 02:56:27 2024]
+Error in rule gwas_rdata:
+    jobid: 46
+    input: csMR-EXAMPLE/precomputation/Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split/Ulcerative_colitis_full_exposure_ieu_a_970.5e-8SNP.100kb.merged_nomhc.bed
+    output: csMR-EXAMPLE/precomputation/Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split/Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split.maflist
+    shell:
+        python scripts/extract_geno_ld.py -g csMR-EXAMPLE/precomputation/Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split -gr /home/u/csMR/data/reference_genome_1000G_EUR -gt quant -t 60
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Sun Sep  1 02:56:27 2024]
+Error in rule split_gwas:
+    jobid: 21
+    input: /home/u/csMR/example/BMI_GWAS/Type_2_diabetes.ma
+    output: csMR-EXAMPLE/precomputation/Type_2_diabetes.GWAS_split/Type_2_diabetes.5e-8SNP.100kb.merged_nomhc.bed
+    shell:
+        python scripts/split_GWAS_ma.py -ma /home/u/csMR/example/BMI_GWAS/Type_2_diabetes.ma -w 100000 -r /home/u/csMR/data/reference_genome_1000G_EUR -id Type_2_diabetes -o csMR-EXAMPLE
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Sun Sep  1 02:56:27 2024]
+[Sun Sep  1 02:56:27 2024]
+Error in rule gwas_rdata:
+    jobid: 48
+    input: csMR-EXAMPLE/precomputation/Inflammatory_bowel_disease.GWAS_split/Inflammatory_bowel_disease.5e-8SNP.100kb.merged_nomhc.bed
+    output: csMR-EXAMPLE/precomputation/Inflammatory_bowel_disease.GWAS_split/Inflammatory_bowel_disease.GWAS_split.maflist
+    shell:
+        python scripts/extract_geno_ld.py -g csMR-EXAMPLE/precomputation/Inflammatory_bowel_disease.GWAS_split -gr /home/u/csMR/data/reference_genome_1000G_EUR -gt quant -t 60
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Error in rule split_gwas:
+    jobid: 33
+    input: /home/u/csMR/example/BMI_GWAS/Apolipoprotein_A_I.ma
+    output: csMR-EXAMPLE/precomputation/Apolipoprotein_A_I.GWAS_split/Apolipoprotein_A_I.5e-8SNP.100kb.merged_nomhc.bed
+    shell:
+        python scripts/split_GWAS_ma.py -ma /home/u/csMR/example/BMI_GWAS/Apolipoprotein_A_I.ma -w 100000 -r /home/u/csMR/data/reference_genome_1000G_EUR -id Apolipoprotein_A_I -o csMR-EXAMPLE
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Sun Sep  1 02:56:27 2024]
+Error in rule split_gwas:
+    jobid: 43
+    input: /home/u/csMR/example/BMI_GWAS/Cholesterol.ma
+    output: csMR-EXAMPLE/precomputation/Cholesterol.GWAS_split/Cholesterol.5e-8SNP.100kb.merged_nomhc.bed
+    shell:
+        python scripts/split_GWAS_ma.py -ma /home/u/csMR/example/BMI_GWAS/Cholesterol.ma -w 100000 -r /home/u/csMR/data/reference_genome_1000G_EUR -id Cholesterol -o csMR-EXAMPLE
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Sun Sep  1 02:56:27 2024]
+[Sun Sep  1 02:56:27 2024]
+Error in rule split_gwas:
+    jobid: 37
+    input: /home/u/csMR/example/BMI_GWAS/HDL_cholesterol.ma
+    output: csMR-EXAMPLE/precomputation/HDL_cholesterol.GWAS_split/HDL_cholesterol.5e-8SNP.100kb.merged_nomhc.bed
+    shell:
+        python scripts/split_GWAS_ma.py -ma /home/u/csMR/example/BMI_GWAS/HDL_cholesterol.ma -w 100000 -r /home/u/csMR/data/reference_genome_1000G_EUR -id HDL_cholesterol -o csMR-EXAMPLE
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Error in rule split_gwas:
+    jobid: 19
+    input: /home/u/csMR/example/BMI_GWAS/Glucose_full_exposure_pan.ma
+    output: csMR-EXAMPLE/precomputation/Glucose_full_exposure_pan.GWAS_split/Glucose_full_exposure_pan.5e-8SNP.100kb.merged_nomhc.bed
+    shell:
+        python scripts/split_GWAS_ma.py -ma /home/u/csMR/example/BMI_GWAS/Glucose_full_exposure_pan.ma -w 100000 -r /home/u/csMR/data/reference_genome_1000G_EUR -id Glucose_full_exposure_pan -o csMR-EXAMPLE
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Sun Sep  1 02:56:27 2024]
+Error in rule split_gwas:
+    jobid: 15
+    input: /home/u/csMR/example/BMI_GWAS/Vitamin_D_deficiency.ma
+    output: csMR-EXAMPLE/precomputation/Vitamin_D_deficiency.GWAS_split/Vitamin_D_deficiency.5e-8SNP.100kb.merged_nomhc.bed
+    shell:
+        python scripts/split_GWAS_ma.py -ma /home/u/csMR/example/BMI_GWAS/Vitamin_D_deficiency.ma -w 100000 -r /home/u/csMR/data/reference_genome_1000G_EUR -id Vitamin_D_deficiency -o csMR-EXAMPLE
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Sun Sep  1 02:56:27 2024]
+Error in rule split_gwas:
+    jobid: 27
+    input: /home/u/csMR/example/BMI_GWAS/Alcohol_intake_frequency.ma
+    output: csMR-EXAMPLE/precomputation/Alcohol_intake_frequency.GWAS_split/Alcohol_intake_frequency.5e-8SNP.100kb.merged_nomhc.bed
+    shell:
+        python scripts/split_GWAS_ma.py -ma /home/u/csMR/example/BMI_GWAS/Alcohol_intake_frequency.ma -w 100000 -r /home/u/csMR/data/reference_genome_1000G_EUR -id Alcohol_intake_frequency -o csMR-EXAMPLE
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Sun Sep  1 02:56:27 2024]
+Cancelling snakemake on user request.
+Error in rule split_gwas:
+    jobid: 13
+    input: /home/u/csMR/example/BMI_GWAS/Vitamin_D.ma
+    output: csMR-EXAMPLE/precomputation/Vitamin_D.GWAS_split/Vitamin_D.5e-8SNP.100kb.merged_nomhc.bed
+    shell:
+        python scripts/split_GWAS_ma.py -ma /home/u/csMR/example/BMI_GWAS/Vitamin_D.ma -w 100000 -r /home/u/csMR/data/reference_genome_1000G_EUR -id Vitamin_D -o csMR-EXAMPLE
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Sun Sep  1 02:56:27 2024]

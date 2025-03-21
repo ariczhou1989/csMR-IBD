@@ -1,0 +1,7 @@
+Building DAG of jobs...
+MissingInputException in rule split_eqtl  in line 133 of /home/u/csMR/work_flow.snakefile:
+Missing input files for rule split_eqtl:
+    output: csMR-EXAMPLE/precomputation/sat_Adipocyte.eQTL_split
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, cell_type=sat_Adipocyte
+    affected files:
+        /home/u/csMR/example/single-cell-eQTL/sat_Adipocyte.ma

@@ -1,7 +1,7 @@
 library(dplyr)
 library(data.table)
 library(getopt)
-library(phenoscanner)
+#library(phenoscanner)
 
 command<-matrix(c(
                   'help', 'h', 0,'logical', 'help.',
@@ -35,7 +35,7 @@ tryCatch({
 }, error = function(e) {
 	print("An error occurred while reading the file.")
 })
-confounders <- c("smoking","alcohol","education","college","university","smoke","drink","drinking")
+#confounders <- c("smoking","alcohol","education","college","university","smoke","drink","drinking")
 exp_ma_data <- fread(file = exp_ma_file, header = T, data.table = F, select = c("SNP", "P"))
 exp_ma_data <- exp_ma_data[na.omit(match(data[,8],exp_ma_data$SNP)),] %>% unique()
 exp_ma_data <- exp_ma_data[exp_ma_data$P < 5e-8,]

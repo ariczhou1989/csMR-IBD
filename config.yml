@@ -22,19 +22,15 @@ BASE_OUTPUT_DIR: csMR-EXAMPLE
 # id: identifier for the dataset. *MUST be unique and NO double dash allowed.
 # path: filepath to the QTL data. *Compressed files are not allowed.
 eQTL_INPUT: # eQTL summary file must contain "SNP, A1, A2, MAF, BETA, SE, P, N, GENE" columns.
-  - id: Astrocyte
-    path: example/single-cell-eQTL/sceQTL_brain_Astrocyte.chr1.ma
-  - id: ExN
-    path: example/single-cell-eQTL/sceQTL_brain_Excitatory.neurons.chr1.ma
+
 
 
 ### GWAS_SUMSTATS: 
 # id: identifier for GWAS. *MUST be unique and NO double dash allowed.
 # path: filepath to GWAS sumstats. *Compressed files are not allowed.
 GWAS_SUMSTATS: # GWAS summary file must contain "SNP, A1, A2, MAF, BETA, SE, P, N" columns.
-  - id: BMI_Giant_UKB
-    path: example/BMI_GWAS/BMI_giant_ukbb_combined_2018.chr1.ma
-    type: quant
+
+
 
 OUTCOME_DIR: ### path to outcome summary stats. The required file format is the same as GWAS summary file.
   example/outcomes
@@ -56,7 +52,7 @@ COLOC_SETTING: # Window definition for mapping gene specificity values to SNPs
   COVERAGES: # Multiple coverages are allowed which must be separated by comma. eg: 0.6,0.9
     0.9
   THREADS:
-    5
+    60
   CUTOFF:
     0.8
 

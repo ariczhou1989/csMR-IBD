@@ -1,0 +1,273 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 60
+Rules claiming more threads will be scaled down.
+Job stats:
+job      count    min threads    max threads
+-----  -------  -------------  -------------
+MR          19              1              1
+all          1              1              1
+total       20              1              1
+
+Select jobs to execute...
+
+[Sun Nov  3 15:21:24 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Alcohol_intake_frequency.results.coverage.0.9.PPH4.0.8.sat_MatrixEQTL_cis.clumped
+    output: csMR-EXAMPLE/MR/Alcohol_intake_frequency-Non_Hodgkin_lymphoma/Alcohol_intake_frequency.Non_Hodgkin_lymphoma.sat_MatrixEQTL_cis.MR.res, csMR-EXAMPLE/MR/Alcohol_intake_frequency-Non_Hodgkin_lymphoma/Alcohol_intake_frequency.Non_Hodgkin_lymphoma.sat_MatrixEQTL_cis.MR.sensitivity
+    jobid: 1969
+    reason: Missing output files: csMR-EXAMPLE/MR/Alcohol_intake_frequency-Non_Hodgkin_lymphoma/Alcohol_intake_frequency.Non_Hodgkin_lymphoma.sat_MatrixEQTL_cis.MR.res, csMR-EXAMPLE/MR/Alcohol_intake_frequency-Non_Hodgkin_lymphoma/Alcohol_intake_frequency.Non_Hodgkin_lymphoma.sat_MatrixEQTL_cis.MR.sensitivity
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Alcohol_intake_frequency, outcome=Non_Hodgkin_lymphoma, cell_type=sat_MatrixEQTL_cis
+    resources: tmpdir=/tmp
+
+
+[Sun Nov  3 15:21:24 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.HDL_cholesterol.results.coverage.0.9.PPH4.0.8.sat_Macrophage.clumped
+    output: csMR-EXAMPLE/MR/HDL_cholesterol-Colon_cancer/HDL_cholesterol.Colon_cancer.sat_Macrophage.MR.res, csMR-EXAMPLE/MR/HDL_cholesterol-Colon_cancer/HDL_cholesterol.Colon_cancer.sat_Macrophage.MR.sensitivity
+    jobid: 1185
+    reason: Missing output files: csMR-EXAMPLE/MR/HDL_cholesterol-Colon_cancer/HDL_cholesterol.Colon_cancer.sat_Macrophage.MR.sensitivity, csMR-EXAMPLE/MR/HDL_cholesterol-Colon_cancer/HDL_cholesterol.Colon_cancer.sat_Macrophage.MR.res
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=HDL_cholesterol, outcome=Colon_cancer, cell_type=sat_Macrophage
+    resources: tmpdir=/tmp
+
+
+[Sun Nov  3 15:21:24 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Apolipoprotein_B.results.coverage.0.9.PPH4.0.8.sat_Adipocyte.clumped
+    output: csMR-EXAMPLE/MR/Apolipoprotein_B-Non_small_cell_lung_cancer/Apolipoprotein_B.Non_small_cell_lung_cancer.sat_Adipocyte.MR.res, csMR-EXAMPLE/MR/Apolipoprotein_B-Non_small_cell_lung_cancer/Apolipoprotein_B.Non_small_cell_lung_cancer.sat_Adipocyte.MR.sensitivity
+    jobid: 1129
+    reason: Missing output files: csMR-EXAMPLE/MR/Apolipoprotein_B-Non_small_cell_lung_cancer/Apolipoprotein_B.Non_small_cell_lung_cancer.sat_Adipocyte.MR.sensitivity, csMR-EXAMPLE/MR/Apolipoprotein_B-Non_small_cell_lung_cancer/Apolipoprotein_B.Non_small_cell_lung_cancer.sat_Adipocyte.MR.res
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Apolipoprotein_B, outcome=Non_small_cell_lung_cancer, cell_type=sat_Adipocyte
+    resources: tmpdir=/tmp
+
+
+[Sun Nov  3 15:21:24 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.telomere_length.results.coverage.0.9.PPH4.0.8.sat_MatrixEQTL_cis.clumped
+    output: csMR-EXAMPLE/MR/telomere_length-Breast_cancer/telomere_length.Breast_cancer.sat_MatrixEQTL_cis.MR.res, csMR-EXAMPLE/MR/telomere_length-Breast_cancer/telomere_length.Breast_cancer.sat_MatrixEQTL_cis.MR.sensitivity
+    jobid: 2130
+    reason: Missing output files: csMR-EXAMPLE/MR/telomere_length-Breast_cancer/telomere_length.Breast_cancer.sat_MatrixEQTL_cis.MR.res, csMR-EXAMPLE/MR/telomere_length-Breast_cancer/telomere_length.Breast_cancer.sat_MatrixEQTL_cis.MR.sensitivity
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=telomere_length, outcome=Breast_cancer, cell_type=sat_MatrixEQTL_cis
+    resources: tmpdir=/tmp
+
+
+[Sun Nov  3 15:21:24 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.telomere_length.results.coverage.0.9.PPH4.0.8.sat_MatrixEQTL_cis.clumped
+    output: csMR-EXAMPLE/MR/telomere_length-Cancer_of_bladder/telomere_length.Cancer_of_bladder.sat_MatrixEQTL_cis.MR.res, csMR-EXAMPLE/MR/telomere_length-Cancer_of_bladder/telomere_length.Cancer_of_bladder.sat_MatrixEQTL_cis.MR.sensitivity
+    jobid: 2116
+    reason: Missing output files: csMR-EXAMPLE/MR/telomere_length-Cancer_of_bladder/telomere_length.Cancer_of_bladder.sat_MatrixEQTL_cis.MR.sensitivity, csMR-EXAMPLE/MR/telomere_length-Cancer_of_bladder/telomere_length.Cancer_of_bladder.sat_MatrixEQTL_cis.MR.res
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=telomere_length, outcome=Cancer_of_bladder, cell_type=sat_MatrixEQTL_cis
+    resources: tmpdir=/tmp
+
+
+[Sun Nov  3 15:21:24 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Vitamin_D.results.coverage.0.9.PPH4.0.8.sat_MatrixEQTL_cis.clumped
+    output: csMR-EXAMPLE/MR/Vitamin_D-Skin_cancer/Vitamin_D.Skin_cancer.sat_MatrixEQTL_cis.MR.res, csMR-EXAMPLE/MR/Vitamin_D-Skin_cancer/Vitamin_D.Skin_cancer.sat_MatrixEQTL_cis.MR.sensitivity
+    jobid: 668
+    reason: Missing output files: csMR-EXAMPLE/MR/Vitamin_D-Skin_cancer/Vitamin_D.Skin_cancer.sat_MatrixEQTL_cis.MR.sensitivity, csMR-EXAMPLE/MR/Vitamin_D-Skin_cancer/Vitamin_D.Skin_cancer.sat_MatrixEQTL_cis.MR.res
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Vitamin_D, outcome=Skin_cancer, cell_type=sat_MatrixEQTL_cis
+    resources: tmpdir=/tmp
+
+
+[Sun Nov  3 15:21:24 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Vitamin_D.results.coverage.0.9.PPH4.0.8.sat_MatrixEQTL_cis.clumped
+    output: csMR-EXAMPLE/MR/Vitamin_D-Cancer_of_kidney_and_renal_pelvis/Vitamin_D.Cancer_of_kidney_and_renal_pelvis.sat_MatrixEQTL_cis.MR.res, csMR-EXAMPLE/MR/Vitamin_D-Cancer_of_kidney_and_renal_pelvis/Vitamin_D.Cancer_of_kidney_and_renal_pelvis.sat_MatrixEQTL_cis.MR.sensitivity
+    jobid: 661
+    reason: Missing output files: csMR-EXAMPLE/MR/Vitamin_D-Cancer_of_kidney_and_renal_pelvis/Vitamin_D.Cancer_of_kidney_and_renal_pelvis.sat_MatrixEQTL_cis.MR.res, csMR-EXAMPLE/MR/Vitamin_D-Cancer_of_kidney_and_renal_pelvis/Vitamin_D.Cancer_of_kidney_and_renal_pelvis.sat_MatrixEQTL_cis.MR.sensitivity
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Vitamin_D, outcome=Cancer_of_kidney_and_renal_pelvis, cell_type=sat_MatrixEQTL_cis
+    resources: tmpdir=/tmp
+
+
+[Sun Nov  3 15:21:24 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Glycated_haemoglobin_HbA1c.results.coverage.0.9.PPH4.0.8.sat_Adipocyte.clumped
+    output: csMR-EXAMPLE/MR/Glycated_haemoglobin_HbA1c-Non_Hodgkin_lymphoma/Glycated_haemoglobin_HbA1c.Non_Hodgkin_lymphoma.sat_Adipocyte.MR.res, csMR-EXAMPLE/MR/Glycated_haemoglobin_HbA1c-Non_Hodgkin_lymphoma/Glycated_haemoglobin_HbA1c.Non_Hodgkin_lymphoma.sat_Adipocyte.MR.sensitivity
+    jobid: 815
+    reason: Missing output files: csMR-EXAMPLE/MR/Glycated_haemoglobin_HbA1c-Non_Hodgkin_lymphoma/Glycated_haemoglobin_HbA1c.Non_Hodgkin_lymphoma.sat_Adipocyte.MR.sensitivity, csMR-EXAMPLE/MR/Glycated_haemoglobin_HbA1c-Non_Hodgkin_lymphoma/Glycated_haemoglobin_HbA1c.Non_Hodgkin_lymphoma.sat_Adipocyte.MR.res
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Glycated_haemoglobin_HbA1c, outcome=Non_Hodgkin_lymphoma, cell_type=sat_Adipocyte
+    resources: tmpdir=/tmp
+
+
+[Sun Nov  3 15:21:24 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.HDL_cholesterol.results.coverage.0.9.PPH4.0.8.sat_Macrophage.clumped
+    output: csMR-EXAMPLE/MR/HDL_cholesterol-Serous_carcinoma_of_ovary/HDL_cholesterol.Serous_carcinoma_of_ovary.sat_Macrophage.MR.res, csMR-EXAMPLE/MR/HDL_cholesterol-Serous_carcinoma_of_ovary/HDL_cholesterol.Serous_carcinoma_of_ovary.sat_Macrophage.MR.sensitivity
+    jobid: 1173
+    reason: Missing output files: csMR-EXAMPLE/MR/HDL_cholesterol-Serous_carcinoma_of_ovary/HDL_cholesterol.Serous_carcinoma_of_ovary.sat_Macrophage.MR.res, csMR-EXAMPLE/MR/HDL_cholesterol-Serous_carcinoma_of_ovary/HDL_cholesterol.Serous_carcinoma_of_ovary.sat_Macrophage.MR.sensitivity
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=HDL_cholesterol, outcome=Serous_carcinoma_of_ovary, cell_type=sat_Macrophage
+    resources: tmpdir=/tmp
+
+
+[Sun Nov  3 15:21:24 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.telomere_length.results.coverage.0.9.PPH4.0.8.sat_MatrixEQTL_cis.clumped
+    output: csMR-EXAMPLE/MR/telomere_length-Pancreatic_cancer/telomere_length.Pancreatic_cancer.sat_MatrixEQTL_cis.MR.res, csMR-EXAMPLE/MR/telomere_length-Pancreatic_cancer/telomere_length.Pancreatic_cancer.sat_MatrixEQTL_cis.MR.sensitivity
+    jobid: 2132
+    reason: Missing output files: csMR-EXAMPLE/MR/telomere_length-Pancreatic_cancer/telomere_length.Pancreatic_cancer.sat_MatrixEQTL_cis.MR.res, csMR-EXAMPLE/MR/telomere_length-Pancreatic_cancer/telomere_length.Pancreatic_cancer.sat_MatrixEQTL_cis.MR.sensitivity
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=telomere_length, outcome=Pancreatic_cancer, cell_type=sat_MatrixEQTL_cis
+    resources: tmpdir=/tmp
+
+
+[Sun Nov  3 15:21:24 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.HDL_cholesterol.results.coverage.0.9.PPH4.0.8.sat_Macrophage.clumped
+    output: csMR-EXAMPLE/MR/HDL_cholesterol-Cancer_of_esophagus/HDL_cholesterol.Cancer_of_esophagus.sat_Macrophage.MR.res, csMR-EXAMPLE/MR/HDL_cholesterol-Cancer_of_esophagus/HDL_cholesterol.Cancer_of_esophagus.sat_Macrophage.MR.sensitivity
+    jobid: 1174
+    reason: Missing output files: csMR-EXAMPLE/MR/HDL_cholesterol-Cancer_of_esophagus/HDL_cholesterol.Cancer_of_esophagus.sat_Macrophage.MR.res, csMR-EXAMPLE/MR/HDL_cholesterol-Cancer_of_esophagus/HDL_cholesterol.Cancer_of_esophagus.sat_Macrophage.MR.sensitivity
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=HDL_cholesterol, outcome=Cancer_of_esophagus, cell_type=sat_Macrophage
+    resources: tmpdir=/tmp
+
+
+[Sun Nov  3 15:21:24 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Serum_25_Hydroxyvitamin_D.results.coverage.0.9.PPH4.0.8.sat_MatrixEQTL_cis.clumped
+    output: csMR-EXAMPLE/MR/Serum_25_Hydroxyvitamin_D-Cancer_of_bladder/Serum_25_Hydroxyvitamin_D.Cancer_of_bladder.sat_MatrixEQTL_cis.MR.res, csMR-EXAMPLE/MR/Serum_25_Hydroxyvitamin_D-Cancer_of_bladder/Serum_25_Hydroxyvitamin_D.Cancer_of_bladder.sat_MatrixEQTL_cis.MR.sensitivity
+    jobid: 496
+    reason: Missing output files: csMR-EXAMPLE/MR/Serum_25_Hydroxyvitamin_D-Cancer_of_bladder/Serum_25_Hydroxyvitamin_D.Cancer_of_bladder.sat_MatrixEQTL_cis.MR.res, csMR-EXAMPLE/MR/Serum_25_Hydroxyvitamin_D-Cancer_of_bladder/Serum_25_Hydroxyvitamin_D.Cancer_of_bladder.sat_MatrixEQTL_cis.MR.sensitivity
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Serum_25_Hydroxyvitamin_D, outcome=Cancer_of_bladder, cell_type=sat_MatrixEQTL_cis
+    resources: tmpdir=/tmp
+
+
+[Sun Nov  3 15:21:24 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Vitamin_D.results.coverage.0.9.PPH4.0.8.sat_MatrixEQTL_cis.clumped
+    output: csMR-EXAMPLE/MR/Vitamin_D-Colon_cancer/Vitamin_D.Colon_cancer.sat_MatrixEQTL_cis.MR.res, csMR-EXAMPLE/MR/Vitamin_D-Colon_cancer/Vitamin_D.Colon_cancer.sat_MatrixEQTL_cis.MR.sensitivity
+    jobid: 677
+    reason: Missing output files: csMR-EXAMPLE/MR/Vitamin_D-Colon_cancer/Vitamin_D.Colon_cancer.sat_MatrixEQTL_cis.MR.res, csMR-EXAMPLE/MR/Vitamin_D-Colon_cancer/Vitamin_D.Colon_cancer.sat_MatrixEQTL_cis.MR.sensitivity
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Vitamin_D, outcome=Colon_cancer, cell_type=sat_MatrixEQTL_cis
+    resources: tmpdir=/tmp
+
+
+[Sun Nov  3 15:21:24 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Glycated_haemoglobin_HbA1c.results.coverage.0.9.PPH4.0.8.sat_Adipocyte.clumped
+    output: csMR-EXAMPLE/MR/Glycated_haemoglobin_HbA1c-Myelodysplastic_syndrome/Glycated_haemoglobin_HbA1c.Myelodysplastic_syndrome.sat_Adipocyte.MR.res, csMR-EXAMPLE/MR/Glycated_haemoglobin_HbA1c-Myelodysplastic_syndrome/Glycated_haemoglobin_HbA1c.Myelodysplastic_syndrome.sat_Adipocyte.MR.sensitivity
+    jobid: 817
+    reason: Missing output files: csMR-EXAMPLE/MR/Glycated_haemoglobin_HbA1c-Myelodysplastic_syndrome/Glycated_haemoglobin_HbA1c.Myelodysplastic_syndrome.sat_Adipocyte.MR.res, csMR-EXAMPLE/MR/Glycated_haemoglobin_HbA1c-Myelodysplastic_syndrome/Glycated_haemoglobin_HbA1c.Myelodysplastic_syndrome.sat_Adipocyte.MR.sensitivity
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Glycated_haemoglobin_HbA1c, outcome=Myelodysplastic_syndrome, cell_type=sat_Adipocyte
+    resources: tmpdir=/tmp
+
+
+[Sun Nov  3 15:21:24 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Alcohol_intake_frequency.results.coverage.0.9.PPH4.0.8.sat_MatrixEQTL_cis.clumped
+    output: csMR-EXAMPLE/MR/Alcohol_intake_frequency-Colon_cancer/Alcohol_intake_frequency.Colon_cancer.sat_MatrixEQTL_cis.MR.res, csMR-EXAMPLE/MR/Alcohol_intake_frequency-Colon_cancer/Alcohol_intake_frequency.Colon_cancer.sat_MatrixEQTL_cis.MR.sensitivity
+    jobid: 1973
+    reason: Missing output files: csMR-EXAMPLE/MR/Alcohol_intake_frequency-Colon_cancer/Alcohol_intake_frequency.Colon_cancer.sat_MatrixEQTL_cis.MR.res, csMR-EXAMPLE/MR/Alcohol_intake_frequency-Colon_cancer/Alcohol_intake_frequency.Colon_cancer.sat_MatrixEQTL_cis.MR.sensitivity
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Alcohol_intake_frequency, outcome=Colon_cancer, cell_type=sat_MatrixEQTL_cis
+    resources: tmpdir=/tmp
+
+
+[Sun Nov  3 15:21:24 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Triglycerides.results.coverage.0.9.PPH4.0.8.sat_Macrophage.clumped
+    output: csMR-EXAMPLE/MR/Triglycerides-Breast_cancer/Triglycerides.Breast_cancer.sat_Macrophage.MR.res, csMR-EXAMPLE/MR/Triglycerides-Breast_cancer/Triglycerides.Breast_cancer.sat_Macrophage.MR.sensitivity
+    jobid: 1504
+    reason: Missing output files: csMR-EXAMPLE/MR/Triglycerides-Breast_cancer/Triglycerides.Breast_cancer.sat_Macrophage.MR.res, csMR-EXAMPLE/MR/Triglycerides-Breast_cancer/Triglycerides.Breast_cancer.sat_Macrophage.MR.sensitivity
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Triglycerides, outcome=Breast_cancer, cell_type=sat_Macrophage
+    resources: tmpdir=/tmp
+
+
+[Sun Nov  3 15:21:24 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Alcohol_intake_frequency.results.coverage.0.9.PPH4.0.8.sat_MatrixEQTL_cis.clumped
+    output: csMR-EXAMPLE/MR/Alcohol_intake_frequency-Cancer_of_prostate/Alcohol_intake_frequency.Cancer_of_prostate.sat_MatrixEQTL_cis.MR.res, csMR-EXAMPLE/MR/Alcohol_intake_frequency-Cancer_of_prostate/Alcohol_intake_frequency.Cancer_of_prostate.sat_MatrixEQTL_cis.MR.sensitivity
+    jobid: 1966
+    reason: Missing output files: csMR-EXAMPLE/MR/Alcohol_intake_frequency-Cancer_of_prostate/Alcohol_intake_frequency.Cancer_of_prostate.sat_MatrixEQTL_cis.MR.res, csMR-EXAMPLE/MR/Alcohol_intake_frequency-Cancer_of_prostate/Alcohol_intake_frequency.Cancer_of_prostate.sat_MatrixEQTL_cis.MR.sensitivity
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Alcohol_intake_frequency, outcome=Cancer_of_prostate, cell_type=sat_MatrixEQTL_cis
+    resources: tmpdir=/tmp
+
+
+[Sun Nov  3 15:21:24 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.HDL_cholesterol.results.coverage.0.9.PPH4.0.8.sat_Macrophage.clumped
+    output: csMR-EXAMPLE/MR/HDL_cholesterol-Skin_cancer/HDL_cholesterol.Skin_cancer.sat_Macrophage.MR.res, csMR-EXAMPLE/MR/HDL_cholesterol-Skin_cancer/HDL_cholesterol.Skin_cancer.sat_Macrophage.MR.sensitivity
+    jobid: 1176
+    reason: Missing output files: csMR-EXAMPLE/MR/HDL_cholesterol-Skin_cancer/HDL_cholesterol.Skin_cancer.sat_Macrophage.MR.res, csMR-EXAMPLE/MR/HDL_cholesterol-Skin_cancer/HDL_cholesterol.Skin_cancer.sat_Macrophage.MR.sensitivity
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=HDL_cholesterol, outcome=Skin_cancer, cell_type=sat_Macrophage
+    resources: tmpdir=/tmp
+
+
+[Sun Nov  3 15:21:25 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Triglycerides.results.coverage.0.9.PPH4.0.8.sat_Macrophage.clumped
+    output: csMR-EXAMPLE/MR/Triglycerides-Cancer_of_stomach/Triglycerides.Cancer_of_stomach.sat_Macrophage.MR.res, csMR-EXAMPLE/MR/Triglycerides-Cancer_of_stomach/Triglycerides.Cancer_of_stomach.sat_Macrophage.MR.sensitivity
+    jobid: 1492
+    reason: Missing output files: csMR-EXAMPLE/MR/Triglycerides-Cancer_of_stomach/Triglycerides.Cancer_of_stomach.sat_Macrophage.MR.sensitivity, csMR-EXAMPLE/MR/Triglycerides-Cancer_of_stomach/Triglycerides.Cancer_of_stomach.sat_Macrophage.MR.res
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Triglycerides, outcome=Cancer_of_stomach, cell_type=sat_Macrophage
+    resources: tmpdir=/tmp
+
+[Sun Nov  3 15:22:46 2024]
+Finished job 1129.
+1 of 20 steps (5%) done
+[Sun Nov  3 15:22:49 2024]
+Error in rule MR:
+    jobid: 677
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Vitamin_D.results.coverage.0.9.PPH4.0.8.sat_MatrixEQTL_cis.clumped
+    output: csMR-EXAMPLE/MR/Vitamin_D-Colon_cancer/Vitamin_D.Colon_cancer.sat_MatrixEQTL_cis.MR.res, csMR-EXAMPLE/MR/Vitamin_D-Colon_cancer/Vitamin_D.Colon_cancer.sat_MatrixEQTL_cis.MR.sensitivity
+    shell:
+        Rscript scripts/csMR.r -e /home/u/csMR/example/BMI_GWAS/Vitamin_D.ma -o example/outcomes/Colon_cancer.ma -c csMR-EXAMPLE/MR/clump/Susie_coloc.Vitamin_D.results.coverage.0.9.PPH4.0.8.sat_MatrixEQTL_cis.clumped -r /home/u/csMR/data/reference_genome_1000G_EUR
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Sun Nov  3 15:22:54 2024]
+Finished job 661.
+2 of 20 steps (10%) done
+[Sun Nov  3 15:22:57 2024]
+Error in rule MR:
+    jobid: 815
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Glycated_haemoglobin_HbA1c.results.coverage.0.9.PPH4.0.8.sat_Adipocyte.clumped
+    output: csMR-EXAMPLE/MR/Glycated_haemoglobin_HbA1c-Non_Hodgkin_lymphoma/Glycated_haemoglobin_HbA1c.Non_Hodgkin_lymphoma.sat_Adipocyte.MR.res, csMR-EXAMPLE/MR/Glycated_haemoglobin_HbA1c-Non_Hodgkin_lymphoma/Glycated_haemoglobin_HbA1c.Non_Hodgkin_lymphoma.sat_Adipocyte.MR.sensitivity
+    shell:
+        Rscript scripts/csMR.r -e /home/u/csMR/example/BMI_GWAS/Glycated_haemoglobin_HbA1c.ma -o example/outcomes/Non_Hodgkin_lymphoma.ma -c csMR-EXAMPLE/MR/clump/Susie_coloc.Glycated_haemoglobin_HbA1c.results.coverage.0.9.PPH4.0.8.sat_Adipocyte.clumped -r /home/u/csMR/data/reference_genome_1000G_EUR
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Sun Nov  3 15:23:00 2024]
+Finished job 668.
+3 of 20 steps (15%) done
+[Sun Nov  3 15:23:17 2024]
+Finished job 817.
+4 of 20 steps (20%) done
+[Sun Nov  3 15:23:37 2024]
+Finished job 1973.
+5 of 20 steps (25%) done
+[Sun Nov  3 15:23:41 2024]
+Finished job 1966.
+6 of 20 steps (30%) done
+[Sun Nov  3 15:23:46 2024]
+Finished job 1969.
+7 of 20 steps (35%) done
+[Sun Nov  3 15:23:53 2024]
+Finished job 1174.
+8 of 20 steps (40%) done
+[Sun Nov  3 15:23:54 2024]
+Finished job 1492.
+9 of 20 steps (45%) done
+[Sun Nov  3 15:23:55 2024]
+Finished job 1185.
+10 of 20 steps (50%) done
+[Sun Nov  3 15:23:57 2024]
+Finished job 1176.
+11 of 20 steps (55%) done
+[Sun Nov  3 15:24:04 2024]
+Finished job 1504.
+12 of 20 steps (60%) done
+[Sun Nov  3 15:24:06 2024]
+Finished job 1173.
+13 of 20 steps (65%) done
+[Sun Nov  3 15:24:29 2024]
+Finished job 496.
+14 of 20 steps (70%) done
+[Sun Nov  3 15:24:34 2024]
+Finished job 2132.
+15 of 20 steps (75%) done
+[Sun Nov  3 15:24:34 2024]
+Finished job 2116.
+16 of 20 steps (80%) done
+[Sun Nov  3 15:24:44 2024]
+Finished job 2130.
+17 of 20 steps (85%) done
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2024-11-03T151933.638005.snakemake.log

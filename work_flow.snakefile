@@ -272,4 +272,12 @@ rule MR:
 #	conda:
 #		"envs/envR4.yml"
 	shell:
-		"Rscript scripts/csMR.r -e {params.exp_ma_file} -o {params.outcome_ma_file} -c {params.clump_file} -r {params.ref_genotype}"
+	    "Rscript scripts/csMR.r -e {params.exp_ma_file} -o {params.outcome_ma_file} -c {params.clump_file} -r {params.ref_genotype}"
+		
+#		"""
+#       {{
+#           Rscript scripts/csMR.r -e {params.exp_ma_file} -o {params.outcome_ma_file} -c {params.clump_file} -r {params.ref_genotype} \
+#          2>> {output[0]}.err.log || echo "Error in {wildcards.run_prefix}-{wildcards.outcome}-{wildcards.cell_type}" >> {output[0]}.err.log || true
+#      }}
+#		touch {output[0]} {output[1]}
+#        """

@@ -1,0 +1,308 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 60
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	714	MR
+	1	all
+	51	clump
+	3	coloc_summary
+	1	eqtl_rdata
+	1	fine_mapping
+	51	get_intersect_pair
+	1	run_coloc
+	3	snp_filter
+	17	split_eqtl
+	843
+
+[Mon Sep  2 09:50:29 2024]
+rule split_eqtl:
+    input: csMR-EXAMPLE/precomputation/Crohn_ebi_a_GCST003044.GWAS_split/Crohn_ebi_a_GCST003044.GWAS_split.maflist, csMR-EXAMPLE/precomputation/Inflammatory_bowel_disease_ebi_a_GCST003043.GWAS_split/Inflammatory_bowel_disease_ebi_a_GCST003043.GWAS_split.maflist, csMR-EXAMPLE/precomputation/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.GWAS_split/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.GWAS_split.maflist, /home/u/csMR/example/single-cell-eQTL/L6_CT.ma
+    output: csMR-EXAMPLE/precomputation/L6_CT.eQTL_split
+    jobid: 832
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, cell_type=L6_CT
+
+
+[Mon Sep  2 09:50:29 2024]
+rule split_eqtl:
+    input: csMR-EXAMPLE/precomputation/Crohn_ebi_a_GCST003044.GWAS_split/Crohn_ebi_a_GCST003044.GWAS_split.maflist, csMR-EXAMPLE/precomputation/Inflammatory_bowel_disease_ebi_a_GCST003043.GWAS_split/Inflammatory_bowel_disease_ebi_a_GCST003043.GWAS_split.maflist, csMR-EXAMPLE/precomputation/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.GWAS_split/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.GWAS_split.maflist, /home/u/csMR/example/single-cell-eQTL/Lamp5_Lhx6.ma
+    output: csMR-EXAMPLE/precomputation/Lamp5_Lhx6.eQTL_split
+    jobid: 836
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, cell_type=Lamp5_Lhx6
+
+
+[Mon Sep  2 09:50:29 2024]
+rule split_eqtl:
+    input: csMR-EXAMPLE/precomputation/Crohn_ebi_a_GCST003044.GWAS_split/Crohn_ebi_a_GCST003044.GWAS_split.maflist, csMR-EXAMPLE/precomputation/Inflammatory_bowel_disease_ebi_a_GCST003043.GWAS_split/Inflammatory_bowel_disease_ebi_a_GCST003043.GWAS_split.maflist, csMR-EXAMPLE/precomputation/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.GWAS_split/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.GWAS_split.maflist, /home/u/csMR/example/single-cell-eQTL/Astro.ma
+    output: csMR-EXAMPLE/precomputation/Astro.eQTL_split
+    jobid: 826
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, cell_type=Astro
+
+
+[Mon Sep  2 09:50:29 2024]
+rule split_eqtl:
+    input: csMR-EXAMPLE/precomputation/Crohn_ebi_a_GCST003044.GWAS_split/Crohn_ebi_a_GCST003044.GWAS_split.maflist, csMR-EXAMPLE/precomputation/Inflammatory_bowel_disease_ebi_a_GCST003043.GWAS_split/Inflammatory_bowel_disease_ebi_a_GCST003043.GWAS_split.maflist, csMR-EXAMPLE/precomputation/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.GWAS_split/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.GWAS_split.maflist, /home/u/csMR/example/single-cell-eQTL/Chandelier_Pvalb.ma
+    output: csMR-EXAMPLE/precomputation/Chandelier_Pvalb.eQTL_split
+    jobid: 827
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, cell_type=Chandelier_Pvalb
+
+
+[Mon Sep  2 09:50:29 2024]
+rule split_eqtl:
+    input: csMR-EXAMPLE/precomputation/Crohn_ebi_a_GCST003044.GWAS_split/Crohn_ebi_a_GCST003044.GWAS_split.maflist, csMR-EXAMPLE/precomputation/Inflammatory_bowel_disease_ebi_a_GCST003043.GWAS_split/Inflammatory_bowel_disease_ebi_a_GCST003043.GWAS_split.maflist, csMR-EXAMPLE/precomputation/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.GWAS_split/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.GWAS_split.maflist, /home/u/csMR/example/single-cell-eQTL/L6_IT.ma
+    output: csMR-EXAMPLE/precomputation/L6_IT.eQTL_split
+    jobid: 833
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, cell_type=L6_IT
+
+
+[Mon Sep  2 09:50:29 2024]
+rule split_eqtl:
+    input: csMR-EXAMPLE/precomputation/Crohn_ebi_a_GCST003044.GWAS_split/Crohn_ebi_a_GCST003044.GWAS_split.maflist, csMR-EXAMPLE/precomputation/Inflammatory_bowel_disease_ebi_a_GCST003043.GWAS_split/Inflammatory_bowel_disease_ebi_a_GCST003043.GWAS_split.maflist, csMR-EXAMPLE/precomputation/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.GWAS_split/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.GWAS_split.maflist, /home/u/csMR/example/single-cell-eQTL/L6b.ma
+    output: csMR-EXAMPLE/precomputation/L6b.eQTL_split
+    jobid: 834
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, cell_type=L6b
+
+
+[Mon Sep  2 09:50:29 2024]
+rule split_eqtl:
+    input: csMR-EXAMPLE/precomputation/Crohn_ebi_a_GCST003044.GWAS_split/Crohn_ebi_a_GCST003044.GWAS_split.maflist, csMR-EXAMPLE/precomputation/Inflammatory_bowel_disease_ebi_a_GCST003043.GWAS_split/Inflammatory_bowel_disease_ebi_a_GCST003043.GWAS_split.maflist, csMR-EXAMPLE/precomputation/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.GWAS_split/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.GWAS_split.maflist, /home/u/csMR/example/single-cell-eQTL/OPC.ma
+    output: csMR-EXAMPLE/precomputation/OPC.eQTL_split
+    jobid: 839
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, cell_type=OPC
+
+
+[Mon Sep  2 09:50:29 2024]
+rule split_eqtl:
+    input: csMR-EXAMPLE/precomputation/Crohn_ebi_a_GCST003044.GWAS_split/Crohn_ebi_a_GCST003044.GWAS_split.maflist, csMR-EXAMPLE/precomputation/Inflammatory_bowel_disease_ebi_a_GCST003043.GWAS_split/Inflammatory_bowel_disease_ebi_a_GCST003043.GWAS_split.maflist, csMR-EXAMPLE/precomputation/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.GWAS_split/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.GWAS_split.maflist, /home/u/csMR/example/single-cell-eQTL/Lamp5.ma
+    output: csMR-EXAMPLE/precomputation/Lamp5.eQTL_split
+    jobid: 835
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, cell_type=Lamp5
+
+
+[Mon Sep  2 09:50:29 2024]
+rule split_eqtl:
+    input: csMR-EXAMPLE/precomputation/Crohn_ebi_a_GCST003044.GWAS_split/Crohn_ebi_a_GCST003044.GWAS_split.maflist, csMR-EXAMPLE/precomputation/Inflammatory_bowel_disease_ebi_a_GCST003043.GWAS_split/Inflammatory_bowel_disease_ebi_a_GCST003043.GWAS_split.maflist, csMR-EXAMPLE/precomputation/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.GWAS_split/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.GWAS_split.maflist, /home/u/csMR/example/single-cell-eQTL/L5_IT.ma
+    output: csMR-EXAMPLE/precomputation/L5_IT.eQTL_split
+    jobid: 831
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, cell_type=L5_IT
+
+
+[Mon Sep  2 09:50:29 2024]
+rule split_eqtl:
+    input: csMR-EXAMPLE/precomputation/Crohn_ebi_a_GCST003044.GWAS_split/Crohn_ebi_a_GCST003044.GWAS_split.maflist, csMR-EXAMPLE/precomputation/Inflammatory_bowel_disease_ebi_a_GCST003043.GWAS_split/Inflammatory_bowel_disease_ebi_a_GCST003043.GWAS_split.maflist, csMR-EXAMPLE/precomputation/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.GWAS_split/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.GWAS_split.maflist, /home/u/csMR/example/single-cell-eQTL/Micro_PVM.ma
+    output: csMR-EXAMPLE/precomputation/Micro_PVM.eQTL_split
+    jobid: 837
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, cell_type=Micro_PVM
+
+[Mon Sep  2 09:50:29 2024]
+Error in rule split_eqtl:
+    jobid: 836
+    output: csMR-EXAMPLE/precomputation/Lamp5_Lhx6.eQTL_split
+    shell:
+        python scripts/split_eQTL_ma.py -ma /home/u/csMR/example/single-cell-eQTL/Lamp5_Lhx6.ma -w 100000 -r /home/u/csMR/data/reference_genome_1000G_EUR -ct Lamp5_Lhx6 -o csMR-EXAMPLE
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Job failed, going on with independent jobs.
+[Mon Sep  2 09:50:29 2024]
+[Mon Sep  2 09:50:29 2024]
+Error in rule split_eqtl:
+Error in rule split_eqtl:
+    jobid: 832
+    jobid: 826
+    output: csMR-EXAMPLE/precomputation/L6_CT.eQTL_split
+    output: csMR-EXAMPLE/precomputation/Astro.eQTL_split
+    shell:
+        python scripts/split_eQTL_ma.py -ma /home/u/csMR/example/single-cell-eQTL/L6_CT.ma -w 100000 -r /home/u/csMR/data/reference_genome_1000G_EUR -ct L6_CT -o csMR-EXAMPLE
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    shell:
+        python scripts/split_eQTL_ma.py -ma /home/u/csMR/example/single-cell-eQTL/Astro.ma -w 100000 -r /home/u/csMR/data/reference_genome_1000G_EUR -ct Astro -o csMR-EXAMPLE
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+
+Job failed, going on with independent jobs.
+[Mon Sep  2 09:50:29 2024]
+Job failed, going on with independent jobs.
+Error in rule split_eqtl:
+    jobid: 827
+    output: csMR-EXAMPLE/precomputation/Chandelier_Pvalb.eQTL_split
+    shell:
+        python scripts/split_eQTL_ma.py -ma /home/u/csMR/example/single-cell-eQTL/Chandelier_Pvalb.ma -w 100000 -r /home/u/csMR/data/reference_genome_1000G_EUR -ct Chandelier_Pvalb -o csMR-EXAMPLE
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Job failed, going on with independent jobs.
+[Mon Sep  2 09:50:29 2024]
+Error in rule split_eqtl:
+    jobid: 833
+    output: csMR-EXAMPLE/precomputation/L6_IT.eQTL_split
+    shell:
+        python scripts/split_eQTL_ma.py -ma /home/u/csMR/example/single-cell-eQTL/L6_IT.ma -w 100000 -r /home/u/csMR/data/reference_genome_1000G_EUR -ct L6_IT -o csMR-EXAMPLE
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Job failed, going on with independent jobs.
+[Mon Sep  2 09:50:29 2024]
+[Mon Sep  2 09:50:29 2024]
+[Mon Sep  2 09:50:29 2024]
+Error in rule split_eqtl:
+Error in rule split_eqtl:
+Error in rule split_eqtl:
+    jobid: 834
+    jobid: 835
+    jobid: 839
+    output: csMR-EXAMPLE/precomputation/L6b.eQTL_split
+    output: csMR-EXAMPLE/precomputation/Lamp5.eQTL_split
+    output: csMR-EXAMPLE/precomputation/OPC.eQTL_split
+    shell:
+        python scripts/split_eQTL_ma.py -ma /home/u/csMR/example/single-cell-eQTL/L6b.ma -w 100000 -r /home/u/csMR/data/reference_genome_1000G_EUR -ct L6b -o csMR-EXAMPLE
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    shell:
+        python scripts/split_eQTL_ma.py -ma /home/u/csMR/example/single-cell-eQTL/Lamp5.ma -w 100000 -r /home/u/csMR/data/reference_genome_1000G_EUR -ct Lamp5 -o csMR-EXAMPLE
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    shell:
+        python scripts/split_eQTL_ma.py -ma /home/u/csMR/example/single-cell-eQTL/OPC.ma -w 100000 -r /home/u/csMR/data/reference_genome_1000G_EUR -ct OPC -o csMR-EXAMPLE
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+
+
+Job failed, going on with independent jobs.
+[Mon Sep  2 09:50:29 2024]
+Error in rule split_eqtl:
+Job failed, going on with independent jobs.
+    jobid: 837
+    output: csMR-EXAMPLE/precomputation/Micro_PVM.eQTL_split
+    shell:
+        python scripts/split_eQTL_ma.py -ma /home/u/csMR/example/single-cell-eQTL/Micro_PVM.ma -w 100000 -r /home/u/csMR/data/reference_genome_1000G_EUR -ct Micro_PVM -o csMR-EXAMPLE
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+Job failed, going on with independent jobs.
+[Mon Sep  2 09:50:29 2024]
+
+Error in rule split_eqtl:
+    jobid: 831
+Job failed, going on with independent jobs.
+    output: csMR-EXAMPLE/precomputation/L5_IT.eQTL_split
+    shell:
+        python scripts/split_eQTL_ma.py -ma /home/u/csMR/example/single-cell-eQTL/L5_IT.ma -w 100000 -r /home/u/csMR/data/reference_genome_1000G_EUR -ct L5_IT -o csMR-EXAMPLE
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Job failed, going on with independent jobs.
+
+[Mon Sep  2 09:50:30 2024]
+rule split_eqtl:
+    input: csMR-EXAMPLE/precomputation/Crohn_ebi_a_GCST003044.GWAS_split/Crohn_ebi_a_GCST003044.GWAS_split.maflist, csMR-EXAMPLE/precomputation/Inflammatory_bowel_disease_ebi_a_GCST003043.GWAS_split/Inflammatory_bowel_disease_ebi_a_GCST003043.GWAS_split.maflist, csMR-EXAMPLE/precomputation/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.GWAS_split/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.GWAS_split.maflist, /home/u/csMR/example/single-cell-eQTL/L5_6_NP.ma
+    output: csMR-EXAMPLE/precomputation/L5_6_NP.eQTL_split
+    jobid: 830
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, cell_type=L5_6_NP
+
+
+[Mon Sep  2 09:50:30 2024]
+rule split_eqtl:
+    input: csMR-EXAMPLE/precomputation/Crohn_ebi_a_GCST003044.GWAS_split/Crohn_ebi_a_GCST003044.GWAS_split.maflist, csMR-EXAMPLE/precomputation/Inflammatory_bowel_disease_ebi_a_GCST003043.GWAS_split/Inflammatory_bowel_disease_ebi_a_GCST003043.GWAS_split.maflist, csMR-EXAMPLE/precomputation/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.GWAS_split/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.GWAS_split.maflist, /home/u/csMR/example/single-cell-eQTL/SST_SST_Chodl.ma
+    output: csMR-EXAMPLE/precomputation/SST_SST_Chodl.eQTL_split
+    jobid: 841
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, cell_type=SST_SST_Chodl
+
+
+[Mon Sep  2 09:50:30 2024]
+rule split_eqtl:
+    input: csMR-EXAMPLE/precomputation/Crohn_ebi_a_GCST003044.GWAS_split/Crohn_ebi_a_GCST003044.GWAS_split.maflist, csMR-EXAMPLE/precomputation/Inflammatory_bowel_disease_ebi_a_GCST003043.GWAS_split/Inflammatory_bowel_disease_ebi_a_GCST003043.GWAS_split.maflist, csMR-EXAMPLE/precomputation/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.GWAS_split/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.GWAS_split.maflist, /home/u/csMR/example/single-cell-eQTL/Oligo.ma
+    output: csMR-EXAMPLE/precomputation/Oligo.eQTL_split
+    jobid: 838
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, cell_type=Oligo
+
+
+[Mon Sep  2 09:50:30 2024]
+rule split_eqtl:
+    input: csMR-EXAMPLE/precomputation/Crohn_ebi_a_GCST003044.GWAS_split/Crohn_ebi_a_GCST003044.GWAS_split.maflist, csMR-EXAMPLE/precomputation/Inflammatory_bowel_disease_ebi_a_GCST003043.GWAS_split/Inflammatory_bowel_disease_ebi_a_GCST003043.GWAS_split.maflist, csMR-EXAMPLE/precomputation/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.GWAS_split/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.GWAS_split.maflist, /home/u/csMR/example/single-cell-eQTL/L2_3_IT.ma
+    output: csMR-EXAMPLE/precomputation/L2_3_IT.eQTL_split
+    jobid: 828
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, cell_type=L2_3_IT
+
+
+[Mon Sep  2 09:50:30 2024]
+rule split_eqtl:
+    input: csMR-EXAMPLE/precomputation/Crohn_ebi_a_GCST003044.GWAS_split/Crohn_ebi_a_GCST003044.GWAS_split.maflist, csMR-EXAMPLE/precomputation/Inflammatory_bowel_disease_ebi_a_GCST003043.GWAS_split/Inflammatory_bowel_disease_ebi_a_GCST003043.GWAS_split.maflist, csMR-EXAMPLE/precomputation/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.GWAS_split/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.GWAS_split.maflist, /home/u/csMR/example/single-cell-eQTL/Vip.ma
+    output: csMR-EXAMPLE/precomputation/Vip.eQTL_split
+    jobid: 842
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, cell_type=Vip
+
+
+[Mon Sep  2 09:50:30 2024]
+rule split_eqtl:
+    input: csMR-EXAMPLE/precomputation/Crohn_ebi_a_GCST003044.GWAS_split/Crohn_ebi_a_GCST003044.GWAS_split.maflist, csMR-EXAMPLE/precomputation/Inflammatory_bowel_disease_ebi_a_GCST003043.GWAS_split/Inflammatory_bowel_disease_ebi_a_GCST003043.GWAS_split.maflist, csMR-EXAMPLE/precomputation/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.GWAS_split/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.GWAS_split.maflist, /home/u/csMR/example/single-cell-eQTL/L4_IT.ma
+    output: csMR-EXAMPLE/precomputation/L4_IT.eQTL_split
+    jobid: 829
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, cell_type=L4_IT
+
+
+[Mon Sep  2 09:50:30 2024]
+rule split_eqtl:
+    input: csMR-EXAMPLE/precomputation/Crohn_ebi_a_GCST003044.GWAS_split/Crohn_ebi_a_GCST003044.GWAS_split.maflist, csMR-EXAMPLE/precomputation/Inflammatory_bowel_disease_ebi_a_GCST003043.GWAS_split/Inflammatory_bowel_disease_ebi_a_GCST003043.GWAS_split.maflist, csMR-EXAMPLE/precomputation/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.GWAS_split/Ulcerative_colitis_ebi_a_GCST003045_full_exposure.GWAS_split.maflist, /home/u/csMR/example/single-cell-eQTL/PC.ma
+    output: csMR-EXAMPLE/precomputation/PC.eQTL_split
+    jobid: 840
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, cell_type=PC
+
+[Mon Sep  2 09:50:30 2024]
+Error in rule split_eqtl:
+    jobid: 841
+    output: csMR-EXAMPLE/precomputation/SST_SST_Chodl.eQTL_split
+    shell:
+        python scripts/split_eQTL_ma.py -ma /home/u/csMR/example/single-cell-eQTL/SST_SST_Chodl.ma -w 100000 -r /home/u/csMR/data/reference_genome_1000G_EUR -ct SST_SST_Chodl -o csMR-EXAMPLE
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Job failed, going on with independent jobs.
+[Mon Sep  2 09:50:30 2024]
+Error in rule split_eqtl:
+    jobid: 828
+[Mon Sep  2 09:50:30 2024]
+    output: csMR-EXAMPLE/precomputation/L2_3_IT.eQTL_split
+Error in rule split_eqtl:
+    shell:
+        python scripts/split_eQTL_ma.py -ma /home/u/csMR/example/single-cell-eQTL/L2_3_IT.ma -w 100000 -r /home/u/csMR/data/reference_genome_1000G_EUR -ct L2_3_IT -o csMR-EXAMPLE
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    jobid: 830
+
+    output: csMR-EXAMPLE/precomputation/L5_6_NP.eQTL_split
+    shell:
+        python scripts/split_eQTL_ma.py -ma /home/u/csMR/example/single-cell-eQTL/L5_6_NP.ma -w 100000 -r /home/u/csMR/data/reference_genome_1000G_EUR -ct L5_6_NP -o csMR-EXAMPLE
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+Job failed, going on with independent jobs.
+
+Job failed, going on with independent jobs.
+[Mon Sep  2 09:50:30 2024]
+Error in rule split_eqtl:
+    jobid: 842
+    output: csMR-EXAMPLE/precomputation/Vip.eQTL_split
+    shell:
+        python scripts/split_eQTL_ma.py -ma /home/u/csMR/example/single-cell-eQTL/Vip.ma -w 100000 -r /home/u/csMR/data/reference_genome_1000G_EUR -ct Vip -o csMR-EXAMPLE
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Mon Sep  2 09:50:30 2024]
+Job failed, going on with independent jobs.
+Error in rule split_eqtl:
+    jobid: 829
+[Mon Sep  2 09:50:30 2024]
+    output: csMR-EXAMPLE/precomputation/L4_IT.eQTL_split
+Error in rule split_eqtl:
+    shell:
+        python scripts/split_eQTL_ma.py -ma /home/u/csMR/example/single-cell-eQTL/L4_IT.ma -w 100000 -r /home/u/csMR/data/reference_genome_1000G_EUR -ct L4_IT -o csMR-EXAMPLE
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    jobid: 838
+
+    output: csMR-EXAMPLE/precomputation/Oligo.eQTL_split
+Job failed, going on with independent jobs.
+    shell:
+        python scripts/split_eQTL_ma.py -ma /home/u/csMR/example/single-cell-eQTL/Oligo.ma -w 100000 -r /home/u/csMR/data/reference_genome_1000G_EUR -ct Oligo -o csMR-EXAMPLE
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+[Mon Sep  2 09:50:30 2024]
+
+Error in rule split_eqtl:
+    jobid: 840
+Job failed, going on with independent jobs.
+    output: csMR-EXAMPLE/precomputation/PC.eQTL_split
+    shell:
+        python scripts/split_eQTL_ma.py -ma /home/u/csMR/example/single-cell-eQTL/PC.ma -w 100000 -r /home/u/csMR/data/reference_genome_1000G_EUR -ct PC -o csMR-EXAMPLE
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Job failed, going on with independent jobs.
+Exiting because a job execution failed. Look above for error message
+Complete log: /home/u/csMR/.snakemake/log/2024-09-02T095028.404908.snakemake.log

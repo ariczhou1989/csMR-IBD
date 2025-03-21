@@ -1,0 +1,28 @@
+Building DAG of jobs...
+IncompleteFilesException:
+The files below seem to be incomplete. If you are sure that certain files are not incomplete, mark them as complete with
+
+    snakemake --cleanup-metadata <filenames>
+
+To re-generate the files rerun your command with the --rerun-incomplete flag.
+Incomplete files:
+csMR-EXAMPLE/MR/clump/Susie_coloc.Vitamin_D.results.coverage.0.9.PPH4.0.8.Endothelial.clumped
+csMR-EXAMPLE/MR/clump/Susie_coloc.Glycated_haemoglobin_HbA1c.results.coverage.0.9.PPH4.0.8.sat_ASPC.clumped
+csMR-EXAMPLE/MR/clump/Susie_coloc.Glycated_haemoglobin_HbA1c.results.coverage.0.9.PPH4.0.8.sat_Macrophage.clumped
+csMR-EXAMPLE/MR/clump/Susie_coloc.Glycated_haemoglobin_HbA1c.results.coverage.0.9.PPH4.0.8.Oligodendrocytes.clumped
+csMR-EXAMPLE/MR/clump/Susie_coloc.Alcohol_intake_frequency.results.coverage.0.9.PPH4.0.8.Inhibitory_neurons.clumped
+csMR-EXAMPLE/MR/clump/Susie_coloc.Alcohol_intake_frequency.results.coverage.0.9.PPH4.0.8.Excitatory_neurons.clumped
+csMR-EXAMPLE/MR/clump/Susie_coloc.Alcohol_intake_frequency.results.coverage.0.9.PPH4.0.8.Astrocytes.clumped
+csMR-EXAMPLE/MR/clump/Susie_coloc.Smoking_status.results.coverage.0.9.PPH4.0.8.sat_Macrophage.clumped
+csMR-EXAMPLE/MR/clump/Susie_coloc.telomere_length.results.coverage.0.9.PPH4.0.8.Oligodendrocytes.clumped
+csMR-EXAMPLE/MR/clump/Susie_coloc.Apolipoprotein_A_I.results.coverage.0.9.PPH4.0.8.sat_Adipocyte.clumped
+csMR-EXAMPLE/MR/clump/Susie_coloc.Apolipoprotein_B.results.coverage.0.9.PPH4.0.8.OPCs.clumped
+csMR-EXAMPLE/MR/clump/Susie_coloc.HDL_cholesterol.results.coverage.0.9.PPH4.0.8.sat_ASPC.clumped
+csMR-EXAMPLE/MR/clump/Susie_coloc.HDL_cholesterol.results.coverage.0.9.PPH4.0.8.Endothelial.clumped
+csMR-EXAMPLE/MR/clump/Susie_coloc.HDL_cholesterol.results.coverage.0.9.PPH4.0.8.OPCs.clumped
+csMR-EXAMPLE/MR/clump/Susie_coloc.HDL_cholesterol.results.coverage.0.9.PPH4.0.8.Inhibitory_neurons.clumped
+csMR-EXAMPLE/MR/clump/Susie_coloc.LDL_direct.results.coverage.0.9.PPH4.0.8.Endothelial.clumped
+csMR-EXAMPLE/MR/clump/Susie_coloc.LDL_direct.results.coverage.0.9.PPH4.0.8.OPCs.clumped
+csMR-EXAMPLE/MR/clump/Susie_coloc.Cholesterol.results.coverage.0.9.PPH4.0.8.Inhibitory_neurons.clumped
+csMR-EXAMPLE/MR/clump/Susie_coloc.Cholesterol.results.coverage.0.9.PPH4.0.8.Astrocytes.clumped
+csMR-EXAMPLE/MR/clump/Susie_coloc.BMI.results.coverage.0.9.PPH4.0.8.sat_Macrophage.clumped

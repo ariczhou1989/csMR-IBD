@@ -1,0 +1,72 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 60
+Rules claiming more threads will be scaled down.
+Job stats:
+job                   count    min threads    max threads
+------------------  -------  -------------  -------------
+MR                      663              1              1
+all                       1              1              1
+clump                    51              1              1
+coloc_summary             3              1              1
+eqtl_rdata                1              1              1
+fine_mapping              1              1              1
+get_intersect_pair       51              1              1
+gwas_rdata                3              1              1
+run_coloc                 1              1              1
+snp_filter                3              1              1
+split_eqtl               17              1              1
+split_gwas                3              1              1
+total                   798              1              1
+
+Select jobs to execute...
+
+[Sat Aug 31 10:11:14 2024]
+rule split_gwas:
+    input: /home/u/csMR/example/BMI_GWAS/Ulcerative_colitis_full_exposure_ieu_a_970.ma
+    output: csMR-EXAMPLE/precomputation/Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split/Ulcerative_colitis_full_exposure_ieu_a_970.5e-8SNP.100kb.merged_nomhc.bed
+    jobid: 11
+    reason: Missing output files: csMR-EXAMPLE/precomputation/Ulcerative_colitis_full_exposure_ieu_a_970.GWAS_split/Ulcerative_colitis_full_exposure_ieu_a_970.5e-8SNP.100kb.merged_nomhc.bed
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 10:11:14 2024]
+rule split_gwas:
+    input: /home/u/csMR/example/BMI_GWAS/Inflammatory_bowel_disease.ma
+    output: csMR-EXAMPLE/precomputation/Inflammatory_bowel_disease.GWAS_split/Inflammatory_bowel_disease.5e-8SNP.100kb.merged_nomhc.bed
+    jobid: 13
+    reason: Missing output files: csMR-EXAMPLE/precomputation/Inflammatory_bowel_disease.GWAS_split/Inflammatory_bowel_disease.5e-8SNP.100kb.merged_nomhc.bed
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Inflammatory_bowel_disease
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 10:11:14 2024]
+rule split_gwas:
+    input: /home/u/csMR/example/BMI_GWAS/Crohn_disease.ma
+    output: csMR-EXAMPLE/precomputation/Crohn_disease.GWAS_split/Crohn_disease.5e-8SNP.100kb.merged_nomhc.bed
+    jobid: 15
+    reason: Missing output files: csMR-EXAMPLE/precomputation/Crohn_disease.GWAS_split/Crohn_disease.5e-8SNP.100kb.merged_nomhc.bed
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Crohn_disease
+    resources: tmpdir=/tmp
+
+Terminating processes on user request, this might take some time.
+[Sat Aug 31 10:11:17 2024]
+Error in rule split_gwas:
+    jobid: 13
+    input: /home/u/csMR/example/BMI_GWAS/Inflammatory_bowel_disease.ma
+    output: csMR-EXAMPLE/precomputation/Inflammatory_bowel_disease.GWAS_split/Inflammatory_bowel_disease.5e-8SNP.100kb.merged_nomhc.bed
+    shell:
+        python scripts/split_GWAS_ma.py -ma /home/u/csMR/example/BMI_GWAS/Inflammatory_bowel_disease.ma -w 100000 -r /home/u/csMR/data/reference_genome_1000G_EUR -id Inflammatory_bowel_disease -o csMR-EXAMPLE
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Sat Aug 31 10:11:17 2024]
+Error in rule split_gwas:
+    jobid: 15
+    input: /home/u/csMR/example/BMI_GWAS/Crohn_disease.ma
+    output: csMR-EXAMPLE/precomputation/Crohn_disease.GWAS_split/Crohn_disease.5e-8SNP.100kb.merged_nomhc.bed
+    shell:
+        python scripts/split_GWAS_ma.py -ma /home/u/csMR/example/BMI_GWAS/Crohn_disease.ma -w 100000 -r /home/u/csMR/data/reference_genome_1000G_EUR -id Crohn_disease -o csMR-EXAMPLE
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Complete log: .snakemake/log/2024-08-31T101113.125447.snakemake.log

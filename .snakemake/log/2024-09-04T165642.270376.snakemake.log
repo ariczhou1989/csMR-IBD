@@ -1,0 +1,24 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 60
+Rules claiming more threads will be scaled down.
+Job stats:
+job      count    min threads    max threads
+-----  -------  -------------  -------------
+MR          47              1              1
+all          1              1              1
+total       48              1              1
+
+Select jobs to execute...
+
+[Wed Sep  4 17:00:24 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Glycated_haemoglobin_HbA1c.results.coverage.0.9.PPH4.0.8.sat_Adipocyte.clumped
+    output: csMR-EXAMPLE/MR/Glycated_haemoglobin_HbA1c-Scoliosis_R10_full_outcome/Glycated_haemoglobin_HbA1c.Scoliosis_R10_full_outcome.sat_Adipocyte.MR.res, csMR-EXAMPLE/MR/Glycated_haemoglobin_HbA1c-Scoliosis_R10_full_outcome/Glycated_haemoglobin_HbA1c.Scoliosis_R10_full_outcome.sat_Adipocyte.MR.sensitivity
+    jobid: 4298
+    reason: Missing output files: csMR-EXAMPLE/MR/Glycated_haemoglobin_HbA1c-Scoliosis_R10_full_outcome/Glycated_haemoglobin_HbA1c.Scoliosis_R10_full_outcome.sat_Adipocyte.MR.sensitivity, csMR-EXAMPLE/MR/Glycated_haemoglobin_HbA1c-Scoliosis_R10_full_outcome/Glycated_haemoglobin_HbA1c.Scoliosis_R10_full_outcome.sat_Adipocyte.MR.res
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Glycated_haemoglobin_HbA1c, outcome=Scoliosis_R10_full_outcome, cell_type=sat_Adipocyte
+    resources: tmpdir=/tmp
+
+Terminating processes on user request, this might take some time.
+Complete log: .snakemake/log/2024-09-04T165642.270376.snakemake.log

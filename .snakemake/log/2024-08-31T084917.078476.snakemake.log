@@ -1,0 +1,214 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 60
+Rules claiming more threads will be scaled down.
+Job stats:
+job      count    min threads    max threads
+-----  -------  -------------  -------------
+MR          14              1              1
+all          1              1              1
+total       15              1              1
+
+Select jobs to execute...
+
+[Sat Aug 31 08:49:46 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Crohn_disease.results.coverage.0.9.PPH4.0.8.L5_IT.clumped
+    output: csMR-EXAMPLE/MR/Crohn_disease-Bipolar_affective_disorders_R10_full_outcome/Crohn_disease.Bipolar_affective_disorders_R10_full_outcome.L5_IT.MR.res, csMR-EXAMPLE/MR/Crohn_disease-Bipolar_affective_disorders_R10_full_outcome/Crohn_disease.Bipolar_affective_disorders_R10_full_outcome.L5_IT.MR.sensitivity
+    jobid: 1052
+    reason: Missing output files: csMR-EXAMPLE/MR/Crohn_disease-Bipolar_affective_disorders_R10_full_outcome/Crohn_disease.Bipolar_affective_disorders_R10_full_outcome.L5_IT.MR.sensitivity, csMR-EXAMPLE/MR/Crohn_disease-Bipolar_affective_disorders_R10_full_outcome/Crohn_disease.Bipolar_affective_disorders_R10_full_outcome.L5_IT.MR.res
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Crohn_disease, outcome=Bipolar_affective_disorders_R10_full_outcome, cell_type=L5_IT
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 08:49:46 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.Excitatory_neurons.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Bipolar_affective_disorders_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Bipolar_affective_disorders_R10_full_outcome.Excitatory_neurons.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Bipolar_affective_disorders_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Bipolar_affective_disorders_R10_full_outcome.Excitatory_neurons.MR.sensitivity
+    jobid: 208
+    reason: Missing output files: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Bipolar_affective_disorders_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Bipolar_affective_disorders_R10_full_outcome.Excitatory_neurons.MR.sensitivity, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Bipolar_affective_disorders_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Bipolar_affective_disorders_R10_full_outcome.Excitatory_neurons.MR.res
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, outcome=Bipolar_affective_disorders_R10_full_outcome, cell_type=Excitatory_neurons
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 08:49:46 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.Excitatory_neurons.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Carpal_tunnel_syndrome_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Carpal_tunnel_syndrome_R10_full_outcome.Excitatory_neurons.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Carpal_tunnel_syndrome_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Carpal_tunnel_syndrome_R10_full_outcome.Excitatory_neurons.MR.sensitivity
+    jobid: 209
+    reason: Missing output files: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Carpal_tunnel_syndrome_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Carpal_tunnel_syndrome_R10_full_outcome.Excitatory_neurons.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Carpal_tunnel_syndrome_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Carpal_tunnel_syndrome_R10_full_outcome.Excitatory_neurons.MR.sensitivity
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, outcome=Carpal_tunnel_syndrome_R10_full_outcome, cell_type=Excitatory_neurons
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 08:49:46 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.Excitatory_neurons.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Generalized_anxiety_disorder_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Generalized_anxiety_disorder_R10_full_outcome.Excitatory_neurons.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Generalized_anxiety_disorder_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Generalized_anxiety_disorder_R10_full_outcome.Excitatory_neurons.MR.sensitivity
+    jobid: 211
+    reason: Missing output files: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Generalized_anxiety_disorder_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Generalized_anxiety_disorder_R10_full_outcome.Excitatory_neurons.MR.sensitivity, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Generalized_anxiety_disorder_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Generalized_anxiety_disorder_R10_full_outcome.Excitatory_neurons.MR.res
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, outcome=Generalized_anxiety_disorder_R10_full_outcome, cell_type=Excitatory_neurons
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 08:49:46 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Crohn_disease.results.coverage.0.9.PPH4.0.8.L5_IT.clumped
+    output: csMR-EXAMPLE/MR/Crohn_disease-Cerebral_aneurysm_nonruptured_R10_full_outcome/Crohn_disease.Cerebral_aneurysm_nonruptured_R10_full_outcome.L5_IT.MR.res, csMR-EXAMPLE/MR/Crohn_disease-Cerebral_aneurysm_nonruptured_R10_full_outcome/Crohn_disease.Cerebral_aneurysm_nonruptured_R10_full_outcome.L5_IT.MR.sensitivity
+    jobid: 1051
+    reason: Missing output files: csMR-EXAMPLE/MR/Crohn_disease-Cerebral_aneurysm_nonruptured_R10_full_outcome/Crohn_disease.Cerebral_aneurysm_nonruptured_R10_full_outcome.L5_IT.MR.sensitivity, csMR-EXAMPLE/MR/Crohn_disease-Cerebral_aneurysm_nonruptured_R10_full_outcome/Crohn_disease.Cerebral_aneurysm_nonruptured_R10_full_outcome.L5_IT.MR.res
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Crohn_disease, outcome=Cerebral_aneurysm_nonruptured_R10_full_outcome, cell_type=L5_IT
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 08:49:46 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Crohn_disease.results.coverage.0.9.PPH4.0.8.L5_IT.clumped
+    output: csMR-EXAMPLE/MR/Crohn_disease-Carpal_tunnel_syndrome_R10_full_outcome/Crohn_disease.Carpal_tunnel_syndrome_R10_full_outcome.L5_IT.MR.res, csMR-EXAMPLE/MR/Crohn_disease-Carpal_tunnel_syndrome_R10_full_outcome/Crohn_disease.Carpal_tunnel_syndrome_R10_full_outcome.L5_IT.MR.sensitivity
+    jobid: 1053
+    reason: Missing output files: csMR-EXAMPLE/MR/Crohn_disease-Carpal_tunnel_syndrome_R10_full_outcome/Crohn_disease.Carpal_tunnel_syndrome_R10_full_outcome.L5_IT.MR.sensitivity, csMR-EXAMPLE/MR/Crohn_disease-Carpal_tunnel_syndrome_R10_full_outcome/Crohn_disease.Carpal_tunnel_syndrome_R10_full_outcome.L5_IT.MR.res
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Crohn_disease, outcome=Carpal_tunnel_syndrome_R10_full_outcome, cell_type=L5_IT
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 08:49:46 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.pb.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-MS-disease_Multiple_Sclerosis_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.MS-disease_Multiple_Sclerosis_R10_full_outcome.pb.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-MS-disease_Multiple_Sclerosis_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.MS-disease_Multiple_Sclerosis_R10_full_outcome.pb.MR.sensitivity
+    jobid: 231
+    reason: Missing output files: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-MS-disease_Multiple_Sclerosis_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.MS-disease_Multiple_Sclerosis_R10_full_outcome.pb.MR.sensitivity, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-MS-disease_Multiple_Sclerosis_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.MS-disease_Multiple_Sclerosis_R10_full_outcome.pb.MR.res
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, outcome=MS-disease_Multiple_Sclerosis_R10_full_outcome, cell_type=pb
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 08:49:46 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.pb.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-ALS_ieu_a_1085_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.ALS_ieu_a_1085_full_outcome.pb.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-ALS_ieu_a_1085_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.ALS_ieu_a_1085_full_outcome.pb.MR.sensitivity
+    jobid: 240
+    reason: Missing output files: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-ALS_ieu_a_1085_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.ALS_ieu_a_1085_full_outcome.pb.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-ALS_ieu_a_1085_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.ALS_ieu_a_1085_full_outcome.pb.MR.sensitivity
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, outcome=ALS_ieu_a_1085_full_outcome, cell_type=pb
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 08:49:46 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Crohn_disease.results.coverage.0.9.PPH4.0.8.Inhibitory_neurons.clumped
+    output: csMR-EXAMPLE/MR/Crohn_disease-Schizophrenia_full_outcome/Crohn_disease.Schizophrenia_full_outcome.Inhibitory_neurons.MR.res, csMR-EXAMPLE/MR/Crohn_disease-Schizophrenia_full_outcome/Crohn_disease.Schizophrenia_full_outcome.Inhibitory_neurons.MR.sensitivity
+    jobid: 917
+    reason: Missing output files: csMR-EXAMPLE/MR/Crohn_disease-Schizophrenia_full_outcome/Crohn_disease.Schizophrenia_full_outcome.Inhibitory_neurons.MR.res, csMR-EXAMPLE/MR/Crohn_disease-Schizophrenia_full_outcome/Crohn_disease.Schizophrenia_full_outcome.Inhibitory_neurons.MR.sensitivity
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Crohn_disease, outcome=Schizophrenia_full_outcome, cell_type=Inhibitory_neurons
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 08:49:46 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Crohn_disease.results.coverage.0.9.PPH4.0.8.L5_IT.clumped
+    output: csMR-EXAMPLE/MR/Crohn_disease-Obsessive_compulsive_disorder_full_outcome/Crohn_disease.Obsessive_compulsive_disorder_full_outcome.L5_IT.MR.res, csMR-EXAMPLE/MR/Crohn_disease-Obsessive_compulsive_disorder_full_outcome/Crohn_disease.Obsessive_compulsive_disorder_full_outcome.L5_IT.MR.sensitivity
+    jobid: 1050
+    reason: Missing output files: csMR-EXAMPLE/MR/Crohn_disease-Obsessive_compulsive_disorder_full_outcome/Crohn_disease.Obsessive_compulsive_disorder_full_outcome.L5_IT.MR.sensitivity, csMR-EXAMPLE/MR/Crohn_disease-Obsessive_compulsive_disorder_full_outcome/Crohn_disease.Obsessive_compulsive_disorder_full_outcome.L5_IT.MR.res
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Crohn_disease, outcome=Obsessive_compulsive_disorder_full_outcome, cell_type=L5_IT
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 08:49:46 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.pb.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Parkinsons_disease_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Parkinsons_disease_R10_full_outcome.pb.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Parkinsons_disease_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Parkinsons_disease_R10_full_outcome.pb.MR.sensitivity
+    jobid: 228
+    reason: Missing output files: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Parkinsons_disease_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Parkinsons_disease_R10_full_outcome.pb.MR.sensitivity, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Parkinsons_disease_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Parkinsons_disease_R10_full_outcome.pb.MR.res
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, outcome=Parkinsons_disease_R10_full_outcome, cell_type=pb
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 08:49:46 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Inflammatory_bowel_disease.results.coverage.0.9.PPH4.0.8.L5_IT.clumped
+    output: csMR-EXAMPLE/MR/Inflammatory_bowel_disease-AD_ieu_b_2_full_outcome/Inflammatory_bowel_disease.AD_ieu_b_2_full_outcome.L5_IT.MR.res, csMR-EXAMPLE/MR/Inflammatory_bowel_disease-AD_ieu_b_2_full_outcome/Inflammatory_bowel_disease.AD_ieu_b_2_full_outcome.L5_IT.MR.sensitivity
+    jobid: 688
+    reason: Missing output files: csMR-EXAMPLE/MR/Inflammatory_bowel_disease-AD_ieu_b_2_full_outcome/Inflammatory_bowel_disease.AD_ieu_b_2_full_outcome.L5_IT.MR.res, csMR-EXAMPLE/MR/Inflammatory_bowel_disease-AD_ieu_b_2_full_outcome/Inflammatory_bowel_disease.AD_ieu_b_2_full_outcome.L5_IT.MR.sensitivity
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Inflammatory_bowel_disease, outcome=AD_ieu_b_2_full_outcome, cell_type=L5_IT
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 08:49:46 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.pb.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Epilepsy_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Epilepsy_R10_full_outcome.pb.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Epilepsy_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Epilepsy_R10_full_outcome.pb.MR.sensitivity
+    jobid: 230
+    reason: Missing output files: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Epilepsy_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Epilepsy_R10_full_outcome.pb.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Epilepsy_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Epilepsy_R10_full_outcome.pb.MR.sensitivity
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, outcome=Epilepsy_R10_full_outcome, cell_type=pb
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 08:49:46 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.Excitatory_neurons.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Obsessive_compulsive_disorder_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Obsessive_compulsive_disorder_full_outcome.Excitatory_neurons.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Obsessive_compulsive_disorder_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Obsessive_compulsive_disorder_full_outcome.Excitatory_neurons.MR.sensitivity
+    jobid: 206
+    reason: Missing output files: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Obsessive_compulsive_disorder_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Obsessive_compulsive_disorder_full_outcome.Excitatory_neurons.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Obsessive_compulsive_disorder_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Obsessive_compulsive_disorder_full_outcome.Excitatory_neurons.MR.sensitivity
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, outcome=Obsessive_compulsive_disorder_full_outcome, cell_type=Excitatory_neurons
+    resources: tmpdir=/tmp
+
+[Sat Aug 31 08:50:03 2024]
+Error in rule MR:
+    jobid: 688
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Inflammatory_bowel_disease.results.coverage.0.9.PPH4.0.8.L5_IT.clumped
+    output: csMR-EXAMPLE/MR/Inflammatory_bowel_disease-AD_ieu_b_2_full_outcome/Inflammatory_bowel_disease.AD_ieu_b_2_full_outcome.L5_IT.MR.res, csMR-EXAMPLE/MR/Inflammatory_bowel_disease-AD_ieu_b_2_full_outcome/Inflammatory_bowel_disease.AD_ieu_b_2_full_outcome.L5_IT.MR.sensitivity
+    shell:
+        Rscript scripts/csMR.r -e /home/u/csMR/example/BMI_GWAS/Inflammatory_bowel_disease.ma -o example/outcomes/AD_ieu_b_2_full_outcome.ma -c csMR-EXAMPLE/MR/clump/Susie_coloc.Inflammatory_bowel_disease.results.coverage.0.9.PPH4.0.8.L5_IT.clumped -r /home/u/csMR/data/reference_genome_1000G_EUR
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Sat Aug 31 08:50:04 2024]
+Error in rule MR:
+    jobid: 1050
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Crohn_disease.results.coverage.0.9.PPH4.0.8.L5_IT.clumped
+    output: csMR-EXAMPLE/MR/Crohn_disease-Obsessive_compulsive_disorder_full_outcome/Crohn_disease.Obsessive_compulsive_disorder_full_outcome.L5_IT.MR.res, csMR-EXAMPLE/MR/Crohn_disease-Obsessive_compulsive_disorder_full_outcome/Crohn_disease.Obsessive_compulsive_disorder_full_outcome.L5_IT.MR.sensitivity
+    shell:
+        Rscript scripts/csMR.r -e /home/u/csMR/example/BMI_GWAS/Crohn_disease.ma -o example/outcomes/Obsessive_compulsive_disorder_full_outcome.ma -c csMR-EXAMPLE/MR/clump/Susie_coloc.Crohn_disease.results.coverage.0.9.PPH4.0.8.L5_IT.clumped -r /home/u/csMR/data/reference_genome_1000G_EUR
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Sat Aug 31 08:50:06 2024]
+Finished job 206.
+1 of 15 steps (7%) done
+[Sat Aug 31 08:50:07 2024]
+Finished job 917.
+2 of 15 steps (13%) done
+[Sat Aug 31 08:50:10 2024]
+Finished job 240.
+3 of 15 steps (20%) done
+[Sat Aug 31 08:50:37 2024]
+Error in rule MR:
+    jobid: 1052
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Crohn_disease.results.coverage.0.9.PPH4.0.8.L5_IT.clumped
+    output: csMR-EXAMPLE/MR/Crohn_disease-Bipolar_affective_disorders_R10_full_outcome/Crohn_disease.Bipolar_affective_disorders_R10_full_outcome.L5_IT.MR.res, csMR-EXAMPLE/MR/Crohn_disease-Bipolar_affective_disorders_R10_full_outcome/Crohn_disease.Bipolar_affective_disorders_R10_full_outcome.L5_IT.MR.sensitivity
+    shell:
+        Rscript scripts/csMR.r -e /home/u/csMR/example/BMI_GWAS/Crohn_disease.ma -o example/outcomes/Bipolar_affective_disorders_R10_full_outcome.ma -c csMR-EXAMPLE/MR/clump/Susie_coloc.Crohn_disease.results.coverage.0.9.PPH4.0.8.L5_IT.clumped -r /home/u/csMR/data/reference_genome_1000G_EUR
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Sat Aug 31 08:50:43 2024]
+Finished job 209.
+4 of 15 steps (27%) done
+[Sat Aug 31 08:50:46 2024]
+Finished job 211.
+5 of 15 steps (33%) done
+[Sat Aug 31 08:50:46 2024]
+Finished job 1053.
+6 of 15 steps (40%) done
+[Sat Aug 31 08:50:48 2024]
+Finished job 230.
+7 of 15 steps (47%) done
+[Sat Aug 31 08:50:48 2024]
+Finished job 208.
+8 of 15 steps (53%) done
+[Sat Aug 31 08:50:48 2024]
+Finished job 231.
+9 of 15 steps (60%) done
+[Sat Aug 31 08:50:50 2024]
+Finished job 1051.
+10 of 15 steps (67%) done
+[Sat Aug 31 08:50:51 2024]
+Finished job 228.
+11 of 15 steps (73%) done
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2024-08-31T084917.078476.snakemake.log

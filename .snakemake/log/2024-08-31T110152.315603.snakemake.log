@@ -1,0 +1,208 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 60
+Rules claiming more threads will be scaled down.
+Job stats:
+job      count    min threads    max threads
+-----  -------  -------------  -------------
+MR          14              1              1
+all          1              1              1
+total       15              1              1
+
+Select jobs to execute...
+
+[Sat Aug 31 11:02:13 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Crohn_disease.results.coverage.0.9.PPH4.0.8.L5_IT.clumped
+    output: csMR-EXAMPLE/MR/Crohn_disease-Generalized_anxiety_disorder_R10_full_outcome/Crohn_disease.Generalized_anxiety_disorder_R10_full_outcome.L5_IT.MR.res, csMR-EXAMPLE/MR/Crohn_disease-Generalized_anxiety_disorder_R10_full_outcome/Crohn_disease.Generalized_anxiety_disorder_R10_full_outcome.L5_IT.MR.sensitivity
+    jobid: 640
+    reason: Missing output files: csMR-EXAMPLE/MR/Crohn_disease-Generalized_anxiety_disorder_R10_full_outcome/Crohn_disease.Generalized_anxiety_disorder_R10_full_outcome.L5_IT.MR.res, csMR-EXAMPLE/MR/Crohn_disease-Generalized_anxiety_disorder_R10_full_outcome/Crohn_disease.Generalized_anxiety_disorder_R10_full_outcome.L5_IT.MR.sensitivity
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Crohn_disease, outcome=Generalized_anxiety_disorder_R10_full_outcome, cell_type=L5_IT
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 11:02:13 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Crohn_disease.results.coverage.0.9.PPH4.0.8.L6_IT.clumped
+    output: csMR-EXAMPLE/MR/Crohn_disease-Generalized_anxiety_disorder_R10_full_outcome/Crohn_disease.Generalized_anxiety_disorder_R10_full_outcome.L6_IT.MR.res, csMR-EXAMPLE/MR/Crohn_disease-Generalized_anxiety_disorder_R10_full_outcome/Crohn_disease.Generalized_anxiety_disorder_R10_full_outcome.L6_IT.MR.sensitivity
+    jobid: 668
+    reason: Missing output files: csMR-EXAMPLE/MR/Crohn_disease-Generalized_anxiety_disorder_R10_full_outcome/Crohn_disease.Generalized_anxiety_disorder_R10_full_outcome.L6_IT.MR.res, csMR-EXAMPLE/MR/Crohn_disease-Generalized_anxiety_disorder_R10_full_outcome/Crohn_disease.Generalized_anxiety_disorder_R10_full_outcome.L6_IT.MR.sensitivity
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Crohn_disease, outcome=Generalized_anxiety_disorder_R10_full_outcome, cell_type=L6_IT
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 11:02:13 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Inflammatory_bowel_disease.results.coverage.0.9.PPH4.0.8.L5_IT.clumped
+    output: csMR-EXAMPLE/MR/Inflammatory_bowel_disease-ADHA/Inflammatory_bowel_disease.ADHA.L5_IT.MR.res, csMR-EXAMPLE/MR/Inflammatory_bowel_disease-ADHA/Inflammatory_bowel_disease.ADHA.L5_IT.MR.sensitivity
+    jobid: 402
+    reason: Missing output files: csMR-EXAMPLE/MR/Inflammatory_bowel_disease-ADHA/Inflammatory_bowel_disease.ADHA.L5_IT.MR.res, csMR-EXAMPLE/MR/Inflammatory_bowel_disease-ADHA/Inflammatory_bowel_disease.ADHA.L5_IT.MR.sensitivity
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Inflammatory_bowel_disease, outcome=ADHA, cell_type=L5_IT
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 11:02:13 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Inflammatory_bowel_disease.results.coverage.0.9.PPH4.0.8.L6_IT.clumped
+    output: csMR-EXAMPLE/MR/Inflammatory_bowel_disease-Generalized_anxiety_disorder_R10_full_outcome/Inflammatory_bowel_disease.Generalized_anxiety_disorder_R10_full_outcome.L6_IT.MR.res, csMR-EXAMPLE/MR/Inflammatory_bowel_disease-Generalized_anxiety_disorder_R10_full_outcome/Inflammatory_bowel_disease.Generalized_anxiety_disorder_R10_full_outcome.L6_IT.MR.sensitivity
+    jobid: 428
+    reason: Missing output files: csMR-EXAMPLE/MR/Inflammatory_bowel_disease-Generalized_anxiety_disorder_R10_full_outcome/Inflammatory_bowel_disease.Generalized_anxiety_disorder_R10_full_outcome.L6_IT.MR.sensitivity, csMR-EXAMPLE/MR/Inflammatory_bowel_disease-Generalized_anxiety_disorder_R10_full_outcome/Inflammatory_bowel_disease.Generalized_anxiety_disorder_R10_full_outcome.L6_IT.MR.res
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Inflammatory_bowel_disease, outcome=Generalized_anxiety_disorder_R10_full_outcome, cell_type=L6_IT
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 11:02:13 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.L2_3_IT.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Cerebral_aneurysm_nonruptured_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Cerebral_aneurysm_nonruptured_R10_full_outcome.L2_3_IT.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Cerebral_aneurysm_nonruptured_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Cerebral_aneurysm_nonruptured_R10_full_outcome.L2_3_IT.MR.sensitivity
+    jobid: 115
+    reason: Missing output files: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Cerebral_aneurysm_nonruptured_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Cerebral_aneurysm_nonruptured_R10_full_outcome.L2_3_IT.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-Cerebral_aneurysm_nonruptured_R10_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.Cerebral_aneurysm_nonruptured_R10_full_outcome.L2_3_IT.MR.sensitivity
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, outcome=Cerebral_aneurysm_nonruptured_R10_full_outcome, cell_type=L2_3_IT
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 11:02:13 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Inflammatory_bowel_disease.results.coverage.0.9.PPH4.0.8.L2_3_IT.clumped
+    output: csMR-EXAMPLE/MR/Inflammatory_bowel_disease-Cerebral_aneurysm_nonruptured_R10_full_outcome/Inflammatory_bowel_disease.Cerebral_aneurysm_nonruptured_R10_full_outcome.L2_3_IT.MR.res, csMR-EXAMPLE/MR/Inflammatory_bowel_disease-Cerebral_aneurysm_nonruptured_R10_full_outcome/Inflammatory_bowel_disease.Cerebral_aneurysm_nonruptured_R10_full_outcome.L2_3_IT.MR.sensitivity
+    jobid: 355
+    reason: Missing output files: csMR-EXAMPLE/MR/Inflammatory_bowel_disease-Cerebral_aneurysm_nonruptured_R10_full_outcome/Inflammatory_bowel_disease.Cerebral_aneurysm_nonruptured_R10_full_outcome.L2_3_IT.MR.res, csMR-EXAMPLE/MR/Inflammatory_bowel_disease-Cerebral_aneurysm_nonruptured_R10_full_outcome/Inflammatory_bowel_disease.Cerebral_aneurysm_nonruptured_R10_full_outcome.L2_3_IT.MR.sensitivity
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Inflammatory_bowel_disease, outcome=Cerebral_aneurysm_nonruptured_R10_full_outcome, cell_type=L2_3_IT
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 11:02:13 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Inflammatory_bowel_disease.results.coverage.0.9.PPH4.0.8.Micro_PVM.clumped
+    output: csMR-EXAMPLE/MR/Inflammatory_bowel_disease-Cerebral_aneurysm_nonruptured_R10_full_outcome/Inflammatory_bowel_disease.Cerebral_aneurysm_nonruptured_R10_full_outcome.Micro_PVM.MR.res, csMR-EXAMPLE/MR/Inflammatory_bowel_disease-Cerebral_aneurysm_nonruptured_R10_full_outcome/Inflammatory_bowel_disease.Cerebral_aneurysm_nonruptured_R10_full_outcome.Micro_PVM.MR.sensitivity
+    jobid: 481
+    reason: Missing output files: csMR-EXAMPLE/MR/Inflammatory_bowel_disease-Cerebral_aneurysm_nonruptured_R10_full_outcome/Inflammatory_bowel_disease.Cerebral_aneurysm_nonruptured_R10_full_outcome.Micro_PVM.MR.res, csMR-EXAMPLE/MR/Inflammatory_bowel_disease-Cerebral_aneurysm_nonruptured_R10_full_outcome/Inflammatory_bowel_disease.Cerebral_aneurysm_nonruptured_R10_full_outcome.Micro_PVM.MR.sensitivity
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Inflammatory_bowel_disease, outcome=Cerebral_aneurysm_nonruptured_R10_full_outcome, cell_type=Micro_PVM
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 11:02:13 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Inflammatory_bowel_disease.results.coverage.0.9.PPH4.0.8.L6_IT.clumped
+    output: csMR-EXAMPLE/MR/Inflammatory_bowel_disease-AD_ieu_b_2_full_outcome/Inflammatory_bowel_disease.AD_ieu_b_2_full_outcome.L6_IT.MR.res, csMR-EXAMPLE/MR/Inflammatory_bowel_disease-AD_ieu_b_2_full_outcome/Inflammatory_bowel_disease.AD_ieu_b_2_full_outcome.L6_IT.MR.sensitivity
+    jobid: 427
+    reason: Missing output files: csMR-EXAMPLE/MR/Inflammatory_bowel_disease-AD_ieu_b_2_full_outcome/Inflammatory_bowel_disease.AD_ieu_b_2_full_outcome.L6_IT.MR.res, csMR-EXAMPLE/MR/Inflammatory_bowel_disease-AD_ieu_b_2_full_outcome/Inflammatory_bowel_disease.AD_ieu_b_2_full_outcome.L6_IT.MR.sensitivity
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Inflammatory_bowel_disease, outcome=AD_ieu_b_2_full_outcome, cell_type=L6_IT
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 11:02:13 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Crohn_disease.results.coverage.0.9.PPH4.0.8.L4_IT.clumped
+    output: csMR-EXAMPLE/MR/Crohn_disease-Cerebral_aneurysm_nonruptured_R10_full_outcome/Crohn_disease.Cerebral_aneurysm_nonruptured_R10_full_outcome.L4_IT.MR.res, csMR-EXAMPLE/MR/Crohn_disease-Cerebral_aneurysm_nonruptured_R10_full_outcome/Crohn_disease.Cerebral_aneurysm_nonruptured_R10_full_outcome.L4_IT.MR.sensitivity
+    jobid: 609
+    reason: Missing output files: csMR-EXAMPLE/MR/Crohn_disease-Cerebral_aneurysm_nonruptured_R10_full_outcome/Crohn_disease.Cerebral_aneurysm_nonruptured_R10_full_outcome.L4_IT.MR.res, csMR-EXAMPLE/MR/Crohn_disease-Cerebral_aneurysm_nonruptured_R10_full_outcome/Crohn_disease.Cerebral_aneurysm_nonruptured_R10_full_outcome.L4_IT.MR.sensitivity
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Crohn_disease, outcome=Cerebral_aneurysm_nonruptured_R10_full_outcome, cell_type=L4_IT
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 11:02:13 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Inflammatory_bowel_disease.results.coverage.0.9.PPH4.0.8.L6_IT.clumped
+    output: csMR-EXAMPLE/MR/Inflammatory_bowel_disease-ADHA/Inflammatory_bowel_disease.ADHA.L6_IT.MR.res, csMR-EXAMPLE/MR/Inflammatory_bowel_disease-ADHA/Inflammatory_bowel_disease.ADHA.L6_IT.MR.sensitivity
+    jobid: 430
+    reason: Missing output files: csMR-EXAMPLE/MR/Inflammatory_bowel_disease-ADHA/Inflammatory_bowel_disease.ADHA.L6_IT.MR.res, csMR-EXAMPLE/MR/Inflammatory_bowel_disease-ADHA/Inflammatory_bowel_disease.ADHA.L6_IT.MR.sensitivity
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Inflammatory_bowel_disease, outcome=ADHA, cell_type=L6_IT
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 11:02:13 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Crohn_disease.results.coverage.0.9.PPH4.0.8.L5_IT.clumped
+    output: csMR-EXAMPLE/MR/Crohn_disease-Epilepsy_R10_full_outcome/Crohn_disease.Epilepsy_R10_full_outcome.L5_IT.MR.res, csMR-EXAMPLE/MR/Crohn_disease-Epilepsy_R10_full_outcome/Crohn_disease.Epilepsy_R10_full_outcome.L5_IT.MR.sensitivity
+    jobid: 632
+    reason: Missing output files: csMR-EXAMPLE/MR/Crohn_disease-Epilepsy_R10_full_outcome/Crohn_disease.Epilepsy_R10_full_outcome.L5_IT.MR.res, csMR-EXAMPLE/MR/Crohn_disease-Epilepsy_R10_full_outcome/Crohn_disease.Epilepsy_R10_full_outcome.L5_IT.MR.sensitivity
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Crohn_disease, outcome=Epilepsy_R10_full_outcome, cell_type=L5_IT
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 11:02:13 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Inflammatory_bowel_disease.results.coverage.0.9.PPH4.0.8.L2_3_IT.clumped
+    output: csMR-EXAMPLE/MR/Inflammatory_bowel_disease-Carpal_tunnel_syndrome_R10_full_outcome/Inflammatory_bowel_disease.Carpal_tunnel_syndrome_R10_full_outcome.L2_3_IT.MR.res, csMR-EXAMPLE/MR/Inflammatory_bowel_disease-Carpal_tunnel_syndrome_R10_full_outcome/Inflammatory_bowel_disease.Carpal_tunnel_syndrome_R10_full_outcome.L2_3_IT.MR.sensitivity
+    jobid: 356
+    reason: Missing output files: csMR-EXAMPLE/MR/Inflammatory_bowel_disease-Carpal_tunnel_syndrome_R10_full_outcome/Inflammatory_bowel_disease.Carpal_tunnel_syndrome_R10_full_outcome.L2_3_IT.MR.sensitivity, csMR-EXAMPLE/MR/Inflammatory_bowel_disease-Carpal_tunnel_syndrome_R10_full_outcome/Inflammatory_bowel_disease.Carpal_tunnel_syndrome_R10_full_outcome.L2_3_IT.MR.res
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Inflammatory_bowel_disease, outcome=Carpal_tunnel_syndrome_R10_full_outcome, cell_type=L2_3_IT
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 11:02:13 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Crohn_disease.results.coverage.0.9.PPH4.0.8.L5_IT.clumped
+    output: csMR-EXAMPLE/MR/Crohn_disease-Obsessive_compulsive_disorder_full_outcome/Crohn_disease.Obsessive_compulsive_disorder_full_outcome.L5_IT.MR.res, csMR-EXAMPLE/MR/Crohn_disease-Obsessive_compulsive_disorder_full_outcome/Crohn_disease.Obsessive_compulsive_disorder_full_outcome.L5_IT.MR.sensitivity
+    jobid: 636
+    reason: Missing output files: csMR-EXAMPLE/MR/Crohn_disease-Obsessive_compulsive_disorder_full_outcome/Crohn_disease.Obsessive_compulsive_disorder_full_outcome.L5_IT.MR.res, csMR-EXAMPLE/MR/Crohn_disease-Obsessive_compulsive_disorder_full_outcome/Crohn_disease.Obsessive_compulsive_disorder_full_outcome.L5_IT.MR.sensitivity
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Crohn_disease, outcome=Obsessive_compulsive_disorder_full_outcome, cell_type=L5_IT
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 11:02:13 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Inflammatory_bowel_disease.results.coverage.0.9.PPH4.0.8.Vip.clumped
+    output: csMR-EXAMPLE/MR/Inflammatory_bowel_disease-Generalized_anxiety_disorder_R10_full_outcome/Inflammatory_bowel_disease.Generalized_anxiety_disorder_R10_full_outcome.Vip.MR.res, csMR-EXAMPLE/MR/Inflammatory_bowel_disease-Generalized_anxiety_disorder_R10_full_outcome/Inflammatory_bowel_disease.Generalized_anxiety_disorder_R10_full_outcome.Vip.MR.sensitivity
+    jobid: 554
+    reason: Missing output files: csMR-EXAMPLE/MR/Inflammatory_bowel_disease-Generalized_anxiety_disorder_R10_full_outcome/Inflammatory_bowel_disease.Generalized_anxiety_disorder_R10_full_outcome.Vip.MR.res, csMR-EXAMPLE/MR/Inflammatory_bowel_disease-Generalized_anxiety_disorder_R10_full_outcome/Inflammatory_bowel_disease.Generalized_anxiety_disorder_R10_full_outcome.Vip.MR.sensitivity
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Inflammatory_bowel_disease, outcome=Generalized_anxiety_disorder_R10_full_outcome, cell_type=Vip
+    resources: tmpdir=/tmp
+
+[Sat Aug 31 11:02:28 2024]
+Error in rule MR:
+    jobid: 402
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Inflammatory_bowel_disease.results.coverage.0.9.PPH4.0.8.L5_IT.clumped
+    output: csMR-EXAMPLE/MR/Inflammatory_bowel_disease-ADHA/Inflammatory_bowel_disease.ADHA.L5_IT.MR.res, csMR-EXAMPLE/MR/Inflammatory_bowel_disease-ADHA/Inflammatory_bowel_disease.ADHA.L5_IT.MR.sensitivity
+    shell:
+        Rscript scripts/csMR.r -e /home/u/csMR/example/BMI_GWAS/Inflammatory_bowel_disease.ma -o example/outcomes/ADHA.ma -c csMR-EXAMPLE/MR/clump/Susie_coloc.Inflammatory_bowel_disease.results.coverage.0.9.PPH4.0.8.L5_IT.clumped -r /home/u/csMR/data/reference_genome_1000G_EUR
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Sat Aug 31 11:02:38 2024]
+Finished job 636.
+1 of 15 steps (7%) done
+[Sat Aug 31 11:02:39 2024]
+Finished job 430.
+2 of 15 steps (13%) done
+[Sat Aug 31 11:02:41 2024]
+Finished job 427.
+3 of 15 steps (20%) done
+[Sat Aug 31 11:02:53 2024]
+Finished job 481.
+4 of 15 steps (27%) done
+[Sat Aug 31 11:03:03 2024]
+Error in rule MR:
+    jobid: 632
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Crohn_disease.results.coverage.0.9.PPH4.0.8.L5_IT.clumped
+    output: csMR-EXAMPLE/MR/Crohn_disease-Epilepsy_R10_full_outcome/Crohn_disease.Epilepsy_R10_full_outcome.L5_IT.MR.res, csMR-EXAMPLE/MR/Crohn_disease-Epilepsy_R10_full_outcome/Crohn_disease.Epilepsy_R10_full_outcome.L5_IT.MR.sensitivity
+    shell:
+        Rscript scripts/csMR.r -e /home/u/csMR/example/BMI_GWAS/Crohn_disease.ma -o example/outcomes/Epilepsy_R10_full_outcome.ma -c csMR-EXAMPLE/MR/clump/Susie_coloc.Crohn_disease.results.coverage.0.9.PPH4.0.8.L5_IT.clumped -r /home/u/csMR/data/reference_genome_1000G_EUR
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Sat Aug 31 11:03:03 2024]
+Finished job 554.
+5 of 15 steps (33%) done
+[Sat Aug 31 11:03:08 2024]
+Finished job 115.
+6 of 15 steps (40%) done
+[Sat Aug 31 11:03:12 2024]
+Finished job 640.
+7 of 15 steps (47%) done
+[Sat Aug 31 11:03:13 2024]
+Finished job 668.
+8 of 15 steps (53%) done
+[Sat Aug 31 11:03:13 2024]
+Finished job 428.
+9 of 15 steps (60%) done
+[Sat Aug 31 11:03:17 2024]
+Finished job 356.
+10 of 15 steps (67%) done
+[Sat Aug 31 11:03:20 2024]
+Finished job 355.
+11 of 15 steps (73%) done
+[Sat Aug 31 11:03:22 2024]
+Finished job 609.
+12 of 15 steps (80%) done
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2024-08-31T110152.315603.snakemake.log

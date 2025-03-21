@@ -1,0 +1,7 @@
+Building DAG of jobs...
+MissingInputException in rule split_gwas  in line 100 of /home/u/csMR/work_flow.snakefile:
+Missing input files for rule split_gwas:
+    output: csMR-EXAMPLE/precomputation/BMI_Giant_UKB.GWAS_split/BMI_Giant_UKB.5e-8SNP.100kb.merged_nomhc.bed
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=BMI_Giant_UKB
+    affected files:
+        /home/u/csMR/example/BMI_GWAS/BMI_giant_ukbb_combined_2018.chr1.ma

@@ -1,0 +1,156 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 60
+Rules claiming more threads will be scaled down.
+Job stats:
+job      count    min threads    max threads
+-----  -------  -------------  -------------
+MR          10              1              1
+all          1              1              1
+total       11              1              1
+
+Select jobs to execute...
+
+[Sat Aug 31 15:45:45 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Crohn_disease.results.coverage.0.9.PPH4.0.8.Excitatory_neurons.clumped
+    output: csMR-EXAMPLE/MR/Crohn_disease-Sleep_disorders_combined_R10_full_outcome/Crohn_disease.Sleep_disorders_combined_R10_full_outcome.Excitatory_neurons.MR.res, csMR-EXAMPLE/MR/Crohn_disease-Sleep_disorders_combined_R10_full_outcome/Crohn_disease.Sleep_disorders_combined_R10_full_outcome.Excitatory_neurons.MR.sensitivity
+    jobid: 361
+    reason: Missing output files: csMR-EXAMPLE/MR/Crohn_disease-Sleep_disorders_combined_R10_full_outcome/Crohn_disease.Sleep_disorders_combined_R10_full_outcome.Excitatory_neurons.MR.res, csMR-EXAMPLE/MR/Crohn_disease-Sleep_disorders_combined_R10_full_outcome/Crohn_disease.Sleep_disorders_combined_R10_full_outcome.Excitatory_neurons.MR.sensitivity
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Crohn_disease, outcome=Sleep_disorders_combined_R10_full_outcome, cell_type=Excitatory_neurons
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 15:45:45 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Inflammatory_bowel_disease.results.coverage.0.9.PPH4.0.8.Microglia.clumped
+    output: csMR-EXAMPLE/MR/Inflammatory_bowel_disease-AD_ieu_b_2_full_outcome/Inflammatory_bowel_disease.AD_ieu_b_2_full_outcome.Microglia.MR.res, csMR-EXAMPLE/MR/Inflammatory_bowel_disease-AD_ieu_b_2_full_outcome/Inflammatory_bowel_disease.AD_ieu_b_2_full_outcome.Microglia.MR.sensitivity
+    jobid: 209
+    reason: Missing output files: csMR-EXAMPLE/MR/Inflammatory_bowel_disease-AD_ieu_b_2_full_outcome/Inflammatory_bowel_disease.AD_ieu_b_2_full_outcome.Microglia.MR.sensitivity, csMR-EXAMPLE/MR/Inflammatory_bowel_disease-AD_ieu_b_2_full_outcome/Inflammatory_bowel_disease.AD_ieu_b_2_full_outcome.Microglia.MR.res
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Inflammatory_bowel_disease, outcome=AD_ieu_b_2_full_outcome, cell_type=Microglia
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 15:45:45 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.Excitatory_neurons.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-ALS_ieu_a_1085_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.ALS_ieu_a_1085_full_outcome.Excitatory_neurons.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-ALS_ieu_a_1085_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.ALS_ieu_a_1085_full_outcome.Excitatory_neurons.MR.sensitivity
+    jobid: 139
+    reason: Missing output files: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-ALS_ieu_a_1085_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.ALS_ieu_a_1085_full_outcome.Excitatory_neurons.MR.sensitivity, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-ALS_ieu_a_1085_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.ALS_ieu_a_1085_full_outcome.Excitatory_neurons.MR.res
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Ulcerative_colitis_full_exposure_ieu_a_970, outcome=ALS_ieu_a_1085_full_outcome, cell_type=Excitatory_neurons
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 15:45:45 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Crohn_disease.results.coverage.0.9.PPH4.0.8.Inhibitory_neurons.clumped
+    output: csMR-EXAMPLE/MR/Crohn_disease-ALS_ieu_a_1085_full_outcome/Crohn_disease.ALS_ieu_a_1085_full_outcome.Inhibitory_neurons.MR.res, csMR-EXAMPLE/MR/Crohn_disease-ALS_ieu_a_1085_full_outcome/Crohn_disease.ALS_ieu_a_1085_full_outcome.Inhibitory_neurons.MR.sensitivity
+    jobid: 339
+    reason: Missing output files: csMR-EXAMPLE/MR/Crohn_disease-ALS_ieu_a_1085_full_outcome/Crohn_disease.ALS_ieu_a_1085_full_outcome.Inhibitory_neurons.MR.sensitivity, csMR-EXAMPLE/MR/Crohn_disease-ALS_ieu_a_1085_full_outcome/Crohn_disease.ALS_ieu_a_1085_full_outcome.Inhibitory_neurons.MR.res
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Crohn_disease, outcome=ALS_ieu_a_1085_full_outcome, cell_type=Inhibitory_neurons
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 15:45:45 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Crohn_disease.results.coverage.0.9.PPH4.0.8.Inhibitory_neurons.clumped
+    output: csMR-EXAMPLE/MR/Crohn_disease-MS-disease_Multiple_Sclerosis_R10_full_outcome/Crohn_disease.MS-disease_Multiple_Sclerosis_R10_full_outcome.Inhibitory_neurons.MR.res, csMR-EXAMPLE/MR/Crohn_disease-MS-disease_Multiple_Sclerosis_R10_full_outcome/Crohn_disease.MS-disease_Multiple_Sclerosis_R10_full_outcome.Inhibitory_neurons.MR.sensitivity
+    jobid: 331
+    reason: Missing output files: csMR-EXAMPLE/MR/Crohn_disease-MS-disease_Multiple_Sclerosis_R10_full_outcome/Crohn_disease.MS-disease_Multiple_Sclerosis_R10_full_outcome.Inhibitory_neurons.MR.sensitivity, csMR-EXAMPLE/MR/Crohn_disease-MS-disease_Multiple_Sclerosis_R10_full_outcome/Crohn_disease.MS-disease_Multiple_Sclerosis_R10_full_outcome.Inhibitory_neurons.MR.res
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Crohn_disease, outcome=MS-disease_Multiple_Sclerosis_R10_full_outcome, cell_type=Inhibitory_neurons
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 15:45:45 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Crohn_disease.results.coverage.0.9.PPH4.0.8.Astrocytes.clumped
+    output: csMR-EXAMPLE/MR/Crohn_disease-MS-disease_Multiple_Sclerosis_R10_full_outcome/Crohn_disease.MS-disease_Multiple_Sclerosis_R10_full_outcome.Astrocytes.MR.res, csMR-EXAMPLE/MR/Crohn_disease-MS-disease_Multiple_Sclerosis_R10_full_outcome/Crohn_disease.MS-disease_Multiple_Sclerosis_R10_full_outcome.Astrocytes.MR.sensitivity
+    jobid: 373
+    reason: Missing output files: csMR-EXAMPLE/MR/Crohn_disease-MS-disease_Multiple_Sclerosis_R10_full_outcome/Crohn_disease.MS-disease_Multiple_Sclerosis_R10_full_outcome.Astrocytes.MR.res, csMR-EXAMPLE/MR/Crohn_disease-MS-disease_Multiple_Sclerosis_R10_full_outcome/Crohn_disease.MS-disease_Multiple_Sclerosis_R10_full_outcome.Astrocytes.MR.sensitivity
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Crohn_disease, outcome=MS-disease_Multiple_Sclerosis_R10_full_outcome, cell_type=Astrocytes
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 15:45:45 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Inflammatory_bowel_disease.results.coverage.0.9.PPH4.0.8.Astrocytes.clumped
+    output: csMR-EXAMPLE/MR/Inflammatory_bowel_disease-Carpal_tunnel_syndrome_R10_full_outcome/Inflammatory_bowel_disease.Carpal_tunnel_syndrome_R10_full_outcome.Astrocytes.MR.res, csMR-EXAMPLE/MR/Inflammatory_bowel_disease-Carpal_tunnel_syndrome_R10_full_outcome/Inflammatory_bowel_disease.Carpal_tunnel_syndrome_R10_full_outcome.Astrocytes.MR.sensitivity
+    jobid: 264
+    reason: Missing output files: csMR-EXAMPLE/MR/Inflammatory_bowel_disease-Carpal_tunnel_syndrome_R10_full_outcome/Inflammatory_bowel_disease.Carpal_tunnel_syndrome_R10_full_outcome.Astrocytes.MR.sensitivity, csMR-EXAMPLE/MR/Inflammatory_bowel_disease-Carpal_tunnel_syndrome_R10_full_outcome/Inflammatory_bowel_disease.Carpal_tunnel_syndrome_R10_full_outcome.Astrocytes.MR.res
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Inflammatory_bowel_disease, outcome=Carpal_tunnel_syndrome_R10_full_outcome, cell_type=Astrocytes
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 15:45:45 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Inflammatory_bowel_disease.results.coverage.0.9.PPH4.0.8.Astrocytes.clumped
+    output: csMR-EXAMPLE/MR/Inflammatory_bowel_disease-Generalized_anxiety_disorder_R10_full_outcome/Inflammatory_bowel_disease.Generalized_anxiety_disorder_R10_full_outcome.Astrocytes.MR.res, csMR-EXAMPLE/MR/Inflammatory_bowel_disease-Generalized_anxiety_disorder_R10_full_outcome/Inflammatory_bowel_disease.Generalized_anxiety_disorder_R10_full_outcome.Astrocytes.MR.sensitivity
+    jobid: 266
+    reason: Missing output files: csMR-EXAMPLE/MR/Inflammatory_bowel_disease-Generalized_anxiety_disorder_R10_full_outcome/Inflammatory_bowel_disease.Generalized_anxiety_disorder_R10_full_outcome.Astrocytes.MR.res, csMR-EXAMPLE/MR/Inflammatory_bowel_disease-Generalized_anxiety_disorder_R10_full_outcome/Inflammatory_bowel_disease.Generalized_anxiety_disorder_R10_full_outcome.Astrocytes.MR.sensitivity
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Inflammatory_bowel_disease, outcome=Generalized_anxiety_disorder_R10_full_outcome, cell_type=Astrocytes
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 15:45:45 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Inflammatory_bowel_disease.results.coverage.0.9.PPH4.0.8.Inhibitory_neurons.clumped
+    output: csMR-EXAMPLE/MR/Inflammatory_bowel_disease-Parkinsons_disease_R10_full_outcome/Inflammatory_bowel_disease.Parkinsons_disease_R10_full_outcome.Inhibitory_neurons.MR.res, csMR-EXAMPLE/MR/Inflammatory_bowel_disease-Parkinsons_disease_R10_full_outcome/Inflammatory_bowel_disease.Parkinsons_disease_R10_full_outcome.Inhibitory_neurons.MR.sensitivity
+    jobid: 214
+    reason: Missing output files: csMR-EXAMPLE/MR/Inflammatory_bowel_disease-Parkinsons_disease_R10_full_outcome/Inflammatory_bowel_disease.Parkinsons_disease_R10_full_outcome.Inhibitory_neurons.MR.res, csMR-EXAMPLE/MR/Inflammatory_bowel_disease-Parkinsons_disease_R10_full_outcome/Inflammatory_bowel_disease.Parkinsons_disease_R10_full_outcome.Inhibitory_neurons.MR.sensitivity
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Inflammatory_bowel_disease, outcome=Parkinsons_disease_R10_full_outcome, cell_type=Inhibitory_neurons
+    resources: tmpdir=/tmp
+
+
+[Sat Aug 31 15:45:45 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Crohn_disease.results.coverage.0.9.PPH4.0.8.Inhibitory_neurons.clumped
+    output: csMR-EXAMPLE/MR/Crohn_disease-Epilepsy_R10_full_outcome/Crohn_disease.Epilepsy_R10_full_outcome.Inhibitory_neurons.MR.res, csMR-EXAMPLE/MR/Crohn_disease-Epilepsy_R10_full_outcome/Crohn_disease.Epilepsy_R10_full_outcome.Inhibitory_neurons.MR.sensitivity
+    jobid: 330
+    reason: Missing output files: csMR-EXAMPLE/MR/Crohn_disease-Epilepsy_R10_full_outcome/Crohn_disease.Epilepsy_R10_full_outcome.Inhibitory_neurons.MR.res, csMR-EXAMPLE/MR/Crohn_disease-Epilepsy_R10_full_outcome/Crohn_disease.Epilepsy_R10_full_outcome.Inhibitory_neurons.MR.sensitivity
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Crohn_disease, outcome=Epilepsy_R10_full_outcome, cell_type=Inhibitory_neurons
+    resources: tmpdir=/tmp
+
+[Sat Aug 31 15:46:01 2024]
+Error in rule MR:
+    jobid: 209
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Inflammatory_bowel_disease.results.coverage.0.9.PPH4.0.8.Microglia.clumped
+    output: csMR-EXAMPLE/MR/Inflammatory_bowel_disease-AD_ieu_b_2_full_outcome/Inflammatory_bowel_disease.AD_ieu_b_2_full_outcome.Microglia.MR.res, csMR-EXAMPLE/MR/Inflammatory_bowel_disease-AD_ieu_b_2_full_outcome/Inflammatory_bowel_disease.AD_ieu_b_2_full_outcome.Microglia.MR.sensitivity
+    shell:
+        Rscript scripts/csMR.r -e /home/u/csMR/example/BMI_GWAS/Inflammatory_bowel_disease.ma -o example/outcomes/AD_ieu_b_2_full_outcome.ma -c csMR-EXAMPLE/MR/clump/Susie_coloc.Inflammatory_bowel_disease.results.coverage.0.9.PPH4.0.8.Microglia.clumped -r /home/u/csMR/data/reference_genome_1000G_EUR
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Sat Aug 31 15:46:12 2024]
+Error in rule MR:
+    jobid: 139
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.Excitatory_neurons.clumped
+    output: csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-ALS_ieu_a_1085_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.ALS_ieu_a_1085_full_outcome.Excitatory_neurons.MR.res, csMR-EXAMPLE/MR/Ulcerative_colitis_full_exposure_ieu_a_970-ALS_ieu_a_1085_full_outcome/Ulcerative_colitis_full_exposure_ieu_a_970.ALS_ieu_a_1085_full_outcome.Excitatory_neurons.MR.sensitivity
+    shell:
+        Rscript scripts/csMR.r -e /home/u/csMR/example/BMI_GWAS/Ulcerative_colitis_full_exposure_ieu_a_970.ma -o example/outcomes/ALS_ieu_a_1085_full_outcome.ma -c csMR-EXAMPLE/MR/clump/Susie_coloc.Ulcerative_colitis_full_exposure_ieu_a_970.results.coverage.0.9.PPH4.0.8.Excitatory_neurons.clumped -r /home/u/csMR/data/reference_genome_1000G_EUR
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Sat Aug 31 15:46:25 2024]
+Finished job 339.
+1 of 11 steps (9%) done
+[Sat Aug 31 15:46:38 2024]
+Finished job 266.
+2 of 11 steps (18%) done
+[Sat Aug 31 15:46:38 2024]
+Finished job 373.
+3 of 11 steps (27%) done
+[Sat Aug 31 15:46:43 2024]
+Finished job 214.
+4 of 11 steps (36%) done
+[Sat Aug 31 15:46:44 2024]
+Finished job 264.
+5 of 11 steps (45%) done
+[Sat Aug 31 15:46:45 2024]
+Finished job 331.
+6 of 11 steps (55%) done
+[Sat Aug 31 15:46:45 2024]
+Finished job 330.
+7 of 11 steps (64%) done
+[Sat Aug 31 15:46:49 2024]
+Finished job 361.
+8 of 11 steps (73%) done
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2024-08-31T154526.420461.snakemake.log

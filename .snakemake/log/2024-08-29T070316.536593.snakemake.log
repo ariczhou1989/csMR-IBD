@@ -1,0 +1,544 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 60
+Rules claiming more threads will be scaled down.
+Job stats:
+job      count    min threads    max threads
+-----  -------  -------------  -------------
+MR          38              1              1
+all          1              1              1
+total       39              1              1
+
+Select jobs to execute...
+
+[Thu Aug 29 07:03:41 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Smoking_status.results.coverage.0.9.PPH4.0.8.pb.clumped
+    output: csMR-EXAMPLE/MR/Smoking_status-Type_2_diabetes_definitions_combined_R10_full_outcome/Smoking_status.Type_2_diabetes_definitions_combined_R10_full_outcome.pb.MR.res, csMR-EXAMPLE/MR/Smoking_status-Type_2_diabetes_definitions_combined_R10_full_outcome/Smoking_status.Type_2_diabetes_definitions_combined_R10_full_outcome.pb.MR.sensitivity
+    jobid: 518
+    reason: Missing output files: csMR-EXAMPLE/MR/Smoking_status-Type_2_diabetes_definitions_combined_R10_full_outcome/Smoking_status.Type_2_diabetes_definitions_combined_R10_full_outcome.pb.MR.res, csMR-EXAMPLE/MR/Smoking_status-Type_2_diabetes_definitions_combined_R10_full_outcome/Smoking_status.Type_2_diabetes_definitions_combined_R10_full_outcome.pb.MR.sensitivity
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Smoking_status, outcome=Type_2_diabetes_definitions_combined_R10_full_outcome, cell_type=pb
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 29 07:03:41 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Inflammatory_bowel_disease.results.coverage.0.9.PPH4.0.8.Microglia.clumped
+    output: csMR-EXAMPLE/MR/Inflammatory_bowel_disease-Schizophrenia_full_outcome/Inflammatory_bowel_disease.Schizophrenia_full_outcome.Microglia.MR.res, csMR-EXAMPLE/MR/Inflammatory_bowel_disease-Schizophrenia_full_outcome/Inflammatory_bowel_disease.Schizophrenia_full_outcome.Microglia.MR.sensitivity
+    jobid: 1618
+    reason: Missing output files: csMR-EXAMPLE/MR/Inflammatory_bowel_disease-Schizophrenia_full_outcome/Inflammatory_bowel_disease.Schizophrenia_full_outcome.Microglia.MR.res, csMR-EXAMPLE/MR/Inflammatory_bowel_disease-Schizophrenia_full_outcome/Inflammatory_bowel_disease.Schizophrenia_full_outcome.Microglia.MR.sensitivity
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Inflammatory_bowel_disease, outcome=Schizophrenia_full_outcome, cell_type=Microglia
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 29 07:03:41 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Alcohol_intake_frequency.results.coverage.0.9.PPH4.0.8.Astrocytes.clumped
+    output: csMR-EXAMPLE/MR/Alcohol_intake_frequency-Sleep_apnoea_R10_full_outcome/Alcohol_intake_frequency.Sleep_apnoea_R10_full_outcome.Astrocytes.MR.res, csMR-EXAMPLE/MR/Alcohol_intake_frequency-Sleep_apnoea_R10_full_outcome/Alcohol_intake_frequency.Sleep_apnoea_R10_full_outcome.Astrocytes.MR.sensitivity
+    jobid: 904
+    reason: Missing output files: csMR-EXAMPLE/MR/Alcohol_intake_frequency-Sleep_apnoea_R10_full_outcome/Alcohol_intake_frequency.Sleep_apnoea_R10_full_outcome.Astrocytes.MR.sensitivity, csMR-EXAMPLE/MR/Alcohol_intake_frequency-Sleep_apnoea_R10_full_outcome/Alcohol_intake_frequency.Sleep_apnoea_R10_full_outcome.Astrocytes.MR.res
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Alcohol_intake_frequency, outcome=Sleep_apnoea_R10_full_outcome, cell_type=Astrocytes
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 29 07:03:41 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Alcohol_intake_frequency.results.coverage.0.9.PPH4.0.8.pb.clumped
+    output: csMR-EXAMPLE/MR/Alcohol_intake_frequency-MS_ieu_a_1025_full_outcome/Alcohol_intake_frequency.MS_ieu_a_1025_full_outcome.pb.MR.res, csMR-EXAMPLE/MR/Alcohol_intake_frequency-MS_ieu_a_1025_full_outcome/Alcohol_intake_frequency.MS_ieu_a_1025_full_outcome.pb.MR.sensitivity
+    jobid: 960
+    reason: Missing output files: csMR-EXAMPLE/MR/Alcohol_intake_frequency-MS_ieu_a_1025_full_outcome/Alcohol_intake_frequency.MS_ieu_a_1025_full_outcome.pb.MR.sensitivity, csMR-EXAMPLE/MR/Alcohol_intake_frequency-MS_ieu_a_1025_full_outcome/Alcohol_intake_frequency.MS_ieu_a_1025_full_outcome.pb.MR.res
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Alcohol_intake_frequency, outcome=MS_ieu_a_1025_full_outcome, cell_type=pb
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 29 07:03:41 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Inflammatory_bowel_disease.results.coverage.0.9.PPH4.0.8.Astrocytes.clumped
+    output: csMR-EXAMPLE/MR/Inflammatory_bowel_disease-Post_traumatic_stress_disorder_R10_full_outcome/Inflammatory_bowel_disease.Post_traumatic_stress_disorder_R10_full_outcome.Astrocytes.MR.res, csMR-EXAMPLE/MR/Inflammatory_bowel_disease-Post_traumatic_stress_disorder_R10_full_outcome/Inflammatory_bowel_disease.Post_traumatic_stress_disorder_R10_full_outcome.Astrocytes.MR.sensitivity
+    jobid: 1800
+    reason: Missing output files: csMR-EXAMPLE/MR/Inflammatory_bowel_disease-Post_traumatic_stress_disorder_R10_full_outcome/Inflammatory_bowel_disease.Post_traumatic_stress_disorder_R10_full_outcome.Astrocytes.MR.sensitivity, csMR-EXAMPLE/MR/Inflammatory_bowel_disease-Post_traumatic_stress_disorder_R10_full_outcome/Inflammatory_bowel_disease.Post_traumatic_stress_disorder_R10_full_outcome.Astrocytes.MR.res
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Inflammatory_bowel_disease, outcome=Post_traumatic_stress_disorder_R10_full_outcome, cell_type=Astrocytes
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 29 07:03:41 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Smoking_status.results.coverage.0.9.PPH4.0.8.pb.clumped
+    output: csMR-EXAMPLE/MR/Smoking_status-Epilepsy_R10_full_outcome/Smoking_status.Epilepsy_R10_full_outcome.pb.MR.res, csMR-EXAMPLE/MR/Smoking_status-Epilepsy_R10_full_outcome/Smoking_status.Epilepsy_R10_full_outcome.pb.MR.sensitivity
+    jobid: 506
+    reason: Missing output files: csMR-EXAMPLE/MR/Smoking_status-Epilepsy_R10_full_outcome/Smoking_status.Epilepsy_R10_full_outcome.pb.MR.sensitivity, csMR-EXAMPLE/MR/Smoking_status-Epilepsy_R10_full_outcome/Smoking_status.Epilepsy_R10_full_outcome.pb.MR.res
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Smoking_status, outcome=Epilepsy_R10_full_outcome, cell_type=pb
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 29 07:03:41 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Alcohol_intake_frequency.results.coverage.0.9.PPH4.0.8.Astrocytes.clumped
+    output: csMR-EXAMPLE/MR/Alcohol_intake_frequency-Insomnia_R10_full_outcome/Alcohol_intake_frequency.Insomnia_R10_full_outcome.Astrocytes.MR.res, csMR-EXAMPLE/MR/Alcohol_intake_frequency-Insomnia_R10_full_outcome/Alcohol_intake_frequency.Insomnia_R10_full_outcome.Astrocytes.MR.sensitivity
+    jobid: 925
+    reason: Missing output files: csMR-EXAMPLE/MR/Alcohol_intake_frequency-Insomnia_R10_full_outcome/Alcohol_intake_frequency.Insomnia_R10_full_outcome.Astrocytes.MR.res, csMR-EXAMPLE/MR/Alcohol_intake_frequency-Insomnia_R10_full_outcome/Alcohol_intake_frequency.Insomnia_R10_full_outcome.Astrocytes.MR.sensitivity
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Alcohol_intake_frequency, outcome=Insomnia_R10_full_outcome, cell_type=Astrocytes
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 29 07:03:41 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Inflammatory_bowel_disease.results.coverage.0.9.PPH4.0.8.Astrocytes.clumped
+    output: csMR-EXAMPLE/MR/Inflammatory_bowel_disease-Coronary_atherosclerosis_R10_full_outcome/Inflammatory_bowel_disease.Coronary_atherosclerosis_R10_full_outcome.Astrocytes.MR.res, csMR-EXAMPLE/MR/Inflammatory_bowel_disease-Coronary_atherosclerosis_R10_full_outcome/Inflammatory_bowel_disease.Coronary_atherosclerosis_R10_full_outcome.Astrocytes.MR.sensitivity
+    jobid: 1793
+    reason: Missing output files: csMR-EXAMPLE/MR/Inflammatory_bowel_disease-Coronary_atherosclerosis_R10_full_outcome/Inflammatory_bowel_disease.Coronary_atherosclerosis_R10_full_outcome.Astrocytes.MR.res, csMR-EXAMPLE/MR/Inflammatory_bowel_disease-Coronary_atherosclerosis_R10_full_outcome/Inflammatory_bowel_disease.Coronary_atherosclerosis_R10_full_outcome.Astrocytes.MR.sensitivity
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Inflammatory_bowel_disease, outcome=Coronary_atherosclerosis_R10_full_outcome, cell_type=Astrocytes
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 29 07:03:41 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.telomere_length.results.coverage.0.9.PPH4.0.8.Inhibitory_neurons.clumped
+    output: csMR-EXAMPLE/MR/telomere_length-Cardiac_arrest_R10_full_outcome/telomere_length.Cardiac_arrest_R10_full_outcome.Inhibitory_neurons.MR.res, csMR-EXAMPLE/MR/telomere_length-Cardiac_arrest_R10_full_outcome/telomere_length.Cardiac_arrest_R10_full_outcome.Inhibitory_neurons.MR.sensitivity
+    jobid: 2549
+    reason: Missing output files: csMR-EXAMPLE/MR/telomere_length-Cardiac_arrest_R10_full_outcome/telomere_length.Cardiac_arrest_R10_full_outcome.Inhibitory_neurons.MR.sensitivity, csMR-EXAMPLE/MR/telomere_length-Cardiac_arrest_R10_full_outcome/telomere_length.Cardiac_arrest_R10_full_outcome.Inhibitory_neurons.MR.res
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=telomere_length, outcome=Cardiac_arrest_R10_full_outcome, cell_type=Inhibitory_neurons
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 29 07:03:41 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Alcohol_intake_frequency.results.coverage.0.9.PPH4.0.8.Astrocytes.clumped
+    output: csMR-EXAMPLE/MR/Alcohol_intake_frequency-Autism_spectrum_disorder_full_outcome/Alcohol_intake_frequency.Autism_spectrum_disorder_full_outcome.Astrocytes.MR.res, csMR-EXAMPLE/MR/Alcohol_intake_frequency-Autism_spectrum_disorder_full_outcome/Alcohol_intake_frequency.Autism_spectrum_disorder_full_outcome.Astrocytes.MR.sensitivity
+    jobid: 889
+    reason: Missing output files: csMR-EXAMPLE/MR/Alcohol_intake_frequency-Autism_spectrum_disorder_full_outcome/Alcohol_intake_frequency.Autism_spectrum_disorder_full_outcome.Astrocytes.MR.res, csMR-EXAMPLE/MR/Alcohol_intake_frequency-Autism_spectrum_disorder_full_outcome/Alcohol_intake_frequency.Autism_spectrum_disorder_full_outcome.Astrocytes.MR.sensitivity
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Alcohol_intake_frequency, outcome=Autism_spectrum_disorder_full_outcome, cell_type=Astrocytes
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 29 07:03:41 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Inflammatory_bowel_disease.results.coverage.0.9.PPH4.0.8.Microglia.clumped
+    output: csMR-EXAMPLE/MR/Inflammatory_bowel_disease-Anorexia_Nervosa_full_outcome/Inflammatory_bowel_disease.Anorexia_Nervosa_full_outcome.Microglia.MR.res, csMR-EXAMPLE/MR/Inflammatory_bowel_disease-Anorexia_Nervosa_full_outcome/Inflammatory_bowel_disease.Anorexia_Nervosa_full_outcome.Microglia.MR.sensitivity
+    jobid: 1612
+    reason: Missing output files: csMR-EXAMPLE/MR/Inflammatory_bowel_disease-Anorexia_Nervosa_full_outcome/Inflammatory_bowel_disease.Anorexia_Nervosa_full_outcome.Microglia.MR.res, csMR-EXAMPLE/MR/Inflammatory_bowel_disease-Anorexia_Nervosa_full_outcome/Inflammatory_bowel_disease.Anorexia_Nervosa_full_outcome.Microglia.MR.sensitivity
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Inflammatory_bowel_disease, outcome=Anorexia_Nervosa_full_outcome, cell_type=Microglia
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 29 07:03:41 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Inflammatory_bowel_disease.results.coverage.0.9.PPH4.0.8.Astrocytes.clumped
+    output: csMR-EXAMPLE/MR/Inflammatory_bowel_disease-COPD_R10_full_outcome/Inflammatory_bowel_disease.COPD_R10_full_outcome.Astrocytes.MR.res, csMR-EXAMPLE/MR/Inflammatory_bowel_disease-COPD_R10_full_outcome/Inflammatory_bowel_disease.COPD_R10_full_outcome.Astrocytes.MR.sensitivity
+    jobid: 1794
+    reason: Missing output files: csMR-EXAMPLE/MR/Inflammatory_bowel_disease-COPD_R10_full_outcome/Inflammatory_bowel_disease.COPD_R10_full_outcome.Astrocytes.MR.res, csMR-EXAMPLE/MR/Inflammatory_bowel_disease-COPD_R10_full_outcome/Inflammatory_bowel_disease.COPD_R10_full_outcome.Astrocytes.MR.sensitivity
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Inflammatory_bowel_disease, outcome=COPD_R10_full_outcome, cell_type=Astrocytes
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 29 07:03:41 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Smoking_status.results.coverage.0.9.PPH4.0.8.pb.clumped
+    output: csMR-EXAMPLE/MR/Smoking_status-Cerebral_palsy_and_other_paralytic_syndromes_R10_full_outcome/Smoking_status.Cerebral_palsy_and_other_paralytic_syndromes_R10_full_outcome.pb.MR.res, csMR-EXAMPLE/MR/Smoking_status-Cerebral_palsy_and_other_paralytic_syndromes_R10_full_outcome/Smoking_status.Cerebral_palsy_and_other_paralytic_syndromes_R10_full_outcome.pb.MR.sensitivity
+    jobid: 542
+    reason: Missing output files: csMR-EXAMPLE/MR/Smoking_status-Cerebral_palsy_and_other_paralytic_syndromes_R10_full_outcome/Smoking_status.Cerebral_palsy_and_other_paralytic_syndromes_R10_full_outcome.pb.MR.res, csMR-EXAMPLE/MR/Smoking_status-Cerebral_palsy_and_other_paralytic_syndromes_R10_full_outcome/Smoking_status.Cerebral_palsy_and_other_paralytic_syndromes_R10_full_outcome.pb.MR.sensitivity
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Smoking_status, outcome=Cerebral_palsy_and_other_paralytic_syndromes_R10_full_outcome, cell_type=pb
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 29 07:03:41 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Crohn_disease.results.coverage.0.9.PPH4.0.8.Oligodendrocytes.clumped
+    output: csMR-EXAMPLE/MR/Crohn_disease-GCST90027164_ALS_37_full_outcome/Crohn_disease.GCST90027164_ALS_37_full_outcome.Oligodendrocytes.MR.res, csMR-EXAMPLE/MR/Crohn_disease-GCST90027164_ALS_37_full_outcome/Crohn_disease.GCST90027164_ALS_37_full_outcome.Oligodendrocytes.MR.sensitivity
+    jobid: 1242
+    reason: Missing output files: csMR-EXAMPLE/MR/Crohn_disease-GCST90027164_ALS_37_full_outcome/Crohn_disease.GCST90027164_ALS_37_full_outcome.Oligodendrocytes.MR.res, csMR-EXAMPLE/MR/Crohn_disease-GCST90027164_ALS_37_full_outcome/Crohn_disease.GCST90027164_ALS_37_full_outcome.Oligodendrocytes.MR.sensitivity
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Crohn_disease, outcome=GCST90027164_ALS_37_full_outcome, cell_type=Oligodendrocytes
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 29 07:03:41 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Inflammatory_bowel_disease.results.coverage.0.9.PPH4.0.8.Inhibitory_neurons.clumped
+    output: csMR-EXAMPLE/MR/Inflammatory_bowel_disease-GCST90027158_AD_38_full_outcome/Inflammatory_bowel_disease.GCST90027158_AD_38_full_outcome.Inhibitory_neurons.MR.res, csMR-EXAMPLE/MR/Inflammatory_bowel_disease-GCST90027158_AD_38_full_outcome/Inflammatory_bowel_disease.GCST90027158_AD_38_full_outcome.Inhibitory_neurons.MR.sensitivity
+    jobid: 1634
+    reason: Missing output files: csMR-EXAMPLE/MR/Inflammatory_bowel_disease-GCST90027158_AD_38_full_outcome/Inflammatory_bowel_disease.GCST90027158_AD_38_full_outcome.Inhibitory_neurons.MR.res, csMR-EXAMPLE/MR/Inflammatory_bowel_disease-GCST90027158_AD_38_full_outcome/Inflammatory_bowel_disease.GCST90027158_AD_38_full_outcome.Inhibitory_neurons.MR.sensitivity
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Inflammatory_bowel_disease, outcome=GCST90027158_AD_38_full_outcome, cell_type=Inhibitory_neurons
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 29 07:03:41 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Inflammatory_bowel_disease.results.coverage.0.9.PPH4.0.8.Astrocytes.clumped
+    output: csMR-EXAMPLE/MR/Inflammatory_bowel_disease-Major_depression_full_outcome/Inflammatory_bowel_disease.Major_depression_full_outcome.Astrocytes.MR.res, csMR-EXAMPLE/MR/Inflammatory_bowel_disease-Major_depression_full_outcome/Inflammatory_bowel_disease.Major_depression_full_outcome.Astrocytes.MR.sensitivity
+    jobid: 1788
+    reason: Missing output files: csMR-EXAMPLE/MR/Inflammatory_bowel_disease-Major_depression_full_outcome/Inflammatory_bowel_disease.Major_depression_full_outcome.Astrocytes.MR.res, csMR-EXAMPLE/MR/Inflammatory_bowel_disease-Major_depression_full_outcome/Inflammatory_bowel_disease.Major_depression_full_outcome.Astrocytes.MR.sensitivity
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Inflammatory_bowel_disease, outcome=Major_depression_full_outcome, cell_type=Astrocytes
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 29 07:03:41 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Smoking_status.results.coverage.0.9.PPH4.0.8.pb.clumped
+    output: csMR-EXAMPLE/MR/Smoking_status-Arthropathies_R10_full_outcome/Smoking_status.Arthropathies_R10_full_outcome.pb.MR.res, csMR-EXAMPLE/MR/Smoking_status-Arthropathies_R10_full_outcome/Smoking_status.Arthropathies_R10_full_outcome.pb.MR.sensitivity
+    jobid: 535
+    reason: Missing output files: csMR-EXAMPLE/MR/Smoking_status-Arthropathies_R10_full_outcome/Smoking_status.Arthropathies_R10_full_outcome.pb.MR.sensitivity, csMR-EXAMPLE/MR/Smoking_status-Arthropathies_R10_full_outcome/Smoking_status.Arthropathies_R10_full_outcome.pb.MR.res
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Smoking_status, outcome=Arthropathies_R10_full_outcome, cell_type=pb
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 29 07:03:41 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Alcohol_intake_frequency.results.coverage.0.9.PPH4.0.8.Astrocytes.clumped
+    output: csMR-EXAMPLE/MR/Alcohol_intake_frequency-Vascular_dementia_R10_full_outcome/Alcohol_intake_frequency.Vascular_dementia_R10_full_outcome.Astrocytes.MR.res, csMR-EXAMPLE/MR/Alcohol_intake_frequency-Vascular_dementia_R10_full_outcome/Alcohol_intake_frequency.Vascular_dementia_R10_full_outcome.Astrocytes.MR.sensitivity
+    jobid: 913
+    reason: Missing output files: csMR-EXAMPLE/MR/Alcohol_intake_frequency-Vascular_dementia_R10_full_outcome/Alcohol_intake_frequency.Vascular_dementia_R10_full_outcome.Astrocytes.MR.sensitivity, csMR-EXAMPLE/MR/Alcohol_intake_frequency-Vascular_dementia_R10_full_outcome/Alcohol_intake_frequency.Vascular_dementia_R10_full_outcome.Astrocytes.MR.res
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Alcohol_intake_frequency, outcome=Vascular_dementia_R10_full_outcome, cell_type=Astrocytes
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 29 07:03:41 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Smoking_status.results.coverage.0.9.PPH4.0.8.pb.clumped
+    output: csMR-EXAMPLE/MR/Smoking_status-Bipolar_affective_disorders_R10_full_outcome/Smoking_status.Bipolar_affective_disorders_R10_full_outcome.pb.MR.res, csMR-EXAMPLE/MR/Smoking_status-Bipolar_affective_disorders_R10_full_outcome/Smoking_status.Bipolar_affective_disorders_R10_full_outcome.pb.MR.sensitivity
+    jobid: 515
+    reason: Missing output files: csMR-EXAMPLE/MR/Smoking_status-Bipolar_affective_disorders_R10_full_outcome/Smoking_status.Bipolar_affective_disorders_R10_full_outcome.pb.MR.sensitivity, csMR-EXAMPLE/MR/Smoking_status-Bipolar_affective_disorders_R10_full_outcome/Smoking_status.Bipolar_affective_disorders_R10_full_outcome.pb.MR.res
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Smoking_status, outcome=Bipolar_affective_disorders_R10_full_outcome, cell_type=pb
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 29 07:03:41 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Inflammatory_bowel_disease.results.coverage.0.9.PPH4.0.8.Microglia.clumped
+    output: csMR-EXAMPLE/MR/Inflammatory_bowel_disease-AD_ieu_b_2_full_outcome/Inflammatory_bowel_disease.AD_ieu_b_2_full_outcome.Microglia.MR.res, csMR-EXAMPLE/MR/Inflammatory_bowel_disease-AD_ieu_b_2_full_outcome/Inflammatory_bowel_disease.AD_ieu_b_2_full_outcome.Microglia.MR.sensitivity
+    jobid: 1607
+    reason: Missing output files: csMR-EXAMPLE/MR/Inflammatory_bowel_disease-AD_ieu_b_2_full_outcome/Inflammatory_bowel_disease.AD_ieu_b_2_full_outcome.Microglia.MR.res, csMR-EXAMPLE/MR/Inflammatory_bowel_disease-AD_ieu_b_2_full_outcome/Inflammatory_bowel_disease.AD_ieu_b_2_full_outcome.Microglia.MR.sensitivity
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Inflammatory_bowel_disease, outcome=AD_ieu_b_2_full_outcome, cell_type=Microglia
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 29 07:03:41 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Inflammatory_bowel_disease.results.coverage.0.9.PPH4.0.8.Astrocytes.clumped
+    output: csMR-EXAMPLE/MR/Inflammatory_bowel_disease-PD_ieu_b_7_full_outcome/Inflammatory_bowel_disease.PD_ieu_b_7_full_outcome.Astrocytes.MR.res, csMR-EXAMPLE/MR/Inflammatory_bowel_disease-PD_ieu_b_7_full_outcome/Inflammatory_bowel_disease.PD_ieu_b_7_full_outcome.Astrocytes.MR.sensitivity
+    jobid: 1817
+    reason: Missing output files: csMR-EXAMPLE/MR/Inflammatory_bowel_disease-PD_ieu_b_7_full_outcome/Inflammatory_bowel_disease.PD_ieu_b_7_full_outcome.Astrocytes.MR.res, csMR-EXAMPLE/MR/Inflammatory_bowel_disease-PD_ieu_b_7_full_outcome/Inflammatory_bowel_disease.PD_ieu_b_7_full_outcome.Astrocytes.MR.sensitivity
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Inflammatory_bowel_disease, outcome=PD_ieu_b_7_full_outcome, cell_type=Astrocytes
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 29 07:03:41 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Crohn_disease.results.coverage.0.9.PPH4.0.8.Inhibitory_neurons.clumped
+    output: csMR-EXAMPLE/MR/Crohn_disease-GCST90406924_38_MSA_full_outcome/Crohn_disease.GCST90406924_38_MSA_full_outcome.Inhibitory_neurons.MR.res, csMR-EXAMPLE/MR/Crohn_disease-GCST90406924_38_MSA_full_outcome/Crohn_disease.GCST90406924_38_MSA_full_outcome.Inhibitory_neurons.MR.sensitivity
+    jobid: 1194
+    reason: Missing output files: csMR-EXAMPLE/MR/Crohn_disease-GCST90406924_38_MSA_full_outcome/Crohn_disease.GCST90406924_38_MSA_full_outcome.Inhibitory_neurons.MR.res, csMR-EXAMPLE/MR/Crohn_disease-GCST90406924_38_MSA_full_outcome/Crohn_disease.GCST90406924_38_MSA_full_outcome.Inhibitory_neurons.MR.sensitivity
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Crohn_disease, outcome=GCST90406924_38_MSA_full_outcome, cell_type=Inhibitory_neurons
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 29 07:03:41 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Crohn_disease.results.coverage.0.9.PPH4.0.8.Oligodendrocytes.clumped
+    output: csMR-EXAMPLE/MR/Crohn_disease-Obsessive_compulsive_disorder_full_outcome/Crohn_disease.Obsessive_compulsive_disorder_full_outcome.Oligodendrocytes.MR.res, csMR-EXAMPLE/MR/Crohn_disease-Obsessive_compulsive_disorder_full_outcome/Crohn_disease.Obsessive_compulsive_disorder_full_outcome.Oligodendrocytes.MR.sensitivity
+    jobid: 1250
+    reason: Missing output files: csMR-EXAMPLE/MR/Crohn_disease-Obsessive_compulsive_disorder_full_outcome/Crohn_disease.Obsessive_compulsive_disorder_full_outcome.Oligodendrocytes.MR.res, csMR-EXAMPLE/MR/Crohn_disease-Obsessive_compulsive_disorder_full_outcome/Crohn_disease.Obsessive_compulsive_disorder_full_outcome.Oligodendrocytes.MR.sensitivity
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Crohn_disease, outcome=Obsessive_compulsive_disorder_full_outcome, cell_type=Oligodendrocytes
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 29 07:03:41 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Inflammatory_bowel_disease.results.coverage.0.9.PPH4.0.8.Astrocytes.clumped
+    output: csMR-EXAMPLE/MR/Inflammatory_bowel_disease-Cluster_headache_wide_R10_full_outcome/Inflammatory_bowel_disease.Cluster_headache_wide_R10_full_outcome.Astrocytes.MR.res, csMR-EXAMPLE/MR/Inflammatory_bowel_disease-Cluster_headache_wide_R10_full_outcome/Inflammatory_bowel_disease.Cluster_headache_wide_R10_full_outcome.Astrocytes.MR.sensitivity
+    jobid: 1796
+    reason: Missing output files: csMR-EXAMPLE/MR/Inflammatory_bowel_disease-Cluster_headache_wide_R10_full_outcome/Inflammatory_bowel_disease.Cluster_headache_wide_R10_full_outcome.Astrocytes.MR.sensitivity, csMR-EXAMPLE/MR/Inflammatory_bowel_disease-Cluster_headache_wide_R10_full_outcome/Inflammatory_bowel_disease.Cluster_headache_wide_R10_full_outcome.Astrocytes.MR.res
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Inflammatory_bowel_disease, outcome=Cluster_headache_wide_R10_full_outcome, cell_type=Astrocytes
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 29 07:03:41 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Crohn_disease.results.coverage.0.9.PPH4.0.8.Oligodendrocytes.clumped
+    output: csMR-EXAMPLE/MR/Crohn_disease-Hyperlipidaemia_other_unspecified_R10_full_outcome/Crohn_disease.Hyperlipidaemia_other_unspecified_R10_full_outcome.Oligodendrocytes.MR.res, csMR-EXAMPLE/MR/Crohn_disease-Hyperlipidaemia_other_unspecified_R10_full_outcome/Crohn_disease.Hyperlipidaemia_other_unspecified_R10_full_outcome.Oligodendrocytes.MR.sensitivity
+    jobid: 1272
+    reason: Missing output files: csMR-EXAMPLE/MR/Crohn_disease-Hyperlipidaemia_other_unspecified_R10_full_outcome/Crohn_disease.Hyperlipidaemia_other_unspecified_R10_full_outcome.Oligodendrocytes.MR.sensitivity, csMR-EXAMPLE/MR/Crohn_disease-Hyperlipidaemia_other_unspecified_R10_full_outcome/Crohn_disease.Hyperlipidaemia_other_unspecified_R10_full_outcome.Oligodendrocytes.MR.res
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Crohn_disease, outcome=Hyperlipidaemia_other_unspecified_R10_full_outcome, cell_type=Oligodendrocytes
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 29 07:03:41 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Alcohol_intake_frequency.results.coverage.0.9.PPH4.0.8.Astrocytes.clumped
+    output: csMR-EXAMPLE/MR/Alcohol_intake_frequency-Gastric_ulcer_R10_full_outcome/Alcohol_intake_frequency.Gastric_ulcer_R10_full_outcome.Astrocytes.MR.res, csMR-EXAMPLE/MR/Alcohol_intake_frequency-Gastric_ulcer_R10_full_outcome/Alcohol_intake_frequency.Gastric_ulcer_R10_full_outcome.Astrocytes.MR.sensitivity
+    jobid: 901
+    reason: Missing output files: csMR-EXAMPLE/MR/Alcohol_intake_frequency-Gastric_ulcer_R10_full_outcome/Alcohol_intake_frequency.Gastric_ulcer_R10_full_outcome.Astrocytes.MR.sensitivity, csMR-EXAMPLE/MR/Alcohol_intake_frequency-Gastric_ulcer_R10_full_outcome/Alcohol_intake_frequency.Gastric_ulcer_R10_full_outcome.Astrocytes.MR.res
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Alcohol_intake_frequency, outcome=Gastric_ulcer_R10_full_outcome, cell_type=Astrocytes
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 29 07:03:41 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Smoking_status.results.coverage.0.9.PPH4.0.8.pb.clumped
+    output: csMR-EXAMPLE/MR/Smoking_status-PD_ieu_b_7_full_outcome/Smoking_status.PD_ieu_b_7_full_outcome.pb.MR.res, csMR-EXAMPLE/MR/Smoking_status-PD_ieu_b_7_full_outcome/Smoking_status.PD_ieu_b_7_full_outcome.pb.MR.sensitivity
+    jobid: 537
+    reason: Missing output files: csMR-EXAMPLE/MR/Smoking_status-PD_ieu_b_7_full_outcome/Smoking_status.PD_ieu_b_7_full_outcome.pb.MR.res, csMR-EXAMPLE/MR/Smoking_status-PD_ieu_b_7_full_outcome/Smoking_status.PD_ieu_b_7_full_outcome.pb.MR.sensitivity
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Smoking_status, outcome=PD_ieu_b_7_full_outcome, cell_type=pb
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 29 07:03:41 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Smoking_status.results.coverage.0.9.PPH4.0.8.pb.clumped
+    output: csMR-EXAMPLE/MR/Smoking_status-Type_2_diabetes/Smoking_status.Type_2_diabetes.pb.MR.res, csMR-EXAMPLE/MR/Smoking_status-Type_2_diabetes/Smoking_status.Type_2_diabetes.pb.MR.sensitivity
+    jobid: 497
+    reason: Missing output files: csMR-EXAMPLE/MR/Smoking_status-Type_2_diabetes/Smoking_status.Type_2_diabetes.pb.MR.sensitivity, csMR-EXAMPLE/MR/Smoking_status-Type_2_diabetes/Smoking_status.Type_2_diabetes.pb.MR.res
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Smoking_status, outcome=Type_2_diabetes, cell_type=pb
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 29 07:03:41 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Crohn_disease.results.coverage.0.9.PPH4.0.8.Inhibitory_neurons.clumped
+    output: csMR-EXAMPLE/MR/Crohn_disease-Coronary_artery_disease/Crohn_disease.Coronary_artery_disease.Inhibitory_neurons.MR.res, csMR-EXAMPLE/MR/Crohn_disease-Coronary_artery_disease/Crohn_disease.Coronary_artery_disease.Inhibitory_neurons.MR.sensitivity
+    jobid: 1195
+    reason: Missing output files: csMR-EXAMPLE/MR/Crohn_disease-Coronary_artery_disease/Crohn_disease.Coronary_artery_disease.Inhibitory_neurons.MR.res, csMR-EXAMPLE/MR/Crohn_disease-Coronary_artery_disease/Crohn_disease.Coronary_artery_disease.Inhibitory_neurons.MR.sensitivity
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Crohn_disease, outcome=Coronary_artery_disease, cell_type=Inhibitory_neurons
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 29 07:03:41 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Inflammatory_bowel_disease.results.coverage.0.9.PPH4.0.8.Inhibitory_neurons.clumped
+    output: csMR-EXAMPLE/MR/Inflammatory_bowel_disease-Aortic_aneurysm_R10_full_outcome/Inflammatory_bowel_disease.Aortic_aneurysm_R10_full_outcome.Inhibitory_neurons.MR.res, csMR-EXAMPLE/MR/Inflammatory_bowel_disease-Aortic_aneurysm_R10_full_outcome/Inflammatory_bowel_disease.Aortic_aneurysm_R10_full_outcome.Inhibitory_neurons.MR.sensitivity
+    jobid: 1671
+    reason: Missing output files: csMR-EXAMPLE/MR/Inflammatory_bowel_disease-Aortic_aneurysm_R10_full_outcome/Inflammatory_bowel_disease.Aortic_aneurysm_R10_full_outcome.Inhibitory_neurons.MR.sensitivity, csMR-EXAMPLE/MR/Inflammatory_bowel_disease-Aortic_aneurysm_R10_full_outcome/Inflammatory_bowel_disease.Aortic_aneurysm_R10_full_outcome.Inhibitory_neurons.MR.res
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Inflammatory_bowel_disease, outcome=Aortic_aneurysm_R10_full_outcome, cell_type=Inhibitory_neurons
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 29 07:03:41 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Inflammatory_bowel_disease.results.coverage.0.9.PPH4.0.8.Astrocytes.clumped
+    output: csMR-EXAMPLE/MR/Inflammatory_bowel_disease-MS_ieu_a_1025_full_outcome/Inflammatory_bowel_disease.MS_ieu_a_1025_full_outcome.Astrocytes.MR.res, csMR-EXAMPLE/MR/Inflammatory_bowel_disease-MS_ieu_a_1025_full_outcome/Inflammatory_bowel_disease.MS_ieu_a_1025_full_outcome.Astrocytes.MR.sensitivity
+    jobid: 1797
+    reason: Missing output files: csMR-EXAMPLE/MR/Inflammatory_bowel_disease-MS_ieu_a_1025_full_outcome/Inflammatory_bowel_disease.MS_ieu_a_1025_full_outcome.Astrocytes.MR.sensitivity, csMR-EXAMPLE/MR/Inflammatory_bowel_disease-MS_ieu_a_1025_full_outcome/Inflammatory_bowel_disease.MS_ieu_a_1025_full_outcome.Astrocytes.MR.res
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Inflammatory_bowel_disease, outcome=MS_ieu_a_1025_full_outcome, cell_type=Astrocytes
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 29 07:03:41 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Inflammatory_bowel_disease.results.coverage.0.9.PPH4.0.8.Astrocytes.clumped
+    output: csMR-EXAMPLE/MR/Inflammatory_bowel_disease-Insomnia_R10_full_outcome/Inflammatory_bowel_disease.Insomnia_R10_full_outcome.Astrocytes.MR.res, csMR-EXAMPLE/MR/Inflammatory_bowel_disease-Insomnia_R10_full_outcome/Inflammatory_bowel_disease.Insomnia_R10_full_outcome.Astrocytes.MR.sensitivity
+    jobid: 1811
+    reason: Missing output files: csMR-EXAMPLE/MR/Inflammatory_bowel_disease-Insomnia_R10_full_outcome/Inflammatory_bowel_disease.Insomnia_R10_full_outcome.Astrocytes.MR.res, csMR-EXAMPLE/MR/Inflammatory_bowel_disease-Insomnia_R10_full_outcome/Inflammatory_bowel_disease.Insomnia_R10_full_outcome.Astrocytes.MR.sensitivity
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Inflammatory_bowel_disease, outcome=Insomnia_R10_full_outcome, cell_type=Astrocytes
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 29 07:03:41 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Smoking_status.results.coverage.0.9.PPH4.0.8.pb.clumped
+    output: csMR-EXAMPLE/MR/Smoking_status-GCST90406924_38_MSA_full_outcome/Smoking_status.GCST90406924_38_MSA_full_outcome.pb.MR.res, csMR-EXAMPLE/MR/Smoking_status-GCST90406924_38_MSA_full_outcome/Smoking_status.GCST90406924_38_MSA_full_outcome.pb.MR.sensitivity
+    jobid: 504
+    reason: Missing output files: csMR-EXAMPLE/MR/Smoking_status-GCST90406924_38_MSA_full_outcome/Smoking_status.GCST90406924_38_MSA_full_outcome.pb.MR.res, csMR-EXAMPLE/MR/Smoking_status-GCST90406924_38_MSA_full_outcome/Smoking_status.GCST90406924_38_MSA_full_outcome.pb.MR.sensitivity
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Smoking_status, outcome=GCST90406924_38_MSA_full_outcome, cell_type=pb
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 29 07:03:41 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Smoking_status.results.coverage.0.9.PPH4.0.8.pb.clumped
+    output: csMR-EXAMPLE/MR/Smoking_status-Insomnia_R10_full_outcome/Smoking_status.Insomnia_R10_full_outcome.pb.MR.res, csMR-EXAMPLE/MR/Smoking_status-Insomnia_R10_full_outcome/Smoking_status.Insomnia_R10_full_outcome.pb.MR.sensitivity
+    jobid: 531
+    reason: Missing output files: csMR-EXAMPLE/MR/Smoking_status-Insomnia_R10_full_outcome/Smoking_status.Insomnia_R10_full_outcome.pb.MR.sensitivity, csMR-EXAMPLE/MR/Smoking_status-Insomnia_R10_full_outcome/Smoking_status.Insomnia_R10_full_outcome.pb.MR.res
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Smoking_status, outcome=Insomnia_R10_full_outcome, cell_type=pb
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 29 07:03:41 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Alcohol_intake_frequency.results.coverage.0.9.PPH4.0.8.Astrocytes.clumped
+    output: csMR-EXAMPLE/MR/Alcohol_intake_frequency-Ischaemic_heart_disease_wide_definition_R10_full_outcome/Alcohol_intake_frequency.Ischaemic_heart_disease_wide_definition_R10_full_outcome.Astrocytes.MR.res, csMR-EXAMPLE/MR/Alcohol_intake_frequency-Ischaemic_heart_disease_wide_definition_R10_full_outcome/Alcohol_intake_frequency.Ischaemic_heart_disease_wide_definition_R10_full_outcome.Astrocytes.MR.sensitivity
+    jobid: 937
+    reason: Missing output files: csMR-EXAMPLE/MR/Alcohol_intake_frequency-Ischaemic_heart_disease_wide_definition_R10_full_outcome/Alcohol_intake_frequency.Ischaemic_heart_disease_wide_definition_R10_full_outcome.Astrocytes.MR.res, csMR-EXAMPLE/MR/Alcohol_intake_frequency-Ischaemic_heart_disease_wide_definition_R10_full_outcome/Alcohol_intake_frequency.Ischaemic_heart_disease_wide_definition_R10_full_outcome.Astrocytes.MR.sensitivity
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Alcohol_intake_frequency, outcome=Ischaemic_heart_disease_wide_definition_R10_full_outcome, cell_type=Astrocytes
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 29 07:03:41 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Inflammatory_bowel_disease.results.coverage.0.9.PPH4.0.8.Astrocytes.clumped
+    output: csMR-EXAMPLE/MR/Inflammatory_bowel_disease-Myocardial_infarction_strict_R10_full_outcome/Inflammatory_bowel_disease.Myocardial_infarction_strict_R10_full_outcome.Astrocytes.MR.res, csMR-EXAMPLE/MR/Inflammatory_bowel_disease-Myocardial_infarction_strict_R10_full_outcome/Inflammatory_bowel_disease.Myocardial_infarction_strict_R10_full_outcome.Astrocytes.MR.sensitivity
+    jobid: 1819
+    reason: Missing output files: csMR-EXAMPLE/MR/Inflammatory_bowel_disease-Myocardial_infarction_strict_R10_full_outcome/Inflammatory_bowel_disease.Myocardial_infarction_strict_R10_full_outcome.Astrocytes.MR.sensitivity, csMR-EXAMPLE/MR/Inflammatory_bowel_disease-Myocardial_infarction_strict_R10_full_outcome/Inflammatory_bowel_disease.Myocardial_infarction_strict_R10_full_outcome.Astrocytes.MR.res
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Inflammatory_bowel_disease, outcome=Myocardial_infarction_strict_R10_full_outcome, cell_type=Astrocytes
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 29 07:03:42 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Crohn_disease.results.coverage.0.9.PPH4.0.8.Inhibitory_neurons.clumped
+    output: csMR-EXAMPLE/MR/Crohn_disease-Schizophrenia_full_outcome/Crohn_disease.Schizophrenia_full_outcome.Inhibitory_neurons.MR.res, csMR-EXAMPLE/MR/Crohn_disease-Schizophrenia_full_outcome/Crohn_disease.Schizophrenia_full_outcome.Inhibitory_neurons.MR.sensitivity
+    jobid: 1224
+    reason: Missing output files: csMR-EXAMPLE/MR/Crohn_disease-Schizophrenia_full_outcome/Crohn_disease.Schizophrenia_full_outcome.Inhibitory_neurons.MR.res, csMR-EXAMPLE/MR/Crohn_disease-Schizophrenia_full_outcome/Crohn_disease.Schizophrenia_full_outcome.Inhibitory_neurons.MR.sensitivity
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Crohn_disease, outcome=Schizophrenia_full_outcome, cell_type=Inhibitory_neurons
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 29 07:03:42 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Smoking_status.results.coverage.0.9.PPH4.0.8.pb.clumped
+    output: csMR-EXAMPLE/MR/Smoking_status-Heart_failure_strict_R10_full_outcome/Smoking_status.Heart_failure_strict_R10_full_outcome.pb.MR.res, csMR-EXAMPLE/MR/Smoking_status-Heart_failure_strict_R10_full_outcome/Smoking_status.Heart_failure_strict_R10_full_outcome.pb.MR.sensitivity
+    jobid: 525
+    reason: Missing output files: csMR-EXAMPLE/MR/Smoking_status-Heart_failure_strict_R10_full_outcome/Smoking_status.Heart_failure_strict_R10_full_outcome.pb.MR.res, csMR-EXAMPLE/MR/Smoking_status-Heart_failure_strict_R10_full_outcome/Smoking_status.Heart_failure_strict_R10_full_outcome.pb.MR.sensitivity
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Smoking_status, outcome=Heart_failure_strict_R10_full_outcome, cell_type=pb
+    resources: tmpdir=/tmp
+
+[Thu Aug 29 07:03:49 2024]
+Finished job 1797.
+1 of 39 steps (3%) done
+[Thu Aug 29 07:04:05 2024]
+Error in rule MR:
+    jobid: 1612
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Inflammatory_bowel_disease.results.coverage.0.9.PPH4.0.8.Microglia.clumped
+    output: csMR-EXAMPLE/MR/Inflammatory_bowel_disease-Anorexia_Nervosa_full_outcome/Inflammatory_bowel_disease.Anorexia_Nervosa_full_outcome.Microglia.MR.res, csMR-EXAMPLE/MR/Inflammatory_bowel_disease-Anorexia_Nervosa_full_outcome/Inflammatory_bowel_disease.Anorexia_Nervosa_full_outcome.Microglia.MR.sensitivity
+    shell:
+        Rscript scripts/csMR.r -e /home/u/csMR/example/BMI_GWAS/Inflammatory_bowel_disease.ma -o example/outcomes/Anorexia_Nervosa_full_outcome.ma -c csMR-EXAMPLE/MR/clump/Susie_coloc.Inflammatory_bowel_disease.results.coverage.0.9.PPH4.0.8.Microglia.clumped -r /home/u/csMR/data/reference_genome_1000G_EUR
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Thu Aug 29 07:04:07 2024]
+Finished job 1618.
+2 of 39 steps (5%) done
+[Thu Aug 29 07:04:09 2024]
+Finished job 1224.
+3 of 39 steps (8%) done
+[Thu Aug 29 07:04:09 2024]
+Finished job 1788.
+4 of 39 steps (10%) done
+[Thu Aug 29 07:04:16 2024]
+Finished job 1607.
+5 of 39 steps (13%) done
+[Thu Aug 29 07:04:16 2024]
+Finished job 1250.
+6 of 39 steps (15%) done
+[Thu Aug 29 07:04:21 2024]
+Finished job 1194.
+7 of 39 steps (18%) done
+[Thu Aug 29 07:04:23 2024]
+Finished job 889.
+8 of 39 steps (21%) done
+[Thu Aug 29 07:04:24 2024]
+Finished job 1195.
+9 of 39 steps (23%) done
+[Thu Aug 29 07:04:26 2024]
+Finished job 1242.
+10 of 39 steps (26%) done
+[Thu Aug 29 07:04:28 2024]
+Finished job 960.
+11 of 39 steps (28%) done
+[Thu Aug 29 07:04:31 2024]
+Finished job 1817.
+12 of 39 steps (31%) done
+[Thu Aug 29 07:04:43 2024]
+Finished job 504.
+13 of 39 steps (33%) done
+[Thu Aug 29 07:04:43 2024]
+Error in rule MR:
+    jobid: 1811
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Inflammatory_bowel_disease.results.coverage.0.9.PPH4.0.8.Astrocytes.clumped
+    output: csMR-EXAMPLE/MR/Inflammatory_bowel_disease-Insomnia_R10_full_outcome/Inflammatory_bowel_disease.Insomnia_R10_full_outcome.Astrocytes.MR.res, csMR-EXAMPLE/MR/Inflammatory_bowel_disease-Insomnia_R10_full_outcome/Inflammatory_bowel_disease.Insomnia_R10_full_outcome.Astrocytes.MR.sensitivity
+    shell:
+        Rscript scripts/csMR.r -e /home/u/csMR/example/BMI_GWAS/Inflammatory_bowel_disease.ma -o example/outcomes/Insomnia_R10_full_outcome.ma -c csMR-EXAMPLE/MR/clump/Susie_coloc.Inflammatory_bowel_disease.results.coverage.0.9.PPH4.0.8.Astrocytes.clumped -r /home/u/csMR/data/reference_genome_1000G_EUR
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Thu Aug 29 07:04:44 2024]
+Error in rule MR:
+    jobid: 1796
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Inflammatory_bowel_disease.results.coverage.0.9.PPH4.0.8.Astrocytes.clumped
+    output: csMR-EXAMPLE/MR/Inflammatory_bowel_disease-Cluster_headache_wide_R10_full_outcome/Inflammatory_bowel_disease.Cluster_headache_wide_R10_full_outcome.Astrocytes.MR.res, csMR-EXAMPLE/MR/Inflammatory_bowel_disease-Cluster_headache_wide_R10_full_outcome/Inflammatory_bowel_disease.Cluster_headache_wide_R10_full_outcome.Astrocytes.MR.sensitivity
+    shell:
+        Rscript scripts/csMR.r -e /home/u/csMR/example/BMI_GWAS/Inflammatory_bowel_disease.ma -o example/outcomes/Cluster_headache_wide_R10_full_outcome.ma -c csMR-EXAMPLE/MR/clump/Susie_coloc.Inflammatory_bowel_disease.results.coverage.0.9.PPH4.0.8.Astrocytes.clumped -r /home/u/csMR/data/reference_genome_1000G_EUR
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Thu Aug 29 07:04:44 2024]
+Error in rule MR:
+    jobid: 1671
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Inflammatory_bowel_disease.results.coverage.0.9.PPH4.0.8.Inhibitory_neurons.clumped
+    output: csMR-EXAMPLE/MR/Inflammatory_bowel_disease-Aortic_aneurysm_R10_full_outcome/Inflammatory_bowel_disease.Aortic_aneurysm_R10_full_outcome.Inhibitory_neurons.MR.res, csMR-EXAMPLE/MR/Inflammatory_bowel_disease-Aortic_aneurysm_R10_full_outcome/Inflammatory_bowel_disease.Aortic_aneurysm_R10_full_outcome.Inhibitory_neurons.MR.sensitivity
+    shell:
+        Rscript scripts/csMR.r -e /home/u/csMR/example/BMI_GWAS/Inflammatory_bowel_disease.ma -o example/outcomes/Aortic_aneurysm_R10_full_outcome.ma -c csMR-EXAMPLE/MR/clump/Susie_coloc.Inflammatory_bowel_disease.results.coverage.0.9.PPH4.0.8.Inhibitory_neurons.clumped -r /home/u/csMR/data/reference_genome_1000G_EUR
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Thu Aug 29 07:04:45 2024]
+Finished job 1794.
+14 of 39 steps (36%) done
+[Thu Aug 29 07:04:46 2024]
+Finished job 497.
+15 of 39 steps (38%) done
+[Thu Aug 29 07:04:50 2024]
+Finished job 537.
+16 of 39 steps (41%) done
+[Thu Aug 29 07:04:51 2024]
+Finished job 1800.
+17 of 39 steps (44%) done
+[Thu Aug 29 07:04:55 2024]
+Finished job 1272.
+18 of 39 steps (46%) done
+[Thu Aug 29 07:04:58 2024]
+Finished job 1793.
+19 of 39 steps (49%) done
+[Thu Aug 29 07:05:03 2024]
+Error in rule MR:
+    jobid: 542
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Smoking_status.results.coverage.0.9.PPH4.0.8.pb.clumped
+    output: csMR-EXAMPLE/MR/Smoking_status-Cerebral_palsy_and_other_paralytic_syndromes_R10_full_outcome/Smoking_status.Cerebral_palsy_and_other_paralytic_syndromes_R10_full_outcome.pb.MR.res, csMR-EXAMPLE/MR/Smoking_status-Cerebral_palsy_and_other_paralytic_syndromes_R10_full_outcome/Smoking_status.Cerebral_palsy_and_other_paralytic_syndromes_R10_full_outcome.pb.MR.sensitivity
+    shell:
+        Rscript scripts/csMR.r -e /home/u/csMR/example/BMI_GWAS/Smoking_status.ma -o example/outcomes/Cerebral_palsy_and_other_paralytic_syndromes_R10_full_outcome.ma -c csMR-EXAMPLE/MR/clump/Susie_coloc.Smoking_status.results.coverage.0.9.PPH4.0.8.pb.clumped -r /home/u/csMR/data/reference_genome_1000G_EUR
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Thu Aug 29 07:05:10 2024]
+Finished job 901.
+20 of 39 steps (51%) done
+[Thu Aug 29 07:05:14 2024]
+Finished job 904.
+21 of 39 steps (54%) done
+[Thu Aug 29 07:05:14 2024]
+Finished job 925.
+22 of 39 steps (56%) done
+[Thu Aug 29 07:05:21 2024]
+Finished job 506.
+23 of 39 steps (59%) done
+[Thu Aug 29 07:05:22 2024]
+Finished job 515.
+24 of 39 steps (62%) done
+[Thu Aug 29 07:05:23 2024]
+Finished job 535.
+25 of 39 steps (64%) done
+[Thu Aug 29 07:05:28 2024]
+Error in rule MR:
+    jobid: 1819
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Inflammatory_bowel_disease.results.coverage.0.9.PPH4.0.8.Astrocytes.clumped
+    output: csMR-EXAMPLE/MR/Inflammatory_bowel_disease-Myocardial_infarction_strict_R10_full_outcome/Inflammatory_bowel_disease.Myocardial_infarction_strict_R10_full_outcome.Astrocytes.MR.res, csMR-EXAMPLE/MR/Inflammatory_bowel_disease-Myocardial_infarction_strict_R10_full_outcome/Inflammatory_bowel_disease.Myocardial_infarction_strict_R10_full_outcome.Astrocytes.MR.sensitivity
+    shell:
+        Rscript scripts/csMR.r -e /home/u/csMR/example/BMI_GWAS/Inflammatory_bowel_disease.ma -o example/outcomes/Myocardial_infarction_strict_R10_full_outcome.ma -c csMR-EXAMPLE/MR/clump/Susie_coloc.Inflammatory_bowel_disease.results.coverage.0.9.PPH4.0.8.Astrocytes.clumped -r /home/u/csMR/data/reference_genome_1000G_EUR
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Thu Aug 29 07:05:29 2024]
+Finished job 531.
+26 of 39 steps (67%) done
+[Thu Aug 29 07:05:31 2024]
+Finished job 525.
+27 of 39 steps (69%) done
+[Thu Aug 29 07:05:32 2024]
+Finished job 1634.
+28 of 39 steps (72%) done
+[Thu Aug 29 07:05:38 2024]
+Finished job 2549.
+29 of 39 steps (74%) done
+[Thu Aug 29 07:05:44 2024]
+Finished job 518.
+30 of 39 steps (77%) done
+[Thu Aug 29 07:05:50 2024]
+Finished job 937.
+31 of 39 steps (79%) done
+[Thu Aug 29 07:05:53 2024]
+Finished job 913.
+32 of 39 steps (82%) done
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2024-08-29T070316.536593.snakemake.log

@@ -1,0 +1,112 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 60
+Rules claiming more threads will be scaled down.
+Job stats:
+job      count    min threads    max threads
+-----  -------  -------------  -------------
+MR          10              1              1
+all          1              1              1
+total       11              1              1
+
+Select jobs to execute...
+
+[Wed Sep  4 17:05:43 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Glycated_haemoglobin_HbA1c.results.coverage.0.9.PPH4.0.8.sat_Adipocyte.clumped
+    output: csMR-EXAMPLE/MR/Glycated_haemoglobin_HbA1c-Generalized_anxiety_disorder_R10_full_outcome/Glycated_haemoglobin_HbA1c.Generalized_anxiety_disorder_R10_full_outcome.sat_Adipocyte.MR.res, csMR-EXAMPLE/MR/Glycated_haemoglobin_HbA1c-Generalized_anxiety_disorder_R10_full_outcome/Glycated_haemoglobin_HbA1c.Generalized_anxiety_disorder_R10_full_outcome.sat_Adipocyte.MR.sensitivity
+    jobid: 4297
+    reason: Missing output files: csMR-EXAMPLE/MR/Glycated_haemoglobin_HbA1c-Generalized_anxiety_disorder_R10_full_outcome/Glycated_haemoglobin_HbA1c.Generalized_anxiety_disorder_R10_full_outcome.sat_Adipocyte.MR.res, csMR-EXAMPLE/MR/Glycated_haemoglobin_HbA1c-Generalized_anxiety_disorder_R10_full_outcome/Glycated_haemoglobin_HbA1c.Generalized_anxiety_disorder_R10_full_outcome.sat_Adipocyte.MR.sensitivity
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Glycated_haemoglobin_HbA1c, outcome=Generalized_anxiety_disorder_R10_full_outcome, cell_type=sat_Adipocyte
+    resources: tmpdir=/tmp
+
+
+[Wed Sep  4 17:05:43 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Glycated_haemoglobin_HbA1c.results.coverage.0.9.PPH4.0.8.sat_Adipocyte.clumped
+    output: csMR-EXAMPLE/MR/Glycated_haemoglobin_HbA1c-Scoliosis_R10_full_outcome/Glycated_haemoglobin_HbA1c.Scoliosis_R10_full_outcome.sat_Adipocyte.MR.res, csMR-EXAMPLE/MR/Glycated_haemoglobin_HbA1c-Scoliosis_R10_full_outcome/Glycated_haemoglobin_HbA1c.Scoliosis_R10_full_outcome.sat_Adipocyte.MR.sensitivity
+    jobid: 4298
+    reason: Missing output files: csMR-EXAMPLE/MR/Glycated_haemoglobin_HbA1c-Scoliosis_R10_full_outcome/Glycated_haemoglobin_HbA1c.Scoliosis_R10_full_outcome.sat_Adipocyte.MR.res, csMR-EXAMPLE/MR/Glycated_haemoglobin_HbA1c-Scoliosis_R10_full_outcome/Glycated_haemoglobin_HbA1c.Scoliosis_R10_full_outcome.sat_Adipocyte.MR.sensitivity
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Glycated_haemoglobin_HbA1c, outcome=Scoliosis_R10_full_outcome, cell_type=sat_Adipocyte
+    resources: tmpdir=/tmp
+
+
+[Wed Sep  4 17:05:43 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.HDL_cholesterol.results.coverage.0.9.PPH4.0.8.sat_Macrophage.clumped
+    output: csMR-EXAMPLE/MR/HDL_cholesterol-Coronary_artery_disease/HDL_cholesterol.Coronary_artery_disease.sat_Macrophage.MR.res, csMR-EXAMPLE/MR/HDL_cholesterol-Coronary_artery_disease/HDL_cholesterol.Coronary_artery_disease.sat_Macrophage.MR.sensitivity
+    jobid: 11578
+    reason: Missing output files: csMR-EXAMPLE/MR/HDL_cholesterol-Coronary_artery_disease/HDL_cholesterol.Coronary_artery_disease.sat_Macrophage.MR.sensitivity, csMR-EXAMPLE/MR/HDL_cholesterol-Coronary_artery_disease/HDL_cholesterol.Coronary_artery_disease.sat_Macrophage.MR.res
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=HDL_cholesterol, outcome=Coronary_artery_disease, cell_type=sat_Macrophage
+    resources: tmpdir=/tmp
+
+
+[Wed Sep  4 17:05:43 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.HDL_cholesterol.results.coverage.0.9.PPH4.0.8.sat_Macrophage.clumped
+    output: csMR-EXAMPLE/MR/HDL_cholesterol-Small_cell_lung_cancer/HDL_cholesterol.Small_cell_lung_cancer.sat_Macrophage.MR.res, csMR-EXAMPLE/MR/HDL_cholesterol-Small_cell_lung_cancer/HDL_cholesterol.Small_cell_lung_cancer.sat_Macrophage.MR.sensitivity
+    jobid: 11596
+    reason: Missing output files: csMR-EXAMPLE/MR/HDL_cholesterol-Small_cell_lung_cancer/HDL_cholesterol.Small_cell_lung_cancer.sat_Macrophage.MR.sensitivity, csMR-EXAMPLE/MR/HDL_cholesterol-Small_cell_lung_cancer/HDL_cholesterol.Small_cell_lung_cancer.sat_Macrophage.MR.res
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=HDL_cholesterol, outcome=Small_cell_lung_cancer, cell_type=sat_Macrophage
+    resources: tmpdir=/tmp
+
+
+[Wed Sep  4 17:05:43 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.HDL_cholesterol.results.coverage.0.9.PPH4.0.8.sat_Macrophage.clumped
+    output: csMR-EXAMPLE/MR/HDL_cholesterol-Skin_cancer/HDL_cholesterol.Skin_cancer.sat_Macrophage.MR.res, csMR-EXAMPLE/MR/HDL_cholesterol-Skin_cancer/HDL_cholesterol.Skin_cancer.sat_Macrophage.MR.sensitivity
+    jobid: 11616
+    reason: Missing output files: csMR-EXAMPLE/MR/HDL_cholesterol-Skin_cancer/HDL_cholesterol.Skin_cancer.sat_Macrophage.MR.res, csMR-EXAMPLE/MR/HDL_cholesterol-Skin_cancer/HDL_cholesterol.Skin_cancer.sat_Macrophage.MR.sensitivity
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=HDL_cholesterol, outcome=Skin_cancer, cell_type=sat_Macrophage
+    resources: tmpdir=/tmp
+
+
+[Wed Sep  4 17:05:43 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Glycated_haemoglobin_HbA1c.results.coverage.0.9.PPH4.0.8.sat_Adipocyte.clumped
+    output: csMR-EXAMPLE/MR/Glycated_haemoglobin_HbA1c-Papillary_adenocarcinoma_of_thyroid_gland/Glycated_haemoglobin_HbA1c.Papillary_adenocarcinoma_of_thyroid_gland.sat_Adipocyte.MR.res, csMR-EXAMPLE/MR/Glycated_haemoglobin_HbA1c-Papillary_adenocarcinoma_of_thyroid_gland/Glycated_haemoglobin_HbA1c.Papillary_adenocarcinoma_of_thyroid_gland.sat_Adipocyte.MR.sensitivity
+    jobid: 4296
+    reason: Missing output files: csMR-EXAMPLE/MR/Glycated_haemoglobin_HbA1c-Papillary_adenocarcinoma_of_thyroid_gland/Glycated_haemoglobin_HbA1c.Papillary_adenocarcinoma_of_thyroid_gland.sat_Adipocyte.MR.sensitivity, csMR-EXAMPLE/MR/Glycated_haemoglobin_HbA1c-Papillary_adenocarcinoma_of_thyroid_gland/Glycated_haemoglobin_HbA1c.Papillary_adenocarcinoma_of_thyroid_gland.sat_Adipocyte.MR.res
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Glycated_haemoglobin_HbA1c, outcome=Papillary_adenocarcinoma_of_thyroid_gland, cell_type=sat_Adipocyte
+    resources: tmpdir=/tmp
+
+
+[Wed Sep  4 17:05:43 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.HDL_cholesterol.results.coverage.0.9.PPH4.0.8.sat_Macrophage.clumped
+    output: csMR-EXAMPLE/MR/HDL_cholesterol-Autism_spectrum_disorder_full_outcome/HDL_cholesterol.Autism_spectrum_disorder_full_outcome.sat_Macrophage.MR.res, csMR-EXAMPLE/MR/HDL_cholesterol-Autism_spectrum_disorder_full_outcome/HDL_cholesterol.Autism_spectrum_disorder_full_outcome.sat_Macrophage.MR.sensitivity
+    jobid: 11565
+    reason: Missing output files: csMR-EXAMPLE/MR/HDL_cholesterol-Autism_spectrum_disorder_full_outcome/HDL_cholesterol.Autism_spectrum_disorder_full_outcome.sat_Macrophage.MR.sensitivity, csMR-EXAMPLE/MR/HDL_cholesterol-Autism_spectrum_disorder_full_outcome/HDL_cholesterol.Autism_spectrum_disorder_full_outcome.sat_Macrophage.MR.res
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=HDL_cholesterol, outcome=Autism_spectrum_disorder_full_outcome, cell_type=sat_Macrophage
+    resources: tmpdir=/tmp
+
+
+[Wed Sep  4 17:05:43 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.Glycated_haemoglobin_HbA1c.results.coverage.0.9.PPH4.0.8.sat_Adipocyte.clumped
+    output: csMR-EXAMPLE/MR/Glycated_haemoglobin_HbA1c-Autism_spectrum_disorder_full_outcome/Glycated_haemoglobin_HbA1c.Autism_spectrum_disorder_full_outcome.sat_Adipocyte.MR.res, csMR-EXAMPLE/MR/Glycated_haemoglobin_HbA1c-Autism_spectrum_disorder_full_outcome/Glycated_haemoglobin_HbA1c.Autism_spectrum_disorder_full_outcome.sat_Adipocyte.MR.sensitivity
+    jobid: 4249
+    reason: Missing output files: csMR-EXAMPLE/MR/Glycated_haemoglobin_HbA1c-Autism_spectrum_disorder_full_outcome/Glycated_haemoglobin_HbA1c.Autism_spectrum_disorder_full_outcome.sat_Adipocyte.MR.sensitivity, csMR-EXAMPLE/MR/Glycated_haemoglobin_HbA1c-Autism_spectrum_disorder_full_outcome/Glycated_haemoglobin_HbA1c.Autism_spectrum_disorder_full_outcome.sat_Adipocyte.MR.res
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=Glycated_haemoglobin_HbA1c, outcome=Autism_spectrum_disorder_full_outcome, cell_type=sat_Adipocyte
+    resources: tmpdir=/tmp
+
+
+[Wed Sep  4 17:05:43 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.HDL_cholesterol.results.coverage.0.9.PPH4.0.8.sat_Macrophage.clumped
+    output: csMR-EXAMPLE/MR/HDL_cholesterol-Amyotrophic_lateral_sclerosis_GCST005647_full_outcome/HDL_cholesterol.Amyotrophic_lateral_sclerosis_GCST005647_full_outcome.sat_Macrophage.MR.res, csMR-EXAMPLE/MR/HDL_cholesterol-Amyotrophic_lateral_sclerosis_GCST005647_full_outcome/HDL_cholesterol.Amyotrophic_lateral_sclerosis_GCST005647_full_outcome.sat_Macrophage.MR.sensitivity
+    jobid: 11615
+    reason: Missing output files: csMR-EXAMPLE/MR/HDL_cholesterol-Amyotrophic_lateral_sclerosis_GCST005647_full_outcome/HDL_cholesterol.Amyotrophic_lateral_sclerosis_GCST005647_full_outcome.sat_Macrophage.MR.res, csMR-EXAMPLE/MR/HDL_cholesterol-Amyotrophic_lateral_sclerosis_GCST005647_full_outcome/HDL_cholesterol.Amyotrophic_lateral_sclerosis_GCST005647_full_outcome.sat_Macrophage.MR.sensitivity
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=HDL_cholesterol, outcome=Amyotrophic_lateral_sclerosis_GCST005647_full_outcome, cell_type=sat_Macrophage
+    resources: tmpdir=/tmp
+
+
+[Wed Sep  4 17:05:43 2024]
+rule MR:
+    input: csMR-EXAMPLE/MR/clump/Susie_coloc.HDL_cholesterol.results.coverage.0.9.PPH4.0.8.sat_Macrophage.clumped
+    output: csMR-EXAMPLE/MR/HDL_cholesterol-Lacunar_stroke/HDL_cholesterol.Lacunar_stroke.sat_Macrophage.MR.res, csMR-EXAMPLE/MR/HDL_cholesterol-Lacunar_stroke/HDL_cholesterol.Lacunar_stroke.sat_Macrophage.MR.sensitivity
+    jobid: 11631
+    reason: Missing output files: csMR-EXAMPLE/MR/HDL_cholesterol-Lacunar_stroke/HDL_cholesterol.Lacunar_stroke.sat_Macrophage.MR.res, csMR-EXAMPLE/MR/HDL_cholesterol-Lacunar_stroke/HDL_cholesterol.Lacunar_stroke.sat_Macrophage.MR.sensitivity
+    wildcards: BASE_OUTPUT_DIR=csMR-EXAMPLE, run_prefix=HDL_cholesterol, outcome=Lacunar_stroke, cell_type=sat_Macrophage
+    resources: tmpdir=/tmp
+
